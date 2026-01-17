@@ -1,0 +1,88 @@
+0001,Primary,PPE -MAC001,MOULDING MACHINE #1,0001,1,0001,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",1
+0001,Primary,PPE -MAC002,MOULDING MACHINE #2,0001,1,0002,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",2
+0001,Primary,PPE -MAC003,MOULDING MACHINE #3,0001,1,0003,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",3
+0001,Primary,PPE -MAC004,MOULDING MACHINE #4,0001,1,0004,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",4
+0001,Primary,PPE -MAC005,MOULDING MACHINE #5,0001,1,0005,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",5
+0001,Primary,PPE -MAC006,MOULDING MACHINE #6,0001,1,0006,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",6
+0001,Primary,PPE -MAC007,MOULDING MACHINE #7,0003,1,0007,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",7
+0002,Primary,PPE -MAC008,PET MACHINE (HEATER) #1,0001,1,0008,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",8
+0002,Primary,PPE -MAC009,PET MACHINE (HEATER) #2,0001,1,0009,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",9
+0002,Primary,PPE -MAC010,PET MACHINE (HEATER) #3,0001,1,0010,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",10
+0002,Primary,PPE -MAC011,PET MACHINE (BLOWING) #1,0001,1,0011,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",11
+0002,Primary,PPE -MAC012,PET MACHINE (BLOWING) #2,0001,1,0012,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",12
+0002,Primary,PPE -MAC013,PET MACHINE (BLOWING) #3,0001,1,0013,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",13
+0002,Primary,PPE -MAC014,PET MACHINE (BLOWING) #4,0001,1,0014,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",14
+0002,Primary,PPE -MAC015,PET MACHINE (BLOWING) #5,0001,1,0015,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",15
+0006,Primary,PPE -MAC016,EXTRUDER #1,0002,1,0016,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",16
+0006,Primary,PPE -MAC017,EXTRUDER #2,0002,1,0017,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",17
+0006,Primary,PPE -MAC018,EXTRUDER #3,0002,1,0018,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",18
+0006,Primary,PPE -MAC019,EXTRUDER #4,0002,1,0019,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",19
+0006,Primary,PPE -MAC020,EXTRUDER #5,0002,1,0020,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",20
+0006,Primary,PPE -MAC021,EXTRUDER #6,0002,1,0021,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",21
+0006,Primary,PPE -MAC022,EXTRUDER #7,0002,1,0022,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",22
+0006,Primary,PPE -MAC023,EXTRUDER #8,0002,1,0023,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",23
+0006,Primary,PPE -MAC024,EXTRUDER #9,0002,1,0024,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",24
+0006,Primary,PPE -MAC025,EXTRUDER #10,0002,1,0025,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",25
+0006,Primary,PPE -MAC026-A,EXTRUDER #11,0002,1,0026,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",26
+0006,Primary,PPE -MAC026-B,EXTRUDER #12,0002,1,0027,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",27
+0006,Primary,PPE -MAC027-A,EXTRUDER #13,0002,1,0028,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",28
+0006,Primary,PPE -MAC027-B,EXTRUDER #14,0002,1,0029,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",29
+0006,Primary,PPE -MAC028-A,EXTRUDER #15,0002,1,0030,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",30
+0006,Primary,PPE -MAC028-B,EXTRUDER #16,0002,1,0031,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",31
+0006,Primary,PPE -MAC029-A,EXTRUDER #17,0002,1,0032,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",32
+0006,Primary,PPE -MAC029-B,EXTRUDER #18,0002,1,0033,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",33
+0006,Primary,PPE -MAC030-A,EXTRUDER #19,0002,1,0034,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",34
+0006,Primary,PPE -MAC030-B,EXTRUDER #20,0002,1,0035,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",35
+0006,Primary,PPE -MAC031,EXTRUDER #21,0002,1,0036,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",36
+0006,Primary,PPE -MAC032,EXTRUDER (PP #1),0002,1,0037,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",37
+0006,Primary,PPE -MAC033,EXTRUDER (PP #2),0002,1,0038,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",38
+0008,Primary,PPE -MAC034,INJECTION MACHINE #1,0002,1,0039,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",39
+0009,Primary,PPE -MAC035,CUTTER #1,0003,1,0040,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",40
+0009,Primary,PPE -MAC036,CUTTER #2,0003,1,0041,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",41
+0009,Primary,PPE -MAC037,CUTTER #3,0003,1,0042,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",42
+0009,Primary,PPE -MAC038,CUTTER #4,0003,1,0043,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",43
+0009,Primary,PPE -MAC039,CUTTER #5,0003,1,0044,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",44
+0009,Primary,PPE -MAC040,CUTTER #6,0003,1,0045,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",45
+0009,Primary,PPE -MAC041,CUTTER #7,0003,1,0046,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",46
+0009,Primary,PPE -MAC042,CUTTER #8,0003,1,0047,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",47
+0009,Primary,PPE -MAC043,CUTTER #9,0003,1,0048,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",48
+0009,Primary,PPE -MAC044,CUTTER #10,0003,1,0049,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",49
+0009,Primary,PPE -MAC045,CUTTER #11,0003,1,0050,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",50
+0009,Primary,PPE -MAC046,CUTTER #12,0003,1,0051,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",51
+0009,Primary,PPE -MAC047,CUTTER #13,0003,1,0052,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",52
+0009,Primary,PPE -MAC048,CUTTER #14,0003,1,0053,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",53
+0009,Primary,PPE -MAC049,CUTTER #15,0003,1,0054,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",54
+0009,Primary,PPE -MAC050,CUTTER #16,0003,1,0055,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",55
+0009,Primary,PPE -MAC051,CUTTER #17,0003,1,0056,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",56
+0009,Primary,PPE -MAC052,CUTTER (PP #1),0003,1,0057,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",57
+0009,Primary,PPE -MAC053,CUTTER (PP #2),0003,1,0058,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",58
+0009,Primary,PPE -MAC054,CUTTER (RB #1),0003,1,0059,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",59
+0009,Primary,PPE -MAC055,CUTTER (RB #2),0003,1,0060,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",60
+0009,Primary,PPE -MAC056,CUTTER (RB #3),0003,1,0061,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",61
+0009,Primary,PPE -MAC057,CUTTER (PE #1),0003,1,0062,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",62
+0013,Primary,PPE -MAC058,CUPS EXTRUDER #1,0003,1,0063,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",63
+0013,Primary,PPE -MAC059,CUPS FORMING #1,0003,1,0064,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",64
+0013,Primary,PPE -MAC060,CUPS EXTRUDER #2,0003,1,0065,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",65
+0013,Primary,PPE -MAC061,CUPS FORMING #2,0003,1,0066,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",66
+0010,Primary,PPE -MAC062,PEANUT JAR MACHINE #1,0003,1,0067,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",67
+0010,Primary,PPE -MAC063,PEANUT JAR MACHINE #2,0003,1,0068,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",68
+0010,Primary,PPE -MAC064,PEANUT JAR MACHINE #3,0003,1,0069,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",69
+0011,Primary,PPE -MAC065,PET GALLON #1,0003,1,0070,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",70
+0011,Primary,PPE -MAC066,PET GALLON #2,0003,1,0071,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",71
+0011,Primary,PPE -MAC067,GALLON MACHINE,0003,1,0072,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",72
+0012,Primary,PPE -MAC068,STRAW MACHINE #1,0003,1,0073,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",73
+0012,Primary,PPE -MAC069,STRAW MACHINE #2,0003,1,0074,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",74
+0012,Primary,PPE -MAC070,STRAW MACHINE #3,0003,1,0075,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",75
+0012,Primary,PPE -MAC071,STRAW MACHINE #4,0003,1,0076,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",76
+0014,Primary,PPE -MAC072,PRINTING MACHINE (FLEXO) #1,0003,1,0077,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",77
+0014,Primary,PPE -MAC073,PRINTING MACHINE (ROTO) #2,0003,1,0078,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",78
+0005,Primary,PPE -MAC074,PELLETIZER #1,0001,1,0079,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",79
+0005,Primary,PPE -MAC075,PELLETIZER #2,0001,1,0080,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",80
+0005,Primary,PPE -MAC076,PELLETIZER #3,0002,1,0081,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",81
+0019,Primary,PPE -MAC077,LATHE MACHINE #1,0002,1,0082,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",82
+0019,Primary,PPE -MAC078,LATHE MACHINE #2,0002,1,0083,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",83
+0003,Primary,PPE -MAC079,MIXER (PLAIN) #1 ,0005,1,0084,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",84
+0003,Primary,PPE -MAC080,MIXER (PLAIN) #2,0005,1,0085,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",85
+0003,Primary,PPE -MAC081,MIXER (PLAIN) #3,0005,1,0086,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",86
+0003,Primary,PPE -MAC082,MIXER (VERTICAL) #1,0005,1,0087,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",87
+0003,Primary,PPE -MAC083,MIXER (VERTICAL) #2,0005,1,0088,Operational,views/img/machine/default/machine.jpg,"[{""attribute"":""Model/Type"",""detail"":""N/A""}]",88

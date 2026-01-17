@@ -1,0 +1,73 @@
+HOSTINGER ACCOUNT
+-----------------
+email: rivsonwebenterprise@gmail.com
+hostinger pw: Rivson_2022_onwards
+gmail pw: Rivson_2022onwards
+
+-------------------------------
+       IMPORTANT NOTES
+-------------------------------
+> sending parameters to ajax FormData does not recognize Special Characters
+  (js file)
+> solution: wrap parameters to an array, then include it in Controller
+  (ajax file)
+> make the dataType of $ajax to text (not json)
+
+example: updating sales status, product profile...
+
+-------------------------------
+
+Datatable Scroll-y work only
+on MINIMUM of 6 columns table
+
+-------------------------------
+Employees
+-------------------------------
+ajax
+  getemployeerecord.ajax.php
+
+controllers
+  employees.controller.php
+
+models
+  employees.model.php
+
+views/js
+  employees.js
+
+views/modules
+  employees
+
+-------------------------------
+Branch
+-------------------------------
+ajax
+  getbranchrecord.ajax.php
+
+controllers
+  branch.controller.php *
+
+models
+  branch.model.php *
+
+views/js
+  branch.js *
+
+views/modules
+  branches  *
+
+  allowcredit   TI
+
+
+-------------------------------
+Uploading to Hostinger
+-------------------------------
+1. install 7-zip
+2. zip rgmc folder - xampp/htdocs
+3. login to hostinger
+4. upload zip file inside public_html folder
+5. download unzipper - https://github.com/ndeet/unzipper
+6. unzip file, then upload files inside public_html folder
+7. visit site - http://webapptestdeploy.com/unzipper.php
+8. unzip file
+9. http://webapptestdeploy.com

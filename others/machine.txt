@@ -1,0 +1,115 @@
+machine
+-------
+classcode      V(4)  	sel-classcode
+machtype       V(10)	sel-machtype
+machabbr       V(10)  	txt-machabbr
+machinedesc    V(35)	txt-machinedesc
+buildingcode   V(4)	sel-buildingcode
+isactive       I		num-isactive
+machineid      V(4)	txt-machineid
+machstatus     V(15)  	sel-machstatus
+photo          T      	tns-photo
+attributelist  T
+id             I
+
+
+
+inventory				stockout
+---------				--------
+countedby    V(7)		requestby	V(7)
+invstatus    V(10)		reqstatus  	V(10)
+invdate      D			reqdate		D
+invnumber    V(10)		reqnumber	V(10)
+postedby     V(7)		postedby	V(7)
+remarks      T			machineid	V(4)
+						remarks		T
+
+
+inventoryitems			stockoutitems
+--------------			-------------
+invnumber	  V(10)		reqnumber	V(10)
+qty			  F(11,2)	qty			F(11,2)
+itemid		  V(6)		itemid		V(6)
+
+
+
+
+
+
+<?php
+class ControllerMachine{
+	// static public function ctrCreateMachine($data){
+	//    	$answer = (new ModelMachine)->mdlAddMachine($data, $photo);
+	// }
+
+	static public function ctrCreateMachine(){
+		if (isset($_POST["sel-classcode"])&&isset($_POST["sel-machtype"])&&($_POST["trans_type"] == 'New')) {
+				if (isset($_POST['num-isactive'])){
+				    $isactive=$_POST['num-isactive'];
+			    }else{
+			    	$isactive="0";
+			    }
+
+				$photo = "";
+				if(isset($_FILES["tns-photo"]["tmp_name"]) && $_FILES["tns-photo"]["size"] != 0){
+					list($width, $height) = getimagesize($_FILES["tns-photo"]["tmp_name"]);
+					$newWidth = 500;
+					$newHeight = 500;
+					/*=============================================
+					Let's create the folder for each user
+					=============================================*/
+					$next_id = (new Connection)->connect()->query("SHOW TABLE STATUS LIKE 'machine'")->fetch(PDO::FETCH_ASSOC)['Auto_increment'];
+
+					$folder = "views/img/machine/M".$next_id;
+					mkdir($folder, 0755);
+
+					/*=============================================
+					PHP functions depending on the image
+					=============================================*/
+					if($_FILES["tns-photo"]["type"] == "image/jpeg"){
+						$randomNumber = mt_rand(100,999);
+						$photo = "views/img/machine/M".$next_id."/".$randomNumber.".jpg";
+						$srcImage = imagecreatefromjpeg($_FILES["tns-photo"]["tmp_name"]);
+						$destination = imagecreatetruecolor($newWidth, $newHeight);
+						imagecopyresized($destination, $srcImage, 0, 0, 0, 0, $newWidth, $newHeight, $width, $height);
+						imagejpeg($destination, $photo);
+					}
+					if ($_FILES["tns-photo"]["type"] == "image/png") {
+						$randomNumber = mt_rand(100,999);
+						$photo = "views/img/machine/M".$next_id."/".$randomNumber.".png";
+						$srcImage = imagecreatefrompng($_FILES["tns-photo"]["tmp_name"]);
+						$destination = imagecreatetruecolor($newWidth, $newHeight);
+						imagecopyresized($destination, $srcImage, 0, 0, 0, 0, $newWidth, $newHeight, $width, $height);
+						imagepng($destination, $photo);
+					}
+				}
+
+				$data = array('classcode' => $_POST["sel-classcode"],
+							  'machtype' => $_POST["sel-machtype"],
+							  'machabbr' => $_POST["txt-machabbr"],
+							  'machinedesc' => $_POST["txt-machinedesc"],
+							  'buildingcode' => $_POST["sel-buildingcode"],
+							  'isactive' => $isactive,
+							  'machstatus' => $_POST["sel-machstatus"],
+							  'photo' => $photo);
+
+				$answer = (new ModelMachine)->mdlAddMachine($data);
+				if ($answer == 'ok') {
+						echo '<script>
+							swal.fire({
+				                title: "User access has been successfully appended!",
+				                type: "success",
+				                showConfirmButton: true,
+						        confirmButtonText: "Ok",
+						        confirmButtonClass: "btn btn-light btn-lg",
+						        allowOutsideClick: false
+				                }).then(function(result){
+										if (result.value) {
+										  window.location = "machine";
+						 				}
+			                });
+						</script>';
+				}
+		}
+	}	
+}

@@ -1,0 +1,268 @@
+classification
+-------------
+classcode			V(4)
+classname			V(35)
+
+machine
+--------
+classcode			V(4)
+machtype			V(10)
+machabbr			V(25)
+machinedesc		V(35)
+buildingcode		V(4)
+isactive			I
+machineid			V(4)
+machstatus		V(15)
+image			T
+attributelist		T
+
+categoryrawmats
+-----------------
+categorycode       	V(4)
+catdescription       	V(40)
+
+rawmats
+---------
+categorycode       	V(4)
+purchaseitem      	 TI
+itemid       		V(5)
+itemcode       		V(10)
+pdesc       		V(80)
+meas2       		V(8)
+ucost      			F(10,2)
+isactive       		TI
+reorder       		F(10,2)
+remarks       		V(150)
+
+rawout
+--------
+requestby        		V(7)
+reqstatus          		V(10)
+reqdate            		D
+reqnumber      		V(10)
+shift                    	V(7)
+postedby          	V(7) - Posted
+machineid        		V(4)
+remarks             	T
+productlist       		T
+id                        	 I
+
+rawoutitems
+------------
+reqnumber        	V(10)
+qty                         	F(11,2)
+price                     	F(9,2)
+tamount              	F(9,2)
+itemid                 	V(6)
+matcost               	TI	(must be = 1)
+id                           	BI
+
+============================
+
+categorygoods
+---------------
+categorycode      	 V(4)
+catdescription      	 V(40)
+
+products
+---------
+categorycode       	V(4)
+itemid       		V(5)
+itemcode       		V(10)
+pdesc       		V(80)
+meas2       		V(8)
+ucost      			F(10,2)
+isactive       		TI
+reorder       		F(10,2)
+remarks       		V(150)
+
+prodfin
+-------
+operatedby              V(7)
+prodstatus                V(10) - Posted
+proddate                  D
+prodnumber            	V(10)
+shift                          V(7)
+postedby                  V(7)
+machineid                 V(4)
+remarks             	T
+productlist      		T
+id                         	I
+
+prodfinitems
+------------
+prodnumber            V(10)
+qty                          F(11,2)
+price                       F(9,2)
+tamount                  F(9,2)
+itemid                     V(6)
+id                           BI
+
+recycle
+-------
+recycleby			V(7)
+recstatus			V(10)
+recdate			D
+recnumber		V(10)
+shift				V(7)
+postedby			V(7)
+machineid			V(4)
+remarks             	T
+productlist      		T
+id                         	I
+
+recycleitems
+------------
+recnumber		V(10)
+qty				F(11,2)
+price				F(9,2)
+tamount			F(9,2)
+itemid			V(6)
+id				BI
+
+productmetrics
+---------------
+prodmetid			V(7)
+categorycode		V(4)
+headcount			F(7,2)
+dailyrate			F(8,2)
+amount			F(10,2)
+mstatus			V(10)
+mdate			D
+postedby			V(7)
+id
+
+machinetracking
+----------------
+machineid			V(4)			sel-machineid
+datereported		D			date-datereported
+curstatus			V(20)		sel-curstatus
+inccode			V(10)		txt-inccode
+reporter			V(7)			sel-reporter
+shift				V(5)			sel-shift
+inctime			V(8)			txt-inctime
+failuretype			V(25)		sel-failuretype
+severity			V(8)			sel-severity
+incidentdetails		V(350)		txt-incidentdetails
+compreporter		V(7)			sel-compreporter
+datecompleted		D			date-datecompleted
+endtime			V(8)			txt-endtime
+daysduration		Dec(10,2)		num-daysduration
+timeduration		Dec(10,2)		num-timeduration
+actiontaken		V(350)		txt-actiontaken
+id
+
+
+machinetracking.php
+
+machinetracking.js
+
+machine_tracking_save_record.ajax.php
+
+machinetracking.controller.php
+
+machinetracking.model.php
+
+
+
+
+
+
+Product Categories				Assigned Machine											Sa diin ni ya na assign nga category ang sa dalum nga mga machines
+-------------------				------------------											--------------------------------------------------------------------
+Container						MOULDING MACHINE #1									MOULDING MACHINE #2, #5 - #7
+Disposable Cups				CUPS EXTRUDER #1, 										CUPS EXTRUDER #2 
+PE Plastic						CUTTER (PE #1)			
+Peanut Jar						PEANUT JAR MACHINE #1									PEANUT JAR MACHINE #2 - #3
+Pet Bottle						PET MACHINE (BLOWING) #1								PET MACHINE (BLOWING) #2 - #5
+PP Plastic						CUTTER (PP #1)											CUTTER (PP #2) - Printing
+Roll Bag						CUTTER (RB #1)											CUTTER (RB #2), CUTTER (RB #3)
+Sando Bag					CUTTER #1												CUTTER #2 - #17
+Straw						Bundler (Straw)
+Water Container				MOULDING MACHINE #3, MOULDING MACHINE #4
+
+
+
+
+
+
+
+
+
+
+
+
+					[categoryrawmats]
+Pelletizer				source: Material Recycle (recycle, recycleitems) - not from categories
+RB&SB Extruder		Roll Bag (0012) OR Recycled Roll (0015) OR
+					Semi-Virgin Roll (0014) OR Virgin Roll (0013)
+PP Extruder			PP Roll (0008)
+LDPE Extruder			PE Packaging Roll (0011)
+Cups Extruder			PPY Roll (0016)
+Straw Repacker		Straw (0007)
+Printing				PP Packaging Roll (0009) OR PE Packaging Pcs, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Goods produced
+SELECT
+  cg.catdescription AS Category,
+  SUM(pfi.qty) AS TotalQty,
+  SUM(pfi.tamount) AS TotalValue,
+  SUM(pfi.qty * pfi.price) AS MaterialCost,
+  COUNT(DISTINCT pf.operatedby) AS TotalHC
+FROM prodfin pf
+JOIN prodfinitems pfi ON pf.prodnumber = pfi.prodnumber
+JOIN products p ON p.itemid = pfi.itemid
+JOIN categorygoods cg ON p.categorycode = cg.categorycode
+WHERE pf.proddate BETWEEN '2025-07-01' AND '2025-07-31'
+GROUP BY cg.catdescription
+
+UNION ALL
+
+-- Raw materials requisitioned
+SELECT
+  cr.catdescription AS Category,
+  SUM(roi.qty) AS TotalQty,
+  SUM(roi.tamount) AS TotalValue,
+  SUM(roi.qty * roi.price) AS MaterialCost,
+  COUNT(DISTINCT ro.requestby) AS TotalHC
+FROM rawout ro
+JOIN rawoutitems roi ON ro.reqnumber = roi.reqnumber
+JOIN rawmats rm ON rm.itemid = roi.itemid  -- assuming
+JOIN categoryrawmats cr ON rm.categorycode = cr.categorycode
+WHERE ro.reqdate BETWEEN '2025-07-01' AND '2025-07-31'
+GROUP BY cr.catdescription
+
+UNION ALL
+
+-- Materials recycled
+SELECT
+  'Material Recycle' AS Category,
+  SUM(ri.qty) AS TotalQty,
+  SUM(ri.tamount) AS TotalValue,
+  SUM(ri.qty * ri.price) AS MaterialCost,
+  COUNT(DISTINCT r.recycleby) AS TotalHC
+FROM recycle r
+JOIN recycleitems ri ON r.recnumber = ri.recnumber
+WHERE r.recdate BETWEEN '2025-07-01' AND '2025-07-31';
+
+
+
+
+
+

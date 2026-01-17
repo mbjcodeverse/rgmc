@@ -1,0 +1,271 @@
+MACHINES                                                PARTS
+========                                                =====                                   
+
+classification          building                        category                                
+--------------          --------                        --------                                
+id            I(11)     id            I(11)             categorycode        V(4)
+classcode     V(4)      buildingcode  V(4)              catdescription      V(25)               
+classname     V(35)     buildingname  V(30)
+
+machine                 machineattributes               items
+-------                 -----------------               -----
+classcode     V(4)      machineid     V(4)              categorycode        V(4)
+machtype      V(10)     attribute     V(60)             purchaseitem        TI(4)
+machabbr      V(10)     detail        V(180)            isactive            TI(4)
+machinedesc   V(35)     id            I(11)             itemcode            V(30)
+buildingcode  V(4)                                      itemid              V(6)
+isactive      I(11)                                     pdesc               V(150)
+machineid     V(4)                                      meas1               V(8)
+machstatus    V(15)                                     eqnum               F(10,2)
+image         T                                         meas2               V(8)
+attributelist T                                         ucost               F(9,2)
+id            I(11)                                     reorder             F(10,2)
+                                                        remarks             V(80)
+                                                        onhand              F(9,2)     
+                                                        id                  I(11)    
+
+supplier                        purchaseorder               purchaseitems
+--------                        -------------               -------------
+suppliercode    V(6)            suppliercode    V(6)        ponumber        V(15)
+name            V(45)           podate          D           qty             F(9,2)
+tin             V(15)           postatus        V(10)       price           F(9,2)
+vatdesc         V(7)            ponumber        V(15)       tamount         D(9,2)
+description     V(50)           orderedby       V(7)        itemid          V(6)  
+mobile          V(26)           machineid       V(4)        id              BI(20)
+landline        V(25)           preparedby      V(7)
+faxnum          V(25)           remarks         V(60)
+website         V(25)           amount          D(13,2)
+contactperson   V(35)           discount        D(9,2)
+country         V(2)            netamount       D(13,2)
+isactive        TI(4)           productlist     T
+address         V(60)           id              I(11)
+id              I(11)
+
+incoming                        incomingitems
+--------                        -------------
+ponumber        V(15)           delnumber       V(15)
+deldate         D               ponumber        V(15)
+delstatus       V(10)           qty             F(9,2)
+inctype         V(7)            price           F(9,2)
+iscode          V(15)           tamount         D(11,2)
+delnumber       V(15)           itemid          V(6)
+checkedby       V(7)            id              BI(20)
+deliveredby     V(35)
+postedby        V(7)
+remarks         V(60)
+amount          D(13,2)
+discount        F(9,2)
+netamount       D(13,2)
+productlist     T
+id              BI(20)
+
+stockout                        stockoutitems
+--------                        -------------
+requestby       V(7)            reqnumber       V(10)               requestby - countedby
+reqstatus       V(10)           qty             F(11,2)             reqstatus - invstatus
+reqdate         D               price           F(9,2)              reqdate - invdate
+reqnumber       V(10)           tamount         F(9,2)              reqnumber - invnumber
+postedby        V(7)            itemid          V(6)
+machineid       V(4)            id              BI                  stockout-form               inventory-form (x)
+remarks         T                                                   sel-requestby               sel-countedby (x)
+productlist     T                                                   date-reqdate                date-invdate (x)
+shift           V(7)                                                txt-reqstatus               txt-invstatus
+id              I(11)                                               txt-reqnumber               txt-invnumber (x)
+                                                                    releasingTransactionTable   inventoryTransactionTable (x)
+inventory                       inventoryitems                      modal-search-releasing      modal-search-inventory
+---------                       --------------                      lst-reqstatus               lst-invstatus (x)
+countedby       V(7)            invnumber       V(10)               reqstatus                   invstatus (x)
+invstatus       V(10)           qty             F(11,2)
+invdate         D               price           F(9,2)
+invnumber       V(10)           tamount         F(9,2)
+postedby        V(7)            itemid          V(6)
+remarks         T               id              BI
+productlist     T
+id              I(11)
+
+
+inventory.php
+inventory.js
+
+inventory_save_record.ajax.php
+inventory_transaction_list.ajax.php
+inventory_get_record.ajax.php
+inventory_get_items.ajax.php
+
+inventory.controller.php
+inventory.model.php
+
+
+returned                        returnitems
+--------                        -------------
+returnby        V(7)            retnumber       V(10)
+retstatus       V(10)           qty             F(11,2)
+retdate         D               itemid          V(6)
+retnumber       V(10)           id              BI(20)
+postedby        V(7)
+remarks         T
+productlist     T
+id              I(11)
+
+=======================================================================================================================
+                                    [ ITEMS ]
+
+Modules                 JS                  Ajax                            Controller              Model           PDF
+-------                 --                  ----                            ----------              -----           ---
+                                                                                                    items
+
+=======================================================================================================================
+                                    [ MACHINE ]
+
+Modules                 JS                  Ajax                            Controller              Model           PDF
+-------                 --                  ----                            ----------              -----           ---
+                                                                            machine                 machine
+
+10/17/2023
+-> added MachineListLocation (controller and model) - resolve issue on same machine name located in different buildings
+-> change all Building to Bldg - building.php and table content
+=======================================================================================================================
+                                    [ PURCHASE ORDER ]
+
+Modules                 JS                  Ajax                            Controller              Model           PDF
+-------                 --                  ----                            ----------              -----           ---
+purchaseorder          purchaseorder      list_purchase_items_products    purchaseorder          purchaseorder  purchaseorder
+                                            get_product_details
+                                            *purchaseorder_save_record
+                                            purchaseorder_transaction_list
+                                            purchaseorder_get_record
+                                            purchaseorder_get_items
+                                            purchaseorder_incoming_qty
+                                            purchaseorder_cancel_record
+                                            purchaseorder_close_record
+
+10/17/2023
+-> direct print after saving new purchase order
+-> concatenated machine description + building location
+-> added machine description in purchase print
+
+-> must have a unique machine name
+-> concern: machine on bldg 1 - PO - machine transferred to bldg 2 <esp machine with same name>
+-> building location not included in printout - in case of transfer
+=======================================================================================================================
+                                    [ INCOMING STOCKS ]
+
+Modules                 JS                  Ajax                            Controller              Model           PDF
+-------                 --                  ----                            ----------              -----           ---
+incoming                incoming            list_purchase_items_products    incoming               incoming
+                                            get_product_details
+                                            incoming_save_record
+                                            purchaseorder_transaction_list
+                                            incoming_transaction_list
+                                            purchaseorder_get_record_for_incoming
+                                            purchaseorder_get_items
+                                            incoming_get_record
+                                            incoming_get_items
+                                            purchaseorder_incoming_qty
+                                            incoming_cancel_record
+
+
+=======================================================================================================================
+                                    [ INCOMING REPORT ]
+
+Modules                 JS                  Ajax                            Controller              Model           PDF
+-------                 --                  ----                            ----------              -----           ---
+incomingreport          incomingreport     
+
+=======================================================================================================================
+                                          [ STOCKOUT ]
+
+Modules                 JS                  Ajax                            Controller              Model           PDF
+-------                 --                  ----                            ----------              -----           ---
+stockout               stockout            list_all_items_with_onhand       stockout                 stockout
+
+=======================================================================================================================
+                                          [ HOME ]
+
+Modules                 JS                  Ajax                            Controller              Model           PDF
+-------                 --                  ----                            ----------              -----           ---
+home                    stockcard_home
+
+
+=======================================================================================================================
+                                        [ RELEASE REPORT ]
+
+Modules                 JS                  Ajax                            Controller              Model           PDF
+-------                 --                  ----                            ----------              -----           ---
+releasereport           *releasereport       release_report
+sidebar
+template
+
+
+
+DOWNLOAD incomingreport.js from hostinger
+
+
+itemreport.php
+
+itemreport.js
+
+itemreport.ajax.php
+
+items.controller.php
+
+items.model.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

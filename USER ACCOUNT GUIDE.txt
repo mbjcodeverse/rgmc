@@ -1,0 +1,8 @@
+USERS THAT CAN SWITCH BETWEEN TECHNICAL AND MANUFACTURING
+------------------------------------------------------------------------------------------
+1) create user account as Manufacturing - set proper username and password
+2) create another user account as Technical - use the system generated username and password (no need to change)
+
+FOR MACHINE OPERATOR
+--------------------------------
+1) create user account as Operator - no need to check any of the functionality in the access privilege

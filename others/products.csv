@@ -1,0 +1,386 @@
+0001,00001,SCO001,CO-Container 1kg 20liter Black (pcs),pcs,85.00,1,0,,1
+0001,00002,SCO002,CO-Container 1kg 20liter Blue (pcs),pcs,85.00,1,0,,2
+0001,00003,SCO003,CO-Container 1kg 20liter Green (pcs),pcs,85.00,1,0,,3
+0001,00004,SCO004,CO-Container 1kg 20liter Virgin (pcs),pcs,85.00,1,0,,4
+0001,00005,SCO005,CO-Container 1kg 20liter White (pcs),pcs,85.00,1,0,,5
+0001,00006,SCO006,CO-Container 1kg 20liter Yellow (pcs),pcs,85.00,1,0,,6
+0001,00007,SCO101,CO-Container 900g 20liter Black (pcs),pcs,80.00,1,0,,7
+0001,00008,SCO203,CO-Container Jerrycan 750g 17liter Black (pcs),pcs,55.00,1,0,,8
+0002,00009,SDC001,DC-Aloha 3oz 20pck (bag),bag,225.00,1,0,,9
+0002,00010,SDC002,DC-Aloha 5oz 20pck (bag),bag,270.00,1,0,,10
+0002,00011,SDC003,DC-Aloha 6oz 20pck (bag),bag,285.00,1,0,,11
+0002,00012,SDC004,DC-Aloha 7oz 20pck (bag),bag,300.00,1,0,,12
+0002,00013,SDC005,DC-Aloha 8oz 20pck (bag),bag,310.00,1,0,,13
+0002,00014,SDC006,DC-Aloha 10oz 20pck (bag),bag,380.00,1,0,,14
+0002,00015,SDC007,DC-Aloha 12oz 20pck (bag),bag,400.00,1,0,,15
+0002,00016,SDC008,DC-Aloha 16oz 20pck (bag),bag,700.00,1,0,,16
+0002,00017,SDC017,DC-Metro 3oz 20pck (bag),bag,225.00,1,0,,17
+0002,00018,SDC018,DC-Metro 5oz 20pck (bag),bag,270.00,1,0,,18
+0002,00019,SDC019,DC-Metro 6oz 20pck (bag),bag,285.00,1,0,,19
+0002,00020,SDC020,DC-Metro 7oz 20pck (bag),bag,300.00,1,0,,20
+0002,00021,SDC021,DC-Metro 8oz 20pck (bag),bag,310.00,1,0,,21
+0002,00022,SDC022,DC-Metro 10oz 20pck (bag),bag,380.00,1,0,,22
+0002,00023,SDC023,DC-Metro 12oz 20pck (bag),bag,400.00,1,0,,23
+0002,00024,SDC024,DC-Metro 16oz 20pck (bag),bag,700.00,1,0,,24
+0002,00025,SDC025,DC-Rivson 3oz 20pck (bag),bag,225.00,1,0,,25
+0002,00026,SDC026,DC-Rivson 5oz 20pck (bag),bag,270.00,1,0,,26
+0002,00027,SDC027,DC-Rivson 6oz 20pck (bag),bag,285.00,1,0,,27
+0002,00028,SDC028,DC-Rivson 7oz 20pck (bag),bag,300.00,1,0,,28
+0002,00029,SDC029,DC-Rivson 8oz 20pck (bag),bag,310.00,1,0,,29
+0002,00030,SDC030,DC-Rivson 10oz 20pck (bag),bag,380.00,1,0,,30
+0002,00031,SDC031,DC-Rivson 12oz 20pck (bag),bag,400.00,1,0,,31
+0002,00032,SDC032,DC-Rivson 16oz 20pck (bag),bag,700.00,1,0,,32
+0003,00033,SGA001,GA-Gallon Round 1gal Transparent 20s (pck),pck,480.00,1,0,,33
+0003,00034,SGA002,GA-Gallon Round 1gal White 20s (pck),pck,480.00,1,0,,34
+0003,00035,SGA101,GA-Gallon Round 1/2gal Transparent 36s (pck),pck,360.00,1,0,,35
+0003,00036,SGA102,GA-Gallon Round 1/2gal White 36s (pck),pck,360.00,1,0,,36
+0004,00037,SPJ001,PJ-Peanut Jar Small 100s (pck),pck,270.00,1,0,,37
+0004,00038,SPJ002,PJ-Peanut Jar Medium 50s (pck),pck,200.00,1,0,,38
+0004,00039,SPJ003,PJ-Peanut Jar Large 50s (pck),pck,215.00,1,0,,39
+0005,00040,SPT001,PT-PET Bottle 250ml 100s (pck),pck,265.00,1,0,,40
+0005,00041,SPT002,PT-PET Bottle 250ml 250s (pck),pck,700.00,1,0,,41
+0005,00042,SPT003,PT-PET Bottle 330ml 100s (pck),pck,265.00,1,0,,42
+0005,00043,SPT004,PT-PET Bottle 330ml 200s (pck),pck,520.00,1,0,,43
+0005,00044,SPT005,PT-PET Bottle 500ml 100s (pck),pck,265.00,1,0,,44
+0005,00045,SPT006,PT-PET Bottle 500ml 200s (pck),pck,265.00,1,0,,45
+0005,00046,SPT008,PT-PET Bottle 1000ml 115s (pck),pck,500.00,1,0,,46
+0005,00047,SPT009,PT-PET Bottle 250ml 250s (pck) (RGMC),pck,490.00,1,0,,47
+0005,00048,SPT010,PT-PET Bottle 330ml 200s (pck) (RGMC),pck,700.00,1,0,,48
+0005,00049,SPT011,PT-PET Bottle 500ml 200s (pck) (RGMC),pck,550.00,1,0,,49
+0005,00050,SPT013,PT-PET Bottle 250ml 100s (pck) (RGMC),pck,265.00,1,0,,50
+0005,00051,SPT014,PT-PET Bottle 330ml 100s (pck) (RGMC),pck,265.00,1,0,,51
+0005,00052,SPT015,PT-PET Bottle 500ml 100s (pck) (RGMC),pck,265.00,1,0,,52
+0005,00053,SPT016,PT-PET Bottle 330ml 300s (pck)(RGMC),pck,265.00,1,0,,53
+0005,00054,SPT017,PT-PET Bottle 500ml 300s (pck)(RGMC),pck,660.00,1,0,,54
+0005,00055,SPT101,PT-Clear Peanut Jar Hexagon 16oz 50s (pck),pck,375.00,1,0,,55
+0005,00056,SPT102,PT-Clear Peanut Jar Round 12oz 100s (pck),pck,500.00,1,0,,56
+0005,00057,SPT103,PT-Clear Peanut Jar Round 16oz 50s (pck),pck,375.00,1,0,,57
+0005,00058,SPT104,PT-Clear Pickle Jar 16oz 50s (pck),pck,375.00,1,0,,58
+0006,00059,SWC001,WC-Water Container 20liter Blue (pcs),pcs,105.00,1,0,,59
+0006,00060,SWC002,WC-Water Container 20liter Green (pcs),pcs,105.00,1,0,,60
+0006,00061,SWC003,WC-Water Container 20liter Orange (pcs),pcs,105.00,1,0,,61
+0006,00062,SWC005,WC-Water Container 20liter Red (pcs),pcs,105.00,1,0,,62
+0006,00063,SWC006,WC-Water Container 20liter Yellow (pcs),pcs,105.00,1,0,,63
+0006,00064,SWC101,WC-Water Container 10liter Blue (pcs),pcs,80.00,1,0,,64
+0007,00065,SST001,ST-Drinking Greatwall 100g x 50 (Bndl),bndl,740.00,1,0,,65
+0007,00066,SST002,ST-Drinking Aloha 70g x 50 (Bndl),bndl,530.00,1,0,,66
+0007,00067,SST003,ST-Drinking Aloha 35g x 50 (Bndl),bndl,275.00,1,0,,67
+0007,00068,SST004,ST-Drinking Liberty 35g x 50 (Bndl) ,bndl,250.00,1,0,,68
+0007,00069,SST005,ST-Drinking Lucky 35g x 50 (Bndl) ,bndl,250.00,1,0,,69
+0007,00070,SST006,ST-Drinking Liwanag 35g x 50 (Bndl) ,bndl,250.00,1,0,,70
+0007,00071,SST007,ST-Drinking Rivson Dipolog 35g x 50 (Bndl) ,bndl,205.00,1,0,,71
+0007,00072,SST008,ST-Drinking 10mm Plain Orange 5kg (Bndl),bndl,600.00,1,0,,72
+0007,00073,SST009,ST-Drinking 10mm Plain Green 5kg (Bndl),bndl,600.00,1,0,,73
+0007,00074,SST010,ST-Drinking 10mm Plain Yellow 5kg (Bndl),bndl,600.00,1,0,,74
+0007,00075,SST011,ST-Drinking Rivson 35g x 50 (Bndl) ,bndl,275.00,1,0,,75
+0007,00076,SST012,ST-Drinking Rivson 70g x 50 (Bndl) ,bndl,530.00,1,0,,76
+0007,00077,SST013,ST-Drinking Rivson 100g x 50 (Bndl) ,bndl,530.00,1,0,,77
+0007,00078,SST101,ST-Hard Straw 5kg Black 5pck (Bndl),bndl,550.00,1,0,,78
+0007,00079,SST102,ST-Hard Straw 5kg Red 5pck (Bndl),bndl,550.00,1,0,,79
+0007,00080,SST201,ST-Sago Straw 9inch 100s Black 30pck (Bndl),bndl,1500.00,1,0,,80
+0007,00081,SST202,ST-Sago Straw 9inch 100s Blue 30pck (Bndl),bndl,1500.00,1,0,,81
+0007,00082,SST203,ST-Sago Straw 9inch 100s Green 30pck (Bndl),bndl,1500.00,1,0,,82
+0007,00083,SST204,ST-Sago Straw 9inch 100s Pink 30pck (Bndl),bndl,1500.00,1,0,,83
+0007,00084,SST207,ST-Sago Straw 9inch 5pck Black (Bndl),bndl,600.00,1,0,,84
+0007,00085,SST301,ST-Drinking Greatwall Stripe 100g x 50 (Bndl) ,bndl,740.00,1,0,,85
+0007,00086,SST302,ST-Drinking Aloha Stripe 70g x 50 (Bndl) ,bndl,530.00,1,0,,86
+0007,00087,SST303,ST-Drinking Aloha Stripe 35g x 50 (Bndl) ,bndl,275.00,1,0,,87
+0007,00088,SST304,ST-Drinking 10mm Stripe Red 5kg (Bndl),bndl,560.20,1,0,,88
+0007,00089,SST305,ST-Drinking 10mm Stripe Yellow 5kg (Bndl),bndl,560.20,1,0,,89
+0007,00090,SST306,ST-Drinking 10mm Stripe Orange 5kg (Bndl),bndl,560.20,1,0,,90
+0007,00091,SST307,ST-Drinking 10mm Stripe Green 5kg (Bndl),bndl,560.20,1,0,,91
+0007,00092,SST308,ST-Drinking 10mm Stripe Blue 5kg (Bndl),bndl,560.20,1,0,,92
+0007,00093,SST309,ST-Drinking 10mm Stripe White 5kg (Bndl),bndl,560.20,1,0,,93
+0008,00094,SAC002,SAC-Container Cap Inner White (Pcs),bndl,3.00,1,0,,94
+0008,00095,SAC003,SAC-Container Cap Outer (Pcs),bndl,3.00,1,0,,95
+0008,00096,SAC051,SAC-Water Cont. Faucet Plastic (Pcs),bndl,15.00,1,0,,96
+0008,00097,SAC052,SAC-Water Cont. Faucet Rotary (Pcs),bndl,15.00,1,0,,97
+0008,00098,SAC053,SAC-Water Cont. Cap Inner (Pcs),bndl,3.00,1,0,,98
+0008,00099,SAC054,SAC-Water Cont. Cap Outer Big (Pcs),bndl,7.00,1,0,,99
+0008,00100,SAC055,SAC-Water Cont. Cap Outer Small (Pcs),bndl,1.50,1,0,,100
+0008,00101,SAC101,SAC-Gallon Cap Outer (Pcs),bndl,3.00,1,0,,101
+0008,00102,SAC151,SAC-Peanut Jar Packaging 24x36x002 (Pcs),bndl,3.00,1,0,,102
+0008,00103,SAC201,SAC-Straw Packaging 25x50x002 (Pcs),bndl,3.00,1,0,,103
+0008,00104,SAC251,SAC-PET 5G Cap (Pcs),bndl,3.00,1,0,,104
+0009,00105,SPB001,PB-Aloha Mini Assorted 80rm (Bndl),bndl,7000.00,1,0,,105
+0009,00106,SPB002,PB- Aloha Mini Transparent 80rm (Bndl),bndl,7000.00,1,0,,106
+0009,00107,SPB003,PB- Aloha Mini White 80rm (Bndl),bndl,7000.00,1,0,,107
+0009,00108,SPB004,PB- Aloha Tiny Assorted 60rm (Bndl),bndl,7500.00,1,0,,108
+0009,00109,SPB005,PB- Aloha Tiny Transparent 60rm (Bndl),bndl,7500.00,1,0,,109
+0009,00110,SPB006,PB- Aloha Tiny White 60rm (Bndl),bndl,7500.00,1,0,,110
+0009,00111,SPB007,PB- Aloha Medium Assorted 30rm (Bndl),bndl,7200.00,1,0,,111
+0009,00112,SPB008,PB- Aloha Medium Transparent 30rm (Bndl),bndl,7200.00,1,0,,112
+0009,00113,SPB009,PB- Aloha Medium White 30rm (Bndl),bndl,7200.00,1,0,,113
+0009,00114,SPB010,PB- Aloha Large Assorted 20rm (Bndl),bndl,7000.00,1,0,,114
+0009,00115,SPB011,PB- Aloha Large Transparent 20rm (Bndl),bndl,7000.00,1,0,,115
+0009,00116,SPB012,PB- Aloha Large White 20rm (Bndl),bndl,7000.00,1,0,,116
+0009,00117,SPB013,PB- Aloha XL Blue 10rm (Bndl),bndl,6700.00,1,0,,117
+0009,00118,SPB015,PB- Aloha Jumbo Blue 5rm (Bndl),bndl,5600.00,1,0,,118
+0009,00119,SPB016,PB- Babi's Chocolate Mini White 80rm (Bndl),bndl,7040.00,1,0,,119
+0009,00120,SPB017,PB- Babi's Chocolate Tiny White 60rm (Bndl),bndl,6600.00,1,0,,120
+0009,00121,SPB018,PB- Babi's Chocolate Medium White 30rm (Bndl),bndl,6840.00,1,0,,121
+0009,00122,SPB019,PB- Babi's Chocolate Large White 20rm (Bndl),bndl,6820.00,1,0,,122
+0009,00123,SPB020,PB- Babi's Chocolate XL White 10rm (Bndl),bndl,6800.00,1,0,,123
+0009,00124,SPB021,PB- Boston Mini Assorted 60rm (Bndl),bndl,4000.00,1,0,,124
+0009,00125,SPB022,PB- Boston Mini White 60rm (Bndl),bndl,4000.00,1,0,,125
+0009,00126,SPB023,PB- Boston Tiny Assorted 30rm (Bndl),bndl,4350.00,1,0,,126
+0009,00127,SPB024,PB- Boston Tiny White 30rm (Bndl),bndl,4350.00,1,0,,127
+0009,00128,SPB025,PB- Boston Medium Assorted 17rm (Bndl),bndl,4800.00,1,0,,128
+0009,00129,SPB026,PB- Boston Medium White 17rm (Bndl),bndl,4800.00,1,0,,129
+0009,00130,SPB027,PB- Boston Large Assorted 12rm (Bndl),bndl,4000.00,1,0,,130
+0009,00131,SPB028,PB- Boston Large White 12rm (Bndl),bndl,4000.00,1,0,,131
+0009,00132,SPB029,PB- Bucks Mini Red 60rm (Bndl),bndl,5600.00,1,0,,132
+0009,00133,SPB030,PB- Bucks Mini Yellow 60rm (Bndl),bndl,5600.00,1,0,,133
+0009,00134,SPB031,PB- Bucks Mini Orange 60rm (Bndl),bndl,5600.00,1,0,,134
+0009,00135,SPB032,PB- Bucks Mini Green 60rm (Bndl),bndl,5600.00,1,0,,135
+0009,00136,SPB033,PB- Bucks Mini Blue 60rm (Bndl),bndl,5600.00,1,0,,136
+0009,00137,SPB034,PB-  Bucks Mini Black 60rm (Bndl),bndl,5600.00,1,0,,137
+0009,00138,SPB035,PB- Bucks Mini White 60rm (Bndl),bndl,5600.00,1,0,,138
+0009,00139,SPB036,PB- Bucks Tiny Red 30rm (Bndl),bndl,4500.00,1,0,,139
+0009,00140,SPB037,PB- Bucks Tiny Yellow 30rm (Bndl),bndl,4500.00,1,0,,140
+0009,00141,SPB038,PB- Bucks Tiny Orange 30rm (Bndl),bndl,4500.00,1,0,,141
+0009,00142,SPB039,PB- Bucks Tiny Green 30rm (Bndl),bndl,4500.00,1,0,,142
+0009,00143,SPB040,PB- Bucks Tiny Blue 30rm (Bndl),bndl,4500.00,1,0,,143
+0009,00144,SPB041,PB- Bucks Tiny Black 30rm (Bndl),bndl,4500.00,1,0,,144
+0009,00145,SPB042,PB- Bucks Tiny White 30rm (Bndl),bndl,4500.00,1,0,,145
+0009,00146,SPB043,PB- Bucks Medium Red 17rm (Bndl),bndl,5185.00,1,0,,146
+0009,00147,SPB044,PB- Bucks Medium Yellow 17rm (Bndl),bndl,5185.00,1,0,,147
+0009,00148,SPB045,PB- Bucks Medium Orange 17rm (Bndl),bndl,5185.00,1,0,,148
+0009,00149,SPB046,PB- Bucks Medium Green 17rm (Bndl),bndl,5185.00,1,0,,149
+0009,00150,SPB047,PB- Bucks Medium Blue 17rm (Bndl),bndl,5185.00,1,0,,150
+0009,00151,SPB048,PB- Bucks Medium Black 17rm (Bndl),bndl,5185.00,1,0,,151
+0009,00152,SPB049,PB- Bucks Medium White 17rm (Bndl),bndl,5185.00,1,0,,152
+0009,00153,SPB050,PB- Bucks Large Red 12rm (Bndl),bndl,4500.00,1,0,,153
+0009,00154,SPB051,PB- Bucks Large Yellow 12rm (Bndl),bndl,4500.00,1,0,,154
+0009,00155,SPB052,PB- Bucks Large Orange 12rm (Bndl),bndl,4500.00,1,0,,155
+0009,00156,SPB053,PB- Bucks Large Green 12rm (Bndl),bndl,4500.00,1,0,,156
+0009,00157,SPB054,PB- Bucks Large Blue 12rm (Bndl),bndl,4500.00,1,0,,157
+0009,00158,SPB055,PB- Bucks Large Black 12rm (Bndl),bndl,4500.00,1,0,,158
+0009,00159,SPB056,PB- Bucks Large White 12rm (Bndl),bndl,4500.00,1,0,,159
+0009,00160,SPB057,PB- Corgi Mini Assorted 60rm (Bndl),bndl,6000.00,1,0,,160
+0009,00161,SPB058,PB- Corgi Mini White 60rm (Bndl),bndl,6000.00,1,0,,161
+0009,00162,SPB059,PB- Corgi Mini White 60rm (Bndl) (30's),bndl,6000.00,1,0,,162
+0009,00163,SPB060,PB- Corgi Tiny Assorted 45rm (Bndl),bndl,5220.00,1,0,,163
+0009,00164,SPB061,PB- Corgi Tiny White 45rm (Bndl),bndl,4500.00,1,0,,164
+0009,00165,SPB062,PB- Corgi Tiny White 50rm (Bndl) (30's),bndl,5220.00,1,0,,165
+0009,00166,SPB063,PB- Corgi Medium Assorted 28rm (Bndl),bndl,7000.00,1,0,,166
+0009,00167,SPB064,PB- Corgi Medium White 28rm (Bndl),bndl,6500.00,1,0,,167
+0009,00168,SPB065,PB- Corgi Medium White 40rm (Bndl) (30's),bndl,7000.00,1,0,,168
+0009,00169,SPB066,PB- Corgi Large Assorted 18rm (Bndl),bndl,5292.00,1,0,,169
+0009,00170,SPB067,PB- Corgi Large White 18rm (Bndl),bndl,6800.00,1,0,,170
+0009,00171,SPB068,PB- Corgi Large White 30rm (Bndl) (30's),bndl,5292.00,1,0,,171
+0009,00172,SPB069,PB- Corgi XL Assorted 10rm (Bndl),bndl,5292.00,1,0,,172
+0009,00173,SPB073,PB- Dragon Mini Assorted 60m (Bndl),bndl,4900.00,1,0,,173
+0009,00174,SPB074,PB- Dragon Mini White 60rm (Bndl),bndl,4900.00,1,0,,174
+0009,00175,SPB075,PB- Dragon Tiny Assorted 45rm (Bndl),bndl,4200.00,1,0,,175
+0009,00176,SPB076,PB- Dragon Tiny White 45rm (Bndl),bndl,4200.00,1,0,,176
+0009,00177,SPB077,PB- Dragon Medium Assorted 28rm (Bndl),bndl,5700.00,1,0,,177
+0009,00178,SPB078,PB- Dragon Medium White 28rm (Bndl),bndl,5700.00,1,0,,178
+0009,00179,SPB079,PB- Dragon Large Assorted 18rm (Bndl),bndl,5500.00,1,0,,179
+0009,00180,SPB080,PB- Dragon Large White 18rm (Bndl),bndl,5500.00,1,0,,180
+0009,00181,SPB083,PB- Gilas Mini Transparent 60rm (Bndl),bndl,4000.00,1,0,,181
+0009,00182,SPB086,PB- Gilas Tiny Transparent 50rm (Bndl),bndl,4000.00,1,0,,182
+0009,00183,SPB089,PB- Gilas Medium Transparent 40rm (Bndl),bndl,4000.00,1,0,,183
+0009,00184,SPB092,PB- Gilas Large Transparent 30rm (Bndl),bndl,4000.00,1,0,,184
+0009,00185,SPB093,PB- JCOBrothers Mini 4rm (Bndl),bndl,680.00,1,0,,185
+0009,00186,SPB094,PB- JCOBrothers Tiny 4rm (Bndl),bndl,840.00,1,0,,186
+0009,00187,SPB095,PB- JCOBrothers Medium 2rm (Bndl),bndl,860.00,1,0,,187
+0009,00188,SPB096,PB- JCOBrothers Large 2rm (Bndl),bndl,1440.00,1,0,,188
+0009,00189,SPB097,PB- Kobe Mini Assorted 60rm (Bndl),bndl,3600.00,1,0,,189
+0009,00190,SPB098,PB- Kobe Mini White 60rm (Bndl),bndl,3600.00,1,0,,190
+0009,00191,SPB099,PB- Kobe Mini Transparent 60rm (Bndl),bndl,3200.00,1,0,,191
+0009,00192,SPB100,PB- Kobe Tiny Assorted 50rm (Bndl),bndl,4300.00,1,0,,192
+0009,00193,SPB101,PB- Kobe Tiny White 50rm (Bndl),bndl,4300.00,1,0,,193
+0009,00194,SPB102,PB- Kobe Tiny Transparent 50rm (Bndl),bndl,4300.00,1,0,,194
+0009,00195,SPB103,PB- Kobe Medium Assorted 40rm (Bndl),bndl,6300.00,1,0,,195
+0009,00196,SPB104,PB- Kobe Medium White 40rm (Bndl),bndl,6300.00,1,0,,196
+0009,00197,SPB105,PB- Kobe Medium Transparent 40rm (Bndl),bndl,6300.00,1,0,,197
+0009,00198,SPB106,PB- Kobe Large Assorted 30rm (Bndl),bndl,6500.00,1,0,,198
+0009,00199,SPB107,PB- Kobe Large White 30rm (Bndl),bndl,6500.00,1,0,,199
+0009,00200,SPB108,PB- Kobe Large Transparent 30rm (Bndl),bndl,6500.00,1,0,,200
+0009,00201,SPB133,PB- Liberty Mini Assorted 80rm (Bndl),bndl,3400.00,1,0,,201
+0009,00202,SPB134,PB- Liberty Mini White 80rm (Bndl),bndl,3400.00,1,0,,202
+0009,00203,SPB135,PB- Liberty Tiny Assorted 70rm (Bndl),bndl,3200.00,1,0,,203
+0009,00204,SPB136,PB- Liberty Tiny White 70rm (Bndl),bndl,3200.00,1,0,,204
+0009,00205,SPB137,PB- Liberty Medium Assorted 40rm (Bndl),bndl,3500.00,1,0,,205
+0009,00206,SPB138,PB- Liberty Medium White 40rm (Bndl),bndl,3500.00,1,0,,206
+0009,00207,SPB139,PB- Liberty Large Assorted 30rm (Bndl),bndl,4300.00,1,0,,207
+0009,00208,SPB140,PB- Liberty Large White 30rm (Bndl),bndl,4300.00,1,0,,208
+0009,00209,SPB141,PB- Liwanag Mini Assorted 80rm (Bndl),bndl,3520.00,1,0,,209
+0009,00210,SPB142,PB- Liwanag Mini White 80rm (Bndl),bndl,3520.00,1,0,,210
+0009,00211,SPB143,PB- Liwanag Tiny Assorted 70rm (Bndl),bndl,3220.00,1,0,,211
+0009,00212,SPB144,PB- Liwanag Tiny White 70rm (Bndl),bndl,3220.00,1,0,,212
+0009,00213,SPB145,PB- Liwanag Medium Assorted 40rm (Bndl),bndl,3400.00,1,0,,213
+0009,00214,SPB146,PB- Liwanag Medium White 40rm (Bndl),bndl,3400.00,1,0,,214
+0009,00215,SPB147,PB- Liwanag Large Assorted 30rm (Bndl),bndl,4200.00,1,0,,215
+0009,00216,SPB148,PB- Liwanag Large White 30rm (Bndl),bndl,4200.00,1,0,,216
+0009,00217,SPB149,PB- Lucky Mini Assorted 80rm (Bndl),bndl,3200.00,1,0,,217
+0009,00218,SPB150,PB- Lucky Mini White 80rm (Bndl),bndl,3200.00,1,0,,218
+0009,00219,SPB151,PB- Lucky Tiny Assorted 70rm (Bndl),bndl,3200.00,1,0,,219
+0009,00220,SPB152,PB- Lucky Tiny White 70rm (Bndl),bndl,3200.00,1,0,,220
+0009,00221,SPB153,PB- Lucky Medium Assorted 40rm (Bndl),bndl,3500.00,1,0,,221
+0009,00222,SPB154,PB- Lucky Medium White 40rm (Bndl),bndl,3500.00,1,0,,222
+0009,00223,SPB155,PB- Lucky Large Assorted 30rm (Bndl),bndl,4300.00,1,0,,223
+0009,00224,SPB156,PB- Lucky Large White 30rm (Bndl),bndl,4300.00,1,0,,224
+0009,00225,SPB157,PB- Panda Mini Assorted 80rm (Bndl),bndl,3200.00,1,0,,225
+0009,00226,SPB158,PB- Panda Mini White 80rm (Bndl),bndl,3200.00,1,0,,226
+0009,00227,SPB159,PB- Panda Tiny Assorted 70rm (Bndl),bndl,3200.00,1,0,,227
+0009,00228,SPB160,PB- Panda Tiny White 70rm (Bndl),bndl,3200.00,1,0,,228
+0009,00229,SPB161,PB- Panda Medium Assorted 40rm (Bndl),bndl,3500.00,1,0,,229
+0009,00230,SPB162,PB- Panda Medium White 40rm (Bndl),bndl,3500.00,1,0,,230
+0009,00231,SPB163,PB- Panda Large Assorted 30rm (Bndl),bndl,4300.00,1,0,,231
+0009,00232,SPB164,PB- Panda Large White 30rm (Bndl),bndl,4300.00,1,0,,232
+0009,00233,SPB165,PB-Polar Bear Mini Transparent 40rm (Bndl),bndl,6200.00,1,0,,233
+0009,00234,SPB166,PB-Polar Bear Mini White 40rm (Bndl),bndl,6200.00,1,0,,234
+0009,00235,SPB167,PB-Polar Bear Mini Assorted 40rm (Bndl),bndl,6200.00,1,0,,235
+0009,00236,SPB168,PB-Polar Bear Tiny Transparent 30rm (Bndl),bndl,6900.00,1,0,,236
+0009,00237,SPB169,PB-Polar Bear Tiny White 30rm (Bndl),bndl,6900.00,1,0,,237
+0009,00238,SPB170,PB-Polar Bear Tiny Assorted 30rm (Bndl),bndl,6900.00,1,0,,238
+0009,00239,SPB171,PB-Polar Bear Medium Transparent 15rm (Bndl),bndl,6825.00,1,0,,239
+0009,00240,SPB172,PB-Polar Bear Medium White 15rm (Bndl),bndl,6825.00,1,0,,240
+0009,00241,SPB173,PB-Polar Bear Medium Assorted 15rm (Bndl),bndl,6825.00,1,0,,241
+0009,00242,SPB174,PB-Polar Bear Large Transparent 10rm (Bndl),bndl,6600.00,1,0,,242
+0009,00243,SPB175,PB-Polar Bear Large White 10rm (Bndl),bndl,6600.00,1,0,,243
+0009,00244,SPB176,PB-Polar Bear Large Assorted 10rm (Bndl),bndl,6600.00,1,0,,244
+0009,00245,SPB177,PB-Pitbull Mini Assorted 40rm (Bndl),bndl,4112.00,1,0,,245
+0009,00246,SPB178,PB-Pitbull Mini White 40rm (Bndl),bndl,4112.00,1,0,,246
+0009,00247,SPB179,PB-Pitbull Mini Black 40rm (Bndl),bndl,4112.00,1,0,,247
+0009,00248,SPB180,PB-Pitbull Tiny Assorted 30rm (Bndl),bndl,4300.00,1,0,,248
+0009,00249,SPB181,PB-Pitbull Tiny White 30rm (Bndl),bndl,4300.00,1,0,,249
+0009,00250,SPB182,PB-Pitbull Tiny Black 30rm (Bndl),bndl,4300.00,1,0,,250
+0009,00251,SPB183,PB-Pitbull Medium Assorted 17rm (Bndl),bndl,4500.00,1,0,,251
+0009,00252,SPB184,PB-Pitbull Medium White 17rm (Bndl),bndl,4500.00,1,0,,252
+0009,00253,SPB185,PB-Pitbull Medium Black 17rm (Bndl),bndl,4500.00,1,0,,253
+0009,00254,SPB186,PB-Pitbull Large Assorted 12rm (Bndl),bndl,4600.00,1,0,,254
+0009,00255,SPB187,PB-Pitbull Large White 12rm (Bndl),bndl,4600.00,1,0,,255
+0009,00256,SPB188,PB-Pitbull Large Black 12rm (Bndl),bndl,4600.00,1,0,,256
+0009,00257,SPB197,PB- Rivson Mini White 4rm (Bndl),bndl,660.00,1,0,,257
+0009,00258,SPB198,PB- Rivson Mini Trans 4rm (Bndl),bndl,660.00,1,0,,258
+0009,00259,SPB199,PB- Rivson Mini Red 4rm (Bndl),bndl,660.00,1,0,,259
+0009,00260,SPB200,PB- Rivson Mini Yellow 4rm (Bndl),bndl,660.00,1,0,,260
+0009,00261,SPB201,PB- Rivson Mini Orange 4rm (Bndl),bndl,660.00,1,0,,261
+0009,00262,SPB202,PB- Rivson Mini Green 4rm (Bndl),bndl,660.00,1,0,,262
+0009,00263,SPB203,PB- Rivson Mini Blue 4rm (Bndl),bndl,660.00,1,0,,263
+0009,00264,SPB204,PB- Rivson Tiny White 4rm (Bndl),bndl,680.00,1,0,,264
+0009,00265,SPB205,PB- Rivson Tiny Trans 4rm (Bndl),bndl,680.00,1,0,,265
+0009,00266,SPB206,PB- Rivson Tiny Red 4rm (Bndl),bndl,680.00,1,0,,266
+0009,00267,SPB207,PB- Rivson Tiny Yellow 4rm (Bndl),bndl,680.00,1,0,,267
+0009,00268,SPB208,PB- Rivson Tiny Orange 4rm (Bndl),bndl,680.00,1,0,,268
+0009,00269,SPB209,PB- Rivson Tiny Green 4rm (Bndl),bndl,680.00,1,0,,269
+0009,00270,SPB210,PB- Rivson Tiny Blue 4rm (Bndl),bndl,680.00,1,0,,270
+0009,00271,SPB211,PB- Rivson Medium White 2rm (Bndl),bndl,840.00,1,0,,271
+0009,00272,SPB212,PB- Rivson Medium Trans 2rm (Bndl),bndl,840.00,1,0,,272
+0009,00273,SPB213,PB- Rivson Medium Red 2rm (Bndl),bndl,840.00,1,0,,273
+0009,00274,SPB214,PB- Rivson Medium Yellow 2rm (Bndl),bndl,840.00,1,0,,274
+0009,00275,SPB215,PB- Rivson Medium Orange 2rm (Bndl),bndl,840.00,1,0,,275
+0009,00276,SPB216,PB- Rivson Medium Green 2rm (Bndl),bndl,840.00,1,0,,276
+0009,00277,SPB217,PB- Rivson Medium Blue 2rm (Bndl),bndl,840.00,1,0,,277
+0009,00278,SPB218,PB- Rivson Large White 2rm (Bndl),bndl,900.00,1,0,,278
+0009,00279,SPB219,PB- Rivson Large Trans 2rm (Bndl),bndl,900.00,1,0,,279
+0009,00280,SPB220,PB- Rivson Large Red 2rm (Bndl),bndl,900.00,1,0,,280
+0009,00281,SPB221,PB- Rivson Large Yellow 2rm (Bndl),bndl,900.00,1,0,,281
+0009,00282,SPB222,PB- Rivson Large Orange 2rm (Bndl),bndl,900.00,1,0,,282
+0009,00283,SPB223,PB- Rivson Large Green 2rm (Bndl),bndl,900.00,1,0,,283
+0009,00284,SPB224,PB- Rivson Large Blue 2rm (Bndl),bndl,900.00,1,0,,284
+0009,00285,SPB228,PB- Sharkie Tiny White 80rm (Bndl),bndl,4600.00,1,0,,285
+0009,00286,SPB230,PB- Sharkie Medium White 50rm (Bndl),bndl,4700.00,1,0,,286
+0009,00287,SPB232,PB- Sharkie Large White 30rm (Bndl),bndl,4800.00,1,0,,287
+0009,00288,SPB233,PB- Smile Mini Transparent 80rm (Bndl),bndl,5600.00,1,0,,288
+0009,00289,SPB234,PB- Smile Tiny Transparent 60rm (Bndl),bndl,5400.00,1,0,,289
+0009,00290,SPB235,PB- Smile Medium Transparent 40rm (Bndl),bndl,7000.00,1,0,,290
+0009,00291,SPB236,PB- Smile Large Transparent 20rm (Bndl),bndl,4900.00,1,0,,291
+0009,00292,SPB255,PB- Bucks Mini Assorted 60rm (Bndl),bndl,5600.00,1,0,,292
+0009,00293,SPB256,PB- Bucks Tiny Assorted 30rm (Bndl),bndl,4500.00,1,0,,293
+0009,00294,SPB257,PB- Bucks Medium Assorted 17rm (Bndl),bndl,5185.00,1,0,,294
+0009,00295,SPB258,PB- Bucks Large Assorted 12rm (Bndl),bndl,4500.00,1,0,,295
+0009,00296,SPB259,PB- Rivson Tiny Transparent 30rm (Bndl),bndl,6360.00,1,0,,296
+0009,00297,SPB260,PB- Rivson Medium Transparent 15rm (Bndl),bndl,6300.00,1,0,,297
+0009,00298,SPB261,PB- Rivson Large Transparent 10rm (Bndl),bndl,6900.00,1,0,,298
+0009,00299,SPB269,PBOX- Polar Bear Tiny Transparent 30rm (Bndl),bndl,18450.00,1,0,,299
+0009,00300,SPB270,PBOX- Polar Bear Medium Transparent 15rm (Bndl),bndl,12450.00,1,0,,300
+0009,00301,SPB271,PBOX- Polar Bear Large Transparent 10rm (Bndl),bndl,10600.00,1,0,,301
+0009,00302,SPB272,PBOX- Polar Bear Mini Transparent 40rm (Bndl),bndl,22600.00,1,0,,302
+0009,00303,SPB273,PB- JCOBrothers Mini 36rm (Bndl),bndl,5817.00,1,0,,303
+0009,00304,SPB274,PB- JCOBrothers Tiny 30rm (Bndl),bndl,6174.00,1,0,,304
+0009,00305,SPB275,PB- JCOBrothers Medium 15rm (Bndl),bndl,5988.75,1,0,,305
+0009,00306,SPB276,PB- JCOBrothers Large 10rm (Bndl),bndl,6844.30,1,0,,306
+0009,00307,SPB277,PB- Latest Mini Red 36rm (Bndl),bndl,5817.00,1,0,,307
+0009,00308,SPB278,PB- Latest Mini Yellow 36rm (Bndl),bndl,5817.00,1,0,,308
+0009,00309,SPB279,PB- Latest Mini Orange 36rm (Bndl),bndl,5817.00,1,0,,309
+0009,00310,SPB280,PB- Latest Mini Green 36rm (Bndl),bndl,5817.00,1,0,,310
+0009,00311,SPB281,PB- Latest Mini Blue 36rm (Bndl),bndl,5817.00,1,0,,311
+0009,00312,SPB282,PB- Latest Mini White 36rm (Bndl),bndl,5817.00,1,0,,312
+0009,00313,SPB283,PB- Latest Tiny Red 30rm (Bndl),bndl,6174.00,1,0,,313
+0009,00314,SPB284,PB- Latest Tiny Yellow 30rm (Bndl),bndl,6174.00,1,0,,314
+0009,00315,SPB285,PB- Latest Tiny Orange 30rm (Bndl),bndl,6174.00,1,0,,315
+0009,00316,SPB286,PB- Latest Tiny Green 30rm (Bndl),bndl,6174.00,1,0,,316
+0009,00317,SPB287,PB- Latest Tiny Blue 30rm (Bndl),bndl,6174.00,1,0,,317
+0009,00318,SPB288,PB- Latest Tiny White 30rm (Bndl),bndl,6174.00,1,0,,318
+0009,00319,SPB289,PB- Latest Medium Red 15rm (Bndl),bndl,5988.75,1,0,,319
+0009,00320,SPB290,PB- Latest Medium Orange 15rm (Bndl),bndl,5988.75,1,0,,320
+0009,00321,SPB291,PB- Latest Medium Yellow 15rm (Bndl),bndl,5988.75,1,0,,321
+0009,00322,SPB292,PB- Latest Medium Green 15rm (Bndl),bndl,5988.75,1,0,,322
+0009,00323,SPB293,PB- Latest Medium Blue 15rm (Bndl),bndl,5988.75,1,0,,323
+0009,00324,SPB294,PB- Latest Medium White 15rm (Bndl),bndl,5988.75,1,0,,324
+0009,00325,SPB295,PB- Latest Large Red 10rm (Bndl),bndl,6844.30,1,0,,325
+0009,00326,SPB296,PB- Latest Large Yellow 10rm (Bndl),bndl,6844.30,1,0,,326
+0009,00327,SPB297,PB- Latest Large Orange 10rm (Bndl),bndl,6844.30,1,0,,327
+0009,00328,SPB298,PB- Latest Large Green 10rm (Bndl),bndl,6844.30,1,0,,328
+0009,00329,SPB299,PB- Latest Large Blue 10rm (Bndl),bndl,6844.30,1,0,,329
+0009,00330,SPB300,PB- Latest Large White 10rm (Bndl),bndl,6844.30,1,0,,330
+0010,00331,SRB001, PB-Roll Bag Aloha 8x11 50rm (Bndl),bndl,4000.00,1,0,,331
+0010,00332,SRB002, PB-Roll Bag Aloha 8x12 50rm (Bndl),bndl,4400.00,1,0,,332
+0010,00333,SRB003, PB-Roll Bag Aloha 8x14 50rm (Bndl),bndl,4500.00,1,0,,333
+0010,00334,SRB004, PB-Roll Bag Aloha 10x16 50rm (Bndl),bndl,5600.00,1,0,,334
+0010,00335,SRB005, PB-Roll Bag Aloha 12x18 50rm (Bndl),bndl,6300.00,1,0,,335
+0010,00336,SRB006, PB-Roll Bag Aloha 16x24 50rm (Bndl),bndl,2800.00,1,0,,336
+0010,00337,SRB008, PB-Roll Bag Jaguar 8X11 40rm (Bndl),bndl,3200.00,1,0,,337
+0010,00338,SRB009, PB-Roll Bag Jaguar 8X12 40rm (Bndl),bndl,3200.00,1,0,,338
+0010,00339,SRB010, PB-Roll Bag Jaguar 8x14 40rm (Bndl),bndl,3300.00,1,0,,339
+0010,00340,SRB014, PB-Roll Bag Jaguar 20x30 45rm (Bndl),bndl,4900.00,1,0,,340
+0010,00341,SRB015, PB-Roll Bag Garfield 8x12 50rm (Bndl),bndl,3000.00,1,0,,341
+0010,00342,SRB016, PB-Roll Bag Garfield 8x14 50rm (Bndl),bndl,3100.00,1,0,,342
+0010,00343,SRB017, PB-Roll Bag Garfield 16x24 50rm (Bndl),bndl,3000.00,1,0,,343
+0010,00344,SRB018, PB-Roll Bag Garfield 20x30 45rm (Bndl),bndl,5000.00,1,0,,344
+0010,00345,SRB019, PB-Roll Bag Rivson 8X11 50rm (Bndl),bndl,4000.00,1,0,,345
+0010,00346,SRB020, PB-Roll Bag Rivson 8X12 50rm (Bndl),bndl,4400.00,1,0,,346
+0010,00347,SRB021, PB-Roll Bag Rivson 8x14 50rm (Bndl),bndl,4400.00,1,0,,347
+0010,00348,SRB022, PB-Roll Bag Rivson 10X16 50rm (Bndl),bndl,4400.00,1,0,,348
+0010,00349,SRB023, PB-Roll Bag Rivson 12x18 50rm (Bndl),bndl,3000.00,1,0,,349
+0010,00350,SRB024, PB-Roll Bag Rivson 16X24 50rm (Bndl),bndl,2700.00,1,0,,350
+0010,00351,SRB025, PB-Roll Bag Rivson 20x30 45rm (Bndl),bndl,4400.00,1,0,,351
+0011,00352,SPP001,PP-Spring 5x8 30rm (Bndl),bndl,5400.00,1,0,,352
+0011,00353,SPP002,PP-Spring 5x10 30rm (Bndl),bndl,5600.00,1,0,,353
+0011,00354,SPP003,PP-Spring 6x10 25rm (Bndl),bndl,5100.00,1,0,,354
+0011,00355,SPP004,PP-Spring 6x12 20rm (Bndl),bndl,5200.00,1,0,,355
+0011,00356,SPP005,PP-Spring 6x14 rm (Bndl),bndl,5250.00,1,0,,356
+0011,00357,SPP006,PP-Spring 7x12 20rm (Bndl),bndl,6000.00,1,0,,357
+0011,00358,SPP007,PP-Spring 7x14 16rm (Bndl),bndl,5800.00,1,0,,358
+0011,00359,SPP008,PP-Spring 001 8x16 rm (Bndl),bndl,7040.00,1,0,,359
+0011,00360,SPP009,PP-Spring 4x5 30rm (Bndl),bndl,2850.00,1,0,,360
+0011,00361,SPP010,PP-Spring 4x6 30rm (Bndl),bndl,3180.00,1,0,,361
+0011,00362,SPP011,PP-Swerte 10x13 rm 5rm (Bndl),bndl,7500.00,1,0,,362
+0011,00363,SPP012,PP-Swerte 7x10 5rm (Bndl),bndl,4375.00,1,0,,363
+0011,00364,SPP013,PP-Spring 002 4x5 rm 30rm (Bndl),bndl,3900.00,1,0,,364
+0011,00365,SPP014,PP-Spring 002 4x6 rm 30rm (Bndl),bndl,4620.00,1,0,,365
+0011,00366,SPP015,PP-Spring 002 4x7 rm 30rm (Bndl),bndl,5490.00,1,0,,366
+0011,00367,SPP016,PP-Spring 002 5x6 rm 30rm (Bndl),bndl,5040.00,1,0,,367
+0011,00368,SPP017,PP-Spring 002 6x12 rm 20rm (Bndl),bndl,10500.00,1,0,,368
+0011,00369,SPP018,PP-003 8x12 rm 10rm (Bndl),bndl,5000.00,1,0,,369
+0011,00370,SPP019,PP-Spring 8x10 rm 16rm (Bndl),bndl,4500.00,1,0,,370
+0011,00371,SPP020,PP-Spring 4x7 30rm (Bndl),bndl,5000.00,1,0,,371
+0011,00372,SPP021,PP-Spring 5x12 25rm (Bndl),bndl,6125.00,1,0,,372
+0011,00373,SPP022,PP-Spring 5.5x20 5rm (Bndl),bndl,4375.00,1,0,,373
+0011,00374,SPP023,PP-Spring 7X20 5rm (Bndl),bndl,5000.00,1,0,,374
+0011,00375,SPP024,PP-Spring 5X23 5rm (Bndl),bndl,5000.00,1,0,,375
+0011,00376,SPP025,PP-Spring 7X10 25rm (Bndl),bndl,4375.00,1,0,,376
+0012,00377,SPE001,PB- PE 14X25 5rm (Bndl),bndl,4800.00,1,0,,377
+0012,00378,SPE002,PB- PE 0018 40X40 4rm (Bndl),bndl,4800.00,1,0,,378
+0012,00379,SPE003,PB- PE 0018 40X60 4rm (Bndl),bndl,7500.00,1,0,,379
+0012,00380,SPE004,PB- PE 0018 20X30 8rm (Bndl),bndl,5000.00,1,0,,380
+0012,00381,SPE005,PB- PE 24X36 4rm (Bndl),bndl,6550.00,1,0,,381
+0012,00382,SPE006,PB- PE 003 16X25 4rm (Bndl),bndl,8000.00,1,0,,382
+0012,00383,SPE007,PB- PE 003 40X45 Red 4rm (Bndl),bndl,8000.00,1,0,,383
+0012,00384,SPE008,PB- PE 003 40X45 Blue 4rm (Bndl),bndl,8000.00,1,0,,384
+0012,00385,SPE009,PB- PE 003 40X48 Red 4rm (Bndl),bndl,8000.00,1,0,,385
+0012,00386,SPE010,PB- PE 003 40X48 Blue 4rm (Bndl),bndl,8000.00,1,0,,386

@@ -1,0 +1,667 @@
+1,0,1,R001,HDPE Blue,kg,45,1,0,,1
+1,0,2,R002,HDPE Red,kg,45,1,0,,2
+1,0,3,R003,HDPE Green,kg,45,1,0,,3
+1,0,4,R004,HDPE Black,kg,42,1,0,,4
+1,0,5,R005,HDPE White,kg,48,1,0,,5
+1,0,6,R006,HDPE Yellow,kg,45,1,0,,6
+1,0,7,R007,HDPE Orange,kg,45,1,0,,7
+1,0,8,R008,HDPE Blow Virgin,kg,72.5,1,0,,8
+1,0,9,R009,HDPE Film Virgin ,kg,72.5,1,0,,9
+1,0,10,R011,LDPE Virgin,kg,89,1,0,,10
+1,0,11,R012,LLDPE Virgin ,kg,77,1,0,,11
+1,0,12,R013,LDPE Recycle ,kg,47,1,0,,12
+1,0,13,R015,Dehydrating Agent ,kg,50,1,0,,13
+1,0,14,R016,PP Yarn Virgin ,kg,75,1,0,,14
+1,0,15,R018,PP Film Virgin ,kg,71,1,0,,15
+1,0,16,R019,PP Recycle Transparent,kg,57,1,0,,16
+1,0,17,R020,PP Black ,kg,63,1,0,,17
+1,0,18,R021,HDV Blue,kg,75,1,0,,18
+1,0,19,R022,HDV Green ,kg,75,1,0,,19
+1,0,20,R023,HDV Orange ,kg,75,1,0,,20
+1,0,21,R024,HDV Pink ,kg,75,1,0,,21
+1,0,22,R025,HDV Red ,kg,75,1,0,,22
+1,0,23,R026,HDV Transparent ,kg,75,1,0,,23
+1,0,24,R027,HDV White ,kg,75,1,0,,24
+1,0,25,R028,HDV Yellow ,kg,75,1,0,,25
+1,0,26,R029,PP Injection Virgin ,kg,74,1,0,,26
+1,0,27,R030,PP Injection Recycle ,kg,42,1,0,,27
+1,0,28,R031,PET Resin ,kg,75,1,0,,28
+1,0,29,R032,HDPE Injection ,kg,76,1,0,,29
+1,0,30,R033,LDPE Inejction ,kg,74,1,0,,30
+1,0,31,R034,Clarifying Agent (bags),kg,40,1,0,,31
+2,0,32,R103,PET Bottle Pre-Formed 12g (30mm),pcs,1.3,1,0,,32
+2,0,33,R104,PET Bottle Pre-Formed 12g (26mm),pcs,1.3,1,0,,33
+2,0,34,R105,PET Bottle Pre-Formed 22g (30mm),pcs,2.6,1,0,,34
+2,0,35,R106,PET Bottle Pre-Formed 22g (26mm),pcs,2.6,1,0,,35
+2,0,36,R107,Peanut Jar Clear Pre-Formed 25g ,pcs,3.1,1,0,,36
+3,0,37,R201,PE Sack,pcs,0,1,0,,37
+3,0,38,R202,Recycled Sack,pcs,0,1,0,,38
+3,0,39,R203,Damage (pcs),pcs,0,1,0,,39
+3,0,40,R204,Damage (kg),kg,0,1,0,,40
+4,0,41,COL001,SB '0004 D6 Blue ,kg,168,1,0,,41
+4,0,42,COL002,SB '0004 D4 Green ,kg,201,1,0,,42
+4,0,43,COL003,SB '0004 D5 Orange ,kg,241,1,0,,43
+4,0,44,COL004,SB '0004 D8 Red ,kg,188,1,0,,44
+4,0,45,COL005,SB '0004 116 White ,kg,160,1,0,,45
+4,0,46,COL006,SB '0004 D7 Yellow ,kg,184,1,0,,46
+4,0,47,COL007,0004 Black 0025 ,kg,84,1,0,,47
+4,0,48,COL008,0004 Blue#5 ,kg,130,1,0,,48
+4,0,49,COL009,0004 Bluish White ,kg,130,1,0,,49
+4,0,50,COL012,0004 Pink ,kg,156,1,0,,50
+5,0,51,AC002,Container Outer Cap w/inner lock,pcs,2.4,1,0,,51
+5,0,52,AC003,Container Inner Cap,pcs,0.6,1,0,,52
+5,0,53,AC004,Water Container Faucet  ,pcs,13,1,0,,53
+5,0,54,AC005,Water Container Small Outer Cap  ,pcs,0.6,1,0,,54
+5,0,55,AC006,Water Container Big Outer Cap w/inner cap,pcs,3.4,1,0,,55
+5,0,56,AC007,Water Container Big Outer Cap w/outinner cap,pcs,3.4,1,0,,56
+5,0,57,AC008,Water Container Inner Cap,pcs,1.5,1,0,,57
+5,0,58,AC009,PET Bottle Cap Blue 30mm,pcs,0.3,1,0,,58
+5,0,59,AC011,PET Bottle Cap Green 30mm,pcs,0.3,1,0,,59
+5,0,60,AC013,PET Bottle Cap White 30mm,pcs,0.3,1,0,,60
+5,0,61,AC014,PET Bottle Cap White 25mm,pcs,0.3,1,0,,61
+5,0,62,AC015,White Clear Peanut Jar Cap  ,pcs,0.75,1,0,,62
+5,0,63,AC016,Yellow Clear Peanut Jar Cap,pcs,0.9,1,0,,63
+5,0,64,AC018,Gallon Cap,pcs,0.11,1,0,,64
+5,0,65,AC020,Gallon Styro Liner ,pcs,0.55,1,0,,65
+5,0,66,AC021,Peanut Jar Cap 50mm ,pcs,0.6,1,0,,66
+5,0,67,AC022,Peanut Jar Cap 67mm,pcs,0.7,1,0,,67
+5,0,68,AC101,Plastic Twine ,pcs,65,1,0,,68
+5,0,69,AC102,Plastic Twine Virgin (pcs),pcs,8,1,0,,69
+5,0,70,AC103,Plastic Strapping ,pcs,1200,1,0,,70
+5,0,71,AC104,Sack 28x50 ,pcs,20,1,0,,71
+5,0,72,AC106,"Packaging Tape 2""",pcs,39,1,0,,72
+5,0,73,AC107,"Packaging Tape 1/2""",pcs,10,1,0,,73
+5,0,74,AC108,Solvent ,ltr,95,1,0,,74
+5,0,75,AC109,Paint Black,kg,270,1,0,,75
+5,0,76,AC110,Paint Blue,kg,300,1,0,,76
+5,0,77,AC111,Paint Green,kg,290,1,0,,77
+5,0,78,AC112,Paint Red,kg,290,1,0,,78
+5,0,79,AC113,Paint White,kg,280,1,0,,79
+5,0,80,AC114,Paint Yellow,kg,290,1,0,,80
+5,0,81,AC115,Paint Pink,kg,265,1,0,,81
+5,0,82,AC116,Paint Violet,kg,262,1,0,,82
+5,0,83,AC117,Paint Orange,kg,277,1,0,,83
+6,0,84,PST001,Straw Plain-Red 9mm,kg,150,1,0,,84
+6,0,85,PST002,Straw Plain-Red 10mm,kg,150,1,0,,85
+6,0,86,PST003,Straw Plain-Orange 9mm,kg,150,1,0,,86
+6,0,87,PST004,Straw Plain-Orange 10mm,kg,150,1,0,,87
+6,0,88,PST005,Straw Plain-Yellow 9mm,kg,150,1,0,,88
+6,0,89,PST006,Straw Plain-Yellow 10mm,kg,150,1,0,,89
+6,0,90,PST007,Straw Plain-Green 9mm,kg,150,1,0,,90
+6,0,91,PST008,Straw Plain-Green 10mm,kg,150,1,0,,91
+6,0,92,PST009,Straw Plain-Blue 9mm,kg,150,1,0,,92
+6,0,93,PST010,Straw Plain-Blue 10mm,kg,150,1,0,,93
+6,0,94,PST011,Straw Plain-White 9mm,kg,150,1,0,,94
+6,0,95,PST012,Straw Plain-White 10mm,kg,150,1,0,,95
+6,0,96,PST101,Straw Stripe-Orange 9mm,kg,150,1,0,,96
+6,0,97,PST102,Straw Stripe-Orange 10mm,kg,150,1,0,,97
+6,0,98,PST103,Straw Stripe-Yellow 9mm,kg,150,1,0,,98
+6,0,99,PST104,Straw Stripe-Yellow 10mm,kg,150,1,0,,99
+6,0,100,PST105,Straw Stripe-Green 9mm,kg,150,1,0,,100
+6,0,101,PST106,Straw Stripe-Green 10mm,kg,150,1,0,,101
+6,0,102,PST107,Straw Stripe-Blue 9mm,kg,150,1,0,,102
+6,0,103,PST108,Straw Stripe-Blue 10mm,kg,150,1,0,,103
+6,0,104,PST109,Straw Stripe-White 9mm,kg,150,1,0,,104
+6,0,105,PST110,Straw Stripe-White 10mm,kg,150,1,0,,105
+6,0,106,PST111,Straw Stripe-Red 9mm,kg,150,1,0,,106
+6,0,107,PST112,Straw Stripe-Red 10mm,kg,150,1,0,,107
+6,0,108,PST113,Straw Sago-Black,kg,150,1,0,,108
+7,0,109,PPR001,PP Roll 3x001,kg,70,1,0,,109
+7,0,110,PPR002,PP Roll 4x001,kg,70,1,0,,110
+7,0,111,PPR003,PP Roll 5x001,kg,70,1,0,,111
+7,0,112,PPR004,PP Roll 5 1/2x001,kg,70,1,0,,112
+7,0,113,PPR005,PP Roll 6x001,kg,70,1,0,,113
+7,0,114,PPR006,PP Roll 61/2x001,kg,70,1,0,,114
+7,0,115,PPR007,PP Roll 7x001,kg,70,1,0,,115
+7,0,116,PPR008,PP Roll 71/2x001,kg,70,1,0,,116
+7,0,117,PPR009,PP Roll 8x001,kg,70,1,0,,117
+7,0,118,PPR010,PP Roll 81/2x001,kg,70,1,0,,118
+7,0,119,PPR011,PP Roll 9x001,kg,70,1,0,,119
+7,0,120,PPR012,PP Roll 10x001,kg,70,1,0,,120
+7,0,121,PPR013,PP Roll 11x001,kg,70,1,0,,121
+7,0,122,PPR014,PP Roll 12x001,kg,70,1,0,,122
+7,0,123,PPR015,PP Roll 13x001,kg,70,1,0,,123
+7,0,124,PPR016,PP Roll 15x001,kg,70,1,0,,124
+7,0,125,PPR017,PP Roll 15 1/2x001,kg,70,1,0,,125
+7,0,126,PPR018,PP Roll 16x001,kg,70,1,0,,126
+7,0,127,PPR019,PP Roll 4x002,kg,70,1,0,,127
+7,0,128,PPR020,PP Roll 5x002,kg,70,1,0,,128
+7,0,129,PPR021,PP Roll 5 1/2x002,kg,70,1,0,,129
+7,0,130,PPR022,PP Roll 6x002,kg,70,1,0,,130
+7,0,131,PPR023,PP Roll 61/2x002,kg,70,1,0,,131
+7,0,132,PPR024,PP Roll 7x002,kg,70,1,0,,132
+7,0,133,PPR025,PP Roll 71/2x002,kg,70,1,0,,133
+7,0,134,PPR026,PP Roll 8x002,kg,70,1,0,,134
+7,0,135,PPR027,PP Roll 81/2x002,kg,70,1,0,,135
+7,0,136,PPR028,PP Roll 9x002,kg,70,1,0,,136
+7,0,137,PPR029,PP Roll 10x002,kg,70,1,0,,137
+7,0,138,PPR030,PP Roll 11x002,kg,70,1,0,,138
+7,0,139,PPR031,PP Roll 12x002,kg,70,1,0,,139
+7,0,140,PPR032,PP Roll 13x002,kg,70,1,0,,140
+7,0,141,PPR033,PP Roll 15x002,kg,70,1,0,,141
+7,0,142,PPR034,PP Roll 15 1/2x002,kg,70,1,0,,142
+7,0,143,PPR035,PP Roll 16x002,kg,70,1,0,,143
+7,0,144,PPR036,PP Roll 7x003,kg,70,1,0,,144
+7,0,145,PPR037,PP Roll 8x003,kg,0,1,0,,145
+8,0,146,PPKR001,PR-Roll PB Aloha Mini (Kgs),kg,75,1,0,,146
+8,0,147,PPKR002,PR-Roll PB Aloha Tiny (Kgs),kg,75,1,0,,147
+8,0,148,PPKR003,PR-Roll PB Aloha Medium (Kgs),kg,75,1,0,,148
+8,0,149,PPKR004,PR-Roll PB Aloha Large (Kgs),kg,75,1,0,,149
+8,0,150,PPKR005,PR-Roll PB Aloha XL (Kgs),kg,75,1,0,,150
+8,0,151,PPKR006,PR-Roll PB Aloha Jumbo (Kgs),kg,75,1,0,,151
+8,0,152,PPKR007,PP-Roll PB Babis Chocolates Mini (Kgs),kg,75,1,0,,152
+8,0,153,PPKR008,PP-Roll PB Babis Chocolates Tiny (Kgs),kg,75,1,0,,153
+8,0,154,PPKR009,PP-Roll PB Babis Chocolates Medium (Kgs),kg,75,1,0,,154
+8,0,155,PPKR010,PP-Roll PB Babis Chocolates Large (Kgs),kg,75,1,0,,155
+8,0,156,PPKR011,PP-Roll PB Babis Chocolates XLarge (Kgs),kg,75,1,0,,156
+8,0,157,PPKR012,PP-Roll PB Boston Mini Black (Kgs),kg,75,1,0,,157
+8,0,158,PPKR013,PP-Roll PB Boston Tiny Black (Kgs),kg,75,1,0,,158
+8,0,159,PPKR014,PP-Roll PB Boston Medium Black (Kgs),kg,75,1,0,,159
+8,0,160,PPKR015,PP-Roll PB Boston Large Black (Kgs),kg,75,1,0,,160
+8,0,161,PPKR016,PP-Roll PB Boston Mini Green (Kgs),kg,75,1,0,,161
+8,0,162,PPKR017,PP-Roll PB Boston Tiny Green (Kgs),kg,75,1,0,,162
+8,0,163,PPKR018,PP-Roll PB Boston Medium Green (Kgs),kg,75,1,0,,163
+8,0,164,PPKR019,PP-Roll PB Boston Large Green (Kgs),kg,75,1,0,,164
+8,0,165,PPKR020,PP-Roll PB Boston Mini White (Kgs),kg,75,1,0,,165
+8,0,166,PPKR021,PP-Roll PB Boston Tiny White (Kgs),kg,75,1,0,,166
+8,0,167,PPKR022,PP-Roll PB Boston Medium White (Kgs),kg,75,1,0,,167
+8,0,168,PPKR023,PP-Roll PB Boston Large White (Kgs),kg,75,1,0,,168
+8,0,169,PPKR024,PP-Roll PB Bucks Mini Black (Kgs),kg,75,1,0,,169
+8,0,170,PPKR025,PP-Roll PB Bucks Tiny Black (Kgs),kg,75,1,0,,170
+8,0,171,PPKR026,PP-Roll PB Bucks Medium Black (Kgs),kg,75,1,0,,171
+8,0,172,PPKR027,PP-Roll PB Bucks Large Black (Kgs),kg,75,1,0,,172
+8,0,173,PPKR028,PP-Roll PB Bucks XL Black (Kgs),kg,75,1,0,,173
+8,0,174,PPKR029,PP-Roll PB Bucks Mini Green (Kgs),kg,75,1,0,,174
+8,0,175,PPKR030,PP-Roll PB Bucks Tiny Green (Kgs),kg,75,1,0,,175
+8,0,176,PPKR031,PP-Roll PB Bucks Medium Green (Kgs),kg,75,1,0,,176
+8,0,177,PPKR032,PP-Roll PB Bucks Large Green (Kgs),kg,75,1,0,,177
+8,0,178,PPKR037,PP-Roll PB Corgi Mini (Kgs),kg,75,1,0,,178
+8,0,179,PPKR038,PP-Roll PB Corgi Tiny (Kgs),kg,75,1,0,,179
+8,0,180,PPKR039,PP-Roll PB Corgi Medium (Kgs),kg,75,1,0,,180
+8,0,181,PPKR040,PP-Roll PB Corgi Large (Kgs),kg,75,1,0,,181
+8,0,182,PPKR041,PP-Roll PB Corgi XL (Kgs),kg,75,1,0,,182
+8,0,183,PPKR046,PP-Roll PB Dragon Mini (Kgs),kg,75,1,0,,183
+8,0,184,PPKR047,PP-Roll PB Dragon Tiny (Kgs),kg,75,1,0,,184
+8,0,185,PPKR048,PP-Roll PB Dragon Medium (Kgs),kg,75,1,0,,185
+8,0,186,PPKR049,PP-Roll PB Dragon Large (Kgs),kg,75,1,0,,186
+8,0,187,PPKR054,PP-Roll PB JCOB Mini (Kgs),kg,75,1,0,,187
+8,0,188,PPKR055,PP-Roll PB JCOB Tiny(Kgs),kg,75,1,0,,188
+8,0,189,PPKR056,PP-Roll PB JCOB Medium (Kgs),kg,75,1,0,,189
+8,0,190,PPKR057,PP-Roll PB JCOB Large (Kgs),kg,75,1,0,,190
+8,0,191,PPKR058,PP-Roll PB Kobe Mini (Kgs),kg,75,1,0,,191
+8,0,192,PPKR059,PP-Roll PB Kobe Tiny (Kgs),kg,75,1,0,,192
+8,0,193,PPKR060,PP-Roll PB Kobe Medium (Kgs),kg,75,1,0,,193
+8,0,194,PPKR061,PP-Roll PB Kobe Large (Kgs),kg,75,1,0,,194
+8,0,195,PPKR066,PP-Roll PB Latest Mini (Kgs),kg,75,1,0,,195
+8,0,196,PPKR067,PP-Roll PB Latest Tiny(Kgs),kg,75,1,0,,196
+8,0,197,PPKR068,PP-Roll PB Latest Medium (Kgs),kg,75,1,0,,197
+8,0,198,PPKR069,PP-Roll PB Latest Large (Kgs),kg,75,1,0,,198
+8,0,199,PPKR070,PP-Roll PB Liberty Mini (Kgs),kg,75,1,0,,199
+8,0,200,PPKR071,PP-Roll PB Liberty Tiny (Kgs),kg,75,1,0,,200
+8,0,201,PPKR072,PP-Roll PB Liberty Medium (Kgs),kg,75,1,0,,201
+8,0,202,PPKR073,PP-Roll PB Liberty Large (Kgs),kg,75,1,0,,202
+8,0,203,PPKR074,PP-Roll PB Liwanag Mini (Kgs),kg,75,1,0,,203
+8,0,204,PPKR075,PP-Roll PB Liwanag Tiny (Kgs),kg,75,1,0,,204
+8,0,205,PPKR076,PP-Roll PB Liwanag Medium (Kgs),kg,75,1,0,,205
+8,0,206,PPKR077,PP-Roll PB Liwanag Large (Kgs),kg,75,1,0,,206
+8,0,207,PPKR078,PP-Roll PB Lucky Mini (Kgs),kg,75,1,0,,207
+8,0,208,PPKR079,PP-Roll PB Lucky Tiny (Kgs),kg,75,1,0,,208
+8,0,209,PPKR080,PP-Roll PB Lucky Medium (Kgs),kg,75,1,0,,209
+8,0,210,PPKR081,PP-Roll PB Lucky Large (Kgs),kg,75,1,0,,210
+8,0,211,PPKR082,PP-Roll PB Panda Mini (Kgs),kg,75,1,0,,211
+8,0,212,PPKR083,PP-Roll PB Panda Tiny (Kgs),kg,75,1,0,,212
+8,0,213,PPKR084,PP-Roll PB Panda Medium (Kgs),kg,75,1,0,,213
+8,0,214,PPKR085,PP-Roll PB Panda Large (Kgs),kg,75,1,0,,214
+8,0,215,PPKR086,PP-Roll PB Polar Bear Mini (Kgs),kg,75,1,0,,215
+8,0,216,PPKR087,PP-Roll PB Polar Bear Tiny (Kgs),kg,75,1,0,,216
+8,0,217,PPKR088,PP-Roll PB Polar Bear Medium (Kgs),kg,75,1,0,,217
+8,0,218,PPKR089,PP-Roll PB Polar Bear Large (Kgs),kg,75,1,0,,218
+8,0,219,PPKR090,PP-Roll PB Pitbull Mini (Kgs),kg,75,1,0,,219
+8,0,220,PPKR091,PP-Roll PB Pitbull Tiny (Kgs),kg,75,1,0,,220
+8,0,221,PPKR092,PP-Roll PB Pitbull Medium (Kgs),kg,75,1,0,,221
+8,0,222,PPKR093,PP-Roll PB Pitbull Large (Kgs),kg,75,1,0,,222
+8,0,223,PPKR098,PP-Roll PB Rivson Mini (Kgs),kg,75,1,0,,223
+8,0,224,PPKR099,PP-Roll PB Rivson Tiny(Kgs),kg,75,1,0,,224
+8,0,225,PPKR100,PP-Roll PB Rivson Medium (Kgs),kg,75,1,0,,225
+8,0,226,PPKR101,PP-Roll PB Rivson Large (Kgs),kg,75,1,0,,226
+8,0,227,PPKR102,PP-Roll PB Rivson XL (Kgs),kg,75,1,0,,227
+8,0,228,PPKR108,PP-Roll PB Smile Mini (Kgs),kg,75,1,0,,228
+8,0,229,PPKR109,PP-Roll PB Smile Tiny (Kgs),kg,75,1,0,,229
+8,0,230,PPKR110,PP-Roll PB Smile Medium (Kgs),kg,75,1,0,,230
+8,0,231,PPKR111,PP-Roll PB Smile Large (Kgs),kg,75,1,0,,231
+8,0,232,PPKR112,PP-Roll PB Spring Mini (Kgs),kg,75,1,0,,232
+8,0,233,PPKR113,PP-Roll PB Spring Tiny (Kgs),kg,75,1,0,,233
+8,0,234,PPKR114,PP-Roll PB Spring Medium (Kgs),kg,75,1,0,,234
+8,0,235,PPKR115,PP-Roll PB Spring Large (Kgs),kg,75,1,0,,235
+8,0,236,PPKR128,PP-Roll Spring Blue 4 1/2 inch,kg,75,1,0,,236
+8,0,237,PPKR129,PP-Roll Spring Blue 5 inch,kg,75,1,0,,237
+8,0,238,PPKR130,PP-Roll Spring Blue 5 1/2 inch,kg,75,1,0,,238
+8,0,239,PPKR131,PP-Roll Spring Blue 6 inch,kg,75,1,0,,239
+8,0,240,PPKR132,PP-Roll Spring Blue 6 1/2 inch,kg,75,1,0,,240
+8,0,241,PPKR133,PP-Roll Spring Blue 7 inch,kg,75,1,0,,241
+8,0,242,PPKR134,PP-Roll Spring Blue 7 1/2 inch,kg,75,1,0,,242
+8,0,243,PPKR135,PP-Roll Spring Blue 8 inch,kg,75,1,0,,243
+8,0,244,PPKR136,PP-Roll Spring Blue 8 1/2 inch,kg,75,1,0,,244
+8,0,245,PPKR137,PP-Roll Spring Blue 9 inch,kg,75,1,0,,245
+8,0,246,PPKR138,PP-Roll Spring Green 4 1/2 inch,kg,75,1,0,,246
+8,0,247,PPKR139,PP-Roll Spring Green 5 inch,kg,75,1,0,,247
+8,0,248,PPKR140,PP-Roll Spring Green 5 1/2 inch,kg,75,1,0,,248
+8,0,249,PPKR141,PP-Roll Spring Green 6 inch,kg,75,1,0,,249
+8,0,250,PPKR142,PP-Roll Spring Green 6 1/2 inch,kg,75,1,0,,250
+8,0,251,PPKR143,PP-Roll Spring Green 7 inch,kg,75,1,0,,251
+8,0,252,PPKR144,PP-Roll Spring Green 7 1/2 inch,kg,75,1,0,,252
+8,0,253,PPKR145,PP-Roll Spring Green 8 inch,kg,75,1,0,,253
+8,0,254,PPKR146,PP-Roll Spring Green 8 1/2 inch,kg,75,1,0,,254
+8,0,255,PPKR147,PP-Roll Spring Green 9 inch,kg,75,1,0,,255
+8,0,256,PPKR148,PP-Roll Swerte 3 inch,kg,75,1,0,,256
+8,0,257,PPKR149,PP-Roll Swerte 5 inch,kg,75,1,0,,257
+8,0,258,PPKR150,PP-Roll Swerte 10 inch,kg,75,1,0,,258
+8,0,259,PPKR151,PP-Roll ST Greatwall (Kgs),kg,75,1,0,,259
+8,0,260,PPKR152,PP-Roll ST Aloha Jumbo (Kgs),kg,75,1,0,,260
+8,0,261,PPKR153,PP-Roll ST ALoha King (Kgs),kg,75,1,0,,261
+8,0,262,PPKR154,PR-Roll ST Liberty King (Kgs),kg,75,1,0,,262
+8,0,263,PPKR155,PP-Roll ST Lucky (Kgs),kg,75,1,0,,263
+8,0,264,PPKR156,PP-Roll ST Liwanag (Kgs),kg,75,1,0,,264
+8,0,265,PPKR157,PP-Roll ST Greatwall Rivson (Kgs),kg,75,1,0,,265
+8,0,266,PPKR158,PP-Roll ST Rivson Jumbo (Kgs),kg,75,1,0,,266
+8,0,267,PPKR159,PP-Roll ST Rivson King (Kgs),kg,75,1,0,,267
+8,0,268,PPKR160,PR-Roll Aloha Disposable Cups 3oz,kg,75,1,0,,268
+8,0,269,PPKR161,PR-Roll Aloha Disposable Cups 5oz,kg,75,1,0,,269
+8,0,270,PPKR162,PR-Roll Aloha Disposable Cups 6oz,kg,75,1,0,,270
+8,0,271,PPKR163,PR-Roll Aloha Disposable Cups 7oz,kg,75,1,0,,271
+8,0,272,PPKR164,PR-Roll Aloha Disposable Cups 8oz,kg,75,1,0,,272
+8,0,273,PPKR165,PR-Roll Aloha Disposable Cups 10oz,kg,75,1,0,,273
+8,0,274,PPKR166,PR-Roll Aloha Disposable Cups 12oz,kg,75,1,0,,274
+8,0,275,PPKR167,PR-Roll Aloha Disposable Cups 16oz,kg,75,1,0,,275
+8,0,276,PPKR168,PR-Roll Metro Disposable Cups 3oz,kg,75,1,0,,276
+8,0,277,PPKR169,PR-Roll Metro Disposable Cups 5oz,kg,75,1,0,,277
+8,0,278,PPKR170,PR-Roll Metro Disposable Cups 6oz,kg,75,1,0,,278
+8,0,279,PPKR171,PR-Roll Metro Disposable Cups 7oz,kg,75,1,0,,279
+8,0,280,PPKR172,PR-Roll Metro Disposable Cups 8oz,kg,75,1,0,,280
+8,0,281,PPKR173,PR-Roll Metro Disposable Cups 10oz,kg,75,1,0,,281
+8,0,282,PPKR174,PR-Roll Metro Disposable Cups 12oz,kg,75,1,0,,282
+8,0,283,PPKR175,PR-Roll Metro Disposable Cups 16oz,kg,75,1,0,,283
+8,0,284,PPKR176,PR-Roll Rivson Disposable Cups 3oz,kg,75,1,0,,284
+8,0,285,PPKR177,PR-Roll Rivson Disposable Cups 5oz,kg,75,1,0,,285
+8,0,286,PPKR178,PR-Roll Rivson Disposable Cups 6oz,kg,75,1,0,,286
+8,0,287,PPKR179,PR-Roll Rivson Disposable Cups 7oz,kg,75,1,0,,287
+8,0,288,PPKR180,PR-Roll Rivson Disposable Cups 8oz,kg,75,1,0,,288
+8,0,289,PPKR181,PR-Roll Rivson Disposable Cups 10oz,kg,75,1,0,,289
+8,0,290,PPKR182,PR-Roll Rivson Disposable Cups 12oz,kg,75,1,0,,290
+8,0,291,PPKR183,PR-Roll Rivson Disposable Cups 16oz,kg,75,1,0,,291
+9,0,292,PPPK001,PR-Packaging PB Aloha Mini (Pcs),kg,75,1,0,,292
+9,0,293,PPPK002,PR-Packaging PB Aloha Tiny (Pcs),kg,75,1,0,,293
+9,0,294,PPPK003,PR-Packaging PB Aloha Medium (Pcs),kg,75,1,0,,294
+9,0,295,PPPK004,PR-Packaging PB Aloha Large (Pcs),kg,75,1,0,,295
+9,0,296,PPPK005,PR-Packaging PB Aloha XL (Pcs),kg,75,1,0,,296
+9,0,297,PPPK006,PR-Packaging PB Boston Mini Black (Pcs),kg,75,1,0,,297
+9,0,298,PPPK007,PR-Packaging PB Boston Tiny Black (Pcs),kg,75,1,0,,298
+9,0,299,PPPK008,PR-Packaging PB Boston Medium Black (Pcs),kg,75,1,0,,299
+9,0,300,PPPK009,PR-Packaging PB Boston Large Black (Pcs),kg,75,1,0,,300
+9,0,301,PPPK010,PR-Packaging PB Boston Mini Green (Pcs),kg,75,1,0,,301
+9,0,302,PPPK011,PR-Packaging PB Boston Tiny Green (Pcs),kg,75,1,0,,302
+9,0,303,PPPK012,PR-Packaging PB Boston Medium Green (Pcs),kg,0.25,1,0,,303
+9,0,304,PPPK013,PR-Packaging PB Boston Large Green (Pcs),pcs,0.25,1,0,,304
+9,0,305,PPPK014,PR-Packaging PB Boston Mini White (Pcs),pcs,0.25,1,0,,305
+9,0,306,PPPK015,PR-Packaging PB Boston Tiny White (Pcs),pcs,0.25,1,0,,306
+9,0,307,PPPK016,PR-Packaging PB Boston Medium White (Pcs),pcs,0.25,1,0,,307
+9,0,308,PPPK017,PR-Packaging PB Boston Large White (Pcs),pcs,0.25,1,0,,308
+9,0,309,PPPK018,PR-Packaging PB Bucks Mini Black (Pcs),pcs,0.25,1,0,,309
+9,0,310,PPPK019,PR-Packaging PB Bucks Tiny Black (Pcs),pcs,0.25,1,0,,310
+9,0,311,PPPK020,PR-Packaging PB Bucks Medium Black (Pcs),pcs,0.25,1,0,,311
+9,0,312,PPPK021,PR-Packaging PB Bucks Large Black (Pcs),pcs,0.25,1,0,,312
+9,0,313,PPPK022,PR-Packaging PB Bucks XL Black (Pcs),pcs,0.25,1,0,,313
+9,0,314,PPPK032,PR-Packaging PB Dragon Mini (Pcs),pcs,0.25,1,0,,314
+9,0,315,PPPK033,PR-Packaging PB Dragon Tiny (Pcs),pcs,0.25,1,0,,315
+9,0,316,PPPK034,PR-Packaging PB Dragon Medium (Pcs),pcs,0.25,1,0,,316
+9,0,317,PPPK035,PR-Packaging PB Dragon Large (Pcs),pcs,0.25,1,0,,317
+9,0,318,PPPK036,PR-Packaging PB Gilas Mini (Pcs),pcs,0.25,1,0,,318
+9,0,319,PPPK037,PR-Packaging PB Gilas Tiny (Pcs),pcs,0.25,1,0,,319
+9,0,320,PPPK038,PR-Packaging PB Gilas Medium (Pcs),pcs,0.25,1,0,,320
+9,0,321,PPPK039,PR-Packaging PB Gilas Large (Pcs),pcs,0.25,1,0,,321
+9,0,322,PPPK040,PR-Packaging PB Kobe Mini (Pcs),pcs,0.25,1,0,,322
+9,0,323,PPPK041,PR-Packaging PB Kobe Tiny (Pcs),pcs,0.25,1,0,,323
+9,0,324,PPPK042,PR-Packaging PB Kobe Medium (Pcs),pcs,0.25,1,0,,324
+9,0,325,PPPK043,PR-Packaging PB Kobe Large (Pcs),pcs,0.25,1,0,,325
+9,0,326,PPPK048,PR-Packaging PB Liberty Mini (Pcs),pcs,0.25,1,0,,326
+9,0,327,PPPK049,PR-Packaging PB Liberty Tiny (Pcs),pcs,0.25,1,0,,327
+9,0,328,PPPK050,PR-Packaging PB Liberty Medium (Pcs),pcs,0.25,1,0,,328
+9,0,329,PPPK051,PR-Packaging PB Liberty Large (Pcs),pcs,0.25,1,0,,329
+9,0,330,PPPK052,PR-Packaging PB Lucky Mini (Pcs),pcs,0.25,1,0,,330
+9,0,331,PPPK053,PR-Packaging PB Lucky Tiny (Pcs),pcs,0.25,1,0,,331
+9,0,332,PPPK054,PR-Packaging PB Lucky Medium (Pcs),pcs,0.25,1,0,,332
+9,0,333,PPPK055,PR-Packaging PB Lucky Large (Pcs),pcs,0.25,1,0,,333
+9,0,334,PPPK056,PR-Packaging PB Liwanag Mini (Pcs),pcs,0.25,1,0,,334
+9,0,335,PPPK057,PR-Packaging PB Liwanag Tiny (Pcs),pcs,0.25,1,0,,335
+9,0,336,PPPK058,PR-Packaging PB Liwanag Medium (Pcs),pcs,0.25,1,0,,336
+9,0,337,PPPK059,PR-Packaging PB Liwanag Large (Pcs),pcs,0.25,1,0,,337
+9,0,338,PPPK060,PR-Packaging PB Panda Mini (Pcs),pcs,0.25,1,0,,338
+9,0,339,PPPK061,PR-Packaging PB Panda Tiny (Pcs),pcs,0.25,1,0,,339
+9,0,340,PPPK062,PR-Packaging PB Panda Medium (Pcs),pcs,0.25,1,0,,340
+9,0,341,PPPK063,PR-Packaging PB Panda Large (Pcs),pcs,0.25,1,0,,341
+9,0,342,PPPK072,PR-Packaging PB Spring Mini (Pcs),pcs,0.25,1,0,,342
+9,0,343,PPPK073,PR-Packaging PB Spring Tiny (Pcs),pcs,0.25,1,0,,343
+9,0,344,PPPK074,PR-Packaging PB Spring Medium (Pcs),pcs,0.25,1,0,,344
+9,0,345,PPPK075,PR-Packaging PB Spring Large (Pcs),pcs,0.25,1,0,,345
+9,0,346,PPPK089,PR-Packaging PB Corgi Mini (Pcs),pcs,0.25,1,0,,346
+9,0,347,PPPK090,PR-Packaging PB Corgi Tiny (Pcs),pcs,0.25,1,0,,347
+9,0,348,PPPK091,PR-Packaging PB Corgi Medium (Pcs),pcs,0.25,1,0,,348
+9,0,349,PPPK092,PR-Packaging PB Corgi Large (Pcs),pcs,0.25,1,0,,349
+9,0,350,PPPK093,PR-Packaging PB Corgi XL (Pcs),pcs,0.25,1,0,,350
+9,0,351,PPPK098,PR-Packaging PB Polar Bear Mini (Pcs),pcs,0.25,1,0,,351
+9,0,352,PPPK099,PR-Packaging PB Polar Bear Tiny (Pcs),pcs,0.25,1,0,,352
+9,0,353,PPPK100,PR-Packaging PB Polar Bear Medium (Pcs),pcs,0.25,1,0,,353
+9,0,354,PPPK101,PR-Packaging PB Polar Bear Large (Pcs),pcs,0.25,1,0,,354
+9,0,355,PPPK102,PR-Packaging PB Babi's Mini (Pcs),pcs,0.25,1,0,,355
+9,0,356,PPPK103,PR-Packaging PB Babi's Tiny (Pcs),pcs,0.25,1,0,,356
+9,0,357,PPPK104,PR-Packaging PB Babi's Medium (Pcs),pcs,0.25,1,0,,357
+9,0,358,PPPK105,PR-Packaging PB Babi's Large (Pcs),pcs,0.25,1,0,,358
+9,0,359,PPPK106,PR-Packaging PB Babi's XLarge (Pcs),pcs,0.25,1,0,,359
+9,0,360,PPPK107,PR-Packaging PB Smile Mini (Pcs),pcs,0.25,1,0,,360
+9,0,361,PPPK108,PR-Packaging PB Smile Tiny (Pcs),pcs,0.25,1,0,,361
+9,0,362,PPPK109,PR-Packaging PB Smile Medium (Pcs),pcs,0.25,1,0,,362
+9,0,363,PPPK110,PR-Packaging PB Smile Large (Pcs),pcs,0.25,1,0,,363
+9,0,364,PPPK115,PR-Packaging PB Buenas Mini (Pcs),pcs,0.25,1,0,,364
+9,0,365,PPPK116,PR-Packaging PB Buenas Tiny (Pcs),pcs,0.25,1,0,,365
+9,0,366,PPPK117,PR-Packaging PB Buenas Medium (Pcs),pcs,0.25,1,0,,366
+9,0,367,PPPK118,PR-Packaging PB Buenas Large (Pcs),pcs,0.25,1,0,,367
+9,0,368,PPPK119,PR-Packaging PB Bucks Mini Blue (Pcs),pcs,0.25,1,0,,368
+9,0,369,PPPK120,PR-Packaging PB Bucks Tiny Blue (Pcs),pcs,0.25,1,0,,369
+9,0,370,PPPK121,PR-Packaging PB Bucks Medium Blue (Pcs),pcs,0.25,1,0,,370
+9,0,371,PPPK122,PR-Packaging PB Bucks Large Blue (Pcs),pcs,0.25,1,0,,371
+9,0,372,PPPK123,PR-Packaging PB Pitbull Mini (Pcs),pcs,0.25,1,0,,372
+9,0,373,PPPK124,PR-Packaging PB Pitbull Tiny (Pcs),pcs,0.25,1,0,,373
+9,0,374,PPPK125,PR-Packaging PB Pitbull Medium (Pcs),pcs,0.25,1,0,,374
+9,0,375,PPPK126,PR-Packaging PB Pitbull Large (Pcs),pcs,0.25,1,0,,375
+9,0,376,PPPK127,PR-Packaging PB JCOB Mini (Pcs),pcs,0.25,1,0,,376
+9,0,377,PPPK128,PR-Packaging PB JCOB Tiny(Pcs),pcs,0.25,1,0,,377
+9,0,378,PPPK129,PR-Packaging PB JCOB Medium (Pcs),pcs,0.25,1,0,,378
+9,0,379,PPPK130,PR-Packaging PB JCOB Large (Pcs),pcs,0.25,1,0,,379
+9,0,380,PPPK131,PR-Packaging PB Latest Mini (Pcs),pcs,0.25,1,0,,380
+9,0,381,PPPK132,PR-Packaging PB Latest Tiny(Pcs),pcs,0.25,1,0,,381
+9,0,382,PPPK133,PR-Packaging PB Latest Medium (Pcs),pcs,0.25,1,0,,382
+9,0,383,PPPK134,PR-Packaging PB Latest Large (Pcs),pcs,0.25,1,0,,383
+9,0,384,PPPK135,PR-Packaging PB Rivson Mini (Pcs),pcs,0.25,1,0,,384
+9,0,385,PPPK136,PR-Packaging PB Rivson Tiny(Pcs),pcs,0.25,1,0,,385
+9,0,386,PPPK137,PR-Packaging PB Rivson Medium (Pcs),pcs,0.25,1,0,,386
+9,0,387,PPPK138,PR-Packaging PB Rivson Large (Pcs),pcs,0.25,1,0,,387
+9,0,388,PPPK139,PR-Packaging PB Rivson Jumbo (Pcs),pcs,0.25,1,0,,388
+9,0,389,PPPK140,PR-Packaging Spring Blue 4.5x8 (500s),pcs,0.25,1,0,,389
+9,0,390,PPPK141,PR-Packaging Spring Blue 5x8 (500s),pcs,0.25,1,0,,390
+9,0,391,PPPK142,PR-Packaging Spring Blue 5x10 (500s),pcs,0.25,1,0,,391
+9,0,392,PPPK143,PR-Packaging Spring Blue 5 1/2 x8 (500s),pcs,0.25,1,0,,392
+9,0,393,PPPK144,PR-Packaging Spring Blue 5 1/2 x10 (500s),pcs,0.25,1,0,,393
+9,0,394,PPPK145,PR-Packaging Spring Blue 6x10 (500s),pcs,0.25,1,0,,394
+9,0,395,PPPK146,PR-Packaging Spring Blue 6x12 (500s),pcs,0.25,1,0,,395
+9,0,396,PPPK147,PR-Packaging Spring Blue 6x14 (500s),pcs,0.25,1,0,,396
+9,0,397,PPPK148,PR-Packaging Spring Blue 6 1/2 x10 (500s),pcs,0.25,1,0,,397
+9,0,398,PPPK149,PR-Packaging Spring Blue 6 1/2 x12 (500s),pcs,0.25,1,0,,398
+9,0,399,PPPK150,PR-Packaging Spring Blue 7x10 (500s),pcs,0.25,1,0,,399
+9,0,400,PPPK151,PR-Packaging Spring Blue 7x12 (500s),pcs,0.25,1,0,,400
+9,0,401,PPPK152,PR-Packaging Spring Blue 7x14 (500s),pcs,0.25,1,0,,401
+9,0,402,PPPK153,PR-Packaging Spring Blue 7 1/2 x10 (500s),pcs,0.25,1,0,,402
+9,0,403,PPPK154,PR-Packaging Spring Blue 7 1/2 x14 (500s),pcs,0.25,1,0,,403
+9,0,404,PPPK155,PR-Packaging Spring Blue 8 1/2 x12 (500s),pcs,0.25,1,0,,404
+9,0,405,PPPK156,PR-Packaging Spring Blue 9x15 (500s),pcs,0.25,1,0,,405
+9,0,406,PPPK157,PR-Packaging Spring Green 4.5x8 (500s),pcs,0.25,1,0,,406
+9,0,407,PPPK158,PR-Packaging Spring Green 5x8 (500s),pcs,0.25,1,0,,407
+9,0,408,PPPK159,PR-Packaging Spring Green 5x10 (500s),pcs,0.25,1,0,,408
+9,0,409,PPPK160,PR-Packaging Spring Green 5 1/2 x8 (500s),pcs,0.25,1,0,,409
+9,0,410,PPPK161,PR-Packaging Spring Green 5 1/2 x10 (500s),pcs,0.25,1,0,,410
+9,0,411,PPPK162,PR-Packaging Spring Green 6x10 (500s),pcs,0.25,1,0,,411
+9,0,412,PPPK163,PR-Packaging Spring Green 6x12 (500s),pcs,0.25,1,0,,412
+9,0,413,PPPK164,PR-Packaging Spring Green 6x14 (500s),pcs,0.25,1,0,,413
+9,0,414,PPPK165,PR-Packaging Spring Green 6 1/2 x10 (500s),pcs,0.25,1,0,,414
+9,0,415,PPPK166,PR-Packaging Spring Green 6 1/2 x12 (500s),pcs,0.25,1,0,,415
+9,0,416,PPPK167,PR-Packaging Spring Green 7x10 (500s),pcs,0.25,1,0,,416
+9,0,417,PPPK168,PR-Packaging Spring Green 7x12 (500s),pcs,0.25,1,0,,417
+9,0,418,PPPK169,PR-Packaging Spring Green 7x14 (500s),pcs,0.25,1,0,,418
+9,0,419,PPPK170,PR-Packaging Spring Green 7 1/2 x10 (500s),pcs,0.25,1,0,,419
+9,0,420,PPPK171,PR-Packaging Spring Green 7 1/2 x14 (500s),pcs,0.25,1,0,,420
+9,0,421,PPPK172,PR-Packaging Spring Green 8 1/2 x12 (500s),pcs,0.25,1,0,,421
+9,0,422,PPPK173,PR-Packaging Spring Green 9x15 (500s),pcs,0.25,1,0,,422
+9,0,423,PPPK174,PR-Packaging Swerte 5x5,pcs,0.25,1,0,,423
+9,0,424,PPPK175,PR-Packaging Swerte 10x13,pcs,0.25,1,0,,424
+9,0,425,PPPK176,PR-Packaging Swerte 3x3,pcs,0.25,1,0,,425
+9,0,426,PPPK177,PP-Packaging Plain 4 1/2X8(Pcs),pcs,0.25,1,0,,426
+9,0,427,PPPK178,PP-Packaging Plain 5 1/2X10(Pcs),pcs,0.25,1,0,,427
+9,0,428,PPPK179,PP-Packaging Plain 5 1/2X20 (Pcs),pcs,0.25,1,0,,428
+9,0,429,PPPK180,PP-Packaging Plain 6 1/2X12(Pcs),pcs,0.25,1,0,,429
+9,0,430,PPPK181,PP-Packaging Plain 7X12 (Pcs),pcs,0.25,1,0,,430
+9,0,431,PPPK182,PP-Packaging Plain 7x20 (Pcs),pcs,0.25,1,0,,431
+9,0,432,PPPK183,PP-Packaging Plain 7 1/2X14 (Pcs),pcs,0.25,1,0,,432
+9,0,433,PPPK184,PP-Packaging Plain 7 1/2X16 (Pcs),pcs,0.25,1,0,,433
+9,0,434,PPPK185,PP-Packaging Plain 8X12 (Pcs),pcs,0.25,1,0,,434
+9,0,435,PPPK186,PP-Packaging Plain 8X14 (Pcs),pcs,0.25,1,0,,435
+9,0,436,PPPK187,PP-Packaging Plain 8X16 (Pcs),pcs,0.25,1,0,,436
+9,0,437,PPPK188,PP-Packaging Plain 8X17 (Pcs),pcs,0.25,1,0,,437
+9,0,438,PPPK189,PP-Packaging Plain 9X11 (Pcs),pcs,0.25,1,0,,438
+9,0,439,PPPK190,PP-Packaging Plain 9X16 (Pcs),pcs,0.25,1,0,,439
+9,0,440,PPPK191,PP-Packaging Plain 9X18 (Pcs),pcs,0.25,1,0,,440
+9,0,441,PPPK192,PP-Packaging Plain 11X11 (Pcs),pcs,0.25,1,0,,441
+9,0,442,PPPK193,PP-Packaging Plain 5x23 (Pcs),pcs,0.25,1,0,,442
+9,0,443,PPPK194,PR-Packaging ST Greatwall (Pcs),pcs,0.25,1,0,,443
+9,0,444,PPPK195,PR-Packaging ST Aloha Jumbo (Pcs),pcs,0.25,1,0,,444
+9,0,445,PPPK196,PR-Packaging ST Aloha King (Pcs),pcs,0.25,1,0,,445
+9,0,446,PPPK197,PR-Packaging ST Liberty King (Pcs),pcs,0.25,1,0,,446
+9,0,447,PPPK200,PR-Packaging ST Rivson Greatwall (Pcs),pcs,0.25,1,0,,447
+9,0,448,PPPK201,PR-Packaging ST Rivson Jumbo (Pcs),pcs,0.25,1,0,,448
+9,0,449,PPPK202,PR-Packaging ST Rivson King (Pcs),pcs,0.25,1,0,,449
+9,0,450,PPPK203,PR-Packaging Disposable Cups 3oz,pcs,0.25,1,0,,450
+9,0,451,PPPK204,PR-Packaging Disposable Cups 5oz,pcs,0.25,1,0,,451
+9,0,452,PPPK205,PR-Packaging Disposable Cups 6oz,pcs,0.25,1,0,,452
+9,0,453,PPPK206,PR-Packaging Disposable Cups 7oz,pcs,0.25,1,0,,453
+9,0,454,PPPK207,PR-Packaging Disposable Cups 8oz,pcs,0.25,1,0,,454
+9,0,455,PPPK208,PR-Packaging Disposable Cups 10oz,pcs,0.25,1,0,,455
+9,0,456,PPPK209,PR-Packaging Disposable Cups 12oz,pcs,0.25,1,0,,456
+9,0,457,PPPK210,PR-Packaging Disposable Cups 16oz,pcs,0.25,1,0,,457
+9,0,458,PPPK211,PR-Packaging Metro Disposable Cups 3oz,pcs,0.25,1,0,,458
+9,0,459,PPPK212,PR-Packaging Metro Disposable Cups 5oz,pcs,0.25,1,0,,459
+9,0,460,PPPK213,PR-Packaging Metro Disposable Cups 6oz,pcs,0.25,1,0,,460
+9,0,461,PPPK214,PR-Packaging Metro Disposable Cups 7oz,pcs,0.25,1,0,,461
+9,0,462,PPPK215,PR-Packaging Metro Disposable Cups 8oz,pcs,0.25,1,0,,462
+9,0,463,PPPK216,PR-Packaging Metro Disposable Cups 10oz,pcs,0.25,1,0,,463
+9,0,464,PPPK217,PR-Packaging Metro Disposable Cups 12oz,pcs,0.25,1,0,,464
+9,0,465,PPPK218,PR-Packaging Metro Disposable Cups 16oz,pcs,0.25,1,0,,465
+9,0,466,PPPK219,PR-Packaging Rivson Disposable Cups 3oz,pcs,0.25,1,0,,466
+9,0,467,PPPK220,PR-Packaging Rivson Disposable Cups 5oz,pcs,0.25,1,0,,467
+9,0,468,PPPK221,PR-Packaging Rivson Disposable Cups 6oz,pcs,0.25,1,0,,468
+9,0,469,PPPK222,PR-Packaging Rivson Disposable Cups 7oz,pcs,0.25,1,0,,469
+9,0,470,PPPK223,PR-Packaging Rivson Disposable Cups 8oz,pcs,0.25,1,0,,470
+9,0,471,PPPK224,PR-Packaging Rivson Disposable Cups 10oz,pcs,0.25,1,0,,471
+9,0,472,PPPK225,PR-Packaging Rivson Disposable Cups 12oz,pcs,0.25,1,0,,472
+9,0,473,PPPK226,PR-Packaging Rivson Disposable Cups 16oz,pcs,0.25,1,0,,473
+10,0,474,PEPK003,Packaging 14x20(Pcs),pcs,0.25,1,0,,474
+10,0,475,PEPK004,Packaging 14x22 (Pcs),pcs,0.25,1,0,,475
+10,0,476,PEPK006,Packaging 14x25 (Pcs),pcs,0.25,1,0,,476
+10,0,477,PEPK007,Packaging 16x24 (Pcs),pcs,0.25,1,0,,477
+10,0,478,PEPK008,Packaging 16x25 (Pcs),pcs,0.25,1,0,,478
+10,0,479,PEPK009,Packaging 16x28 (Pcs),pcs,0.25,1,0,,479
+10,0,480,PEPK011,Packaging 18x20 (Pcs),pcs,0.25,1,0,,480
+10,0,481,PEPK012,Packaging 18x28 (Pcs),pcs,0.25,1,0,,481
+10,0,482,PEPK014,Packaging 18x36 (Pcs),pcs,0.25,1,0,,482
+10,0,483,PEPK015,Packaging 20x30(Pcs),pcs,0.25,1,0,,483
+10,0,484,PEPK019,Packaging 22x36 (Pcs),pcs,0.25,1,0,,484
+10,0,485,PEPK020,Packaging 22X38 (Pcs),pcs,0.25,1,0,,485
+10,0,486,PEPK024,Packaging 24X36 (Pcs),pcs,0.25,1,0,,486
+10,0,487,PEPK026,Packaging 24x40 (Pcs),pcs,0.25,1,0,,487
+10,0,488,PEPK030,Packaging 24x50 (Pcs),pcs,0.25,1,0,,488
+10,0,489,PEPK040,Packaging 40X40 (Pcs),pcs,0.25,1,0,,489
+10,0,490,PEPK042,Packaging 40x45(Pcs),pcs,0.25,1,0,,490
+10,0,491,PEPK043,Packaging 40x50 (Pcs),pcs,0.25,1,0,,491
+10,0,492,PEPK046,Packaging 40X60 (Pcs),pcs,0.25,1,0,,492
+11,0,493,PER001,Packaging Roll 10 inch (Kgs),kg,75,1,0,,493
+11,0,494,PER002,Packaging Roll 14 inch (Kgs),kg,75,1,0,,494
+11,0,495,PER003,Packaging Roll 18 inch (Kgs),kg,75,1,0,,495
+11,0,496,PER004,Packaging Roll 22 inch (Kgs),kg,75,1,0,,496
+11,0,497,PER005,Packaging Roll 24 inch (Kgs),kg,75,1,0,,497
+11,0,498,PER006,Packaging Roll 25 inch (Kgs),kg,75,1,0,,498
+11,0,499,PER007,Packaging Roll 27 inch (Kgs),kg,75,1,0,,499
+11,0,500,PER008,Packaging Roll 34 inch (Kgs),kg,75,1,0,,500
+11,0,501,PER009,Packaging Roll 36 inch (Kgs),kg,75,1,0,,501
+11,0,502,PER010,Packaging Roll 40 inch (Kgs),kg,75,1,0,,502
+11,0,503,PER011,Packaging Roll 16 inch (Kgs),kg,75,1,0,,503
+11,0,504,PER012,Packaging Roll 11 inch (Kgs),kg,75,1,0,,504
+11,0,505,PER013,Packaging Roll 39 inch (Kgs),kg,75,1,0,,505
+11,0,506,PER014,Packaging Roll 20 inch (Kgs),kg,75,1,0,,506
+11,0,507,PER015,Packaging Roll 40 inch Blue (Kgs),kg,75,1,0,,507
+12,0,508,RBR001,PB- '0012 5 inch 001,kg,75,1,0,,508
+12,0,509,RBR002,PB- '0012 8 inch 001,kg,75,1,0,,509
+12,0,510,RBR003,PB- '0012 10 inch 001,kg,75,1,0,,510
+12,0,511,RBR004,PB- '0012 12 inch 001,kg,75,1,0,,511
+12,0,512,RBR005,PB- '0012 16 inch 001,kg,75,1,0,,512
+12,0,513,RBR006,PB- '0012 20 inch 001,kg,75,1,0,,513
+12,0,514,RBR007,PB- '0012 5 inch 002,kg,75,1,0,,514
+12,0,515,RBR008,PB- '0012 8 inch 002,kg,75,1,0,,515
+12,0,516,RBR009,PB- '0012 10 inch 002,kg,75,1,0,,516
+12,0,517,RBR010,PB- '0012 12 inch 002,kg,75,1,0,,517
+12,0,518,RBR011,PB- '0012 16 inch 002,kg,75,1,0,,518
+12,0,519,RBR012,PB- '0012 20 inch 002,kg,75,1,0,,519
+13,0,520,VR001,0013 Mini Transparent,kg,75,1,0,,520
+13,0,521,VR003,0013 Mini White,kg,75,1,0,,521
+13,0,522,VR004,0013 Mini Blue,kg,75,1,0,,522
+13,0,523,VR005,0013 Mini Orange,kg,75,1,0,,523
+13,0,524,VR006,0013 Mini Red,kg,75,1,0,,524
+13,0,525,VR007,0013 Mini Yellow,kg,75,1,0,,525
+13,0,526,VR008,0013 Mini Green,kg,75,1,0,,526
+13,0,527,VR009,0013 Tiny Transparent,kg,75,1,0,,527
+13,0,528,VR011,0013 Tiny White,kg,75,1,0,,528
+13,0,529,VR012,0013 Tiny Blue,kg,75,1,0,,529
+13,0,530,VR013,0013 Tiny Orange,kg,75,1,0,,530
+13,0,531,VR014,0013 Tiny Red,kg,75,1,0,,531
+13,0,532,VR015,0013 Tiny Yellow,kg,75,1,0,,532
+13,0,533,VR016,0013 Tiny Green,kg,75,1,0,,533
+13,0,534,VR017,0013 Medium Transparent,kg,75,1,0,,534
+13,0,535,VR019,0013 Medium White,kg,75,1,0,,535
+13,0,536,VR020,0013 Medium Blue,kg,75,1,0,,536
+13,0,537,VR021,0013 Medium Orange,kg,75,1,0,,537
+13,0,538,VR022,0013 Medium Red,kg,75,1,0,,538
+13,0,539,VR023,0013 Medium Yellow,kg,75,1,0,,539
+13,0,540,VR024,0013 Medium Green,kg,75,1,0,,540
+13,0,541,VR025,0013 Large Transparent,kg,75,1,0,,541
+13,0,542,VR027,0013 Large White,kg,75,1,0,,542
+13,0,543,VR028,0013 Large Blue,kg,75,1,0,,543
+13,0,544,VR029,0013 Large Orange,kg,75,1,0,,544
+13,0,545,VR030,0013 Large Red,kg,75,1,0,,545
+13,0,546,VR031,0013 Large Yellow,kg,75,1,0,,546
+13,0,547,VR032,0013 Large Green,kg,75,1,0,,547
+13,0,548,VR033,0013 XL Transparent,kg,75,1,0,,548
+13,0,549,VR035,0013 XL White,kg,75,1,0,,549
+13,0,550,VR036,0013 XL Blue,kg,75,1,0,,550
+13,0,551,VR037,0013 XL Orange,kg,75,1,0,,551
+13,0,552,VR038,0013 XL Red,kg,75,1,0,,552
+13,0,553,VR039,0013 XL Yellow,kg,75,1,0,,553
+13,0,554,VR040,0013 XL Green,kg,75,1,0,,554
+14,0,555,SVR01,0014 Mini Transparent,kg,75,1,0,,555
+14,0,556,SVR03,0014 Mini White,kg,75,1,0,,556
+14,0,557,SVR04,0014 Mini Blue,kg,75,1,0,,557
+14,0,558,SVR05,0014 Mini Orange,kg,75,1,0,,558
+14,0,559,SVR06,0014 Mini Red,kg,75,1,0,,559
+14,0,560,SVR07,0014 Mini Yellow,kg,75,1,0,,560
+14,0,561,SVR08,0014 Mini Green,kg,75,1,0,,561
+14,0,562,SVR09,0014 Tiny Transparent,kg,75,1,0,,562
+14,0,563,SVR11,0014 Tiny White,kg,75,1,0,,563
+14,0,564,SVR12,0014 Tiny Blue,kg,75,1,0,,564
+14,0,565,SVR13,0014 Tiny Orange,kg,75,1,0,,565
+14,0,566,SVR14,0014 Tiny Red,kg,75,1,0,,566
+14,0,567,SVR15,0014 Tiny Yellow,kg,75,1,0,,567
+14,0,568,SVR16,0014 Tiny Green,kg,75,1,0,,568
+14,0,569,SVR17,0014 Medium Transparent,kg,75,1,0,,569
+14,0,570,SVR19,0014 Medium White (Kgs),kg,75,1,0,,570
+14,0,571,SVR20,0014 Medium Blue (Kgs),kg,75,1,0,,571
+14,0,572,SVR21,0014 Medium Orange (Kgs),kg,75,1,0,,572
+14,0,573,SVR22,0014 Medium Red (Kgs),kg,75,1,0,,573
+14,0,574,SVR23,0014 Medium Yellow (Kgs),kg,75,1,0,,574
+14,0,575,SVR24,0014 Medium Green (Kgs),kg,75,1,0,,575
+14,0,576,SVR25,0014 Large Transparent (Kgs),kg,75,1,0,,576
+14,0,577,SVR27,0014 Large White (Kgs),kg,75,1,0,,577
+14,0,578,SVR28,0014 Large Blue (Kgs),kg,75,1,0,,578
+14,0,579,SVR29,0014 Large Orange (Kgs),kg,75,1,0,,579
+14,0,580,SVR30,0014 Large Red (Kgs),kg,75,1,0,,580
+14,0,581,SVR31,0014 Large Yellow (Kgs),kg,75,1,0,,581
+14,0,582,SVR32,0014 Large Green (Kgs),kg,75,1,0,,582
+14,0,583,SVR36,0014 XL Blue (Kgs),kg,75,1,0,,583
+15,0,584,RR001-01,0015 B Mini Black (Kgs),kg,45,1,0,,584
+15,0,585,RR001-02,0015 B Mini White (Kgs),kg,45,1,0,,585
+15,0,586,RR001-03,0015 B Mini Blue (Kgs),kg,45,1,0,,586
+15,0,587,RR001-04,0015 B Mini Red (Kgs),kg,45,1,0,,587
+15,0,588,RR001-05,0015 B Mini Yellow (Kgs),kg,45,1,0,,588
+15,0,589,RR001-06,0015 B Mini Green (Kgs),kg,45,1,0,,589
+15,0,590,RR001-07,0015 B Mini Orange (Kgs),kg,45,1,0,,590
+15,0,591,RR001-08,0015 B Tiny Black (Kgs),kg,45,1,0,,591
+15,0,592,RR001-09,0015 B Tiny White (Kgs),kg,45,1,0,,592
+15,0,593,RR001-10,0015 B Tiny Blue (Kgs),kg,45,1,0,,593
+15,0,594,RR001-11,0015 B Tiny Red (Kgs),kg,45,1,0,,594
+15,0,595,RR001-12,0015 B Tiny Yellow (Kgs),kg,45,1,0,,595
+15,0,596,RR001-13,0015 B Tiny Green (Kgs),kg,45,1,0,,596
+15,0,597,RR001-14,0015 B Tiny Orange (Kgs),kg,45,1,0,,597
+15,0,598,RR001-15,0015 B Medium Black (Kgs),kg,45,1,0,,598
+15,0,599,RR001-16,0015 B Medium White (Kgs),kg,45,1,0,,599
+15,0,600,RR001-17,0015 B Medium Blue (Kgs),kg,45,1,0,,600
+15,0,601,RR001-18,0015 B Medium Red (Kgs),kg,45,1,0,,601
+15,0,602,RR001-19,0015 B Medium Yellow (Kgs),kg,45,1,0,,602
+15,0,603,RR001-20,0015 B Medium Green (Kgs),kg,45,1,0,,603
+15,0,604,RR001-21,0015 B Medium Orange (Kgs),kg,45,1,0,,604
+15,0,605,RR001-22,0015 B Large Black (Kgs),kg,45,1,0,,605
+15,0,606,RR001-23,0015 B Large White (Kgs),kg,45,1,0,,606
+15,0,607,RR001-24,0015 B Large Blue (Kgs),kg,45,1,0,,607
+15,0,608,RR001-25,0015 B Large Red (Kgs),kg,45,1,0,,608
+15,0,609,RR001-26,0015 B Large Yellow (Kgs),kg,45,1,0,,609
+15,0,610,RR001-27,0015 B Large Green (Kgs),kg,45,1,0,,610
+15,0,611,RR001-28,0015 B Large Orange (Kgs),kg,45,1,0,,611
+15,0,612,RR002-02,0015 C Mini White (Kgs),kg,45,1,0,,612
+15,0,613,RR002-03,0015 C Mini Blue (Kgs),kg,45,1,0,,613
+15,0,614,RR002-04,0015 C Mini Red (Kgs),kg,45,1,0,,614
+15,0,615,RR002-05,0015 C Mini Yellow (Kgs),kg,45,1,0,,615
+15,0,616,RR002-06,0015 C Mini Green (Kgs),kg,45,1,0,,616
+15,0,617,RR002-07,0015 C Mini Orange (Kgs),kg,45,1,0,,617
+15,0,618,RR002-09,0015 C Tiny White (Kgs),kg,45,1,0,,618
+15,0,619,RR002-10,0015 C Tiny Blue (Kgs),kg,45,1,0,,619
+15,0,620,RR002-11,0015 C Tiny Red (Kgs),kg,45,1,0,,620
+15,0,621,RR002-12,0015 C Tiny Yellow (Kgs),kg,45,1,0,,621
+15,0,622,RR002-13,0015 C Tiny Green (Kgs),kg,45,1,0,,622
+15,0,623,RR002-14,0015 C Tiny Orange (Kgs),kg,45,1,0,,623
+15,0,624,RR002-16,0015 C Medium White (Kgs),kg,45,1,0,,624
+15,0,625,RR002-17,0015 C Medium Blue (Kgs),kg,45,1,0,,625
+15,0,626,RR002-18,0015 C Medium Red (Kgs),kg,45,1,0,,626
+15,0,627,RR002-19,0015 C Medium Yellow (Kgs),kg,45,1,0,,627
+15,0,628,RR002-20,0015 C Medium Green (Kgs),kg,45,1,0,,628
+15,0,629,RR002-21,0015 C Medium Orange (Kgs),kg,45,1,0,,629
+15,0,630,RR002-23,0015 C Large White (Kgs),kg,45,1,0,,630
+15,0,631,RR002-24,0015 C Large Blue (Kgs),kg,45,1,0,,631
+15,0,632,RR002-25,0015 C Large Red (Kgs),kg,45,1,0,,632
+15,0,633,RR002-26,0015 C Large Yellow (Kgs),kg,45,1,0,,633
+15,0,634,RR002-27,0015 C Large Green (Kgs),kg,45,1,0,,634
+15,0,635,RR002-28,0015 C Large Orange (Kgs),kg,0,1,0,,635
+15,0,636,RR002-30,0015 C XLarge White (Kgs),kg,45,1,0,,636
+15,0,637,RR002-31,0015 C XLarge Blue (Kgs),kg,45,1,0,,637
+15,0,638,RR002-32,0015 C XLarge Red (Kgs),kg,45,1,0,,638
+15,0,639,RR002-33,0015 C XLarge Yellow (Kgs),kg,45,1,0,,639
+15,0,640,RR002-34,0015 C XLarge Green (Kgs),kg,45,1,0,,640
+15,0,641,RR003-03,0015 D Mini White (Kgs),kg,45,1,0,,641
+15,0,642,RR003-04,0015 D Mini Blue (Kgs),kg,45,1,0,,642
+15,0,643,RR003-05,0015 D Mini Red (Kgs),kg,45,1,0,,643
+15,0,644,RR003-06,0015 D Mini Yellow (Kgs),kg,45,1,0,,644
+15,0,645,RR003-07,0015 D Mini Green (Kgs),kg,45,1,0,,645
+15,0,646,RR003-08,0015 D Mini Orange (Kgs),kg,45,1,0,,646
+15,0,647,RR003-11,0015 D Tiny White (Kgs),kg,45,1,0,,647
+15,0,648,RR003-12,0015 D Tiny Blue (Kgs),kg,45,1,0,,648
+15,0,649,RR003-13,0015 D Tiny Red (Kgs),kg,45,1,0,,649
+15,0,650,RR003-14,0015 D Tiny Yellow (Kgs),kg,45,1,0,,650
+15,0,651,RR003-15,0015 D Tiny Green (Kgs),kg,45,1,0,,651
+15,0,652,RR003-16,0015 D Tiny Orange (Kgs),kg,45,1,0,,652
+15,0,653,RR003-19,0015 D Medium White (Kgs),kg,45,1,0,,653
+15,0,654,RR003-20,0015 D Medium Blue (Kgs),kg,45,1,0,,654
+15,0,655,RR003-21,0015 D Medium Red (Kgs),kg,45,1,0,,655
+15,0,656,RR003-22,0015 D Medium Yellow (Kgs),kg,45,1,0,,656
+15,0,657,RR003-23,0015 D Medium Green (Kgs),kg,45,1,0,,657
+15,0,658,RR003-24,0015 D Medium Orange (Kgs),kg,45,1,0,,658
+15,0,659,RR003-27,0015 D Large White (Kgs),kg,45,1,0,,659
+15,0,660,RR003-28,0015 D Large Blue (Kgs),kg,45,1,0,,660
+15,0,661,RR003-29,0015 D Large Red (Kgs),kg,45,1,0,,661
+15,0,662,RR003-30,0015 D Large Yellow (Kgs),kg,45,1,0,,662
+15,0,663,RR003-31,0015 D Large Green (Kgs),kg,45,1,0,,663
+15,0,664,RR004-01,0015 E Mini Black (Kgs),kg,45,1,0,,664
+15,0,665,RR004-07,0015 E Tiny Black (Kgs),kg,45,1,0,,665
+15,0,666,RR004-13,0015 E Medium Black (Kgs),kg,45,1,0,,666
+15,0,667,RR004-19,0015 E Large Black (Kgs),kg,45,1,0,,667

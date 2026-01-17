@@ -1,0 +1,808 @@
+categorycode,purchaseitem,isactive,itemcode,itemid,pdesc,meas1,eqnum,meas2,ucost,reorder,remarks,onhand,id
+0001,1,1,,P00001,"15Kw 20Hp Hydraulic Pump Inverter, 3P 50Hz 60Hz 220V",pcs,1.00,pcs,0.00,0.00,,0,1
+0001,1,1,,P00002,"30Kw 40Hp Electric Motor Inverter, 3P 50Hz 60Hz 220V",pcs,1.00,pcs,0.00,0.00,,0,2
+0001,1,1,,P00003,"Air Cylinder, Double Acting, SC50X125",pcs,1.00,pcs,0.00,0.00,,0,3
+0001,1,1,,P00004,"Air Filter Regulator, Saw100",pcs,1.00,pcs,0.00,0.00,,0,4
+0001,1,1,,P00005,Allen Bolt 12X75,pcs,1.00,pcs,0.00,0.00,,0,5
+0001,1,1,,P00006,Allen Bolt 16X75,pcs,1.00,pcs,0.00,0.00,,0,6
+0001,1,1,,P00007,Allen Bolt 16X120,pcs,1.00,pcs,0.00,0.00,,0,7
+0001,1,1,,P00008,Allen Bolt 60X80,pcs,1.00,pcs,0.00,0.00,,0,8
+0001,1,1,,P00009,Allen Bolt 20X160,pcs,1.00,pcs,0.00,0.00,,0,9
+0001,1,1,,P00010,Allen Bolt 30X90,pcs,1.00,pcs,0.00,0.00,,0,10
+0001,1,1,,P00011,"Analog Pressure Switch, Liyou 0225MPA 380V",pcs,1.00,pcs,0.00,0.00,,0,11
+0001,1,1,,P00012,Bearing NSK-6017,pcs,1.00,pcs,0.00,0.00,,0,12
+0001,1,1,,P00013,Bearing SKF-6017,pcs,1.00,pcs,0.00,0.00,,0,13
+0001,1,1,,P00014,Belt C125 Bando,pcs,1.00,pcs,0.00,0.00,,0,14
+0001,1,1,,P00015,Belt C126,pcs,1.00,pcs,0.00,0.00,,0,15
+0001,1,1,,P00016,"Bladder Accumulator, NS GB/T20663",pcs,1.00,pcs,0.00,0.00,,0,16
+0001,1,1,,P00017,"Blower Fan, CZR-50Mm",pcs,1.00,pcs,0.00,0.00,,0,17
+0001,1,1,,P00018,Buffer Ring 1155X100X6.3,pcs,1.00,pcs,0.00,0.00,,0,18
+0001,1,1,,P00019,Circlip 24.2X0X1.2,pcs,1.00,pcs,0.00,0.00,,0,19
+0001,1,1,,P00020,"Circuit Breaker, 175Amp, 3 Poles Bolt-On Type",pcs,1.00,pcs,0.00,0.00,,0,20
+0001,1,1,,P00021,"Circuit Breaker, 175Amp, 3 Poles Plug-In Type",pcs,1.00,pcs,0.00,0.00,,0,21
+0001,1,1,,P00022,"Digital Pressure Switch, MD-S9282-4",pcs,1.00,pcs,0.00,0.00,,0,22
+0001,1,1,,P00023,"Electric Motor, Gear Box, 3Okw, 40Hp, 220V, 3P- 60Hz-1180Rpm",pcs,1.00,pcs,0.00,0.00,,0,23
+0001,1,1,,P00024,"Electro Hydraulic Servo Valve, QDY6",pcs,1.00,pcs,0.00,0.00,,0,24
+0001,1,1,,P00025,"Gate Valve, 1/2""",pcs,1.00,pcs,0.00,0.00,,0,25
+0001,1,1,,P00026,Gefran Sensor Model:LT-M-02005-XL02020,pcs,1.00,pcs,0.00,0.00,,0,26
+0001,1,1,,P00027,Gefran Sensor Model:PY-2-F-025-SO1M-Xl0202,pcs,1.00,pcs,0.00,0.00,,0,27
+0001,1,1,,P00028,"Heater 150X85, 220V 1000W",pcs,1.00,pcs,0.00,0.00,,0,28
+0001,1,1,,P00029,"Heater 235X90, 220V 1500W Mica",pcs,1.00,pcs,0.00,0.00,,0,29
+0001,1,1,,P00030,"Heater 248X100, 220V 1800W",pcs,1.00,pcs,0.00,0.00,,0,30
+0001,1,1,,P00031,"Heater 320X100, 220V 2000W Ceramic",pcs,1.00,pcs,0.00,0.00,,0,31
+0001,1,1,,P00032,"Heater 320X165, 220V 3300W Ceramic",pcs,1.00,pcs,0.00,0.00,,0,32
+0001,1,1,,P00033,"Heater 320X80,  220V 2000W Ceramic",pcs,1.00,pcs,0.00,0.00,,0,33
+0001,1,1,,P00034,"Heater 338X75, 220V 1800W Mica",pcs,1.00,pcs,0.00,0.00,,0,34
+0001,1,1,,P00035,"Hex Bolt, 16X75",pcs,1.00,pcs,0.00,0.00,,0,35
+0001,1,1,,P00036,"Inverter, S/N GD200A-018G/022P-4",pcs,1.00,pcs,0.00,0.00,,0,36
+0001,1,1,,P00037,"Light Curtain, Sensor, 30Lc0475-NE18S",pcs,1.00,pcs,0.00,0.00,,0,37
+0001,1,1,,P00038,"Light Curtain, Sensor, 30Lc0475-NR18S",pcs,1.00,pcs,0.00,0.00,,0,38
+0001,1,1,,P00039,"Limit Switch, Roller Lever, Omron D4V-8104Z",pcs,1.00,pcs,0.00,0.00,,0,39
+0001,1,1,,P00040,"Magic Eye, Photo Electric Switch E3JK-Ds30M1",pcs,1.00,pcs,0.00,0.00,,0,40
+0001,1,1,,P00041,"Miniature Circuit Breaker, 25Amp, 2 Poles Plug-In Type",pcs,1.00,pcs,0.00,0.00,,0,41
+0001,1,1,,P00042,"Mininiature Circuit Breaker, 32Amp, 3 Poles DIN Rail",pcs,1.00,pcs,0.00,0.00,,0,42
+0001,1,1,,P00043,Monoseal 20X15X3,pcs,1.00,pcs,0.00,0.00,,0,43
+0001,1,1,,P00044,Monoseal 24/26X14X10.5 NBR+P A6 FAB Eu/K51,pcs,1.00,pcs,0.00,0.00,,0,44
+0001,1,1,,P00045,Monoseal 35X25X5 PU Hallite IDI/ISI,pcs,1.00,pcs,0.00,0.00,,0,45
+0001,1,1,,P00046,Monoseal 80X70X6,pcs,1.00,pcs,0.00,0.00,,0,46
+0001,1,1,,P00047,Monoseal 90X80X6,pcs,1.00,pcs,0.00,0.00,,0,47
+0001,1,1,,P00048,Oil Seal 45X25X11,pcs,1.00,pcs,0.00,0.00,,0,48
+0001,1,1,,P00049,Oil Seal Tc 110X85X12,pcs,1.00,pcs,0.00,0.00,,0,49
+0001,1,1,,P00050,Oring 2.62X17.86,pcs,1.00,pcs,0.00,0.00,,0,50
+0001,1,1,,P00051,Oring 3X13,pcs,1.00,pcs,0.00,0.00,,0,51
+0001,1,1,,P00052,Oring 3X85,pcs,1.00,pcs,0.00,0.00,,0,52
+0001,1,1,,P00053,Oring 40X34X3Mm,pcs,1.00,pcs,0.00,0.00,,0,53
+0001,1,1,,P00054,Oring 4X93,pcs,1.00,pcs,0.00,0.00,,0,54
+0001,1,1,,P00055,Oring 5.33X101.6,pcs,1.00,pcs,0.00,0.00,,0,55
+0001,1,1,,P00056,Oring 5.33X111.13,pcs,1.00,pcs,0.00,0.00,,0,56
+0001,1,1,,P00057,Oring 5X205,pcs,1.00,pcs,0.00,0.00,,0,57
+0001,1,1,,P00058,Oring 5X205 NBR70 GAPI-ITA,pcs,1.00,pcs,0.00,0.00,,0,58
+0001,1,1,,P00059,"Output Relay, 17D198086",pcs,1.00,pcs,0.00,0.00,,0,59
+0001,1,1,,P00060,"Photo Electric Sensor, BEN300-DDT",pcs,1.00,pcs,0.00,0.00,,0,60
+0001,1,1,,P00061,"Proximity Switch, PSE 17-5DN",pcs,1.00,pcs,0.00,0.00,,0,61
+0001,1,1,,P00062,"Pump Motor, Hydraulic,  Secondary, 2.2Kw, 3Hp, 220V, 3P-4Poles- 60Hz-1430/1725Rpm",pcs,1.00,pcs,0.00,0.00,,0,62
+0001,1,1,,P00063,"Pump Motor, Hydraulic, Main,  15Kw, 20Hp, 220V, 3P- 60Hz-1760Rpm",pcs,1.00,pcs,0.00,0.00,,0,63
+0001,1,1,,P00064,"Pump Motor, Hydraulic, Wall Thickness, 3.75Kw, 5Hp, 220/380V, 3P-50/60Hz-1430/1730Rpm",pcs,1.00,pcs,0.00,0.00,,0,64
+0001,1,1,,P00065,Push Button Switch,pcs,1.00,pcs,0.00,0.00,,0,65
+0001,1,1,,P00066,"Push In Fittings, SPC 10-02",pcs,1.00,pcs,0.00,0.00,,0,66
+0001,1,1,,P00067,"Push In Fittings, SPC 12-01",pcs,1.00,pcs,0.00,0.00,,0,67
+0001,1,1,,P00068,"Push In Fittings, SPL 10-01",pcs,1.00,pcs,0.00,0.00,,0,68
+0001,1,1,,P00069,"Push In Fittings, TEE 12",pcs,1.00,pcs,0.00,0.00,,0,69
+0001,1,1,,P00070,"Schneider Electric Contactor, LC1 E09 10",pcs,1.00,pcs,0.00,0.00,,0,70
+0001,1,1,,P00071,"Solenoid Valve, NP13-25A-12C-3",pcs,1.00,pcs,0.00,0.00,,0,71
+0001,1,1,,P00072,"Solenoid Valve, SVK 1220 ",pcs,1.00,pcs,0.00,0.00,,0,72
+0001,1,1,,P00073,"Solenoid Valve, VP342 -5GD1-02A",pcs,1.00,pcs,0.00,0.00,,0,73
+0001,1,1,,P00074,"Solid State Relay, SSR-40DA",pcs,1.00,pcs,0.00,0.00,,0,74
+0001,1,1,,P00075,"Solid State Relay, SSR-80DA",pcs,1.00,pcs,0.00,0.00,,0,75
+0001,1,1,,P00076,Wiferflex 110X100X6/8 PU Hallite DH,pcs,1.00,pcs,0.00,0.00,,0,76
+0001,1,1,,P00077,Wiferflex 153X140X7/9.5,pcs,1.00,pcs,0.00,0.00,,0,77
+0001,1,1,,P00078,Wiferflex 153X140X7/9.5,pcs,1.00,pcs,0.00,0.00,,0,78
+0001,1,1,,P00079,Wiferflex 153X140X7/9.5 NBR FAB LBH,pcs,1.00,pcs,0.00,0.00,,0,79
+0001,1,1,,P00080,Wiferflex 90X80X6/8,pcs,1.00,pcs,0.00,0.00,,0,80
+0002,1,1,,P00081,2P40A Switch (Miniature Breaker) DZ47-63 C40,pcs,1.00,pcs,0.00,0.00,,0,81
+0002,1,1,,P00082,2P6A Switch (Miniature Breaker) DZ47-63 C10,pcs,1.00,pcs,0.00,0.00,,0,82
+0002,1,1,,P00083,2P6A Switch (Miniature Breaker) DZ47-63 C6,pcs,1.00,pcs,0.00,0.00,,0,83
+0002,1,1,,P00084,Air Cylinder 100X150,pcs,1.00,pcs,0.00,0.00,,0,84
+0002,1,1,,P00085,Air Cylinder 25X25,pcs,1.00,pcs,0.00,0.00,,0,85
+0002,1,1,,P00086,Air Cylinder 32X150,pcs,1.00,pcs,0.00,0.00,,0,86
+0002,1,1,,P00087,Air Cylinder 32X25 ,pcs,1.00,pcs,0.00,0.00,,0,87
+0002,1,1,,P00088,Air Cylinder 63X600,pcs,1.00,pcs,0.00,0.00,,0,88
+0002,1,1,,P00089,Air Cylinder 8DAU32125,pcs,1.00,pcs,0.00,0.00,,0,89
+0002,1,1,,P00090,Air Cylinder 8DAU32150,pcs,1.00,pcs,0.00,0.00,,0,90
+0002,1,1,,P00091,Air Cylinder 8DAU32175 ,pcs,1.00,pcs,0.00,0.00,,0,91
+0002,1,1,,P00092,Air Cylinder 8FDA2525X,pcs,1.00,pcs,0.00,0.00,,0,92
+0002,1,1,,P00093,Air Cylinder JD5030S,pcs,1.00,pcs,0.00,0.00,,0,93
+0002,1,1,,P00094,Air Cylinder SC ZGXCL 40X30 ,pcs,1.00,pcs,0.00,0.00,,0,94
+0002,1,1,,P00095,Air Cylinder SC32X150,pcs,1.00,pcs,0.00,0.00,,0,95
+0002,1,1,,P00096,Air Cylinder SDA 20X30,pcs,1.00,pcs,0.00,0.00,,0,96
+0002,1,1,,P00097,Air Cylinder SDA 32X20,pcs,1.00,pcs,0.00,0.00,,0,97
+0002,1,1,,P00098,Air Cylinder TSDA 50X15-B,pcs,1.00,pcs,0.00,0.00,,0,98
+0002,1,1,,P00099,Air Filter Regulator AR2000-02,pcs,1.00,pcs,0.00,0.00,,0,99
+0002,1,1,,P00100,"Air Filter Regulator Lubricator Combination Cylinder, AW3000-03 and AL3000-03",pcs,1.00,pcs,0.00,0.00,,0,100
+0002,1,1,,P00101,Air Shaft Nozzle,pcs,1.00,pcs,0.00,0.00,,0,101
+0002,1,1,,P00102,Allen Bolt 10X80,pcs,1.00,pcs,0.00,0.00,,0,102
+0002,1,1,,P00103,Allen  Bolt 10X90,pcs,1.00,pcs,0.00,0.00,,0,103
+0002,1,1,,P00104,Allen  Bolt 6X20,pcs,1.00,pcs,0.00,0.00,,0,104
+0002,1,1,,P00105,Allen Bolt 18X75,pcs,1.00,pcs,0.00,0.00,,0,105
+0002,1,1,,P00106,Anti Static Device ,pcs,1.00,pcs,0.00,0.00,,0,106
+0002,1,1,,P00107,Anti Static Tube,pcs,1.00,pcs,0.00,0.00,,0,107
+0002,1,1,,P00108,Automatic Proximity Switch PSE 17-5DN,pcs,1.00,pcs,0.00,0.00,,0,108
+0002,1,1,,P00109,Bamboo Curtain 30Cm,pcs,1.00,pcs,0.00,0.00,,0,109
+0002,1,1,,P00110,Bamboo Curtain 42Cm,pcs,1.00,pcs,0.00,0.00,,0,110
+0002,1,1,,P00111,Bearing 1203,pcs,1.00,pcs,0.00,0.00,,0,111
+0002,1,1,,P00112,Bearing 1204,pcs,1.00,pcs,0.00,0.00,,0,112
+0002,1,1,,P00113,Bearing 1205,pcs,1.00,pcs,0.00,0.00,,0,113
+0002,1,1,,P00114,Bearing 6001,pcs,1.00,pcs,0.00,0.00,,0,114
+0002,1,1,,P00115,Bearing 6004,pcs,1.00,pcs,0.00,0.00,,0,115
+0002,1,1,,P00116,Bearing 6005,pcs,1.00,pcs,0.00,0.00,,0,116
+0002,1,1,,P00117,Bearing 6024,pcs,1.00,pcs,0.00,0.00,,0,117
+0002,1,1,,P00118,Bearing 6203,pcs,1.00,pcs,0.00,0.00,,0,118
+0002,1,1,,P00119,Bearing 6204,pcs,1.00,pcs,0.00,0.00,,0,119
+0002,1,1,,P00120,Bearing 6303,pcs,1.00,pcs,0.00,0.00,,0,120
+0002,1,1,,P00121,Bearing 6306,pcs,1.00,pcs,0.00,0.00,,0,121
+0002,1,1,,P00122,Bearing 6311,pcs,1.00,pcs,0.00,0.00,,0,122
+0002,1,1,,P00123,Bearing 6904,pcs,1.00,pcs,0.00,0.00,,0,123
+0002,1,1,,P00124,Bearing CSK-25,pcs,1.00,pcs,0.00,0.00,,0,124
+0002,1,1,,P00125,Bearing CSK-356218,pcs,1.00,pcs,0.00,0.00,,0,125
+0002,1,1,,P00126,Bearing NK-130,pcs,1.00,pcs,0.00,0.00,,0,126
+0002,1,1,,P00127,Belt 510L (Timing Belt Width: 25Mm),pcs,1.00,pcs,0.00,0.00,,0,127
+0002,1,1,,P00128,"Belt 8M-25-6500 ""White""",pcs,1.00,pcs,0.00,0.00,,0,128
+0002,1,1,,P00129,"Belt 8M-6500-30""White"" ",pcs,1.00,pcs,0.00,0.00,,0,129
+0002,1,1,,P00130,Belt A39 Bando,pcs,1.00,pcs,0.00,0.00,,0,130
+0002,1,1,,P00131,Belt A42 Bando,pcs,1.00,pcs,0.00,0.00,,0,131
+0002,1,1,,P00132,Belt A43 Bando,pcs,1.00,pcs,0.00,0.00,,0,132
+0002,1,1,,P00133,Belt A44 Bando,pcs,1.00,pcs,0.00,0.00,,0,133
+0002,1,1,,P00134,Belt A45 Bando,pcs,1.00,pcs,0.00,0.00,,0,134
+0002,1,1,,P00135,Belt A53 Bando,pcs,1.00,pcs,0.00,0.00,,0,135
+0002,1,1,,P00136,Belt B37 Bando,pcs,1.00,pcs,0.00,0.00,,0,136
+0002,1,1,,P00137,Belt B42 Bando,pcs,1.00,pcs,0.00,0.00,,0,137
+0002,1,1,,P00138,Belt B63 Bando,pcs,1.00,pcs,0.00,0.00,,0,138
+0002,1,1,,P00139,Belt B65 Bando,pcs,1.00,pcs,0.00,0.00,,0,139
+0002,1,1,,P00140,Belt C32 Bando,pcs,1.00,pcs,0.00,0.00,,0,140
+0002,1,1,,P00141,Belt HTD 1200-8M,pcs,1.00,pcs,0.00,0.00,,0,141
+0002,1,1,,P00142,Belt HTD1000-8M,pcs,1.00,pcs,0.00,0.00,,0,142
+0002,1,1,,P00143,Belt HTD1288-14M,pcs,1.00,pcs,0.00,0.00,,0,143
+0002,1,1,,P00144,Belt HTD592-8M,pcs,1.00,pcs,0.00,0.00,,0,144
+0002,1,1,,P00145,Belt HTD880-8M,pcs,1.00,pcs,0.00,0.00,,0,145
+0002,1,1,,P00146,Bi Welding TEE 6,pcs,1.00,pcs,0.00,0.00,,0,146
+0002,1,1,,P00147,"Black Aluminium Nylon Brush Strip 19""",pcs,1.00,pcs,0.00,0.00,,0,147
+0002,1,1,,P00148,Button  Switch KCD4 15/30A 250V,pcs,1.00,pcs,0.00,0.00,,0,148
+0002,1,1,,P00149,"Chopping Board, 22Cm Small",pcs,1.00,pcs,0.00,0.00,,0,149
+0002,1,1,,P00150,"Chopping Board,40Cm/405Mmx15Mm Big",pcs,1.00,pcs,0.00,0.00,,0,150
+0002,1,1,,P00151,Cold Cutter 6Cmx.73M,pcs,1.00,pcs,0.00,0.00,,0,151
+0002,1,1,,P00152,Computer Punching Panel ,pcs,1.00,pcs,0.00,0.00,,0,152
+0002,1,1,,P00153,Copper Billet,pcs,1.00,pcs,0.00,0.00,,0,153
+0002,1,1,,P00154,Cross Flow Fan,pcs,1.00,pcs,0.00,0.00,,0,154
+0002,1,1,,P00155,Cross Flow Fan Motor CYF-06043/220V/45W/0.3A,pcs,1.00,pcs,0.00,0.00,,0,155
+0002,1,1,,P00156,Cutter Main Rubber Roller 76Cm Green,pcs,1.00,pcs,0.00,0.00,,0,156
+0002,1,1,,P00157,Cylinder WWX-63-150-15E-3T,pcs,1.00,pcs,0.00,0.00,,0,157
+0002,1,1,,P00158,Die Cutter Large 170X170,pcs,1.00,pcs,0.00,0.00,,0,158
+0002,1,1,,P00159,Die Cutter Medium 170X170,pcs,1.00,pcs,0.00,0.00,,0,159
+0002,1,1,,P00160,Die Cutter Micro,pcs,1.00,pcs,0.00,0.00,,0,160
+0002,1,1,,P00161,Die Cutter Mini,pcs,1.00,pcs,0.00,0.00,,0,161
+0002,1,1,,P00162,Die Cutter Tiny,pcs,1.00,pcs,0.00,0.00,,0,162
+0002,1,1,,P00163,Die Cutter X-Large,pcs,1.00,pcs,0.00,0.00,,0,163
+0002,1,1,,P00164,DMSJ-20 Solid State Sensor 35.5Diameter,pcs,1.00,pcs,0.00,0.00,,0,164
+0002,1,1,,P00165,Emergency Stop Button,pcs,1.00,pcs,0.00,0.00,,0,165
+0002,1,1,,P00166,Excellence Electronic Speed Switch,pcs,1.00,pcs,0.00,0.00,,0,166
+0002,1,1,,P00167,Gear Motor Magnetic Powder Brake FZ50A-1,pcs,1.00,pcs,0.00,0.00,,0,167
+0002,1,1,,P00168,General Purpose Relay Idec RJIS CL-D24,pcs,1.00,pcs,0.00,0.00,,0,168
+0002,1,1,,P00169,General Purpose Relay JQV-13FL  Cygkcn,pcs,1.00,pcs,0.00,0.00,,0,169
+0002,1,1,,P00170,General Purpose Relay JQX-13F (D),pcs,1.00,pcs,0.00,0.00,,0,170
+0002,1,1,,P00171,General Purpose Relay JZX-22F (D)2Z,pcs,1.00,pcs,0.00,0.00,,0,171
+0002,1,1,,P00172,Hand Lever Valve  KMEPC 4Hv230-08,pcs,1.00,pcs,0.00,0.00,,0,172
+0002,1,1,,P00173,Heat Bend Spring Silver 15X60,pcs,1.00,pcs,0.00,0.00,,0,173
+0002,1,1,,P00174,Heat Bend Spring Yellow 20X30,pcs,1.00,pcs,0.00,0.00,,0,174
+0002,1,1,,P00175,Heat Bend Spring Yellow 20X70,pcs,1.00,pcs,0.00,0.00,,0,175
+0002,1,1,,P00176,Heat Bend Spring Yellow 25X80,pcs,1.00,pcs,0.00,0.00,,0,176
+0002,1,1,,P00177,Heat Spring Silver 20X80,pcs,1.00,pcs,0.00,0.00,,0,177
+0002,1,1,,P00178,Heater 1200X28 110V 1500W Rectangular,pcs,1.00,pcs,0.00,0.00,,0,178
+0002,1,1,,P00179,Heater 12X140 220V 350W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,179
+0002,1,1,,P00180,Heater 12X40 220V 150W  Cartridge ,pcs,1.00,pcs,0.00,0.00,,0,180
+0002,1,1,,P00181,Heater 12X615 220V 1200W  Cartridge,pcs,1.00,pcs,0.00,0.00,,0,181
+0002,1,1,,P00182,Heater 12X615 Gfq-600,pcs,1.00,pcs,0.00,0.00,,0,182
+0002,1,1,,P00183,Heater 15.8X435 220V 2400W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,183
+0002,1,1,,P00184,Heater 15.8X470 220V 2000W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,184
+0002,1,1,,P00185,Heater 15.8X500 220V 2400W Cartridge ,pcs,1.00,pcs,0.00,0.00,,0,185
+0002,1,1,,P00186,Heater 15.8X780 220V 3500W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,186
+0002,1,1,,P00187,Heater 220V 100W 17/11,pcs,1.00,pcs,0.00,0.00,,0,187
+0002,1,1,,P00188,Heater 420X30 110V 2100W Rectangular,pcs,1.00,pcs,0.00,0.00,,0,188
+0002,1,1,,P00189,Heater 430X20 110V 600W,pcs,1.00,pcs,0.00,0.00,,0,189
+0002,1,1,,P00190,Heater 8X50 220V 100W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,190
+0002,1,1,,P00191,Intelligent Speed Controller XC0972012,pcs,1.00,pcs,0.00,0.00,,0,191
+0002,1,1,,P00192,Inverter GD20-1R5G-S2 Power Output:1.5Kw,pcs,1.00,pcs,0.00,0.00,,0,192
+0002,1,1,,P00193,Magic Eye (Reed Switch) CMSG-020,pcs,1.00,pcs,0.00,0.00,,0,193
+0002,1,1,,P00194,Magic Eye (Sick Optex Sensor) Crd-300N,pcs,1.00,pcs,0.00,0.00,,0,194
+0002,1,1,,P00195,Maong For Cuter Weights,pcs,1.00,pcs,0.00,0.00,,0,195
+0002,1,1,,P00196,Nitoflon 0.08X13X10 Red,pcs,1.00,pcs,0.00,0.00,,0,196
+0002,1,1,,P00197,Nitoflon 0.13X13X10 Green,pcs,1.00,pcs,0.00,0.00,,0,197
+0002,1,1,,P00198,Photo Electric Sensor HP7-P11 Light On,pcs,1.00,pcs,0.00,0.00,,0,198
+0002,1,1,,P00199,Photoelectric Sensor  Ketai Z3J-DS-50E3,pcs,1.00,pcs,0.00,0.00,,0,199
+0002,1,1,,P00200,"Pneumatic Metal Connector, JSC 8-03",pcs,1.00,pcs,0.00,0.00,,0,200
+0002,1,1,,P00201,Potentiometer 4.7K WXD3-13,pcs,1.00,pcs,0.00,0.00,,0,201
+0002,1,1,,P00202,Power Supply 24Volts,pcs,1.00,pcs,0.00,0.00,,0,202
+0002,1,1,,P00203,Power Supply 48 Volts,pcs,1.00,pcs,0.00,0.00,,0,203
+0002,1,1,,P00204,Proximity Sensor Pl*05N Red,pcs,1.00,pcs,0.00,0.00,,0,204
+0002,1,1,,P00205,Proximity Sensork M12-04N Red,pcs,1.00,pcs,0.00,0.00,,0,205
+0002,1,1,,P00206,Proximity Switch KL-05N,pcs,1.00,pcs,0.00,0.00,,0,206
+0002,1,1,,P00207,Push Button Green (Normally Open),pcs,1.00,pcs,0.00,0.00,,0,207
+0002,1,1,,P00208,Push Button Red (Normally Close),pcs,1.00,pcs,0.00,0.00,,0,208
+0002,1,1,,P00209,Push Button Yellow (Forward Reverse),pcs,1.00,pcs,0.00,0.00,,0,209
+0002,1,1,,P00210,Robotic Arm -0 3.5 Diameter,pcs,1.00,pcs,0.00,0.00,,0,210
+0002,1,1,,P00211,Rod Silver .60Mx13mm,pcs,1.00,pcs,0.00,0.00,,0,211
+0002,1,1,,P00212,Rod Silver 38Cmx13mm,pcs,1.00,pcs,0.00,0.00,,0,212
+0002,1,1,,P00213,Rubber For Robotic Arm,pcs,1.00,pcs,0.00,0.00,,0,213
+0002,1,1,,P00214,Rubber Guide -Oil,pcs,1.00,pcs,0.00,0.00,,0,214
+0002,1,1,,P00215,Rubber Roller 50Cm ,pcs,1.00,pcs,0.00,0.00,,0,215
+0002,1,1,,P00216,Sealing Bar 50Cmx7Cm,pcs,1.00,pcs,0.00,0.00,,0,216
+0002,1,1,,P00217,Sealing Bar 78Cmx7Cm,pcs,1.00,pcs,0.00,0.00,,0,217
+0002,1,1,,P00218,"Sealing Cutter Thin Blade/Perfiration Blade  L.39.7, W.3.0,Thickness:3mm",pcs,1.00,pcs,0.00,0.00,,0,218
+0002,1,1,,P00219,Sensor CS1Uo20,pcs,1.00,pcs,0.00,0.00,,0,219
+0002,1,1,,P00220,Sensor YK-500 2A 20Mm ,pcs,1.00,pcs,0.00,0.00,,0,220
+0002,1,1,,P00221,Servo Motor MS 1H1-75B30Cb 0.75Kw 220V 3000R/Min 2.39N.M 250Hz 4.8A Motor Code:14101 Sn:011108344N503253,pcs,1.00,pcs,0.00,0.00,,0,221
+0002,1,1,,P00222,Servo Motor SGD7S-200 A00 B202,pcs,1.00,pcs,0.00,0.00,,0,222
+0002,1,1,,P00223,Silicon Rubber,pcs,1.00,pcs,0.00,0.00,,0,223
+0002,1,1,,P00224,"Silicon Rubber /Squeeze Rubber 17""X45Mmx8mm",pcs,1.00,pcs,0.00,0.00,,0,224
+0002,1,1,,P00225,"Silicon Rubber 17"" Rollbag",pcs,1.00,pcs,0.00,0.00,,0,225
+0002,1,1,,P00226,Slide Bearing 30UU,pcs,1.00,pcs,0.00,0.00,,0,226
+0002,1,1,,P00227,Solenoid Valve 4V210-08,pcs,1.00,pcs,0.00,0.00,,0,227
+0002,1,1,,P00228,Solenoid Valve SW-6102,pcs,1.00,pcs,0.00,0.00,,0,228
+0002,1,1,,P00229,Solid State Module KSR 25DA,pcs,1.00,pcs,0.00,0.00,,0,229
+0002,1,1,,P00230,Solid State Module KSR-40 VA,pcs,1.00,pcs,0.00,0.00,,0,230
+0002,1,1,,P00231,Solid State Relay KSR-40 DAE,pcs,1.00,pcs,0.00,0.00,,0,231
+0002,1,1,,P00232,Solid State Relay SSR-25DA,pcs,1.00,pcs,0.00,0.00,,0,232
+0002,1,1,,P00233,Solid State Relay SSR-40,pcs,1.00,pcs,0.00,0.00,,0,233
+0002,1,1,,P00234,Solid State Relay SSR-40DA,pcs,1.00,pcs,0.00,0.00,,0,234
+0002,1,1,,P00235,Solid State Relay SSR-80DA,pcs,1.00,pcs,0.00,0.00,,0,235
+0002,1,1,,P00236,Solid State Relay SSVR XMD-R40A,pcs,1.00,pcs,0.00,0.00,,0,236
+0002,1,1,,P00237,Spc Fittings 6-02,pcs,1.00,pcs,0.00,0.00,,0,237
+0002,1,1,,P00238,Speed Control Motor 5GU-60-RGU-CF ,pcs,1.00,pcs,0.00,0.00,,0,238
+0002,1,1,,P00239,Speed Controller,pcs,1.00,pcs,0.00,0.00,,0,239
+0002,1,1,,P00240,Tamper Guide  Circle,pcs,1.00,pcs,0.00,0.00,,0,240
+0002,1,1,,P00241,Tamper Guide Rod,pcs,1.00,pcs,0.00,0.00,,0,241
+0002,1,1,,P00242,Teflon Cloth,pcs,1.00,pcs,0.00,0.00,,0,242
+0002,1,1,,P00243,Temperature Control 1912-6348 ETC-20-V,pcs,1.00,pcs,0.00,0.00,,0,243
+0002,1,1,,P00244,Temperature Controller 100-240 VAC,pcs,1.00,pcs,0.00,0.00,,0,244
+0002,1,1,,P00245,Temperature Controller ETC-20 SSR 30MA,pcs,1.00,pcs,0.00,0.00,,0,245
+0002,1,1,,P00246,Terminal Block 10P 20A 500V,pcs,1.00,pcs,0.00,0.00,,0,246
+0002,1,1,,P00247,Terminal Block 4P 25A 600V,pcs,1.00,pcs,0.00,0.00,,0,247
+0002,1,1,,P00248,Thermocouple 20CMK SS Insulation,pcs,1.00,pcs,0.00,0.00,,0,248
+0002,1,1,,P00249,Thermocouple 2MK WRN-02 Cloth Insulation,pcs,1.00,pcs,0.00,0.00,,0,249
+0002,1,1,,P00250,Thermocouple WRN-01 5000mm W/O Cloth Insulation,pcs,1.00,pcs,0.00,0.00,,0,250
+0002,1,1,,P00251,Thermocouple WRN-M6 4000mm W/O Cloth Insulation,pcs,1.00,pcs,0.00,0.00,,0,251
+0002,1,1,,P00252,Torque Motor/Speed Control Motor 5RK120Gn-SFM 10 5GU-120-K 120W 0.70A 1550R/min,pcs,1.00,pcs,0.00,0.00,,0,252
+0002,1,1,,P00253,Wood With Bearing Lme12UU,pcs,1.00,pcs,0.00,0.00,,0,253
+0003,1,1,,P00254,Bearing 6002,pcs,1.00,pcs,0.00,0.00,,0,254
+0003,1,1,,P00255,"Coupling 1/2"" GI HD",pcs,1.00,pcs,0.00,0.00,,0,255
+0003,1,1,,P00256,"Elbow 1/2""  GI HD Fittings",pcs,1.00,pcs,0.00,0.00,,0,256
+0003,1,1,,P00257,Filament Hallogen Heater Long,pcs,1.00,pcs,0.00,0.00,,0,257
+0003,1,1,,P00258,Filament Hallogen Heater Short,pcs,1.00,pcs,0.00,0.00,,0,258
+0003,1,1,,P00259,"FX3Sa-20MR-CM, Programmable Controller",pcs,1.00,pcs,0.00,0.00,,0,259
+0003,1,1,,P00260,Heater 14X515 220V 1400W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,260
+0003,1,1,,P00261,Hex Bolt 6X30,pcs,1.00,pcs,0.00,0.00,,0,261
+0003,1,1,,P00262,"Magic Eye, Photo Electric Switch E3JK-DS30M1",pcs,1.00,pcs,0.00,0.00,,0,262
+0003,1,1,,P00263,Oil Seal  TC 110X85X12,pcs,1.00,pcs,0.00,0.00,,0,263
+0003,1,1,,P00264,Oil Seal 25X15X8 THO-TT TC/TF,pcs,1.00,pcs,0.00,0.00,,0,264
+0003,1,1,,P00265,Oil Seal Wiper Metal 50X40X5,pcs,1.00,pcs,0.00,0.00,,0,265
+0003,1,1,,P00266,Oil Seal Wiper Metal 50X40X7/10,pcs,1.00,pcs,0.00,0.00,,0,266
+0003,1,1,,P00267,"Solenoid Valve,  VF5120K-5GD1-03",pcs,1.00,pcs,0.00,0.00,,0,267
+0003,1,1,,P00268,"Solenoid Valve, 4966K0Q120",pcs,1.00,pcs,0.00,0.00,,0,268
+0003,1,1,,P00269,"Push In Fittings, SPL 8-03",pcs,1.00,pcs,0.00,0.00,,0,269
+0004,1,1,,P00270,Bearing 6202,pcs,1.00,pcs,0.00,0.00,,0,270
+0004,1,1,,P00271,Bearing 6313,pcs,1.00,pcs,0.00,0.00,,0,271
+0004,1,1,,P00272,Bearing UCFl208-FYH,pcs,1.00,pcs,0.00,0.00,,0,272
+0004,1,1,,P00273,Belt B52,pcs,1.00,pcs,0.00,0.00,,0,273
+0004,1,1,,P00274,Belt B54 (Pix),pcs,1.00,pcs,0.00,0.00,,0,274
+0004,1,1,,P00275,Belt B70 Bando,pcs,1.00,pcs,0.00,0.00,,0,275
+0004,1,1,,P00276,Belt B71,pcs,1.00,pcs,0.00,0.00,,0,276
+0004,1,1,,P00277,Belt B73 Bando,pcs,1.00,pcs,0.00,0.00,,0,277
+0004,1,1,,P00278,Belt C71,pcs,1.00,pcs,0.00,0.00,,0,278
+0004,1,1,,P00279,Belt C85 Bando,pcs,1.00,pcs,0.00,0.00,,0,279
+0004,1,1,,P00280,Belt C97 Bando,pcs,1.00,pcs,0.00,0.00,,0,280
+0004,1,1,,P00281,"Belt, 1372 LI",pcs,1.00,pcs,0.00,0.00,,0,281
+0004,1,1,,P00282,"Elbow GI 1"" HD Fittings",pcs,1.00,pcs,0.00,0.00,,0,282
+0004,1,1,,P00283,"Gate Valve 1-1/2"" Brass",pcs,1.00,pcs,0.00,0.00,,0,283
+0004,1,1,,P00284,"Heater Ø134X120, 220V 1200W Mica ",pcs,1.00,pcs,0.00,0.00,,0,284
+0004,1,1,,P00285,"Heater Ø134X90, 220V 990W Mica",pcs,1.00,pcs,0.00,0.00,,0,285
+0004,1,1,,P00286,"Heater Ø135X100, 220V 1500W Ceramic",pcs,1.00,pcs,0.00,0.00,,0,286
+0004,1,1,,P00287,"Heater Ø135X100, 220V 1500W Mica",pcs,1.00,pcs,0.00,0.00,,0,287
+0004,1,1,,P00288,"Heater Ø135X135, 220V 1500W Ceramic",pcs,1.00,pcs,0.00,0.00,,0,288
+0004,1,1,,P00289,"Heater Ø135X135, 220V 1500W Mica",pcs,1.00,pcs,0.00,0.00,,0,289
+0004,1,1,,P00290,"Heater Ø135X80, 220V 1500W Ceramic",pcs,1.00,pcs,0.00,0.00,,0,290
+0004,1,1,,P00291,"Heater Ø135X80, 220V 1500W Mica",pcs,1.00,pcs,0.00,0.00,,0,291
+0004,1,1,,P00292,Heater Ø14X515 220V 1400W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,292
+0004,1,1,,P00293,Heater Ø17.5X100 220V 350W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,293
+0004,1,1,,P00294,Heater Ø17.5X140 220V 400W  Cartridge,pcs,1.00,pcs,0.00,0.00,,0,294
+0004,1,1,,P00295,Heater Ø17.5X150 220V 500W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,295
+0004,1,1,,P00296,Heater Ø17.5X150 220V 600W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,296
+0004,1,1,,P00297,Heater Ø17.5X180 220V 500W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,297
+0004,1,1,,P00298,Heater Ø17.5X80 220V 300W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,298
+0004,1,1,,P00299,Heater Ø180X120 220V 1800W Mica,pcs,1.00,pcs,0.00,0.00,,0,299
+0004,1,1,,P00300,"Heater Ø260X38, 220V 300W Mica (Rec/Flat)",pcs,1.00,pcs,0.00,0.00,,0,300
+0004,1,1,,P00301,Heater Ø340X110 220V 1300W Mica (Rec/Flat),pcs,1.00,pcs,0.00,0.00,,0,301
+0004,1,1,,P00302,"Heater Ø340X290, 220V/2100W Mica Square",pcs,1.00,pcs,0.00,0.00,,0,302
+0004,1,1,,P00303,"Heater Ø470X25, 220V 700W Ceramic Rectangular",pcs,1.00,pcs,0.00,0.00,,0,303
+0004,1,1,,P00304,Heater Ø490X135 2600W Ceramic,pcs,1.00,pcs,0.00,0.00,,0,304
+0004,1,1,,P00305,"Heater Ø495X130, 220V 2600W Ceramic",pcs,1.00,pcs,0.00,0.00,,0,305
+0004,1,1,,P00306,"Heater Ø557X120, 220V 2600W Ceramic",pcs,1.00,pcs,0.00,0.00,,0,306
+0004,1,1,,P00307,"Heater Ø82X110, 220V 1000W Mica",pcs,1.00,pcs,0.00,0.00,,0,307
+0004,1,1,,P00308,Hydraulic Hose 1/2X350cm,pcs,1.00,pcs,0.00,0.00,,0,308
+0004,1,1,,P00309,"Inverter, AC900-Key-1",pcs,1.00,pcs,0.00,0.00,,0,309
+0004,1,1,,P00310,"Inverter, GD200A-030G/037P-4",pcs,1.00,pcs,0.00,0.00,,0,310
+0004,1,1,,P00311,Magnet Hopper,pcs,1.00,pcs,0.00,0.00,,0,311
+0004,1,1,,P00312,Miniature Breaker 63A ,pcs,1.00,pcs,0.00,0.00,,0,312
+0004,1,1,,P00313,Oil Seal 105X130X12,pcs,1.00,pcs,0.00,0.00,,0,313
+0004,1,1,,P00314,Oil Seal 85X110X12,pcs,1.00,pcs,0.00,0.00,,0,314
+0004,1,1,,P00315,PVC Blue Elbow 63mm,pcs,1.00,pcs,0.00,0.00,,0,315
+0004,1,1,,P00316,PVC Coupling Connector 1-1/4,pcs,1.00,pcs,0.00,0.00,,0,316
+0004,1,1,,P00317,PVC Female Adapter 32mm,pcs,1.00,pcs,0.00,0.00,,0,317
+0004,1,1,,P00318,"Screw & Barrel, 82X98cm Dia (Pel 1)",pcs,1.00,pcs,0.00,0.00,,0,318
+0004,1,1,,P00319,"Screw & Barrel, 95mm X 2072mm (Pel 2)",pcs,1.00,pcs,0.00,0.00,,0,319
+0004,1,1,,P00320,Silicon Sealant  Joinsil 600,pcs,1.00,pcs,0.00,0.00,,0,320
+0004,1,1,,P00321,"Straight Elbow 1"" Gi Hd Fittings ",pcs,1.00,pcs,0.00,0.00,,0,321
+0004,1,1,,P00322,"Tee 1/2"" Gi Hd Fittings",pcs,1.00,pcs,0.00,0.00,,0,322
+0004,1,1,,P00323,"Temperature Meter Relay+(Almx1), Tce3-H Rit-2-6 ",pcs,1.00,pcs,0.00,0.00,,0,323
+0004,1,1,,P00324,Water Pump Rs 885,pcs,1.00,pcs,0.00,0.00,,0,324
+0005,1,1,,P00325,Air Blower 1.5Kw,pcs,1.00,pcs,0.00,0.00,,0,325
+0005,1,1,,P00326,Air Blower 2.2Kw ,pcs,1.00,pcs,0.00,0.00,,0,326
+0005,1,1,,P00327,Allen  Bolt 12X45,pcs,1.00,pcs,0.00,0.00,,0,327
+0005,1,1,,P00328,Allen  Bolt 16X55,pcs,1.00,pcs,0.00,0.00,,0,328
+0005,1,1,,P00329,Allen  Bolt 20X60,pcs,1.00,pcs,0.00,0.00,,0,329
+0005,1,1,,P00330,Allen Bolt 16X50,pcs,1.00,pcs,0.00,0.00,,0,330
+0005,1,1,,P00331,Allen Bolt 16X90,pcs,1.00,pcs,0.00,0.00,,0,331
+0005,1,1,,P00332,Bearing 6006,pcs,1.00,pcs,0.00,0.00,,0,332
+0005,1,1,,P00333,Bearing 6010,pcs,1.00,pcs,0.00,0.00,,0,333
+0005,1,1,,P00334,Bearing 6205,pcs,1.00,pcs,0.00,0.00,,0,334
+0005,1,1,,P00335,Bearing 6206,pcs,1.00,pcs,0.00,0.00,,0,335
+0005,1,1,,P00336,Bearing 6207,pcs,1.00,pcs,0.00,0.00,,0,336
+0005,1,1,,P00337,Bearing 6301,pcs,1.00,pcs,0.00,0.00,,0,337
+0005,1,1,,P00338,Bearing Ucf207-Fyh,pcs,1.00,pcs,0.00,0.00,,0,338
+0005,1,1,,P00339,Belt B90 Bando,pcs,1.00,pcs,0.00,0.00,,0,339
+0005,1,1,,P00340,Belt B94 Bando,pcs,1.00,pcs,0.00,0.00,,0,340
+0005,1,1,,P00341,Belt B95 Bando,pcs,1.00,pcs,0.00,0.00,,0,341
+0005,1,1,,P00342,Blower Motor Mdya-380  220V/380V 50Hz,pcs,1.00,pcs,0.00,0.00,,0,342
+0005,1,1,,P00343,Blowing Machine Automatic Ventilation Controller,pcs,1.00,pcs,0.00,0.00,,0,343
+0005,1,1,,P00344,Extruder Die Head 30.5Cmx15Cmx33Cm,pcs,1.00,pcs,0.00,0.00,,0,344
+0005,1,1,,P00345,Fan Motor Blower .25Kw,pcs,1.00,pcs,0.00,0.00,,0,345
+0005,1,1,,P00346,Heater 100X120 220V 350W Mica Rec/Flat,pcs,1.00,pcs,0.00,0.00,,0,346
+0005,1,1,,P00347,Heater 120X100 220V 2500W Mica Rec/Flat,pcs,1.00,pcs,0.00,0.00,,0,347
+0005,1,1,,P00348,Heater 150X125 220V 1400W Mica ,pcs,1.00,pcs,0.00,0.00,,0,348
+0005,1,1,,P00349,Heater 150X150 220V 1700W Mica ,pcs,1.00,pcs,0.00,0.00,,0,349
+0005,1,1,,P00350,Heater 150X76 220V 1000W Mica ,pcs,1.00,pcs,0.00,0.00,,0,350
+0005,1,1,,P00351,Heater 150X85 220V 1200W Mica ,pcs,1.00,pcs,0.00,0.00,,0,351
+0005,1,1,,P00352,Heater 180X120 220V 1800W,pcs,1.00,pcs,0.00,0.00,,0,352
+0005,1,1,,P00353,Heater 180X130 220V 1400W Mica Curved,pcs,1.00,pcs,0.00,0.00,,0,353
+0005,1,1,,P00354,Heater 200X90 220V 1600W Mica ,pcs,1.00,pcs,0.00,0.00,,0,354
+0005,1,1,,P00355,Heater 200X90 220V 1700W,pcs,1.00,pcs,0.00,0.00,,0,355
+0005,1,1,,P00356,Heater 220X150 Ac220V Mica Curved,pcs,1.00,pcs,0.00,0.00,,0,356
+0005,1,1,,P00357,Heater 225X90 220V 1800W,pcs,1.00,pcs,0.00,0.00,,0,357
+0005,1,1,,P00358,Heater 225X90 220V 1900W Mica ,pcs,1.00,pcs,0.00,0.00,,0,358
+0005,1,1,,P00359,Heater 280X80 220V 2000W Ceramic ,pcs,1.00,pcs,0.00,0.00,,0,359
+0005,1,1,,P00360,Heater 60X80 Ac220V  Mica ,pcs,1.00,pcs,0.00,0.00,,0,360
+0005,1,1,,P00361,Heater 60X90 Ac220V  Mica ,pcs,1.00,pcs,0.00,0.00,,0,361
+0005,1,1,,P00362,Heater 90X160 220V 1400W Mica ,pcs,1.00,pcs,0.00,0.00,,0,362
+0005,1,1,,P00363,Heater 95X100 Ac220V Mica ,pcs,1.00,pcs,0.00,0.00,,0,363
+0005,1,1,,P00364,Heater 95X150 Ac220V Mica ,pcs,1.00,pcs,0.00,0.00,,0,364
+0005,1,1,,P00365,Inverter En600-2T0015 Source 3Ph 220V 50/60Hz Output 1.5Kw 7A Sn:6527Ayob170,pcs,1.00,pcs,0.00,0.00,,0,365
+0005,1,1,,P00366,"Inverter, 200A-018G 022P-4",pcs,1.00,pcs,0.00,0.00,,0,366
+0005,1,1,,P00367,"Inverter, Gd200A-022G 030P-4 Po: 22Kw 30Kw",pcs,1.00,pcs,0.00,0.00,,0,367
+0005,1,1,,P00368,Magnet Hopper,pcs,1.00,pcs,0.00,0.00,,0,368
+0005,1,1,,P00369,Magnetic Contactor Cjx2-1810,pcs,1.00,pcs,0.00,0.00,,0,369
+0005,1,1,,P00370,Magnetic Contactor Cjx2-1810,pcs,1.00,pcs,0.00,0.00,,0,370
+0005,1,1,,P00371,Magnetic Contactor Sp21,pcs,1.00,pcs,0.00,0.00,,0,371
+0005,1,1,,P00372,Magnetic Contactor Sp21,pcs,1.00,pcs,0.00,0.00,,0,372
+0005,1,1,,P00373,Magnetic Contactor Sp40T,pcs,1.00,pcs,0.00,0.00,,0,373
+0005,1,1,,P00374,Magnetic Contactor S-P80T,pcs,1.00,pcs,0.00,0.00,,0,374
+0005,1,1,,P00375,Magnetic Contactor S-P80T,pcs,1.00,pcs,0.00,0.00,,0,375
+0005,1,1,,P00376,Magnetic Contractor 40Amps Sp40T,pcs,1.00,pcs,0.00,0.00,,0,376
+0005,1,1,,P00377,Main Motor 11Kw,pcs,1.00,pcs,0.00,0.00,,0,377
+0005,1,1,,P00378,Main Motor 15Kw,pcs,1.00,pcs,0.00,0.00,,0,378
+0005,1,1,,P00379,Panel Meter Al 48-30A,pcs,1.00,pcs,0.00,0.00,,0,379
+0005,1,1,,P00380,Panel Meter Sd-50/10A,pcs,1.00,pcs,0.00,0.00,,0,380
+0005,1,1,,P00381,Panel Meter Sd-50/15A,pcs,1.00,pcs,0.00,0.00,,0,381
+0005,1,1,,P00382,Panel Meter Sd-50/20A,pcs,1.00,pcs,0.00,0.00,,0,382
+0005,1,1,,P00383,Panel Meter Sd-50/30A,pcs,1.00,pcs,0.00,0.00,,0,383
+0005,1,1,,P00384,Panel Meter Sd-50/5A,pcs,1.00,pcs,0.00,0.00,,0,384
+0005,1,1,,P00385,Potentiometer (118 470K-2W),pcs,1.00,pcs,0.00,0.00,,0,385
+0005,1,1,,P00386,Proximeter Wth' 118 470K-2W,pcs,1.00,pcs,0.00,0.00,,0,386
+0005,1,1,,P00387,Roller Chain Rc 60-2R 10 Feet,pcs,1.00,pcs,0.00,0.00,,0,387
+0005,1,1,,P00388,Silicon Roller 37Cm,pcs,1.00,pcs,0.00,0.00,,0,388
+0005,1,1,,P00389,Solid State Module Ksr 25Da,pcs,1.00,pcs,0.00,0.00,,0,389
+0005,1,1,,P00390,Solid State Ssr-10Dd,pcs,1.00,pcs,0.00,0.00,,0,390
+0005,1,1,,P00391,"Push In Fittings, Spc 10-01",pcs,1.00,pcs,0.00,0.00,,0,391
+0005,1,1,,P00392,Take Up Motor 2.2 Kw,pcs,1.00,pcs,0.00,0.00,,0,392
+0005,1,1,,P00393,Temperature Controller Ngg 5411-1(1615) / Ngg-5000,pcs,1.00,pcs,0.00,0.00,,0,393
+0005,1,1,,P00394,Temperature Controller Xmte-34109(N),pcs,1.00,pcs,0.00,0.00,,0,394
+0005,1,1,,P00395,Temporary Controller Pn-821K-R,pcs,1.00,pcs,0.00,0.00,,0,395
+0005,1,1,,P00396,"Thermal Hose 2"" Black (Blower Black Hose) 50Mm/4M",pcs,1.00,pcs,0.00,0.00,,0,396
+0005,1,1,,P00397,Thermocouple Wrnt-01 (4000Mm) W/ Cloth,pcs,1.00,pcs,0.00,0.00,,0,397
+0005,1,1,,P00398,Thermocouple-Wrnt-01 3000Mm W/ Cloth,pcs,1.00,pcs,0.00,0.00,,0,398
+0005,1,1,,P00399,Thermocouple-Wrnt-01 3000Mm W/ Out Cloth,pcs,1.00,pcs,0.00,0.00,,0,399
+0005,1,1,,P00400,Thermocouple-Wrnt-01 4000Mm W/O Cloth,pcs,1.00,pcs,0.00,0.00,,0,400
+0005,1,1,,P00401,Thermocouple-Wrnt-01 5000Mm W/O Cloth,pcs,1.00,pcs,0.00,0.00,,0,401
+0005,1,1,,P00402,Thermocouple-Wrnt-01 500Mm W/O Cloth,pcs,1.00,pcs,0.00,0.00,,0,402
+0005,1,1,,P00403,Torque Motor Controller/Volt Panel Meter (Ytc-8A 220V),pcs,1.00,pcs,0.00,0.00,,0,403
+0005,1,1,,P00404,Winder Motor Y2Lj90-6 1.4A,pcs,1.00,pcs,0.00,0.00,,0,404
+0006,1,1,,P00405,Bearing 51104 ,pcs,1.00,pcs,0.00,0.00,,0,405
+0006,1,1,,P00406,Bearing 51105,pcs,1.00,pcs,0.00,0.00,,0,406
+0006,1,1,,P00407,Bearing 6800,pcs,1.00,pcs,0.00,0.00,,0,407
+0006,1,1,,P00408,Belt C103 Bando,pcs,1.00,pcs,0.00,0.00,,0,408
+0006,1,1,,P00409,Belt C78 Bando,pcs,1.00,pcs,0.00,0.00,,0,409
+0006,1,1,,P00410,Belt C95 Bando,pcs,1.00,pcs,0.00,0.00,,0,410
+0006,1,1,,P00411,Cylinder Sc32X250,pcs,1.00,pcs,0.00,0.00,,0,411
+0006,1,1,,P00412,Directional Valve Dsg-01-3C2-D24-N1-51T,pcs,1.00,pcs,0.00,0.00,,0,412
+0006,1,1,,P00413,Directional Valve Dsg-03-3C2-B24-N1-51T,pcs,1.00,pcs,0.00,0.00,,0,413
+0006,1,1,,P00414,Heater 200X120 220V Mica Square,pcs,1.00,pcs,0.00,0.00,,0,414
+0006,1,1,,P00415,Heater 115X50 220V 450W Mica ,pcs,1.00,pcs,0.00,0.00,,0,415
+0006,1,1,,P00416,Heater 210X60 220V 1000W Ceramic ,pcs,1.00,pcs,0.00,0.00,,0,416
+0006,1,1,,P00417,Heater 26X318 220V 200W Ceramic,pcs,1.00,pcs,0.00,0.00,,0,417
+0006,1,1,,P00418,Heater 56X40 220V 180W  Mica ,pcs,1.00,pcs,0.00,0.00,,0,418
+0006,1,1,,P00419,Heater 600X30 220V Mica ,pcs,1.00,pcs,0.00,0.00,,0,419
+0006,1,1,,P00420,Heater 96X102 220V 900W Mica ,pcs,1.00,pcs,0.00,0.00,,0,420
+0006,1,1,,P00421,Heater 98X100 220V 800W Mica ,pcs,1.00,pcs,0.00,0.00,,0,421
+0006,1,1,,P00422,Heater Cutter Blade,pcs,1.00,pcs,0.00,0.00,,0,422
+0006,1,1,,P00423,"Hydraulic Cylinder Deli, H0B40*420",pcs,1.00,pcs,0.00,0.00,,0,423
+0006,1,1,,P00424,"Hydraulic Hose 1/2""X220Cm",pcs,1.00,pcs,0.00,0.00,,0,424
+0006,1,1,,P00425,Hydraulic Hose 3/4X190Cm 21.5Mpa 90-St,pcs,1.00,pcs,0.00,0.00,,0,425
+0006,1,1,,P00426,Hydraulic Hose 3/4X190Cm 21.5Mpa St-St,pcs,1.00,pcs,0.00,0.00,,0,426
+0006,1,1,,P00427,Monoseal 40X30X6 Pu Hallite Un,pcs,1.00,pcs,0.00,0.00,,0,427
+0006,1,1,,P00428,Peanut Butter Jar Blade,pcs,1.00,pcs,0.00,0.00,,0,428
+0006,1,1,,P00429,Solenoid Valve Vf5120-5Gd1 Smc,pcs,1.00,pcs,0.00,0.00,,0,429
+0006,1,1,,P00430,Solenoid Valve Vf5120K-5Gdi-03,pcs,1.00,pcs,0.00,0.00,,0,430
+0006,1,1,,P00431,Trimmer Holder,pcs,1.00,pcs,0.00,0.00,,0,431
+0007,1,1,,P00432,10Oz Knock Out Mold,pcs,1.00,pcs,0.00,0.00,,0,432
+0007,1,1,,P00433,10Oz W/O Logo Knock Out Mold,pcs,1.00,pcs,0.00,0.00,,0,433
+0007,1,1,,P00434,12Oz Knock Out  Mold,pcs,1.00,pcs,0.00,0.00,,0,434
+0007,1,1,,P00435,12Oz W/O Logo Knock Out  Mold,pcs,1.00,pcs,0.00,0.00,,0,435
+0007,1,1,,P00436,16Oz Knock Out Mold,pcs,1.00,pcs,0.00,0.00,,0,436
+0007,1,1,,P00437,3Oz Knock Out Mold,pcs,1.00,pcs,0.00,0.00,,0,437
+0007,1,1,,P00438,5Oz Knock Out Mold,pcs,1.00,pcs,0.00,0.00,,0,438
+0007,1,1,,P00439,6Oz Knock Out Mold,pcs,1.00,pcs,0.00,0.00,,0,439
+0007,1,1,,P00440,7Oz Knock Out Mold,pcs,1.00,pcs,0.00,0.00,,0,440
+0007,1,1,,P00441,8Oz Knock Out Mold,pcs,1.00,pcs,0.00,0.00,,0,441
+0007,1,1,,P00442,8Oz W/O Logo Knock Out Mold,pcs,1.00,pcs,0.00,0.00,,0,442
+0007,1,1,,P00443,Bearing 6317,pcs,1.00,pcs,0.00,0.00,,0,443
+0007,1,1,,P00444,Chain 40-2R X 10Ft Ansi,pcs,1.00,pcs,0.00,0.00,,0,444
+0007,1,1,,P00445,Chain With Spikes,pcs,1.00,pcs,0.00,0.00,,0,445
+0007,1,1,,P00446,"Frequency Inverter 2/2, Em600-2R2-2B",pcs,1.00,pcs,0.00,0.00,,0,446
+0007,1,1,,P00447,"Frequency Inverter, 4Kw 1/2, Em600-4Ro-2B",pcs,1.00,pcs,0.00,0.00,,0,447
+0007,1,1,,P00448,Heater 15.75X270 220V 600W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,448
+0007,1,1,,P00449,Heater 15.8X270 220V 600W Cartridge,pcs,1.00,pcs,0.00,0.00,,0,449
+0007,1,1,,P00450,Hydraulic Pump Plastic Connector,pcs,1.00,pcs,0.00,0.00,,0,450
+0007,1,1,,P00451,Magnetic Contactor Sp50T 220V 3Phase,pcs,1.00,pcs,0.00,0.00,,0,451
+0007,1,1,,P00452,Mould Arm Bossing,pcs,1.00,pcs,0.00,0.00,,0,452
+0007,1,1,,P00453,Oil Fittings Nkl 1/8-41,pcs,1.00,pcs,0.00,0.00,,0,453
+0007,1,1,,P00454,Oil Seal Wiper Metal 50X40X5,pcs,1.00,pcs,0.00,0.00,,0,454
+0007,1,1,,P00455,Oring 2X25,pcs,1.00,pcs,0.00,0.00,,0,455
+0007,1,1,,P00456,Plastic Belt Pulley (No Specs),pcs,1.00,pcs,0.00,0.00,,0,456
+0007,1,1,,P00457,Polyurethane Belt 10Mm,pcs,1.00,pcs,0.00,0.00,,0,457
+0007,1,1,,P00458,Polyurethane Belt 4Mm,pcs,1.00,pcs,0.00,0.00,,0,458
+0007,1,1,,P00459,Polyurethane Belt 8Mm,pcs,1.00,pcs,0.00,0.00,,0,459
+0007,1,1,,P00460,Roller Feeder Guide,pcs,1.00,pcs,0.00,0.00,,0,460
+0007,1,1,,P00461,Solenoid Valve Fds Sxw3160-5G-04,pcs,1.00,pcs,0.00,0.00,,0,461
+0007,1,1,,P00462,"Solenoid Valve Smc Vfs5110 Seb 06 0.1-1.0Mpa (Offer:Ypc 3/4"" Thread,5/2 Way 24Vdc Siv511-24Vdc",pcs,1.00,pcs,0.00,0.00,,0,462
+0007,1,1,,P00463,"Solenoid Valve, 4R210-08",pcs,1.00,pcs,0.00,0.00,,0,463
+0007,1,1,,P00464,"Solenoid Valve, Sxw3160-5G-04 2-Way",pcs,1.00,pcs,0.00,0.00,,0,464
+0007,1,1,,P00465,Spool Roller,pcs,1.00,pcs,0.00,0.00,,0,465
+0007,1,1,,P00466,Stretching Cylinder (No Specs),pcs,1.00,pcs,0.00,0.00,,0,466
+0007,1,1,,P00467,Traction Fan Motor,pcs,1.00,pcs,0.00,0.00,,0,467
+0008,1,1,,P00468,"Allen Bolt,  6X30",pcs,1.00,pcs,0.00,0.00,,0,468
+0008,1,1,,P00469,Conveyor Belt 330Mm,pcs,1.00,pcs,0.00,0.00,,0,469
+0008,1,1,,P00470,Conveyor Belt 80Mmx2800Mm,pcs,1.00,pcs,0.00,0.00,,0,470
+0008,1,1,,P00471,Heater 118X25 230V 500W,pcs,1.00,pcs,0.00,0.00,,0,471
+0008,1,1,,P00472,Heater 127X38 220V 700W Mica ,pcs,1.00,pcs,0.00,0.00,,0,472
+0008,1,1,,P00473,Heater 128X35 220V 700W Mica ,pcs,1.00,pcs,0.00,0.00,,0,473
+0008,1,1,,P00474,Heater 128X65 220V 700W Mica ,pcs,1.00,pcs,0.00,0.00,,0,474
+0008,1,1,,P00475,Heater 12X160 220V 300W  Cartridge,pcs,1.00,pcs,0.00,0.00,,0,475
+0008,1,1,,P00476,Heater 88X38 230V 500W,pcs,1.00,pcs,0.00,0.00,,0,476
+0008,1,1,,P00477,Hex Bolt  5X45,pcs,1.00,pcs,0.00,0.00,,0,477
+0008,1,1,,P00478,Hex Bolt 10X40,pcs,1.00,pcs,0.00,0.00,,0,478
+0008,1,1,,P00479,Mx Sprocket,pcs,1.00,pcs,0.00,0.00,,0,479
+0008,1,1,,P00480,"Push In Fitting, Spc  8-02",pcs,1.00,pcs,0.00,0.00,,0,480
+0008,1,1,,P00481,"Push In Fittings, Spc 12-04",pcs,1.00,pcs,0.00,0.00,,0,481
+0008,1,1,,P00482,"Push In Fittings, Spl 8-02",pcs,1.00,pcs,0.00,0.00,,0,482
+0008,1,1,,P00483,"Push In Fittings, Spy 10",pcs,1.00,pcs,0.00,0.00,,0,483
+0008,1,1,,P00484,"Push In Fittings, Spy 8",pcs,1.00,pcs,0.00,0.00,,0,484
+0008,1,1,,P00485,Straw Cutter Blade,pcs,1.00,pcs,0.00,0.00,,0,485
+0008,1,1,,P00486,Temperature Controller Pxe4Tay1-1Y-C,pcs,1.00,pcs,0.00,0.00,,0,486
+0008,1,1,,P00487,Thermocouples Wrnt-M6 (2000Mm),pcs,1.00,pcs,0.00,0.00,,0,487
+0009,1,1,,P00488,52 Teeth Printing Gear King,pcs,1.00,pcs,0.00,0.00,,0,488
+0009,1,1,,P00489,55 Teeth Printing Gear Jumbo,pcs,1.00,pcs,0.00,0.00,,0,489
+0009,1,1,,P00490,65 Teeth Main Gear Cylinder Printing Gear Cylinder,pcs,1.00,pcs,0.00,0.00,,0,490
+0009,1,1,,P00491,Bearing Ucfc211,pcs,1.00,pcs,0.00,0.00,,0,491
+0009,1,1,,P00492,Diplomer,pcs,1.00,pcs,0.00,0.00,,0,492
+0009,1,1,,P00493,Plate Mounting Tape 52330-00001-01,pcs,1.00,pcs,0.00,0.00,,0,493
+0009,1,1,,P00494,"Push In Fitting, Spc  8-02",pcs,1.00,pcs,0.00,0.00,,0,494
+0009,1,1,,P00495,"Push In Fittings, Spc 12-04",pcs,1.00,pcs,0.00,0.00,,0,495
+0010,1,1,,P00496,Allen Bolt  8X75,pcs,1.00,pcs,0.00,0.00,,0,496
+0010,1,1,,P00497,Allen Bolt 8X30,pcs,1.00,pcs,0.00,0.00,,0,497
+0010,1,1,,P00498,Bearing 6305Zzcm 5K,pcs,1.00,pcs,0.00,0.00,,0,498
+0010,1,1,,P00499,Circlip 25X0X1.2,pcs,1.00,pcs,0.00,0.00,,0,499
+0010,1,1,,P00500,Circlip 57.8X2,pcs,1.00,pcs,0.00,0.00,,0,500
+0010,1,1,,P00501,"Corrosion Preventive Spray, 450Ml",pcs,1.00,pcs,0.00,0.00,,0,501
+0010,1,1,,P00502,Hex Bolt 12X30,pcs,1.00,pcs,0.00,0.00,,0,502
+0010,1,1,,P00503,Hex Bolt 8X45 ,pcs,1.00,pcs,0.00,0.00,,0,503
+0010,1,1,,P00504,Hot Runner Md198,pcs,1.00,pcs,0.00,0.00,,0,504
+0010,1,1,,P00505,Mould Clean Spray 450Ml Toku-98,pcs,1.00,pcs,0.00,0.00,,0,505
+0010,1,1,,P00506,Mould Release Spray 500Ml Prosspray,pcs,1.00,pcs,0.00,0.00,,0,506
+0010,1,1,,P00507,Oring Viton 2X7,pcs,1.00,pcs,0.00,0.00,,0,507
+0010,1,1,,P00508,Pneumatic Filter Regulator Afr2000,pcs,1.00,pcs,0.00,0.00,,0,508
+0010,1,1,,P00509,"Push  In Fitttings, Spl 12-02",pcs,1.00,pcs,0.00,0.00,,0,509
+0010,1,1,,P00510,"Push In Fittings,  Spy 8",pcs,1.00,pcs,0.00,0.00,,0,510
+0010,1,1,,P00511,"Push In Fittings, Spc  8-04",pcs,1.00,pcs,0.00,0.00,,0,511
+0010,1,1,,P00512,"Push In Fittings, Spc 10-02",pcs,1.00,pcs,0.00,0.00,,0,512
+0010,1,1,,P00513,"Push In Fittings, Spc 10-04",pcs,1.00,pcs,0.00,0.00,,0,513
+0010,1,1,,P00514,"Push In Fittings, Spc 12-03",pcs,1.00,pcs,0.00,0.00,,0,514
+0010,1,1,,P00515,"Push In Fittings, Spc 12-04",pcs,1.00,pcs,0.00,0.00,,0,515
+0010,1,1,,P00516,"Push In Fittings, Spl  12-04",pcs,1.00,pcs,0.00,0.00,,0,516
+0010,1,1,,P00517,"Push In Fittings, Spl  8-04",pcs,1.00,pcs,0.00,0.00,,0,517
+0010,1,1,,P00518,"Push In Fittings, Spl 10-04",pcs,1.00,pcs,0.00,0.00,,0,518
+0010,1,1,,P00519,"Push In Fittings, Spl 12-03",pcs,1.00,pcs,0.00,0.00,,0,519
+0010,1,1,,P00520,"Push In Fittings, Spl 6-01",pcs,1.00,pcs,0.00,0.00,,0,520
+0010,1,1,,P00521,"Push In Fittings, Spy 10",pcs,1.00,pcs,0.00,0.00,,0,521
+0010,1,1,,P00522,"Push In Fittings, Spy 12",pcs,1.00,pcs,0.00,0.00,,0,522
+0011,1,1,,P00523,Allen Bolt  12X40,pcs,1.00,pcs,0.00,0.00,,0,523
+0011,1,1,,P00524,Allen Bolt  12X50,pcs,1.00,pcs,0.00,0.00,,0,524
+0011,1,1,,P00525,Bearing 6215,pcs,1.00,pcs,0.00,0.00,,0,525
+0011,1,1,,P00526,Bearing Nu2215Ec2,pcs,1.00,pcs,0.00,0.00,,0,526
+0011,1,1,,P00527,Granulator Blade Circle,pcs,1.00,pcs,0.00,0.00,,0,527
+0011,1,1,,P00528,Granulator Blade Flat,pcs,1.00,pcs,0.00,0.00,,0,528
+0011,1,1,,P00529,Hex  Bolt 10X15,pcs,1.00,pcs,0.00,0.00,,0,529
+0011,1,1,,P00530,Hex Bolt 12X30,pcs,1.00,pcs,0.00,0.00,,0,530
+0011,1,1,,P00531,Oil Seal 95X75X10,pcs,1.00,pcs,0.00,0.00,,0,531
+0011,1,1,,P00532,Overload Relay Th-P60 Eta 67A(54A-80A),pcs,1.00,pcs,0.00,0.00,,0,532
+0011,1,1,,P00533,"Push In Fittings,  Spc  8-02",pcs,1.00,pcs,0.00,0.00,,0,533
+0011,1,1,,P00534,"Push In Fittings,  Spc 10-04",pcs,1.00,pcs,0.00,0.00,,0,534
+0011,1,1,,P00535,"Push In Fittings,  Spl 10-02",pcs,1.00,pcs,0.00,0.00,,0,535
+0011,1,1,,P00536,"Push In Fittings,  Spl 8-03",pcs,1.00,pcs,0.00,0.00,,0,536
+0011,1,1,,P00537,"Push In Fittings,  Spy 10",pcs,1.00,pcs,0.00,0.00,,0,537
+0011,1,1,,P00538,"Push In Fittings, Spl  8-01",pcs,1.00,pcs,0.00,0.00,,0,538
+0012,1,1,,P00539,Belt A26,pcs,1.00,pcs,0.00,0.00,,0,539
+0012,1,1,,P00540,Belt M25,pcs,1.00,pcs,0.00,0.00,,0,540
+0012,1,1,,P00541,Belt M26,pcs,1.00,pcs,0.00,0.00,,0,541
+0012,1,1,,P00542,Capacitor 108-130Uf 250Vac,pcs,1.00,pcs,0.00,0.00,,0,542
+0012,1,1,,P00543,Capacitor 88-106 Uf 250V,pcs,1.00,pcs,0.00,0.00,,0,543
+0012,1,1,,P00544,Capacitor 108-130,pcs,1.00,pcs,0.00,0.00,,0,544
+0012,1,1,,P00545,Capacitor10Uf 250 V,pcs,1.00,pcs,0.00,0.00,,0,545
+0013,1,1,,P00546,Belt A42,pcs,1.00,pcs,0.00,0.00,,0,546
+0013,1,1,,P00547,Belt B84,pcs,1.00,pcs,0.00,0.00,,0,547
+0013,1,1,,P00548,"Three Phase Asynchronuos Motor, 3Kw, 380V, 50Hz-1410Rpm",pcs,1.00,pcs,0.00,0.00,,0,548
+0014,1,1,,P00549,"Foot Valve 2""",pcs,1.00,pcs,0.00,0.00,,0,549
+0014,1,1,,P00550,Pressure Gauge 0-350Psi,pcs,1.00,pcs,0.00,0.00,,0,550
+0015,1,1,,P00551,"Allen Bolt, 12X25",pcs,1.00,pcs,0.00,0.00,,0,551
+0015,1,1,,P00552,Anly Twin Timer (Type Atdv-Nc),pcs,1.00,pcs,0.00,0.00,,0,552
+0015,1,1,,P00553,Bearing 6003,pcs,1.00,pcs,0.00,0.00,,0,553
+0015,1,1,,P00554,Belt C79,pcs,1.00,pcs,0.00,0.00,,0,554
+0015,1,1,,P00555,Belt Htd 880-8M ,pcs,1.00,pcs,0.00,0.00,,0,555
+0015,1,1,,P00556,Compressor Oil Vdl68 Caltex (Cont.),pcs,1.00,pcs,0.00,0.00,,0,556
+0015,1,1,,P00557,Corena S4 R Air Compresor Oil (20 Ltrs/Pail),pcs,1.00,pcs,0.00,0.00,,0,557
+0015,1,1,,P00558,Filter Ring,pcs,1.00,pcs,0.00,0.00,,0,558
+0015,1,1,,P00559,Hex Bolt 6X35,pcs,1.00,pcs,0.00,0.00,,0,559
+0015,1,1,,P00560,High Pressure Compressor Air Filter,pcs,1.00,pcs,0.00,0.00,,0,560
+0015,1,1,,P00561,Hydraulic Oil Aw68 Petron (200L/Drum),pcs,1.00,pcs,0.00,0.00,,0,561
+0015,1,1,,P00562,Oil Filter Wd962,pcs,1.00,pcs,0.00,0.00,,0,562
+0016,1,1,,P00563,Allen  10X50,pcs,1.00,pcs,0.00,0.00,,0,563
+0016,1,1,,P00564,Allen Bolt 12X50,pcs,1.00,pcs,0.00,0.00,,0,564
+0016,1,1,,P00565,Allen Bolt 6X45,pcs,1.00,pcs,0.00,0.00,,0,565
+0016,1,1,,P00566,Crusher Blade - Skd 11 400 (Long Blade),pcs,1.00,pcs,0.00,0.00,,0,566
+0016,1,1,,P00567,Crusher Blade - Skd 11 400 (Short Blade),pcs,1.00,pcs,0.00,0.00,,0,567
+0016,1,1,,P00568,Crusher Blade - Skd 11 500 (Long Blade),pcs,1.00,pcs,0.00,0.00,,0,568
+0016,1,1,,P00569,Crusher Blade - Skd 11 500 (Short Blade),pcs,1.00,pcs,0.00,0.00,,0,569
+0016,1,1,,P00570,Hex Bolt 10X40,pcs,1.00,pcs,0.00,0.00,,0,570
+0016,1,1,,P00571,Hex Bolt 12X30,pcs,1.00,pcs,0.00,0.00,,0,571
+0016,1,1,,P00572,Hex Bolt 16X45,pcs,1.00,pcs,0.00,0.00,,0,572
+0016,1,1,,P00573,Hex Bolt 16X55,pcs,1.00,pcs,0.00,0.00,,0,573
+0016,1,1,,P00574,Hex Bolt 8X45 ,pcs,1.00,pcs,0.00,0.00,,0,574
+0016,1,1,,P00575,Oil Seal 95X75X10,pcs,1.00,pcs,0.00,0.00,,0,575
+0016,1,1,,P00576,Overload Relay Th-P60 Eta 67A(54A-80A) (Shihlin Brand),pcs,1.00,pcs,0.00,0.00,,0,576
+0017,1,1,,P00577,American Brand Board,pcs,1.00,pcs,0.00,0.00,,0,577
+0017,1,1,,P00578,American Circuit Enclosure Nema 1Mam Box 2 Pole Bolt-On,pcs,1.00,pcs,0.00,0.00,,0,578
+0017,1,1,,P00579,Anchor Bolt 16Mmx13Ft.,pcs,1.00,pcs,0.00,0.00,,0,579
+0017,1,1,,P00580,"Ball Valve 1"" Creston",pcs,1.00,pcs,0.00,0.00,,0,580
+0017,1,1,,P00581,Ball Valve 1/2 Creston,pcs,1.00,pcs,0.00,0.00,,0,581
+0017,1,1,,P00582,Blind Rivets 1/8X3/4 - 1000Pc/S Forx,pcs,1.00,pcs,0.00,0.00,,0,582
+0017,1,1,,P00583,Breaker W/ Enclosure 100A,pcs,1.00,pcs,0.00,0.00,,0,583
+0017,1,1,,P00584,Breaker W/ Enclosure 125A,pcs,1.00,pcs,0.00,0.00,,0,584
+0017,1,1,,P00585,Breaker W/ Enclosure 200A,pcs,1.00,pcs,0.00,0.00,,0,585
+0017,1,1,,P00586,Breaker W/ Enclosure 40A,pcs,1.00,pcs,0.00,0.00,,0,586
+0017,1,1,,P00587,Brushes & Brooms Red,pcs,1.00,pcs,0.00,0.00,,0,587
+0017,1,1,,P00588,Butane,pcs,1.00,pcs,0.00,0.00,,0,588
+0017,1,1,,P00589,"Cable Tie 14"" (8X350Mm)",pcs,1.00,pcs,0.00,0.00,,0,589
+0017,1,1,,P00590,Cable Tie 4X200,pcs,1.00,pcs,0.00,0.00,,0,590
+0017,1,1,,P00591,Cable Tie 9X550,pcs,1.00,pcs,0.00,0.00,,0,591
+0017,1,1,,P00592,Cable Ties 3X150,pcs,1.00,pcs,0.00,0.00,,0,592
+0017,1,1,,P00593,Cable Ties 430X9Mm,pcs,1.00,pcs,0.00,0.00,,0,593
+0017,1,1,,P00594,Cable Ties 4X250,pcs,1.00,pcs,0.00,0.00,,0,594
+0017,1,1,,P00595,"Cable Ties 6"" (4X150Mm)",pcs,1.00,pcs,0.00,0.00,,0,595
+0017,1,1,,P00596,"Carbitips 3/8"" Center",pcs,1.00,pcs,0.00,0.00,,0,596
+0017,1,1,,P00597,"Carbitips 3/8"" Left Hand",pcs,1.00,pcs,0.00,0.00,,0,597
+0017,1,1,,P00598,"Carbitips 3/8"" Right Hand",pcs,1.00,pcs,0.00,0.00,,0,598
+0017,1,1,,P00599,Carbon Brush Cb-51A,pcs,1.00,pcs,0.00,0.00,,0,599
+0017,1,1,,P00600,Ceiling Mounted Exhaust Fan Model: Xlf-300,pcs,1.00,pcs,0.00,0.00,,0,600
+0017,1,1,,P00601,Ceiling Receptacle,pcs,1.00,pcs,0.00,0.00,,0,601
+0017,1,1,,P00602,Circuit Breaker Enclosure 1Main Box 2 Pole Bolt-On,pcs,1.00,pcs,0.00,0.00,,0,602
+0017,1,1,,P00603,Circuit Breaker Thermal-Magnetic 3P-100A-10Ka/415V Model: Ezc100F3100,pcs,1.00,pcs,0.00,0.00,,0,603
+0017,1,1,,P00604,"Conduit C Clamp 1""",pcs,1.00,pcs,0.00,0.00,,0,604
+0017,1,1,,P00605,"Conduit C Clamp Surefit 1/2""",pcs,1.00,pcs,0.00,0.00,,0,605
+0017,1,1,,P00606,"Conduit Coupling 3""",pcs,1.00,pcs,0.00,0.00,,0,606
+0017,1,1,,P00607,"Conduit Fittings 1""",pcs,1.00,pcs,0.00,0.00,,0,607
+0017,1,1,,P00608,"Conduit Fittings 1""",pcs,1.00,pcs,0.00,0.00,,0,608
+0017,1,1,,P00609,"Conduit Fittings 2""",pcs,1.00,pcs,0.00,0.00,,0,609
+0017,1,1,,P00610,"Coupling 1 1/2"" Gi Hd",pcs,1.00,pcs,0.00,0.00,,0,610
+0017,1,1,,P00611,"Coupling 1/2"" Gi Hd",pcs,1.00,pcs,0.00,0.00,,0,611
+0017,1,1,,P00612,"Coupling 3/4"" Gi Hd",pcs,1.00,pcs,0.00,0.00,,0,612
+0017,1,1,,P00613,"Coupling Threaded 1-1/2"" Gi Hd",pcs,1.00,pcs,0.00,0.00,,0,613
+0017,1,1,,P00614,"Coupling Threaded Female 1""X1 1/2 (France)",pcs,1.00,pcs,0.00,0.00,,0,614
+0017,1,1,,P00615,"Coupling Threaded Female 1""X1 1/2 (France)",pcs,1.00,pcs,0.00,0.00,,0,615
+0017,1,1,,P00616,"Diamond Cutting Disc 4"" Bosun",pcs,1.00,pcs,0.00,0.00,,0,616
+0017,1,1,,P00617,Drill Bit 1/4,pcs,1.00,pcs,0.00,0.00,,0,617
+0017,1,1,,P00618,Drill Bit 3/16 Dormer,pcs,1.00,pcs,0.00,0.00,,0,618
+0017,1,1,,P00619,"Drill Bit 3/4"" Creston Titanium Coated",pcs,1.00,pcs,0.00,0.00,,0,619
+0017,1,1,,P00620,"Elbow 1 1/2"" Gi Hd Fittings",pcs,1.00,pcs,0.00,0.00,,0,620
+0017,1,1,,P00621,"Elbow 1/2"" Gi Hd Fittings",pcs,1.00,pcs,0.00,0.00,,0,621
+0017,1,1,,P00622,"Elbow Gi 1"" Hd Fittings",pcs,1.00,pcs,0.00,0.00,,0,622
+0017,1,1,,P00623,Electrical Tape 3M Big,pcs,1.00,pcs,0.00,0.00,,0,623
+0017,1,1,,P00624,"Emt Adaptor Connector 2""",pcs,1.00,pcs,0.00,0.00,,0,624
+0017,1,1,,P00625,Emt Body Type 32Mm,pcs,1.00,pcs,0.00,0.00,,0,625
+0017,1,1,,P00626,"Emt Connector 1""",pcs,1.00,pcs,0.00,0.00,,0,626
+0017,1,1,,P00627,"Emt Connector 1/2""",pcs,1.00,pcs,0.00,0.00,,0,627
+0017,1,1,,P00628,"Emt Connector 1-1/2""",pcs,1.00,pcs,0.00,0.00,,0,628
+0017,1,1,,P00629,"Emt Connector 1-1/4""",pcs,1.00,pcs,0.00,0.00,,0,629
+0017,1,1,,P00630,"Emt Connector 2""",pcs,1.00,pcs,0.00,0.00,,0,630
+0017,1,1,,P00631,"Emt Connector 3/4""",pcs,1.00,pcs,0.00,0.00,,0,631
+0017,1,1,,P00632,"Emt Coupling 1-1/2""",pcs,1.00,pcs,0.00,0.00,,0,632
+0017,1,1,,P00633,"Emt Coupling Adaptor 2""",pcs,1.00,pcs,0.00,0.00,,0,633
+0017,1,1,,P00634,"Emt Coupling Adaptor Screw Typr 1 1/4""",pcs,1.00,pcs,0.00,0.00,,0,634
+0017,1,1,,P00635,"Emt Coupling Screw Type 1""",pcs,1.00,pcs,0.00,0.00,,0,635
+0017,1,1,,P00636,"Emt Elbow 1 1/2""",pcs,1.00,pcs,0.00,0.00,,0,636
+0017,1,1,,P00637,"Emt Elbow 1 1/4""",pcs,1.00,pcs,0.00,0.00,,0,637
+0017,1,1,,P00638,"Emt Elbow 1""",pcs,1.00,pcs,0.00,0.00,,0,638
+0017,1,1,,P00639,Emt Elbow 1/2,pcs,1.00,pcs,0.00,0.00,,0,639
+0017,1,1,,P00640,"Emt Elbow 2""",pcs,1.00,pcs,0.00,0.00,,0,640
+0017,1,1,,P00641,"Emt Straight Connector 2""",pcs,1.00,pcs,0.00,0.00,,0,641
+0017,1,1,,P00642,Enclosure 100A,pcs,1.00,pcs,0.00,0.00,,0,642
+0017,1,1,,P00643,Enclosure From 100A Circuit Breaker,pcs,1.00,pcs,0.00,0.00,,0,643
+0017,1,1,,P00644,Enclosure From 200A Circuit Breaker,pcs,1.00,pcs,0.00,0.00,,0,644
+0017,1,1,,P00645,Enclosure N-3R Bolt On Circuit Breaker,pcs,1.00,pcs,0.00,0.00,,0,645
+0017,1,1,,P00646,Enclosure Nema 3R 3P Arrow,pcs,1.00,pcs,0.00,0.00,,0,646
+0017,1,1,,P00647,"End Cup 1"" Gi Hd",pcs,1.00,pcs,0.00,0.00,,0,647
+0017,1,1,,P00648,"End Cup 1-1/2""Gi Hd",pcs,1.00,pcs,0.00,0.00,,0,648
+0017,1,1,,P00649,"End Cup 3/4"" Gi Hd",pcs,1.00,pcs,0.00,0.00,,0,649
+0017,1,1,,P00650,Expansion Bolt 3/8,pcs,1.00,pcs,0.00,0.00,,0,650
+0017,1,1,,P00651,Eye Lugs 8-6,pcs,1.00,pcs,0.00,0.00,,0,651
+0017,1,1,,P00652,Eye Terminal 3.5-6,pcs,1.00,pcs,0.00,0.00,,0,652
+0017,1,1,,P00653,Eye Terminal Lug 38-12,pcs,1.00,pcs,0.00,0.00,,0,653
+0017,1,1,,P00654,Eye Terminal Lugs 14-6,pcs,1.00,pcs,0.00,0.00,,0,654
+0017,1,1,,P00655,Eye Terminal Lugs 22-8,pcs,1.00,pcs,0.00,0.00,,0,655
+0017,1,1,,P00656,Eyelugs 14-8,pcs,1.00,pcs,0.00,0.00,,0,656
+0017,1,1,,P00657,Eyelugs 200-12,pcs,1.00,pcs,0.00,0.00,,0,657
+0017,1,1,,P00658,Eyelugs 22-10,pcs,1.00,pcs,0.00,0.00,,0,658
+0017,1,1,,P00659,Eyelugs 22-6,pcs,1.00,pcs,0.00,0.00,,0,659
+0017,1,1,,P00660,Eyelugs 2-4,pcs,1.00,pcs,0.00,0.00,,0,660
+0017,1,1,,P00661,Eyelugs 38-10,pcs,1.00,pcs,0.00,0.00,,0,661
+0017,1,1,,P00662,Eyelugs 38-8,pcs,1.00,pcs,0.00,0.00,,0,662
+0017,1,1,,P00663,Eyelugs 50-10,pcs,1.00,pcs,0.00,0.00,,0,663
+0017,1,1,,P00664,Eyelugs 60-10,pcs,1.00,pcs,0.00,0.00,,0,664
+0017,1,1,,P00665,Eyelugs 70-10,pcs,1.00,pcs,0.00,0.00,,0,665
+0017,1,1,,P00666,Eyelugs 80-10,pcs,1.00,pcs,0.00,0.00,,0,666
+0017,1,1,,P00667,Eyelugs 80-12,pcs,1.00,pcs,0.00,0.00,,0,667
+0017,1,1,,P00668,Eyelugs 8-5,pcs,1.00,pcs,0.00,0.00,,0,668
+0017,1,1,,P00669,Eyelugs 8-8,pcs,1.00,pcs,0.00,0.00,,0,669
+0017,1,1,,P00670,Fan Exhaus 12Inch.,pcs,1.00,pcs,0.00,0.00,,0,670
+0017,1,1,,P00671,"Faucet 3/4"" Brass",pcs,1.00,pcs,0.00,0.00,,0,671
+0017,1,1,,P00672,"Faucet Brass 1/2""",pcs,1.00,pcs,0.00,0.00,,0,672
+0017,1,1,,P00673,Fixture Downlight Model: Sdlhii-63-Gu10,pcs,1.00,pcs,0.00,0.00,,0,673
+0017,1,1,,P00674,"Flap Disc 4""",pcs,1.00,pcs,0.00,0.00,,0,674
+0017,1,1,,P00675,"Foot Valve 2""",pcs,1.00,pcs,0.00,0.00,,0,675
+0017,1,1,,P00676,Fuse Link 15K,pcs,1.00,pcs,0.00,0.00,,0,676
+0017,1,1,,P00677,Fuse Link 20K,pcs,1.00,pcs,0.00,0.00,,0,677
+0017,1,1,,P00678,Fuse Link 40K,pcs,1.00,pcs,0.00,0.00,,0,678
+0017,1,1,,P00679,Fuse Link 65K,pcs,1.00,pcs,0.00,0.00,,0,679
+0017,1,1,,P00680,"Gate Valve 1""",pcs,1.00,pcs,0.00,0.00,,0,680
+0017,1,1,,P00681,"Gate Valve 1/2""",pcs,1.00,pcs,0.00,0.00,,0,681
+0017,1,1,,P00682,"Gate Valve 1-1/2"" Brass",pcs,1.00,pcs,0.00,0.00,,0,682
+0017,1,1,,P00683,Ge Breaker Tqc 60A 3P 240V Bolt-On,pcs,1.00,pcs,0.00,0.00,,0,683
+0017,1,1,,P00684,Gi Steel Utility Box,pcs,1.00,pcs,0.00,0.00,,0,684
+0017,1,1,,P00685,Gi Wire #16,pcs,1.00,pcs,0.00,0.00,,0,685
+0017,1,1,,P00686,"Grinding Stone 4""",pcs,1.00,pcs,0.00,0.00,,0,686
+0017,1,1,,P00687,Ground Tool Bits 1/2 (Cleveland),pcs,1.00,pcs,0.00,0.00,,0,687
+0017,1,1,,P00688,Ground Tool Bits 3/8 (Clevland),pcs,1.00,pcs,0.00,0.00,,0,688
+0017,1,1,,P00689,"Hacksaw Blade 12""/300Mm 18Tpi/8D Sandflex Small",pcs,1.00,pcs,0.00,0.00,,0,689
+0017,1,1,,P00690,Hose Clip 40-55,pcs,1.00,pcs,0.00,0.00,,0,690
+0017,1,1,,P00691,Hose Clip 40-60,pcs,1.00,pcs,0.00,0.00,,0,691
+0017,1,1,,P00692,Hose Clip 40-63,pcs,1.00,pcs,0.00,0.00,,0,692
+0017,1,1,,P00693,Hose Clip 40-64,pcs,1.00,pcs,0.00,0.00,,0,693
+0017,1,1,,P00694,Hose Clip 45-60,pcs,1.00,pcs,0.00,0.00,,0,694
+0017,1,1,,P00695,Hose Clip 50-70,pcs,1.00,pcs,0.00,0.00,,0,695
+0017,1,1,,P00696,Hose Clip 60-80,pcs,1.00,pcs,0.00,0.00,,0,696
+0017,1,1,,P00697,Hose Clip 60-83,pcs,1.00,pcs,0.00,0.00,,0,697
+0017,1,1,,P00698,Hydraulic Adaptor Fitting 3/8X1/6,pcs,1.00,pcs,0.00,0.00,,0,698
+0017,1,1,,P00699,Hydraulic Hose Adaptor 3/8X1/2,pcs,1.00,pcs,0.00,0.00,,0,699
+0017,1,1,,P00700,"Insolator 2""",pcs,1.00,pcs,0.00,0.00,,0,700
+0017,1,1,,P00701,Junction Box,pcs,1.00,pcs,0.00,0.00,,0,701
+0017,1,1,,P00702,Junction Box Cover,pcs,1.00,pcs,0.00,0.00,,0,702
+0017,1,1,,P00703,Led 100W (Firefly),pcs,1.00,pcs,0.00,0.00,,0,703
+0017,1,1,,P00704,Led 65W (Eurolux),pcs,1.00,pcs,0.00,0.00,,0,704
+0017,1,1,,P00705,Led 7W (Landlite),pcs,1.00,pcs,0.00,0.00,,0,705
+0017,1,1,,P00706,Led Bulb 13W Philips,pcs,1.00,pcs,0.00,0.00,,0,706
+0017,1,1,,P00707,Led T5 Linestra Fixture Set (Eurolux),pcs,1.00,pcs,0.00,0.00,,0,707
+0017,1,1,,P00708,"Locknut 1""",pcs,1.00,pcs,0.00,0.00,,0,708
+0017,1,1,,P00709,"Locknut 1/2""",pcs,1.00,pcs,0.00,0.00,,0,709
+0017,1,1,,P00710,"Locknut 2""",pcs,1.00,pcs,0.00,0.00,,0,710
+0017,1,1,,P00711,"Locknut 3""",pcs,1.00,pcs,0.00,0.00,,0,711
+0017,1,1,,P00712,"Lq St. Connector 3/4""",pcs,1.00,pcs,0.00,0.00,,0,712
+0017,1,1,,P00713,Male Plug Wrp002,pcs,1.00,pcs,0.00,0.00,,0,713
+0017,1,1,,P00714,Masking Tape,pcs,1.00,pcs,0.00,0.00,,0,714
+0017,1,1,,P00715,Mechanical Bracket Or Terminal Holder 3 Bolts,pcs,1.00,pcs,0.00,0.00,,0,715
+0017,1,1,,P00716,Mesh Screen 304 #40,pcs,1.00,pcs,0.00,0.00,,0,716
+0017,1,1,,P00717,Mesh Screen 304 #80,pcs,1.00,pcs,0.00,0.00,,0,717
+0017,1,1,,P00718,Mesh Screen 304 #100,pcs,1.00,pcs,0.00,0.00,,0,718
+0017,1,1,,P00719,"Metal Screw 1 1/2""",pcs,1.00,pcs,0.00,0.00,,0,719
+0017,1,1,,P00720,"Metal Screw 1""",pcs,1.00,pcs,0.00,0.00,,0,720
+0017,1,1,,P00721,Mighty Gasket Silicone 85G (Pioneer),pcs,1.00,pcs,0.00,0.00,,0,721
+0017,1,1,,P00722,Miniature Breaker 32A,pcs,1.00,pcs,0.00,0.00,,0,722
+0017,1,1,,P00723,Miniature Breaker 32A 3P Chint,pcs,1.00,pcs,0.00,0.00,,0,723
+0017,1,1,,P00724,Miniature Breaker 63A,pcs,1.00,pcs,0.00,0.00,,0,724
+0017,1,1,,P00725,Miniature Circuit Breaker 63A 3P Chint,pcs,1.00,pcs,0.00,0.00,,0,725
+0017,1,1,,P00726,Ordinary Switch 10A (Omni),pcs,1.00,pcs,0.00,0.00,,0,726
+0017,1,1,,P00727,Outlet 2 Gang,pcs,1.00,pcs,0.00,0.00,,0,727
+0017,1,1,,P00728,Outlet 3 Gang (Royu),pcs,1.00,pcs,0.00,0.00,,0,728
+0017,1,1,,P00729,Overload Relay Th-P12 15A(12A-18A),pcs,1.00,pcs,0.00,0.00,,0,729
+0017,1,1,,P00730,Overload Relay Th-P60 Eta 67A(54A-80A) (Shihlin Brand),pcs,1.00,pcs,0.00,0.00,,0,730
+0017,1,1,,P00731,"Paint Brush 1""",pcs,1.00,pcs,0.00,0.00,,0,731
+0017,1,1,,P00732,"Paint Brush 2""",pcs,1.00,pcs,0.00,0.00,,0,732
+0017,1,1,,P00733,"Paint Brush 4""",pcs,1.00,pcs,0.00,0.00,,0,733
+0017,1,1,,P00734,"Paint Roller 4""",pcs,1.00,pcs,0.00,0.00,,0,734
+0017,1,1,,P00735,Plastic Steel Epoxy 57G (Devcon),pcs,1.00,pcs,0.00,0.00,,0,735
+0017,1,1,,P00736,"Polyurethane Hose, 10Mm",pcs,1.00,pcs,0.00,0.00,,0,736
+0017,1,1,,P00737,"Polyurethane Hose, 12Mm",pcs,1.00,pcs,0.00,0.00,,0,737
+0017,1,1,,P00738,"Polyurethane Hose, 6Mm",pcs,1.00,pcs,0.00,0.00,,0,738
+0017,1,1,,P00739,"Polyurethane Hose, 8Mm",pcs,1.00,pcs,0.00,0.00,,0,739
+0017,1,1,,P00740,Powder Soap 800G,pcs,1.00,pcs,0.00,0.00,,0,740
+0017,1,1,,P00741,Power Hacksaw Blade 10Teeth 350-25-1.25,pcs,1.00,pcs,0.00,0.00,,0,741
+0017,1,1,,P00742,Push Button Emergency,pcs,1.00,pcs,0.00,0.00,,0,742
+0017,1,1,,P00743,Push Button Green (Normally Open),pcs,1.00,pcs,0.00,0.00,,0,743
+0017,1,1,,P00744,Push Button Red (Normally Close),pcs,1.00,pcs,0.00,0.00,,0,744
+0017,1,1,,P00745,Pvc Blue Elbow 63Mm,pcs,1.00,pcs,0.00,0.00,,0,745
+0017,1,1,,P00746,Pvc Coupling 1-1/2 White,pcs,1.00,pcs,0.00,0.00,,0,746
+0017,1,1,,P00747,Pvc Coupling Blue 32Mm,pcs,1.00,pcs,0.00,0.00,,0,747
+0017,1,1,,P00748,Pvc Coupling Connector 1-1/4,pcs,1.00,pcs,0.00,0.00,,0,748
+0017,1,1,,P00749,Pvc Coupling Reducer 50X40,pcs,1.00,pcs,0.00,0.00,,0,749
+0017,1,1,,P00750,Pvc Elbow 20Mm Blue,pcs,1.00,pcs,0.00,0.00,,0,750
+0017,1,1,,P00751,Pvc Elbow 32Mm Blue,pcs,1.00,pcs,0.00,0.00,,0,751
+0017,1,1,,P00752,Pvc Elbow 63Dn White,pcs,1.00,pcs,0.00,0.00,,0,752
+0017,1,1,,P00753,Pvc Elbow L40 White,pcs,1.00,pcs,0.00,0.00,,0,753
+0017,1,1,,P00754,Pvc Elbow White 32Dn,pcs,1.00,pcs,0.00,0.00,,0,754
+0017,1,1,,P00755,Pvc Female Adapter 32Mm,pcs,1.00,pcs,0.00,0.00,,0,755
+0017,1,1,,P00756,"Pvc Male Adapter Threaded 3/4""",pcs,1.00,pcs,0.00,0.00,,0,756
+0017,1,1,,P00757,"Pvc Male Adapter W/ Locknut 1""",pcs,1.00,pcs,0.00,0.00,,0,757
+0017,1,1,,P00758,"Pvc Male Adapter W/ Locknut 2""",pcs,1.00,pcs,0.00,0.00,,0,758
+0017,1,1,,P00759,Pvc Spring Hose 1 1/2,pcs,1.00,pcs,0.00,0.00,,0,759
+0017,1,1,,P00760,"Pvc Spring Hose 1""",pcs,1.00,pcs,0.00,0.00,,0,760
+0017,1,1,,P00761,Pvc Tee Blue 63Mm,pcs,1.00,pcs,0.00,0.00,,0,761
+0017,1,1,,P00762,Pvc Tee White T63,pcs,1.00,pcs,0.00,0.00,,0,762
+0017,1,1,,P00763,Pvc Union 50Dn White,pcs,1.00,pcs,0.00,0.00,,0,763
+0017,1,1,,P00764,Pvc Union 63Dn White,pcs,1.00,pcs,0.00,0.00,,0,764
+0017,1,1,,P00765,"Receptaple 4""",pcs,1.00,pcs,0.00,0.00,,0,765
+0017,1,1,,P00766,Rubber Plug 15A (Eagle),pcs,1.00,pcs,0.00,0.00,,0,766
+0017,1,1,,P00767,Rubber Tape No15,pcs,1.00,pcs,0.00,0.00,,0,767
+0017,1,1,,P00768,Rugby Bostik 300Ml.,pcs,1.00,pcs,0.00,0.00,,0,768
+0017,1,1,,P00769,"Saddle Clamp Conduit C Clamp 3/4"" (One Eye)",pcs,1.00,pcs,0.00,0.00,,0,769
+0017,1,1,,P00770,"Saddle Clamp/Gi Clamp 1 1/4""",pcs,1.00,pcs,0.00,0.00,,0,770
+0017,1,1,,P00771,"Sanding Pad 4""",pcs,1.00,pcs,0.00,0.00,,0,771
+0017,1,1,,P00772,Sandpaper #120 (3M),pcs,1.00,pcs,0.00,0.00,,0,772
+0017,1,1,,P00773,Sandpaper #60,pcs,1.00,pcs,0.00,0.00,,0,773
+0017,1,1,,P00774,Sandpaper 1000 Eagle,pcs,1.00,pcs,0.00,0.00,,0,774
+0017,1,1,,P00775,Selector Switch Xb2-Bd21,pcs,1.00,pcs,0.00,0.00,,0,775
+0017,1,1,,P00776,Shilin Overload Relay Th-P20 Eta 28A (22-34A),pcs,1.00,pcs,0.00,0.00,,0,776
+0017,1,1,,P00777,Shrink Tube 10Mm,pcs,1.00,pcs,0.00,0.00,,0,777
+0017,1,1,,P00778,Silicon Sealant Joinsil 600,pcs,1.00,pcs,0.00,0.00,,0,778
+0017,1,1,,P00779,"Spatula 2""",pcs,1.00,pcs,0.00,0.00,,0,779
+0017,1,1,,P00780,"Spatula 4""",pcs,1.00,pcs,0.00,0.00,,0,780
+0017,1,1,,P00781,"Stainless Welding Rod 1/8""Aws E-308-16",pcs,1.00,pcs,0.00,0.00,,0,781
+0017,1,1,,P00782,Steel Brush,pcs,1.00,pcs,0.00,0.00,,0,782
+0017,1,1,,P00783,"Steel Coupling 1/2""",pcs,1.00,pcs,0.00,0.00,,0,783
+0017,1,1,,P00784,Steel Drillbit 1/2,pcs,1.00,pcs,0.00,0.00,,0,784
+0017,1,1,,P00785,Steel Drillbit 1/8,pcs,1.00,pcs,0.00,0.00,,0,785
+0017,1,1,,P00786,"Straight Elbow 1"" Gi Hd Fittings",pcs,1.00,pcs,0.00,0.00,,0,786
+0017,1,1,,P00787,Switch Box,pcs,1.00,pcs,0.00,0.00,,0,787
+0017,1,1,,P00788,"Tailin Cutting Disc 4"" Superthin",pcs,1.00,pcs,0.00,0.00,,0,788
+0017,1,1,,P00789,"Tee 1/2"" Gi Hd Fittings",pcs,1.00,pcs,0.00,0.00,,0,789
+0017,1,1,,P00790,"Tee 2"" Gi Hd Fittings",pcs,1.00,pcs,0.00,0.00,,0,790
+0017,1,1,,P00791,"Teflon Tape 3/4"" (Sugi)",pcs,1.00,pcs,0.00,0.00,,0,791
+0017,1,1,,P00792,Terminal Eye 1.25-4 Insulated Fork Type,pcs,1.00,pcs,0.00,0.00,,0,792
+0017,1,1,,P00793,Terminal Eye 1.25-4 Non-Insulated,pcs,1.00,pcs,0.00,0.00,,0,793
+0017,1,1,,P00794,Terminal Lug 12-10,pcs,1.00,pcs,0.00,0.00,,0,794
+0017,1,1,,P00795,Terminal Lug 5.5-6,pcs,1.00,pcs,0.00,0.00,,0,795
+0017,1,1,,P00796,Thread Lock Permanent Heavy Duty Bolt Lock & Bearing 6277 6Ml,pcs,1.00,pcs,0.00,0.00,,0,796
+0017,1,1,,P00797,Tool Bit 5/16 Cleveland,pcs,1.00,pcs,0.00,0.00,,0,797
+0017,1,1,,P00798,"Union 1/2 "" Gi Hd Fittings",pcs,1.00,pcs,0.00,0.00,,0,798
+0017,1,1,,P00799,"Union 3/4 "" Gi Hd Fittings",pcs,1.00,pcs,0.00,0.00,,0,799
+0017,1,1,,P00800,Used Clothes/Trapo/Rags,pcs,1.00,pcs,0.00,0.00,,0,800
+0017,1,1,,P00801,Vital Shellac 10Ml Vt183 59Ml (Shellac),pcs,1.00,pcs,0.00,0.00,,0,801
+0017,1,1,,P00802,Vulcaseal 75Ml.,pcs,1.00,pcs,0.00,0.00,,0,802
+0017,1,1,,P00803,Wd-40 418Ml,pcs,1.00,pcs,0.00,0.00,,0,803
+0017,1,1,,P00804,Welding Glass,pcs,1.00,pcs,0.00,0.00,,0,804
+0017,1,1,,P00805,Welding Rod 6013,pcs,1.00,pcs,0.00,0.00,,0,805
+0017,1,1,,P00806,"Wipweld Citocordlll Cast Iron Hot 3.2Mm 1/8""",pcs,1.00,pcs,0.00,0.00,,0,806
+0017,1,1,,P00807,"Wipweld Ni Nickel Electrode With Machinable Weld Deposit For Cast Iron 3.2Mm 1/8""",pcs,1.00,pcs,0.00,0.00,,0,807
