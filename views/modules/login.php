@@ -15,14 +15,14 @@
             </div>
 
             <div class="form-group form-group-feedback form-group-feedback-left">
-              <input type="text" class="form-control custom-input" placeholder="Username" name="loginUser" id="loginUser" value="magnetar" required>
+              <input type="text" class="form-control custom-input" placeholder="Username" name="loginUser" id="loginUser" value="" required>
               <div class="form-control-feedback">
                 <i class="icon-user text-muted"></i>
               </div>
             </div>
 
             <div class="form-group form-group-feedback form-group-feedback-left">
-              <input type="password" class="form-control custom-input" placeholder="Password" name="loginPass" value="uyscuti" required>
+              <input type="password" class="form-control custom-input" placeholder="Password" name="loginPass" value="" required>
               <div class="form-control-feedback">
                 <i class="icon-lock2 text-muted"></i>
               </div>
