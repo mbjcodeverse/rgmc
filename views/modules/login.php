@@ -7,7 +7,7 @@
             <div class="text-center mb-4">
               <img src="views/global_assets/images/rgmc_logo2.jpg" height="100" class="mb-3">
 
-              <h1 class="mb-1 display-4" style="font-size: 2.0rem;">RIVSON GOLDPLAST</h1>
+              <h1 class="mb-1 display-4" style="font-size: 2.0rem;">RIVSON GOLDPLAS</h1>
 
               <span class="text-muted d-block" style="font-size: 1.2rem; letter-spacing: 1px;">
                MANUFACTURING CORPORATION
