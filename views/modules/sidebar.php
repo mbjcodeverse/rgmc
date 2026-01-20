@@ -109,7 +109,7 @@
                       <ul class="nav nav-group-sub" data-submenu-title="Text editors">';
                         if($_SESSION["tmt"] != "Restricted"){     
                           echo '
-                              <li class="nav-item"><a href="machinetracking" class="nav-link">Machine Tracking</a></li>  
+                              <li class="nav-item"><a href="machinetracking" class="nav-link">Machine Incident</a></li>  
                           ';
                         }
 
@@ -292,7 +292,7 @@
                       //       <li class="nav-item"><a href="" class="nav-link">Incoming</a></li>  
                       // ';
                       echo '
-                             <li class="nav-item"><a href="machinetrackingreport" class="nav-link">Machine Reliability Trends</a></li>  
+                             <li class="nav-item"><a href="machinetrackingreport" class="nav-link">Machine Incident Trends</a></li>  
                       ';
                       echo '
                              <li class="nav-item"><a href="purchasereport" class="nav-link">Incoming Stocks</a></li>  
@@ -508,7 +508,13 @@
                         echo '
                             <li class="nav-item"><a href="machine" class="nav-link">Machines</a></li>  
                         ';
-                      }                    
+                      } 
+                      
+                      if($_SESSION["tcls"] != "Restricted"){     
+                        echo '
+                            <li class="nav-item"><a href="breakdownlist" class="nav-link">Machine Breakdown List</a></li>  
+                        ';
+                      }   
 
                       if($_SESSION["tcls"] != "Restricted"){     
                         echo '

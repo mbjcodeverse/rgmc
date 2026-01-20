@@ -182,6 +182,7 @@
             $_GET["route"] == 'prodoperator' ||
             $_GET["route"] == 'quotareport' ||
             $_GET["route"] == 'resetoperatoraccount' ||
+            $_GET["route"] == 'breakdownlist' ||
             $_GET["route"] == 'logout'){
             include "modules/".$_GET["route"].".php";
         }else{
