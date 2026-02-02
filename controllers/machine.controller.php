@@ -36,9 +36,21 @@ class ControllerMachine{
 		return $answer;
 	}	
 
-	// Get Releasing Details
-	// static public function ctrShowReleasing($reqnumber){
-	// 	$answer = (new ModelStockout)->mdlShowReleasing($reqnumber);
-	// 	return $answer;
-	// }	
+	static public function ctrAddMachineBreakdown($data){
+	   	$answer = (new ModelMachine)->mdlAddMachineBreakdown($data);
+	}
+
+	static public function ctrEditMachineBreakdown($data){
+		$answer = (new ModelMachine)->mdlEditMachineBreakdown($data);
+    }	
+
+	static public function ctrMachineBreakdownTransactionList($classcode, $failuretype){
+		$answer = (new ModelMachine)->mdlMachineBreakdownTransactionList($classcode, $failuretype);
+		return $answer;
+	}
+	
+	static public function ctrShowMachineBreakdown($breakid){
+		$answer = (new ModelMachine)->mdlShowMachineBreakdown($breakid);
+		return $answer;
+	}	
 }

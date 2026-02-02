@@ -13,24 +13,29 @@ class ModelMachineTracking{
             $diagnosis_id->execute();
 		    $diagnosisid = $diagnosis_id -> fetchAll(PDO::FETCH_ASSOC);
 
-			$stmt = $pdo->prepare("INSERT INTO machinetracking(machineid, datereported, curstatus, inccode, reporter, shift, inctime, failuretype, controlnum, incidentdetails, compreporter, datecompleted, endtime, daysduration, timeduration, actiontaken) 
-                                                              VALUES (:machineid, :datereported, :curstatus, :inccode, :reporter, :shift, :inctime, :failuretype, :controlnum, :incidentdetails, :compreporter, :datecompleted, :endtime, :daysduration, :timeduration, :actiontaken)");
+			$stmt = $pdo->prepare("INSERT INTO machinetracking(machineid, datereported, machstatus, phase, curstatus, inccode, reporter, shift, inctime, failuretype, breakid, incidentdetails, technician, compreporter, datecompleted, endtime, daysduration, timeduration, cause, actiontaken) 
+                                                              VALUES (:machineid, :datereported, :machstatus, :phase, :curstatus, :inccode, :reporter, :shift, :inctime, :failuretype, :breakid, :incidentdetails, :technician, :compreporter, :datecompleted, :endtime, :daysduration, :timeduration, :cause, :actiontaken)");
 
 			$stmt->bindParam(":machineid", $data["machineid"], PDO::PARAM_STR);
 			$stmt->bindParam(":datereported", $data["date_reported"], PDO::PARAM_STR);
+			$stmt->bindParam(":machstatus", $data["machstatus"], PDO::PARAM_STR);
+			$stmt->bindParam(":phase", $data["phase"], PDO::PARAM_STR);
 			$stmt->bindParam(":curstatus", $data["curstatus"], PDO::PARAM_STR);
 			$stmt->bindParam(":inccode", $diagnosisid[0]['gen_id'], PDO::PARAM_STR);
 			$stmt->bindParam(":reporter", $data["reporter"], PDO::PARAM_STR);
 			$stmt->bindParam(":shift", $data["shift"], PDO::PARAM_STR);
 			$stmt->bindParam(":inctime", $data["inctime"], PDO::PARAM_STR);
             $stmt->bindParam(":failuretype", $data["failuretype"], PDO::PARAM_STR);
-            $stmt->bindParam(":controlnum", $data["controlnum"], PDO::PARAM_STR);
+			$stmt->bindParam(":breakid", $data["breakid"], PDO::PARAM_STR);
+            // $stmt->bindParam(":controlnum", $data["controlnum"], PDO::PARAM_STR);
             $stmt->bindParam(":incidentdetails", $data["incidentdetails"], PDO::PARAM_STR);
+			$stmt->bindParam(":technician", $data["technician"], PDO::PARAM_STR);
             $stmt->bindParam(":compreporter", $data["compreporter"], PDO::PARAM_STR);
             $stmt->bindParam(":datecompleted", $data["date_completed"], PDO::PARAM_STR);
             $stmt->bindParam(":endtime", $data["endtime"], PDO::PARAM_STR);
             $stmt->bindParam(":daysduration", $data["daysduration"], PDO::PARAM_STR);
             $stmt->bindParam(":timeduration", $data["timeduration"], PDO::PARAM_STR);
+			$stmt->bindParam(":cause", $data["cause"], PDO::PARAM_STR);	
             $stmt->bindParam(":actiontaken", $data["actiontaken"], PDO::PARAM_STR);	
 			$stmt->execute();
 
@@ -39,7 +44,7 @@ class ModelMachineTracking{
                                            		   WHERE machineid = :machineid");
 
 			$machine_stmt->bindParam(":machineid", $data["machineid"], PDO::PARAM_STR);
-			$machine_stmt->bindParam(":machstatus", $data["curstatus"], PDO::PARAM_STR);
+			$machine_stmt->bindParam(":machstatus", $data["machstatus"], PDO::PARAM_STR);
 			$machine_stmt->execute();
 
 		    $pdo->commit();
@@ -62,36 +67,45 @@ class ModelMachineTracking{
 			$stmt = $pdo->prepare("UPDATE machinetracking SET
                                                  machineid = :machineid,
                                                  datereported = :datereported,
+												 machstatus = :machstatus,
+												 phase = :phase,
                                                  curstatus = :curstatus,
                                                  reporter = :reporter,
                                                  shift = :shift,
                                                  inctime = :inctime,
                                                  failuretype = :failuretype,
-                                                 controlnum = :controlnum,
+												 breakid = :breakid,
                                                  incidentdetails = :incidentdetails,
+												 technician = :technician,
                                                  compreporter = :compreporter,
                                                  datecompleted = :datecompleted,
                                                  endtime = :endtime,
                                                  daysduration = :daysduration,
                                                  timeduration = :timeduration,
+												 cause = :cause,
                                                  actiontaken = :actiontaken
                                            WHERE inccode = :inccode");
 
 			$stmt->bindParam(":machineid", $data["machineid"], PDO::PARAM_STR);
 			$stmt->bindParam(":datereported", $data["date_reported"], PDO::PARAM_STR);
+			$stmt->bindParam(":machstatus", $data["machstatus"], PDO::PARAM_STR);
+			$stmt->bindParam(":phase", $data["phase"], PDO::PARAM_STR);
 			$stmt->bindParam(":curstatus", $data["curstatus"], PDO::PARAM_STR);
             $stmt->bindParam(":inccode", $data["inccode"], PDO::PARAM_STR);
 			$stmt->bindParam(":reporter", $data["reporter"], PDO::PARAM_STR);
 			$stmt->bindParam(":shift", $data["shift"], PDO::PARAM_STR);
 			$stmt->bindParam(":inctime", $data["inctime"], PDO::PARAM_STR);
 			$stmt->bindParam(":failuretype", $data["failuretype"], PDO::PARAM_STR);
-            $stmt->bindParam(":controlnum", $data["controlnum"], PDO::PARAM_STR);
+            $stmt->bindParam(":breakid", $data["breakid"], PDO::PARAM_STR);
+			// $stmt->bindParam(":controlnum", $data["controlnum"], PDO::PARAM_STR);
             $stmt->bindParam(":incidentdetails", $data["incidentdetails"], PDO::PARAM_STR);
+			$stmt->bindParam(":technician", $data["technician"], PDO::PARAM_STR);
             $stmt->bindParam(":compreporter", $data["compreporter"], PDO::PARAM_STR);
             $stmt->bindParam(":datecompleted", $data["date_completed"], PDO::PARAM_STR);
             $stmt->bindParam(":endtime", $data["endtime"], PDO::PARAM_STR);
             $stmt->bindParam(":daysduration", $data["daysduration"], PDO::PARAM_STR);
             $stmt->bindParam(":timeduration", $data["timeduration"], PDO::PARAM_STR);
+			$stmt->bindParam(":cause", $data["cause"], PDO::PARAM_STR);
             $stmt->bindParam(":actiontaken", $data["actiontaken"], PDO::PARAM_STR);		
 			$stmt->execute();
 
@@ -100,11 +114,13 @@ class ModelMachineTracking{
                                            		   WHERE machineid = :machineid");
 
 			$machine_stmt->bindParam(":machineid", $data["machineid"], PDO::PARAM_STR);
-			$machine_stmt->bindParam(":machstatus", $data["curstatus"], PDO::PARAM_STR);
+			$machine_stmt->bindParam(":machstatus", $data["machstatus"], PDO::PARAM_STR);
 			$machine_stmt->execute();
 
+			$inccode = $data["inccode"];
+
 		    $pdo->commit();
-		    return "ok";
+		    return $inccode;
 		}catch (Exception $e){
 			$pdo->rollBack();
 			return "error";
@@ -113,17 +129,27 @@ class ModelMachineTracking{
 		$stmt = null;
 	}
 	
-	static public function mdlMachineTrackingTransactionList($machineid, $datemode, $start_date, $end_date, $curstatus){
+	static public function mdlMachineTrackingTransactionList($machineid, $datemode, $start_date, $end_date, $phase, $postedby){
 		if ($machineid != ''){
 			$machine = " AND (b.machineid = '$machineid')";
 		}else{
 			$machine = "";
 		}	
 
-		if ($curstatus != ''){
-			$status = " AND (a.curstatus = '$curstatus')";
+		if ($postedby != ''){
+			$reporter = " AND (a.reporter = '$postedby')";
 		}else{
-			$status = "";
+			$reporter = "";
+		}	
+
+		if ($phase != ''){
+			if ($phase == '- Queued -'){
+				$inc_phase = " AND ((a.phase = 'Pending') OR (a.phase = 'Allocated'))";
+			}else{
+				$inc_phase = " AND (a.phase = '$phase')";
+			}
+		}else{
+			$inc_phase = "";
 		}
 
 		if(!empty($end_date)){
@@ -136,7 +162,7 @@ class ModelMachineTracking{
 			$dates = "";
 		}					
 
-		$whereClause = "WHERE (a.inccode != '')" . $machine . $status . $dates;
+		$whereClause = "WHERE (a.inccode != '')" . $machine . $inc_phase . $dates . $reporter;
 
 		$stmt = (new Connection)->connect()->prepare("SELECT
                                         DATE_FORMAT(a.datereported, '%m/%d/%Y') AS datereported,
@@ -144,7 +170,7 @@ class ModelMachineTracking{
                                                     a.inccode,
 													a.controlnum,
                                                     b.machinedesc,
-                                                    a.curstatus,
+                                                    a.phase,
                                                     IF(a.datecompleted IS NULL OR a.datecompleted = '0000-00-00', '', DATE_FORMAT(a.datecompleted, '%m/%d/%Y')) AS datecompleted
                                                 FROM machinetracking a
                                                 INNER JOIN machine b ON a.machineid = b.machineid
@@ -409,6 +435,44 @@ class ModelMachineTracking{
         return $result;
 	}
 
+	static public function mdlPrintMachineTracking($inccode){
+		$stmt = (new Connection)->connect()->prepare("SELECT
+												mt.machineid,
+												m.machinedesc,
+												m.classcode,
+												mt.datereported,
+												mt.machstatus,
+												mt.phase,
+												mt.curstatus,
+												mt.inccode,
+												mt.reporter,
+												mt.shift,
+												mt.inctime,
+												mt.failuretype,
+												mt.breakid,
+												IFNULL(bd.details,'') AS details,
+												mt.controlnum,
+												mt.incidentdetails,
+												mt.technician,
+												mt.compreporter,
+												mt.datecompleted,
+												mt.endtime,
+												mt.daysduration,
+												mt.timeduration,
+												mt.cause,
+												mt.actiontaken
+										FROM machinetracking mt INNER JOIN machine m
+																ON (mt.machineid = m.machineid)
+																LEFT JOIN machinebreakdown bd
+																ON (mt.breakid = bd.breakid)		
+										WHERE (mt.inccode = '$inccode')");
+		$stmt -> execute();
+        $result = $stmt->fetch();
+        $stmt->closeCursor();
+        $stmt = null;
+        return $result;
+	}
+
 	static public function mdlCancelMachineTracking($reqnumber){
 		$db = new Connection();
 		$pdo = $db->connect();
@@ -429,5 +493,38 @@ class ModelMachineTracking{
 		}	
 		$pdo = null;	
 		$stmt = null;
+	}
+	
+	static public function mdlMachineCategoryFailuretypeList($machineid){
+		$stmt = (new Connection)->connect()->prepare("SELECT DISTINCT(mb.failuretype) AS failuretype,mb.classcode
+												 FROM machine m INNER JOIN machinebreakdown mb ON (m.classcode = mb.classcode)
+												 WHERE (m.machineid = '$machineid') ORDER BY failuretype");
+		$stmt -> execute();
+        $result = $stmt->fetchAll();
+        $stmt->closeCursor();
+        $stmt = null;
+        return $result;
 	}	
+
+	static public function mdlMachineCategoryBreakdownList($failuretype,$class_code){
+		$stmt = (new Connection)->connect()->prepare("SELECT * FROM machinebreakdown
+												             WHERE (failuretype = '$failuretype') AND (classcode = '$class_code')
+															 ORDER BY details");
+		$stmt -> execute();
+        $result = $stmt->fetchAll();
+        $stmt->closeCursor();
+        $stmt = null;
+        return $result;
+	}
+	
+	static public function mdlMachineIncidentList($machineid){
+		$stmt = (new Connection)->connect()->prepare("SELECT * FROM machinetracking
+															 WHERE machineid = '$machineid'
+															 	   AND phase != 'Cancelled'
+															       AND phase != 'Completed'");
+        $stmt->execute();
+        $answer = $stmt->fetchAll();
+        $stmt = null; 
+        return $answer;
+	}
 }

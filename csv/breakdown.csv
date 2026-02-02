@@ -1,0 +1,524 @@
+﻿1,0001,Electrical System,Faulty wiring or loose connections,BD0000001
+2,0001,Electrical System,Control panel malfunction,BD0000002
+3,0001,Electrical System,"Sensor failure (temperature, pressure)",BD0000003
+4,0001,Mechanical,Worn or damaged screw and barrel,BD0000004
+5,0001,Mechanical,Gearbox failure,BD0000005
+6,0001,Mechanical,Hydraulic pump or valve malfunction,BD0000006
+7,0001,Mechanical,Broken or misaligned mold clamping system,BD0000007
+8,0001,Heating System,Heater band burnout,BD0000008
+9,0001,Heating System,Thermocouple failure,BD0000009
+10,0001,Heating System,Uneven heating causing material degradation,BD0000010
+11,0001,Pneumatic System,Air leaks in blow pin or valves,BD0000011
+12,0001,Pneumatic System,Compressor failure or insufficient pressure,BD0000012
+13,0001,Cooling System,Blocked water channels in mold,BD0000013
+14,0001,Cooling System,Pump failure or insufficient cooling flow,BD0000014
+15,0001,Hydraulic System,Hydraulic pump overheating,BD0000015
+16,0001,Hydraulic System,Low hydraulic oil level,BD0000016
+17,0001,Hydraulic System,Oil contamination,BD0000017
+18,0001,Hydraulic System,Cylinder leakage,BD0000018
+19,0001,Hydraulic System,Valve block malfunction,BD0000019
+20,0001,Lubrication & Wear,"Lack of lubrication in moving parts (gearbox, bearings)",BD0000020
+21,0001,Lubrication & Wear,Oil contamination or low oil level,BD0000021
+22,0001,Material Feeding,Blockage in hopper or feed throat,BD0000022
+23,0001,Material Feeding,Contaminated raw material causing screw jamming,BD0000023
+24,0001,Sensor & Control System,PLC program errors,BD0000024
+25,0001,Sensor & Control System,Sensor calibration issues,BD0000025
+26,0001,Operator/Setup,Incorrect machine setup,BD0000026
+27,0001,Operator/Setup,Inadequate cleaning leading to residue buildup,BD0000027
+28,0001,Molding/Forming,"Die buildup (carbonized plastic, contamination)",BD0000028
+29,0001,Molding/Forming,Die bolts loosening,BD0000029
+30,0001,Molding/Forming,Die plate cracking,BD0000030
+31,0001,Molding/Forming,Incorrect die temperature,BD0000031
+32,0001,Molding/Forming,Internal die blockage causing high back pressure,BD0000032
+33,0010,Electrical System,Faulty wiring or loose connections,BD0000033
+34,0010,Electrical System,Control panel malfunction,BD0000034
+35,0010,Electrical System,"Sensor failure (temperature, pressure)",BD0000035
+36,0010,Mechanical,Worn or damaged screw and barrel,BD0000036
+37,0010,Mechanical,Gearbox failure,BD0000037
+38,0010,Mechanical,Hydraulic pump or valve malfunction,BD0000038
+39,0010,Mechanical,Broken or misaligned mold clamping system,BD0000039
+40,0010,Heating System,Heater band burnout,BD0000040
+41,0010,Heating System,Thermocouple failure,BD0000041
+42,0010,Heating System,Uneven heating causing material degradation,BD0000042
+43,0010,Pneumatic System,Air leaks in blow pin or valves,BD0000043
+44,0010,Pneumatic System,Compressor failure or insufficient pressure,BD0000044
+45,0010,Cooling System,Blocked water channels in mold,BD0000045
+46,0010,Cooling System,Pump failure or insufficient cooling flow,BD0000046
+47,0010,Hydraulic System,Hydraulic pump overheating,BD0000047
+48,0010,Hydraulic System,Low hydraulic oil level,BD0000048
+49,0010,Hydraulic System,Oil contamination,BD0000049
+50,0010,Hydraulic System,Cylinder leakage,BD0000050
+51,0010,Hydraulic System,Valve block malfunction,BD0000051
+52,0010,Lubrication & Wear,"Lack of lubrication in moving parts (gearbox, bearings)",BD0000052
+53,0010,Lubrication & Wear,Oil contamination or low oil level,BD0000053
+54,0010,Material Feeding,Blockage in hopper or feed throat,BD0000054
+55,0010,Material Feeding,Contaminated raw material causing screw jamming,BD0000055
+56,0010,Sensor & Control System,PLC program errors,BD0000056
+57,0010,Sensor & Control System,Sensor calibration issues,BD0000057
+58,0010,Operator/Setup,Incorrect machine setup,BD0000058
+59,0010,Operator/Setup,Inadequate cleaning leading to residue buildup,BD0000059
+60,0010,Molding/Forming,"Die buildup (carbonized plastic, contamination)",BD0000060
+61,0010,Molding/Forming,Die bolts loosening,BD0000061
+62,0010,Molding/Forming,Die plate cracking,BD0000062
+63,0010,Molding/Forming,Incorrect die temperature,BD0000063
+64,0010,Molding/Forming,Internal die blockage causing high back pressure,BD0000064
+65,0011,Electrical System,Faulty wiring or loose connections,BD0000065
+66,0011,Electrical System,Control panel malfunction,BD0000066
+67,0011,Electrical System,"Sensor failure (temperature, pressure)",BD0000067
+68,0011,Mechanical,Worn or damaged screw and barrel,BD0000068
+69,0011,Mechanical,Gearbox failure,BD0000069
+70,0011,Mechanical,Hydraulic pump or valve malfunction,BD0000070
+71,0011,Mechanical,Broken or misaligned mold clamping system,BD0000071
+72,0011,Heating System,Heater band burnout,BD0000072
+73,0011,Heating System,Thermocouple failure,BD0000073
+74,0011,Heating System,Uneven heating causing material degradation,BD0000074
+75,0011,Pneumatic System,Air leaks in blow pin or valves,BD0000075
+76,0011,Pneumatic System,Compressor failure or insufficient pressure,BD0000076
+77,0011,Cooling System,Blocked water channels in mold,BD0000077
+78,0011,Cooling System,Pump failure or insufficient cooling flow,BD0000078
+79,0011,Hydraulic System,Hydraulic pump overheating,BD0000079
+80,0011,Hydraulic System,Low hydraulic oil level,BD0000080
+81,0011,Hydraulic System,Oil contamination,BD0000081
+82,0011,Hydraulic System,Cylinder leakage,BD0000082
+83,0011,Hydraulic System,Valve block malfunction,BD0000083
+84,0011,Lubrication & Wear,"Lack of lubrication in moving parts (gearbox, bearings)",BD0000084
+85,0011,Lubrication & Wear,Oil contamination or low oil level,BD0000085
+86,0011,Material Feeding,Blockage in hopper or feed throat,BD0000086
+87,0011,Material Feeding,Contaminated raw material causing screw jamming,BD0000087
+88,0011,Sensor & Control System,PLC program errors,BD0000088
+89,0011,Sensor & Control System,Sensor calibration issues,BD0000089
+90,0011,Operator/Setup,Incorrect machine setup,BD0000090
+91,0011,Operator/Setup,Inadequate cleaning leading to residue buildup,BD0000091
+92,0011,Molding/Forming,"Die buildup (carbonized plastic, contamination)",BD0000092
+93,0011,Molding/Forming,Die bolts loosening,BD0000093
+94,0011,Molding/Forming,Die plate cracking,BD0000094
+95,0011,Molding/Forming,Incorrect die temperature,BD0000095
+96,0011,Molding/Forming,Internal die blockage causing high back pressure,BD0000096
+97,0012,Electrical System,Faulty wiring or loose connections,BD0000097
+98,0012,Electrical System,Control panel malfunction,BD0000098
+99,0012,Electrical System,"Sensor failure (temperature, pressure)",BD0000099
+100,0012,Mechanical,Worn or damaged screw and barrel,BD0000100
+101,0012,Mechanical,Gearbox failure,BD0000101
+102,0012,Mechanical,Hydraulic pump or valve malfunction,BD0000102
+103,0012,Mechanical,Broken or misaligned mold clamping system,BD0000103
+104,0012,Heating System,Heater band burnout,BD0000104
+105,0012,Heating System,Thermocouple failure,BD0000105
+106,0012,Heating System,Uneven heating causing material degradation,BD0000106
+107,0012,Pneumatic System,Air leaks in blow pin or valves,BD0000107
+108,0012,Pneumatic System,Compressor failure or insufficient pressure,BD0000108
+109,0012,Cooling System,Blocked water channels in mold,BD0000109
+110,0012,Cooling System,Pump failure or insufficient cooling flow,BD0000110
+111,0012,Hydraulic System,Hydraulic pump overheating,BD0000111
+112,0012,Hydraulic System,Low hydraulic oil level,BD0000112
+113,0012,Hydraulic System,Oil contamination,BD0000113
+114,0012,Hydraulic System,Cylinder leakage,BD0000114
+115,0012,Hydraulic System,Valve block malfunction,BD0000115
+116,0012,Lubrication & Wear,"Lack of lubrication in moving parts (gearbox, bearings)",BD0000116
+117,0012,Lubrication & Wear,Oil contamination or low oil level,BD0000117
+118,0012,Material Feeding,Blockage in hopper or feed throat,BD0000118
+119,0012,Material Feeding,Contaminated raw material causing screw jamming,BD0000119
+120,0012,Sensor & Control System,PLC program errors,BD0000120
+121,0012,Sensor & Control System,Sensor calibration issues,BD0000121
+122,0012,Operator/Setup,Incorrect machine setup,BD0000122
+123,0012,Operator/Setup,Inadequate cleaning leading to residue buildup,BD0000123
+124,0012,Molding/Forming,"Die buildup (carbonized plastic, contamination)",BD0000124
+125,0012,Molding/Forming,Die bolts loosening,BD0000125
+126,0012,Molding/Forming,Die plate cracking,BD0000126
+127,0012,Molding/Forming,Incorrect die temperature,BD0000127
+128,0012,Molding/Forming,Internal die blockage causing high back pressure,BD0000128
+129,0007,Electrical System,Blown fuses or circuit overload,BD0000129
+130,0007,Electrical System,Faulty main motor (1.5 kW),BD0000130
+131,0007,Electrical System,Damaged limit switches or proximity sensors,BD0000131
+132,0007,Electrical System,Poor grounding leading to intermittent shutdown,BD0000132
+133,0007,Electrical System,Malfunctioning PLC or control board,BD0000133
+134,0007,Electrical System,Loose wiring or terminal oxidation,BD0000134
+135,0007,Mechanical,Worn bearings on rollers or pulling wheels,BD0000135
+136,0007,Mechanical,Chain drive wear or breakage,BD0000136
+137,0007,Mechanical,Misalignment of sealing knife assembly,BD0000137
+138,0007,Mechanical,Broken or jammed cutting mechanism,BD0000138
+139,0007,Mechanical,Slippage on feeding rollers,BD0000139
+140,0007,Heating & Sealing Unit,Heater rod burnout,BD0000140
+141,0007,Heating & Sealing Unit,Temperature controller failure,BD0000141
+142,0007,Heating & Sealing Unit,Thermocouple malfunction,BD0000142
+143,0007,Heating & Sealing Unit,Uneven heating causing seal defects and stoppage,BD0000143
+144,0007,Heating & Sealing Unit,Sealing knife carbon build-up,BD0000144
+145,0007,Pneumatic System,Air leakage in tubing or fittings,BD0000145
+146,0007,Pneumatic System,Solenoid valve malfunction,BD0000146
+147,0007,Pneumatic System,Low compressor pressure,BD0000147
+148,0007,Pneumatic System,Cylinder misalignment or slow movement,BD0000148
+149,0007,Lubrication & Wear,Lack of lubrication on moving parts,BD0000149
+150,0007,Lubrication & Wear,Gear wear or broken teeth,BD0000150
+151,0007,Lubrication & Wear,Excessive friction causing overheating,BD0000151
+152,0007,Material Feeding,Photo-eye sensor failure (for bag length accuracy),BD0000152
+153,0007,Material Feeding,Dirty or blocked sensors,BD0000153
+154,0007,Material Feeding,Worn rubber rollers causing feeding inconsistency,BD0000154
+155,0007,Material Feeding,Film tension problems leading to jams,BD0000155
+156,0007,Sensor & Control System,Wrong bag length settings,BD0000156
+157,0007,Sensor & Control System,Incorrect sealing temperature,BD0000157
+158,0007,Sensor & Control System,PLC program freeze or error,BD0000158
+159,0007,Operator/Setup,Improper threading of film,BD0000159
+160,0007,Operator/Setup,Incorrect machine setup,BD0000160
+161,0007,Operator/Setup,Inadequate cleaning leading to residue buildup,BD0000161
+162,0009,Electrical System,Blown fuses or circuit overload,BD0000162
+163,0009,Electrical System,Faulty main motor (1.5 kW),BD0000163
+164,0009,Electrical System,Damaged limit switches or proximity sensors,BD0000164
+165,0009,Electrical System,Poor grounding leading to intermittent shutdown,BD0000165
+166,0009,Electrical System,Malfunctioning PLC or control board,BD0000166
+167,0009,Electrical System,Loose wiring or terminal oxidation,BD0000167
+168,0009,Mechanical,Worn bearings on rollers or pulling wheels,BD0000168
+169,0009,Mechanical,Chain drive wear or breakage,BD0000169
+170,0009,Mechanical,Misalignment of sealing knife assembly,BD0000170
+171,0009,Mechanical,Broken or jammed cutting mechanism,BD0000171
+172,0009,Mechanical,Slippage on feeding rollers,BD0000172
+173,0009,Heating & Sealing Unit,Heater rod burnout,BD0000173
+174,0009,Heating & Sealing Unit,Temperature controller failure,BD0000174
+175,0009,Heating & Sealing Unit,Thermocouple malfunction,BD0000175
+176,0009,Heating & Sealing Unit,Uneven heating causing seal defects and stoppage,BD0000176
+177,0009,Heating & Sealing Unit,Sealing knife carbon build-up,BD0000177
+178,0009,Pneumatic System,Air leakage in tubing or fittings,BD0000178
+179,0009,Pneumatic System,Solenoid valve malfunction,BD0000179
+180,0009,Pneumatic System,Low compressor pressure,BD0000180
+181,0009,Pneumatic System,Cylinder misalignment or slow movement,BD0000181
+182,0009,Lubrication & Wear,Lack of lubrication on moving parts,BD0000182
+183,0009,Lubrication & Wear,Gear wear or broken teeth,BD0000183
+184,0009,Lubrication & Wear,Excessive friction causing overheating,BD0000184
+185,0009,Material Feeding,Photo-eye sensor failure (for bag length accuracy),BD0000185
+186,0009,Material Feeding,Dirty or blocked sensors,BD0000186
+187,0009,Material Feeding,Worn rubber rollers causing feeding inconsistency,BD0000187
+188,0009,Material Feeding,Film tension problems leading to jams,BD0000188
+189,0009,Sensor & Control System,Wrong bag length settings,BD0000189
+190,0009,Sensor & Control System,Incorrect sealing temperature,BD0000190
+191,0009,Sensor & Control System,PLC program freeze or error,BD0000191
+192,0009,Operator/Setup,Improper threading of film,BD0000192
+193,0009,Operator/Setup,Incorrect machine setup,BD0000193
+194,0009,Operator/Setup,Inadequate cleaning leading to residue buildup,BD0000194
+195,0013,Electrical System,Heater band burnout.,BD0000195
+196,0013,Electrical System,Thermocouple failure causing wrong temperature readings,BD0000196
+197,0013,Electrical System,PLC/controller malfunction,BD0000197
+198,0013,Electrical System,Servo motor failure,BD0000198
+199,0013,Electrical System,"Faulty contactors, relays, or SSRs",BD0000199
+200,0013,Electrical System,Loose terminal connections → voltage drop,BD0000200
+201,0013,Electrical System,"Power supply fluctuations (AC 220V, 60 Hz)",BD0000201
+202,0013,Mechanical,Forming station misalignment,BD0000202
+203,0013,Mechanical,Cutting station blade wear or breakage,BD0000203
+204,0013,Mechanical,Bearing failure on main drive components,BD0000204
+205,0013,Mechanical,High-pressure air leaks causing weak forming,BD0000205
+206,0013,Mechanical,Chain or belt breakage,BD0000206
+207,0013,Mechanical,Stuck or jammed stripper/stacker mechanism,BD0000207
+208,0013,Heating System,Uneven heater temperature,BD0000208
+209,0013,Heating System,Heater zones not responding,BD0000209
+210,0013,Heating System,Temperature overshoot or undershoot,BD0000210
+211,0013,Heating System,Reflectors dirty → uneven heating,BD0000211
+212,0013,Pneumatic System,Low air pressure (below required forming pressure),BD0000212
+213,0013,Pneumatic System,Air leaks in hoses or fittings,BD0000213
+214,0013,Pneumatic System,Faulty solenoid valves,BD0000214
+215,0013,Pneumatic System,Slow or seized pneumatic cylinders,BD0000215
+216,0013,Pneumatic System,Air filter or dryer clogged → moisture in system,BD0000216
+217,0013,Cooling System,Chiller failure,BD0000217
+218,0013,Cooling System,Blocked cooling lines,BD0000218
+219,0013,Cooling System,Low coolant flow,BD0000219
+220,0013,Hydraulic System,Hydraulic pump overheating,BD0000220
+221,0013,Hydraulic System,Low hydraulic oil level,BD0000221
+222,0013,Hydraulic System,Oil contamination,BD0000222
+223,0013,Hydraulic System,Cylinder leakage,BD0000223
+224,0013,Hydraulic System,Valve block malfunction,BD0000224
+225,0013,Lubrication & Wear,Excessive friction causing overheating,BD0000225
+226,0013,Lubrication & Wear,"Lack of lubrication in moving parts (gearbox, bearings)",BD0000226
+227,0013,Lubrication & Wear,Oil contamination or low oil level,BD0000227
+228,0013,Material Feeding,Sheet misalignment,BD0000228
+229,0013,Material Feeding,Feeder servo motor error,BD0000229
+230,0013,Material Feeding,Sheet slipping due to worn clamps or belts,BD0000230
+231,0013,Material Feeding,Incorrect sheet tension,BD0000231
+232,0013,Material Feeding,Foreign material or dust blocking feed rollers,BD0000232
+233,0013,Sensor & Control System,Photoelectric sensor misalignment,BD0000233
+234,0013,Sensor & Control System,Limit switches damaged,BD0000234
+235,0013,Sensor & Control System,Proximity sensors contaminated with dust,BD0000235
+236,0013,Sensor & Control System,"Wrong parameter settings (stroke, cutting time, heating zones)",BD0000236
+237,0013,Operator/Setup,Incorrect sheet thickness setting,BD0000237
+238,0013,Operator/Setup,Wrong forming temperature,BD0000238
+239,0013,Operator/Setup,Improper mold changeover,BD0000239
+240,0013,Operator/Setup,Inadequate machine cleaning,BD0000240
+241,0013,Operator/Setup,Wrong pressure or stroke parameters,BD0000241
+242,0013,Molding/Forming,Blocked vacuum holes in mold,BD0000242
+243,0013,Molding/Forming,Insufficient air cooling,BD0000243
+244,0013,Molding/Forming,Damaged mold surfaces,BD0000244
+245,0013,Molding/Forming,Wrong mold clamping pressure,BD0000245
+246,0013,Molding/Forming,Mold overheating,BD0000246
+247,0013,Molding/Forming,Overload on cutting servo motor,BD0000247
+248,0013,Molding/Forming,Scrap not ejecting properly → jam,BD0000248
+249,0013,Downstream Equipment,Stacker arm malfunction,BD0000249
+250,0013,Downstream Equipment,Sensor misread causing wrong stacking count,BD0000250
+251,0013,Downstream Equipment,Jammed conveyor,BD0000251
+252,0013,Downstream Equipment,Worn belts or bearings,BD0000252
+253,0018,Electrical System,Heater band burnout.,BD0000253
+254,0018,Electrical System,Thermocouple failure causing wrong temperature readings,BD0000254
+255,0018,Electrical System,PLC/controller malfunction,BD0000255
+256,0018,Electrical System,Servo motor failure,BD0000256
+257,0018,Electrical System,"Faulty contactors, relays, or SSRs",BD0000257
+258,0018,Electrical System,Loose terminal connections → voltage drop,BD0000258
+259,0018,Electrical System,"Power supply fluctuations (AC 220V, 60 Hz)",BD0000259
+260,0018,Mechanical,Forming station misalignment,BD0000260
+261,0018,Mechanical,Cutting station blade wear or breakage,BD0000261
+262,0018,Mechanical,Bearing failure on main drive components,BD0000262
+263,0018,Mechanical,High-pressure air leaks causing weak forming,BD0000263
+264,0018,Mechanical,Chain or belt breakage,BD0000264
+265,0018,Mechanical,Stuck or jammed stripper/stacker mechanism,BD0000265
+266,0018,Heating System,Uneven heater temperature,BD0000266
+267,0018,Heating System,Heater zones not responding,BD0000267
+268,0018,Heating System,Temperature overshoot or undershoot,BD0000268
+269,0018,Heating System,Reflectors dirty → uneven heating,BD0000269
+270,0018,Pneumatic System,Low air pressure (below required forming pressure),BD0000270
+271,0018,Pneumatic System,Air leaks in hoses or fittings,BD0000271
+272,0018,Pneumatic System,Faulty solenoid valves,BD0000272
+273,0018,Pneumatic System,Slow or seized pneumatic cylinders,BD0000273
+274,0018,Pneumatic System,Air filter or dryer clogged → moisture in system,BD0000274
+275,0018,Cooling System,Chiller failure,BD0000275
+276,0018,Cooling System,Blocked cooling lines,BD0000276
+277,0018,Cooling System,Low coolant flow,BD0000277
+278,0018,Hydraulic System,Hydraulic pump overheating,BD0000278
+279,0018,Hydraulic System,Low hydraulic oil level,BD0000279
+280,0018,Hydraulic System,Oil contamination,BD0000280
+281,0018,Hydraulic System,Cylinder leakage,BD0000281
+282,0018,Hydraulic System,Valve block malfunction,BD0000282
+283,0018,Lubrication & Wear,Excessive friction causing overheating,BD0000283
+284,0018,Lubrication & Wear,"Lack of lubrication in moving parts (gearbox, bearings)",BD0000284
+285,0018,Lubrication & Wear,Oil contamination or low oil level,BD0000285
+286,0018,Material Feeding,Sheet misalignment,BD0000286
+287,0018,Material Feeding,Feeder servo motor error,BD0000287
+288,0018,Material Feeding,Sheet slipping due to worn clamps or belts,BD0000288
+289,0018,Material Feeding,Incorrect sheet tension,BD0000289
+290,0018,Material Feeding,Foreign material or dust blocking feed rollers,BD0000290
+291,0018,Sensor & Control System,Photoelectric sensor misalignment,BD0000291
+292,0018,Sensor & Control System,Limit switches damaged,BD0000292
+293,0018,Sensor & Control System,Proximity sensors contaminated with dust,BD0000293
+294,0018,Sensor & Control System,"Wrong parameter settings (stroke, cutting time, heating zones)",BD0000294
+295,0018,Operator/Setup,Incorrect sheet thickness setting,BD0000295
+296,0018,Operator/Setup,Wrong forming temperature,BD0000296
+297,0018,Operator/Setup,Improper mold changeover,BD0000297
+298,0018,Operator/Setup,Inadequate machine cleaning,BD0000298
+299,0018,Operator/Setup,Wrong pressure or stroke parameters,BD0000299
+300,0018,Molding/Forming,Blocked vacuum holes in mold,BD0000300
+301,0018,Molding/Forming,Insufficient air cooling,BD0000301
+302,0018,Molding/Forming,Damaged mold surfaces,BD0000302
+303,0018,Molding/Forming,Wrong mold clamping pressure,BD0000303
+304,0018,Molding/Forming,Mold overheating,BD0000304
+305,0018,Molding/Forming,Overload on cutting servo motor,BD0000305
+306,0018,Molding/Forming,Scrap not ejecting properly → jam,BD0000306
+307,0018,Downstream Equipment,Stacker arm malfunction,BD0000307
+308,0018,Downstream Equipment,Sensor misread causing wrong stacking count,BD0000308
+309,0018,Downstream Equipment,Jammed conveyor,BD0000309
+310,0018,Downstream Equipment,Worn belts or bearings,BD0000310
+311,0005,Electrical System,Burned motor windings (main motor or servo drives),BD0000311
+312,0005,Electrical System,Overheated or overloaded VFD (inverter),BD0000312
+313,0005,Electrical System,Heater band burnout,BD0000313
+314,0005,Electrical System,Faulty thermocouples (wrong or no temperature reading),BD0000314
+315,0005,Electrical System,Control panel short circuit,BD0000315
+316,0005,Electrical System,Loose wiring or damaged connectors,BD0000316
+317,0005,Electrical System,Power fluctuations or low voltage,BD0000317
+318,0005,Electrical System,PLC malfunction or program error,BD0000318
+319,0005,Electrical System,"Faulty sensors (pressure, temperature, limit switches)",BD0000319
+320,0005,Mechanical,"Worn screw and barrel (low output, overheating, pressure loss)",BD0000320
+321,0005,Mechanical,Worn gearbox or broken gear teeth,BD0000321
+322,0005,Mechanical,Damaged thrust bearing,BD0000322
+323,0005,Mechanical,Hopper blockage or stuck material,BD0000323
+324,0005,Mechanical,Worn puller rollers/slippage,BD0000324
+325,0005,Mechanical,Misalignment of die head,BD0000325
+326,0005,Mechanical,Cracked die or blocked die channels,BD0000326
+327,0005,Mechanical,Broken coupling between motor and gearbox,BD0000327
+328,0005,Heating System,Uneven heating in zones,BD0000328
+329,0005,Heating System,Temperature controller malfunction,BD0000329
+330,0005,Heating System,Overheating/underheating causing material degradation,BD0000330
+331,0005,Heating System,Broken insulation causing heat loss,BD0000331
+332,0005,Pneumatic System,Air compressor failure,BD0000332
+333,0005,Pneumatic System,Low air pressure,BD0000333
+334,0005,Pneumatic System,Air leaks in valves or hoses,BD0000334
+335,0005,Pneumatic System,Solenoid valve failure,BD0000335
+336,0005,Cooling System,Water pump failure,BD0000336
+337,0005,Cooling System,Chiller malfunction,BD0000337
+338,0005,Cooling System,Blocked water channels in die head or calibration table,BD0000338
+339,0005,Cooling System,Insufficient cooling flow causing product distortion,BD0000339
+340,0005,Cooling System,Cooling tower contamination,BD0000340
+341,0005,Hydraulic System,Pump overheating,BD0000341
+342,0005,Hydraulic System,Low hydraulic oil,BD0000342
+343,0005,Hydraulic System,Leaking cylinders or hoses,BD0000343
+344,0005,Hydraulic System,Valve block malfunction,BD0000344
+345,0005,Lubrication & Wear,Gearbox oil level too low,BD0000345
+346,0005,Lubrication & Wear,Oil contamination,BD0000346
+347,0005,Lubrication & Wear,Bearing lubrication failure,BD0000347
+348,0005,Lubrication & Wear,Excessive friction causing overheating,BD0000348
+349,0005,Material Feeding,Jammed hopper,BD0000349
+350,0005,Material Feeding,Wet or contaminated raw material,BD0000350
+351,0005,Material Feeding,Screw cannot grip material due to bridging,BD0000351
+352,0005,Material Feeding,Worn feed throat,BD0000352
+353,0005,Material Feeding,Blocked vacuum loader / clogged filters,BD0000353
+354,0005,Material Feeding,Poor material mixing (inconsistent melt),BD0000354
+355,0005,Operator/Setup,Wrong temperature settings,BD0000355
+356,0005,Operator/Setup,Incorrect screw speed or pressure setup,BD0000356
+357,0005,Operator/Setup,Improper die installation,BD0000357
+358,0005,Operator/Setup,Poor cleaning after material change,BD0000358
+359,0005,Operator/Setup,Wrong raw material type or MFI (Melt Flow Index),BD0000359
+360,0005,Operator/Setup,Skipping preventive maintenance,BD0000360
+361,0005,Molding/Forming,"Die buildup (carbonized plastic, contamination)",BD0000361
+362,0005,Molding/Forming,Die bolts loosening,BD0000362
+363,0005,Molding/Forming,Die plate cracking,BD0000363
+364,0005,Molding/Forming,Incorrect die temperature,BD0000364
+365,0005,Molding/Forming,Internal die blockage causing high back pressure,BD0000365
+366,0005,Downstream Equipment,Cutter motor failure,BD0000366
+367,0005,Downstream Equipment,Calibration table misalignment,BD0000367
+368,0005,Downstream Equipment,Vacuum pump failure,BD0000368
+369,0005,Downstream Equipment,Conveyor jams,BD0000369
+370,0005,Downstream Equipment,"Winder malfunction (film, sheet applications)",BD0000370
+371,0006,Electrical System,Burned motor windings (main motor or servo drives),BD0000371
+372,0006,Electrical System,Overheated or overloaded VFD (inverter),BD0000372
+373,0006,Electrical System,Heater band burnout,BD0000373
+374,0006,Electrical System,Faulty thermocouples (wrong or no temperature reading),BD0000374
+375,0006,Electrical System,Control panel short circuit,BD0000375
+376,0006,Electrical System,Loose wiring or damaged connectors,BD0000376
+377,0006,Electrical System,Power fluctuations or low voltage,BD0000377
+378,0006,Electrical System,PLC malfunction or program error,BD0000378
+379,0006,Electrical System,"Faulty sensors (pressure, temperature, limit switches)",BD0000379
+380,0006,Mechanical,"Worn screw and barrel (low output, overheating, pressure loss)",BD0000380
+381,0006,Mechanical,Worn gearbox or broken gear teeth,BD0000381
+382,0006,Mechanical,Damaged thrust bearing,BD0000382
+383,0006,Mechanical,Hopper blockage or stuck material,BD0000383
+384,0006,Mechanical,Worn puller rollers/slippage,BD0000384
+385,0006,Mechanical,Misalignment of die head,BD0000385
+386,0006,Mechanical,Cracked die or blocked die channels,BD0000386
+387,0006,Mechanical,Broken coupling between motor and gearbox,BD0000387
+388,0006,Heating System,Uneven heating in zones,BD0000388
+389,0006,Heating System,Temperature controller malfunction,BD0000389
+390,0006,Heating System,Overheating/underheating causing material degradation,BD0000390
+391,0006,Heating System,Broken insulation causing heat loss,BD0000391
+392,0006,Pneumatic System,Air compressor failure,BD0000392
+393,0006,Pneumatic System,Low air pressure,BD0000393
+394,0006,Pneumatic System,Air leaks in valves or hoses,BD0000394
+395,0006,Pneumatic System,Solenoid valve failure,BD0000395
+396,0006,Cooling System,Water pump failure,BD0000396
+397,0006,Cooling System,Chiller malfunction,BD0000397
+398,0006,Cooling System,Blocked water channels in die head or calibration table,BD0000398
+399,0006,Cooling System,Insufficient cooling flow causing product distortion,BD0000399
+400,0006,Cooling System,Cooling tower contamination,BD0000400
+401,0006,Hydraulic System,Pump overheating,BD0000401
+402,0006,Hydraulic System,Low hydraulic oil,BD0000402
+403,0006,Hydraulic System,Leaking cylinders or hoses,BD0000403
+404,0006,Hydraulic System,Valve block malfunction,BD0000404
+405,0006,Lubrication & Wear,Gearbox oil level too low,BD0000405
+406,0006,Lubrication & Wear,Oil contamination,BD0000406
+407,0006,Lubrication & Wear,Bearing lubrication failure,BD0000407
+408,0006,Lubrication & Wear,Excessive friction causing overheating,BD0000408
+409,0006,Material Feeding,Jammed hopper,BD0000409
+410,0006,Material Feeding,Wet or contaminated raw material,BD0000410
+411,0006,Material Feeding,Screw cannot grip material due to bridging,BD0000411
+412,0006,Material Feeding,Worn feed throat,BD0000412
+413,0006,Material Feeding,Blocked vacuum loader / clogged filters,BD0000413
+414,0006,Material Feeding,Poor material mixing (inconsistent melt),BD0000414
+415,0006,Operator/Setup,Wrong temperature settings,BD0000415
+416,0006,Operator/Setup,Incorrect screw speed or pressure setup,BD0000416
+417,0006,Operator/Setup,Improper die installation,BD0000417
+418,0006,Operator/Setup,Poor cleaning after material change,BD0000418
+419,0006,Operator/Setup,Wrong raw material type or MFI (Melt Flow Index),BD0000419
+420,0006,Operator/Setup,Skipping preventive maintenance,BD0000420
+421,0006,Molding/Forming,"Die buildup (carbonized plastic, contamination)",BD0000421
+422,0006,Molding/Forming,Die bolts loosening,BD0000422
+423,0006,Molding/Forming,Die plate cracking,BD0000423
+424,0006,Molding/Forming,Incorrect die temperature,BD0000424
+425,0006,Molding/Forming,Internal die blockage causing high back pressure,BD0000425
+426,0006,Downstream Equipment,Cutter motor failure,BD0000426
+427,0006,Downstream Equipment,Calibration table misalignment,BD0000427
+428,0006,Downstream Equipment,Vacuum pump failure,BD0000428
+429,0006,Downstream Equipment,Conveyor jams,BD0000429
+430,0006,Downstream Equipment,"Winder malfunction (film, sheet applications)",BD0000430
+431,0002,Electrical System,"Faulty sensors (proximity switches, photoelectric, temperature sensors)",BD0000431
+432,0002,Electrical System,Wiring cuts or loose connectors due to vibration,BD0000432
+433,0002,Electrical System,"PLC/relay failures (usually due to overheating, dust, power surges)",BD0000433
+434,0002,Electrical System,Faulty limit switches on mold open/close,BD0000434
+435,0002,Electrical System,Blown fuses / breakers,BD0000435
+436,0002,Electrical System,Servo motor controller issues (for newer models),BD0000436
+437,0002,Mechanical,Wear on linear bearings & sliders,BD0000437
+438,0002,Mechanical,Mold misalignment,BD0000438
+439,0002,Mechanical,Cracked stretching rods,BD0000439
+440,0002,Mechanical,Worn toggle mechanism,BD0000440
+441,0002,Mechanical,Chain or belt wear in the preform feed system,BD0000441
+442,0002,Mechanical,Loose bolts or poor lubrication,BD0000442
+443,0002,Heating System,Burned-out heating lamps,BD0000443
+444,0002,Heating System,Broken thermocouples,BD0000444
+445,0002,Heating System,Temperature drifting or uncontrolled heating,BD0000445
+446,0002,Heating System,Dirty reflectors reducing heating efficiency,BD0000446
+447,0002,Heating System,Fan failures inside oven area,BD0000447
+448,0002,Pneumatic System,"Insufficient air pressure (leaks, clogged filters, faulty compressor)",BD0000448
+449,0002,Pneumatic System,"Moisture in air lines → rust, valve sticking, actuator failure",BD0000449
+450,0002,Pneumatic System,"Faulty solenoid valves (slow response, stuck open/closed)",BD0000450
+451,0002,Pneumatic System,"Broken/aging air cylinders (loss of stroke, air bypassing seals)",BD0000451
+452,0002,Pneumatic System,Pressure regulator malfunction,BD0000452
+453,0002,Cooling System,Insufficient chiller capacity,BD0000453
+454,0002,Cooling System,Cooling water pump failure,BD0000454
+455,0002,Cooling System,Blocked pipes,BD0000455
+456,0002,Cooling System,Low water flow / pressure,BD0000456
+457,0002,Hydraulic System,Low hydraulic oil level,BD0000457
+458,0002,Hydraulic System,"Contaminated oil (metal shavings, moisture)",BD0000458
+459,0002,Hydraulic System,Failing hydraulic pump,BD0000459
+460,0002,Hydraulic System,Overheating due to clogged filters or cooling failure,BD0000460
+461,0002,Lubrication & Wear,Excessive friction causing overheating,BD0000461
+462,0002,Lubrication & Wear,"Lack of lubrication in moving parts (gearbox, bearings)",BD0000462
+463,0002,Lubrication & Wear,Oil contamination or low oil level,BD0000463
+464,0002,Material Feeding,Preform weight variation,BD0000464
+465,0002,Material Feeding,Wrong resin type,BD0000465
+466,0002,Material Feeding,"Contaminated preforms (dust, oil)",BD0000466
+467,0002,Material Feeding,Preforms inserted upside down or jammed in feeder,BD0000467
+468,0002,Material Feeding,Incorrect preform neck ring size for mold,BD0000468
+469,0002,Sensor & Control System,Photoelectric sensor misalignment,BD0000469
+470,0002,Sensor & Control System,Limit switches damaged,BD0000470
+471,0002,Sensor & Control System,Proximity sensors contaminated with dust,BD0000471
+472,0002,Sensor & Control System,"Wrong parameter settings (stroke, cutting time, heating zones)",BD0000472
+473,0002,Operator/Setup,Incorrect blowing pressure settings,BD0000473
+474,0002,Operator/Setup,Wrong heating zone configuration,BD0000474
+475,0002,Operator/Setup,Cycle speed too high for the mold,BD0000475
+476,0002,Operator/Setup,Poor machine startup / shutdown practice,BD0000476
+477,0002,Operator/Setup,Insufficient lubrication due to skipped maintenance,BD0000477
+478,0008,Electrical System,"Faulty sensors (proximity switches, photoelectric, temperature sensors)",BD0000478
+479,0008,Electrical System,Wiring cuts or loose connectors due to vibration,BD0000479
+480,0008,Electrical System,"PLC/relay failures (usually due to overheating, dust, power surges)",BD0000480
+481,0008,Electrical System,Faulty limit switches on mold open/close,BD0000481
+482,0008,Electrical System,Blown fuses / breakers,BD0000482
+483,0008,Electrical System,Servo motor controller issues (for newer models),BD0000483
+484,0008,Mechanical,Wear on linear bearings & sliders,BD0000484
+485,0008,Mechanical,Mold misalignment,BD0000485
+486,0008,Mechanical,Cracked stretching rods,BD0000486
+487,0008,Mechanical,Worn toggle mechanism,BD0000487
+488,0008,Mechanical,Chain or belt wear in the preform feed system,BD0000488
+489,0008,Mechanical,Loose bolts or poor lubrication,BD0000489
+490,0008,Heating System,Burned-out heating lamps,BD0000490
+491,0008,Heating System,Broken thermocouples,BD0000491
+492,0008,Heating System,Temperature drifting or uncontrolled heating,BD0000492
+493,0008,Heating System,Dirty reflectors reducing heating efficiency,BD0000493
+494,0008,Heating System,Fan failures inside oven area,BD0000494
+495,0008,Pneumatic System,"Insufficient air pressure (leaks, clogged filters, faulty compressor)",BD0000495
+496,0008,Pneumatic System,"Moisture in air lines → rust, valve sticking, actuator failure",BD0000496
+497,0008,Pneumatic System,"Faulty solenoid valves (slow response, stuck open/closed)",BD0000497
+498,0008,Pneumatic System,"Broken/aging air cylinders (loss of stroke, air bypassing seals)",BD0000498
+499,0008,Pneumatic System,Pressure regulator malfunction,BD0000499
+500,0008,Cooling System,Insufficient chiller capacity,BD0000500
+501,0008,Cooling System,Cooling water pump failure,BD0000501
+502,0008,Cooling System,Blocked pipes,BD0000502
+503,0008,Cooling System,Low water flow / pressure,BD0000503
+504,0008,Hydraulic System,Low hydraulic oil level,BD0000504
+505,0008,Hydraulic System,"Contaminated oil (metal shavings, moisture)",BD0000505
+506,0008,Hydraulic System,Failing hydraulic pump,BD0000506
+507,0008,Hydraulic System,Overheating due to clogged filters or cooling failure,BD0000507
+508,0008,Lubrication & Wear,Excessive friction causing overheating,BD0000508
+509,0008,Lubrication & Wear,"Lack of lubrication in moving parts (gearbox, bearings)",BD0000509
+510,0008,Lubrication & Wear,Oil contamination or low oil level,BD0000510
+511,0008,Material Feeding,Preform weight variation,BD0000511
+512,0008,Material Feeding,Wrong resin type,BD0000512
+513,0008,Material Feeding,"Contaminated preforms (dust, oil)",BD0000513
+514,0008,Material Feeding,Preforms inserted upside down or jammed in feeder,BD0000514
+515,0008,Material Feeding,Incorrect preform neck ring size for mold,BD0000515
+516,0008,Sensor & Control System,Photoelectric sensor misalignment,BD0000516
+517,0008,Sensor & Control System,Limit switches damaged,BD0000517
+518,0008,Sensor & Control System,Proximity sensors contaminated with dust,BD0000518
+519,0008,Sensor & Control System,"Wrong parameter settings (stroke, cutting time, heating zones)",BD0000519
+520,0008,Operator/Setup,Incorrect blowing pressure settings,BD0000520
+521,0008,Operator/Setup,Wrong heating zone configuration,BD0000521
+522,0008,Operator/Setup,Cycle speed too high for the mold,BD0000522
+523,0008,Operator/Setup,Poor machine startup / shutdown practice,BD0000523
+524,0008,Operator/Setup,Insufficient lubrication due to skipped maintenance,BD0000524

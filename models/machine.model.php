@@ -185,4 +185,104 @@ class ModelMachine{
 		$stmt -> close();
 		$stmt = null;
 	}
+
+	static public function mdlAddMachineBreakdown($data){
+		$db = new Connection();
+		$pdo = $db->connect();
+        try{
+        	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $pdo->beginTransaction();
+
+            $break_id = $pdo->prepare("SELECT CONCAT('BD', LPAD((count(id)+1),7,'0')) as gen_id FROM machinebreakdown");
+
+            $break_id->execute();
+		    $breakid = $break_id -> fetchAll(PDO::FETCH_ASSOC);
+
+			$stmt = $pdo->prepare("INSERT INTO machinebreakdown(classcode, failuretype, details, breakid) 
+                                                              VALUES (:classcode, :failuretype, :details, :breakid)");
+
+			$stmt->bindParam(":classcode", $data["classcode"], PDO::PARAM_STR);
+			$stmt->bindParam(":failuretype", $data["failuretype"], PDO::PARAM_STR);
+			$stmt->bindParam(":details", $data["details"], PDO::PARAM_STR);
+			$stmt->bindParam(":breakid", $breakid[0]['gen_id'], PDO::PARAM_STR);	
+			$stmt->execute();
+
+		    $pdo->commit();
+		    return "ok";
+		}catch (Exception $e){
+			$pdo->rollBack();
+			return "error";
+		}	
+		$pdo = null;	
+		$stmt = null;
+	}
+
+	static public function mdlEditMachineBreakdown($data){
+		$db = new Connection();
+		$pdo = $db->connect();
+        try{
+        	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $pdo->beginTransaction();
+
+			$stmt = $pdo->prepare("UPDATE machinebreakdown SET
+                                                 classcode = :classcode,
+                                                 failuretype = :failuretype,
+                                                 details = :details
+                                           WHERE breakid = :breakid");
+
+			$stmt->bindParam(":classcode", $data["classcode"], PDO::PARAM_STR);
+			$stmt->bindParam(":failuretype", $data["failuretype"], PDO::PARAM_STR);
+			$stmt->bindParam(":details", $data["details"], PDO::PARAM_STR);
+            $stmt->bindParam(":breakid", $data["breakid"], PDO::PARAM_STR);	
+			$stmt->execute();
+
+		    $pdo->commit();
+		    return "ok";
+		}catch (Exception $e){
+			$pdo->rollBack();
+			return "error";
+		}	
+		$pdo = null;	
+		$stmt = null;
+	}	
+
+	static public function mdlMachineBreakdownTransactionList($classcode, $failuretype){
+		if ($classcode != ''){
+			$class_code = " AND (b.classcode = '$classcode')";
+		}else{
+			$class_code = "";
+		}	
+
+		if ($failuretype != ''){
+			$failure_type = " AND (b.failuretype = '$failuretype')";
+		}else{
+			$failure_type = "";
+		}					
+
+		$whereClause = "WHERE (b.breakid != '')" . $class_code . $failure_type;
+
+		$stmt = (new Connection)->connect()->prepare("SELECT
+                                                    a.classname,
+													b.breakid,
+                                                    b.failuretype,
+													b.details
+                                                FROM classification a
+                                                INNER JOIN machinebreakdown b ON a.classcode = b.classcode
+                                                $whereClause
+                                                ORDER BY a.classname,b.failuretype");
+        $stmt->execute();
+        $results = $stmt->fetchAll();
+        $stmt = null; 
+        return $results;
+	}
+	
+	static public function mdlShowMachineBreakdown($breakid){
+		$stmt = (new Connection)->connect()->prepare("SELECT * FROM machinebreakdown WHERE (breakid = '$breakid')");
+
+		$stmt -> execute();
+        $result = $stmt->fetch();
+        $stmt->closeCursor();
+        $stmt = null;
+        return $result;
+	}	
 }

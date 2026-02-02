@@ -52,7 +52,7 @@ var totalPercentage = 0, validCount = 0, totalAverage = 0.00;
 document.addEventListener('DOMContentLoaded', function() {
 // $(function() {
     // Hide - Report Type by default (Machiniries Tab)
-    $("ul.nav-tabs-bottom li:nth-child(4)").hide();
+    $("ul.nav-tabs-bottom li:nth-child(5)").hide();
 
     // Machiniries Tab date range
     $('#lst_date_range').daterangepicker({
@@ -86,45 +86,26 @@ document.addEventListener('DOMContentLoaded', function() {
         minDate: moment('2025-09-01')
     }); 
 
-
-
-
-    // $("#statistical").hide();
-    $("#narrative").hide();
+    $("#statistical").hide();
 
     $("#sel-displaytype").on("change", function () {
-        const displayType = $(this).val();
-
-        if (displayType === "Narrative") {
-            $("#statistical").hide();
-            $("#narrative").show();
-        } else if (displayType === "Statistical") {
-            $("#narrative").hide();
-            $("#statistical").show();
-        } else {
-            // If nothing selected
-            $("#statistical").hide();
-            $("#narrative").hide();
-        }
+        machine_health_report();
     });
 
-
-
-    
     var tableInventory = $('.productInventoryTable').DataTable();
     tableInventory.columns.adjust();
 
     $('li.cur-inventory').click(function(){
-        // show report type
-        $("ul.nav-tabs-bottom li:nth-child(4)").hide();    
-        // var tableInventory = $('.productInventoryTable').DataTable();
-        // tableInventory.columns.adjust();
+        $("ul.nav-tabs-bottom li:nth-child(5)").hide();    
     });
 
     $('li.cur-machine').click(function(){
-        // hide report type
-        $("ul.nav-tabs-bottom li:nth-child(4)").hide();
-    });         
+        $("ul.nav-tabs-bottom li:nth-child(5)").hide();
+    });    
+    
+    $('li.cur-stockledger').click(function(){
+        $("ul.nav-tabs-bottom li:nth-child(5)").hide();
+    }); 
 
     machine_status_count();
     machine_health_report();
@@ -142,7 +123,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // filter_machine();
     });
 
-    $("#sel-displaytype").val('Statistical').trigger('change');
+    // $("#sel-displaytype").val('Statistical').trigger('change');
+    $("#sel-displaytype").val('Narrative').trigger('change');
 
     $('#sel-buildingcode,#lst_date_range').on("change", function(){
         // Statistical
@@ -155,6 +137,13 @@ document.addEventListener('DOMContentLoaded', function() {
         machine_health_report();
     });
 
+    // PER MACHINE
+    // mttr = total downtime / total frequency
+    // mtbf = (total operating time - total downtime) / total frequency
+
+    // operating time = days between x 24 hours
+
+    // summary mtbf = mtbf per machine x frequency per machine / total frequency
     function machine_health_report(){
         let buildingcode = $("#sel-buildingcode").val();
         let date_range = $("#lst_date_range").val();
@@ -174,87 +163,453 @@ document.addEventListener('DOMContentLoaded', function() {
             dataType:"json",               
             success:function(answer){
                 $(".health_content").empty();
+                var total_category_frequency = 0;
+                var total_category_downtime = 0.00;
+                var total_category_mtbf = 0.00;
+                var average_category_mttr = 0.00;
+                var average_category_mtbf = 0.00;
+                var prev_classname;
+                var curr_classname;
                 var html = [];
-                html.push('<div class="table-responsive" style="overflow-y: auto; max-height: 470px;margin-bottom:12px;">');
-                    html.push('<table class="table mx-auto w-auto itemInventoryTable">');
-                        html.push('<thead>');
-                            html.push('<tr>');
-                                html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">CATEGORY</th>');
-                                html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">MACHINE DESCRIPTION</th>');
-                                html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">CASE</th>');
-                                html.push('<th class="table_head_center_fixed" style="padding-top:8px;padding-bottom:8px;">STAT</th>');
-                                html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">FREQUENCY</th>');
-                                html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">DOWNTIME</th>');
-                                html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">MTBF</th>');
-                                html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">MTTR</th>');
-                            html.push('</tr>');
-                        html.push('</thead>');
+                if ($("#sel-displaytype").val() == 'Narrative'){
+                    html.push('<div class="table-responsive" style="overflow-y: auto; max-height: 470px;margin-bottom:12px;">');
+                        html.push('<table class="table mx-auto w-auto itemInventoryTable">');
+                            html.push('<thead>');
+                                html.push('<tr>');
+                                    html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">CATEGORY</th>');
+                                    html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">MACHINE DESCRIPTION</th>');
+                                    // html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">CASE</th>');
+                                    html.push('<th class="table_head_center_fixed" style="padding-top:8px;padding-bottom:8px;">STAT</th>');
+                                    html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">FREQUENCY</th>');
+                                    html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">DOWNTIME</th>');
+                                    html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">MTBF</th>');
+                                    html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">MTTR</th>');
+                                html.push('</tr>');
+                            html.push('</thead>');
 
-                        for(var i = 0; i < answer.length; i++) {
-                            var health = answer[i];
-                            var classname = health.classname;
-                            var machinedesc = health.machinedesc;
-                            var machinestatus = health.machinestatus;
-                            var totalfrequency = health.totalfrequency;
-                            var totaldowntime = health.totaldowntime;
-                            var mtbf = numberWithCommas(health.mtbf);
-                            var mttr = numberWithCommas(health.mttr);
+                            for(var i = 0; i < answer.length; i++) {
+                                var health = answer[i];
+                                var classname = health.classname;
+                                var machinedesc = health.machinedesc;
+                                var machineid = health.machineid;
+                                var machinestatus = health.machinestatus;
+                                var totalfrequency = health.totalfrequency;
+                                var totaldowntime = health.totaldowntime;
+                                var mtbf = numberWithCommas(health.mtbf);
+                                var mttr = numberWithCommas(health.mttr);
 
-                            var statusColor = getStatusColor(machinestatus);
+                                var statusColor = getStatusColor(machinestatus);
 
-                            html.push('<tr>');
-                                html.push('<td style="text-align:left;border:1px solid white;border-right:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+classname+'</td>');
-                                html.push('<td style="text-align:left;border:1px solid white;border-right:1px solid white;font-size:1.1em;padding-top:4px;padding-bottom:4px;">'+machinedesc+'</td>');
-                                html.push('<td style="text-align:center;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+''+'</td>');
+                                if (i == 0){
+                                    prev_classname = health.classname;
+                                    total_category_frequency = total_category_frequency + Number(health.totalfrequency);
+                                    total_category_downtime = total_category_downtime + Number(health.totaldowntime);
+                                    total_category_mtbf = total_category_mtbf + (Number(health.mtbf) * Number(health.totalfrequency));
+                                }else{
+                                    curr_classname = health.classname;
+                                    if (prev_classname == curr_classname){
+                                        total_category_frequency = total_category_frequency + Number(health.totalfrequency);
+                                        total_category_downtime = total_category_downtime + Number(health.totaldowntime);
+                                        total_category_mtbf = total_category_mtbf + (Number(health.mtbf) * Number(health.totalfrequency));
+                                    }else{
+                                        average_category_mttr = total_category_downtime / total_category_frequency;
+                                        average_category_mtbf = total_category_mtbf / total_category_frequency;
+                                        html.push('<tr>');
+                                            html.push('<td colspan="3"></td>');
+                                            html.push('<td style="text-align:center;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+total_category_frequency+'</td>');
+                                            html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(total_category_downtime)+'</td>');
+                                            html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mtbf)+'</td>');
+                                            html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mttr)+'</td>');
+                                        html.push('</tr>');
 
-                                // html.push(
-                                //     '<td style="text-align:center;' +
-                                //     'border:4px solid white;' +
-                                //     'font-size:1.2em;' +
-                                //     'padding-top:4px;' +
-                                //     'padding-bottom:4px;' +
-                                //     'background-color:' + statusColor + ';' +
-                                //     'color:white;">' +
-                                //     machinestatus +
-                                //     '</td>'
-                                // );
+                                        total_category_frequency = 0;
+                                        total_category_downtime = 0.00;
+                                        total_category_mtbf = 0.00;
+                                        total_category_frequency = total_category_frequency + Number(health.totalfrequency);
+                                        total_category_downtime = total_category_downtime + Number(health.totaldowntime);
+                                        total_category_mtbf = total_category_mtbf + (Number(health.mtbf) * Number(health.totalfrequency));
+                                        prev_classname = health.classname;
+                                        // alert(prev_classname);
+                                    }
+                                }
 
-                                html.push(
-                                    '<td style="text-align:center;' +
-                                    'border:4px solid white;' +
-                                    'font-size:1.2em;' +
-                                    'padding-top:4px;' +
-                                    'padding-bottom:4px;' +
-                                    'background-color:' + statusColor + ';' +
-                                    'color:white;"></td>'
-                                );
+                                html.push('<tr>');
+                                    html.push('<td style="text-align:left;border:1px solid white;border-right:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+classname+'</td>');
 
-                                //html.push('<td style="text-align:center;border:4px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+machinestatus+'</td>');
-                                
-                                html.push('<td style="text-align:center;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+totalfrequency+'</td>');
-                                html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+totaldowntime+'</td>');
-                                html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+mtbf+'</td>');
-                                html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+mttr+'</td>');
-                            html.push('</tr>');
-                        }
+                                    // html.push(
+                                    // '<td style="text-align:left;border:1px solid white;font-size:1.1em;padding:4px;">' +
+                                    //     '<span class="machine-desc" ' +
+                                    //     'data-machineid="'+machineid+'" ' +
+                                    //     'style="' +
+                                    //         'cursor:pointer;' +
+                                    //         'padding:2px 6px;' +
+                                    //         'border-radius:4px;' +
+                                    //         'transition:background-color 0.15s ease,color 0.15s ease,font-weight 0.15s ease;' +
+                                    //     '" ' +
+                                    //     'onmouseover="this.style.backgroundColor=\'#ffeb3b\'; this.style.color=\'#000\'; this.style.fontWeight=\'bold\';" ' +
+                                    //     'onmouseout="this.style.backgroundColor=\'transparent\'; this.style.color=\'inherit\'; this.style.fontWeight=\'normal\';"' +
+                                    //     '>' +
+                                    //     machinedesc +
+                                    //     '</span>' +
+                                    // '</td>'
+                                    // );
 
-                    html.push('</table>');
-                html.push('</div>');
+                                    html.push(
+                                        '<td class="machine-desc" ' +
+                                            'data-machineid="'+machineid+'" ' +
+                                            'style="' +
+                                            'text-align:left;' +
+                                            'border:1px solid white;' +
+                                            'font-size:1.1em;' +
+                                            'cursor:pointer;' +
+                                            'padding:0;' +       // TD padding removed
+                                            '">' +
+
+                                            '<div ' +
+                                            'style="' +
+                                                'width:100%;' +
+                                                'height:100%;' +
+                                                'padding:1px 4px;' +   // 1px top/bottom, 4px left/right
+                                                'box-sizing:border-box;' +
+                                                'border-radius:2px;' +
+                                                'transition:background-color 0.15s ease,color 0.15s ease,font-weight 0.15s ease;' +
+                                            '" ' +
+                                            'onmouseover="this.style.backgroundColor=\'#ffeb3b\'; this.style.color=\'#000\'; this.style.fontWeight=\'bold\';" ' +
+                                            'onmouseout="this.style.backgroundColor=\'transparent\'; this.style.color=\'inherit\'; this.style.fontWeight=\'normal\';"' +
+                                            '>' +
+                                            machinedesc +
+                                            '</div>' +
+                                        '</td>'
+                                        );
+
+                                    // html.push('<td style="text-align:left;border:1px solid white;border-right:1px solid white;font-size:1.1em;padding-top:4px;padding-bottom:4px;">'+machinedesc+'</td>');
+                                    
+                                    
+                                    // html.push('<td style="text-align:center;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+''+'</td>');
+
+                                    // html.push(
+                                    //     '<td style="text-align:center;' +
+                                    //     'border:4px solid white;' +
+                                    //     'font-size:1.2em;' +
+                                    //     'padding-top:4px;' +
+                                    //     'padding-bottom:4px;' +
+                                    //     'background-color:' + statusColor + ';' +
+                                    //     'color:white;">' +
+                                    //     machinestatus +
+                                    //     '</td>'
+                                    // );
+
+                                    html.push(
+                                        '<td style="text-align:center;' +
+                                        'border:4px solid white;' +
+                                        'font-size:1.2em;' +
+                                        'padding-top:4px;' +
+                                        'padding-bottom:4px;' +
+                                        'background-color:' + statusColor + ';' +
+                                        'color:white;"></td>'
+                                    );
+
+                                    //html.push('<td style="text-align:center;border:4px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+machinestatus+'</td>');
+                                    
+                                    html.push('<td style="text-align:center;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+totalfrequency+'</td>');
+                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+totaldowntime+'</td>');
+                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+mtbf+'</td>');
+                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+mttr+'</td>');
+                                html.push('</tr>');
+                            }
+
+                            if (i > 0){
+                                average_category_mttr = total_category_downtime / total_category_frequency;
+                                average_category_mtbf = total_category_mtbf / total_category_frequency;
+                                html.push('<tr>');
+                                    html.push('<td colspan="3"></td>');
+                                    html.push('<td style="text-align:center;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+total_category_frequency+'</td>');
+                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(total_category_downtime)+'</td>');
+                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mtbf)+'</td>');
+                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mttr)+'</td>');
+                                html.push('</tr>');
+                            }
+
+                        html.push('</table>');
+                    html.push('</div>');
+                }else{
+                    html.push('<div class="table-responsive" style="overflow-y: auto; max-height: 470px;margin-bottom:12px;">');
+                        html.push('<table class="table mx-auto w-auto itemInventoryTable">');
+                            html.push('<thead>');
+                                html.push('<tr>');
+                                    html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">CATEGORY</th>');
+                                    html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">FREQUENCY</th>');
+                                    html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">DOWNTIME</th>');
+                                    html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">MTBF</th>');
+                                    html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">MTTR</th>');
+                                html.push('</tr>');
+                            html.push('</thead>');
+
+                            for(var i = 0; i < answer.length; i++) {
+                                var health = answer[i];
+                                var classname = health.classname;
+                                var machinedesc = health.machinedesc;
+                                var machinestatus = health.machinestatus;
+                                var totalfrequency = health.totalfrequency;
+                                var totaldowntime = health.totaldowntime;
+                                var mtbf = numberWithCommas(health.mtbf);
+                                var mttr = numberWithCommas(health.mttr);
+
+                                var statusColor = getStatusColor(machinestatus);
+
+                                if (i == 0){
+                                    prev_classname = health.classname;
+                                    total_category_frequency = total_category_frequency + Number(health.totalfrequency);
+                                    total_category_downtime = total_category_downtime + Number(health.totaldowntime);
+                                    total_category_mtbf = total_category_mtbf + (Number(health.mtbf) * Number(health.totalfrequency));
+                                }else{
+                                    curr_classname = health.classname;
+                                    if (prev_classname == curr_classname){
+                                        total_category_frequency = total_category_frequency + Number(health.totalfrequency);
+                                        total_category_downtime = total_category_downtime + Number(health.totaldowntime);
+                                        total_category_mtbf = total_category_mtbf + (Number(health.mtbf) * Number(health.totalfrequency));
+                                    }else{
+                                        average_category_mttr = total_category_downtime / total_category_frequency;
+                                        average_category_mtbf = total_category_mtbf / total_category_frequency;
+                                        html.push('<tr>');
+                                            html.push('<td style="text-align:left;border:1px solid white;border-right:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+prev_classname.toUpperCase()+'</td>');
+                                            html.push('<td style="text-align:center;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+total_category_frequency+'</td>');
+                                            html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(total_category_downtime)+'</td>');
+                                            html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mtbf)+'</td>');
+                                            html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mttr)+'</td>');
+                                        html.push('</tr>');
+
+                                        total_category_frequency = 0;
+                                        total_category_downtime = 0.00;
+                                        total_category_mtbf = 0.00;
+                                        total_category_frequency = total_category_frequency + Number(health.totalfrequency);
+                                        total_category_downtime = total_category_downtime + Number(health.totaldowntime);
+                                        total_category_mtbf = total_category_mtbf + (Number(health.mtbf) * Number(health.totalfrequency));
+                                        prev_classname = health.classname;
+                                        // alert(prev_classname);
+                                    }
+                                }
+                            }
+
+                            if (i > 0){
+                                average_category_mttr = total_category_downtime / total_category_frequency;
+                                average_category_mtbf = total_category_mtbf / total_category_frequency;
+                                html.push('<tr>');
+                                    html.push('<td style="text-align:left;border:1px solid white;border-right:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+classname.toUpperCase()+'</td>');
+                                    html.push('<td style="text-align:center;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+total_category_frequency+'</td>');
+                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(total_category_downtime)+'</td>');
+                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mtbf)+'</td>');
+                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mttr)+'</td>');
+                                html.push('</tr>');
+                            }
+
+                        html.push('</table>');
+                    html.push('</div>');
+                }
                 $('.health_content').html(html.join(''));
             }
         });
     }
 
+    // --------- Highlighted machine name - clickable ---------------------
+    $(document).on("click", ".machine-desc", function () {
+        var machineid = $(this).data("machineid");
+        let machine_incidents = new FormData();
+        machine_incidents.append("machineid", machineid);
+        $.ajax({
+            url:"ajax/machine_incident_list.ajax.php",   
+            method: "POST",    
+            data: machine_incidents,                               
+            cache: false,                  
+            contentType: false,            
+            processData: false,            
+            dataType:"json",  
+            success: function (answer) {
+                if (Array.isArray(answer) && answer.length > 1) {                     
+                    for (var m = 0; m < answer.length; m++) {                         
+                        let incident = answer[m];                         
+                        var inccode = incident.inccode;                                          
+                    }                 
+                } else {                     
+                    if (answer && answer[0] && answer[0].inccode) {                           
+                        let inccode = answer[0].inccode;
+                        let data = new FormData();
+                        data.append("inccode", inccode);
+                        $.ajax({
+                            url:"ajax/machine_tracking_print.ajax.php",
+                            method: "POST",
+                            data: data,
+                            cache: false,
+                            contentType: false,
+                            processData: false,
+                            dataType:"json",
+                            success:function(answer){
+                                $("#sel-machineid").val(answer["machineid"]).trigger('change');
+                                $("#class_code").val(answer["classcode"]);
+                                let reported_date = answer["datereported"];
+                                let reporteddate = reported_date.split("-");
+                                reporteddate = reporteddate[1] + "/" + reporteddate[2] + "/" + reporteddate[0];
+                                $("#date-datereported").val(reporteddate);
+                                $("#sel-machstatus").val(answer["machstatus"]).trigger('change');
+                                $("#txt-phase").val(answer["phase"]);
+                                $("#machineincident").modal("show");
+                                $("#sel-curstatus").val(answer["curstatus"]).trigger('change');
+                                $("#txt-inccode").val(answer["inccode"]);
+                                $("#sel-reporter").val(answer["reporter"]).trigger('change');
+                                $("#sel-shift").val(answer["shift"]).trigger('change');
+                                $("#txt-inctime").val(answer["inctime"]);
+                                $("#sel-failuretype").val(answer["failuretype"]).trigger('change');
+                                $("#txt-controlnum").val(answer["controlnum"]);
+                                $("#txt-incidentdetails").val(answer["incidentdetails"]);
+                                $("#sel-technician").val(answer["technician"]).trigger('change');
+                                $("#sel-compreporter").val(answer["compreporter"]).trigger('change');
+
+                                let completed_date = answer["datecompleted"];
+                                if (completed_date != '0000-00-00'){
+                                    var completeddate = completed_date.split("-");
+                                    completeddate = completeddate[1] + "/" + completeddate[2] + "/" + completeddate[0];
+                                }else{
+                                    var completeddate = '';
+                                }
+                                $("#date-datecompleted").val(completeddate);
+
+                                $("#txt-endtime").val(answer["endtime"]);
+                                $("#num-daysduration").val(numberWithCommas(answer["daysduration"]));
+                                $("#num-timeduration").val(numberWithCommas(answer["timeduration"]));
+                                $("#txt-actiontaken").val(answer["actiontaken"]);
+
+                                setAssignedTechnician(answer["technician"]);
+
+                                setFailuretypeOptions(
+                                    answer["failuretype"],
+                                    answer["breakid"]
+                                );
+                            }
+                        });
+                    } else {                         
+                        alert('No incidents found.');                     
+                    }                 
+                }      
+            }
+        });
+    });
+
+    $('#sel-machineid').on('change', function () {
+        setFailuretypeOptions();
+    });
+
+    function setFailuretypeOptions(selectedFailureType = null, selectedBreakID = null) {
+        let machineid = $("#sel-machineid").val();
+        var data = new FormData();
+        data.append("machineid", machineid);
+
+        $.ajax({
+            url: "ajax/machine_category_failuretype_list.ajax.php",
+            method: "POST",
+            data: data,
+            cache: false,
+            contentType: false,
+            processData: false,
+            dataType: "json",
+            success: function (answer) {
+                let $failureType = $("#sel-failuretype");
+                $failureType.prop('disabled', true)
+                            .empty()
+                            .append('<option value=""></option>');
+
+                let $breakID = $("#sel-breakid");
+                $breakID.prop('disabled', false)
+                        .empty()
+                        .append('<option value=""></option>');            
+
+                let class_code = '';
+
+                for (let i = 0; i < answer.length; i++) {
+                    let ft = answer[i];
+                    class_code = ft.classcode;
+
+                    $failureType.append(
+                        `<option value="${ft.failuretype}">${ft.failuretype}</option>`
+                    );
+                }
+
+                $("#class_code").val(class_code);
+
+                if (selectedFailureType) {
+                    $failureType.val(selectedFailureType);
+                    setBreakdownOptions(selectedBreakID);
+                }
+            }
+        });
+    }
+    
+    $('#sel-failuretype').on('change', function () {
+        setBreakdownOptions();
+    }); 
+    
+    function setBreakdownOptions(selectedBreakID = null) {
+        let failuretype = $("#sel-failuretype").val();
+        let class_code = $("#class_code").val();
+
+        var data = new FormData();
+        data.append("failuretype", failuretype);
+        data.append("class_code", class_code);
+
+        $.ajax({
+            url: "ajax/machine_category_breakdown_list.ajax.php",
+            method: "POST",
+            data: data,
+            cache: false,
+            contentType: false,
+            processData: false,
+            dataType: "json",
+            success: function (answer) {
+                let $breakID = $("#sel-breakid");
+                $breakID.prop('disabled', true)
+                        .empty()
+                        .append('<option value=""></option>');
+
+                for (let i = 0; i < answer.length; i++) {
+                    let bd = answer[i];
+                    $breakID.append(
+                        `<option value="${bd.breakid}">${bd.details}</option>`
+                    );
+                }
+            
+                if (selectedBreakID) {
+                    $breakID.val(selectedBreakID);
+                }
+            }
+        });
+    } 
+
+    $('#sel-technician').on('change', function () {
+        setAssignedTechnician();
+    });
+
+    function setAssignedTechnician(selectedTechnician = null) {
+        if (selectedTechnician) {
+            let $technician = $("#sel-technician");
+            $technician.val(selectedTechnician);
+        }
+    }
+
+    $('#machineincident')
+        .find('input, select, textarea')
+        .prop('disabled', true);
+
+    // ----- End of Machine Incident View ---------------------------------
+
     function getStatusColor(status) {
         switch (status) {
             case 'Operational':
                 return '#22752d'; // green
-            case 'Under Maintenance':
-                return '#3239ab'; // blue
-            case 'Under Repair':
+            // case 'Under Maintenance':
+            //     return '#3239ab'; // blue
+            case 'Offline':
                 return '#DC3545'; // red
-            case 'Idle':
-                return '#FFC107'; // yellow
+            // case 'Idle':
+            //     return '#FFC107'; // yellow
             default:
                 return '#6C757D'; // gray
         }
@@ -273,22 +628,22 @@ document.addEventListener('DOMContentLoaded', function() {
         processData: false,            
         dataType:"json",               
         success:function(answer){
-          document.getElementById("operational").innerHTML = '0'; 
-          document.getElementById("under-repair").innerHTML = '0';
-          document.getElementById("under-maintenance").innerHTML = '0';
-        //   document.getElementById("standby").innerHTML = '0'; 
+        //   document.getElementById("operational").innerHTML = '0'; 
+          document.getElementById("unplanned-downtime").innerHTML = '0';
+          document.getElementById("planned-downtime").innerHTML = '0';
+          document.getElementById("inspection").innerHTML = '0'; 
           for(var m = 0; m < answer.length; m++) {
             let machine_count = answer[m];
             let machstatus = machine_count.machstatus;
             let mcount =  machine_count.mcount;
             if (machstatus == 'Operational'){
               document.getElementById("operational").innerHTML = mcount;
-            }else if (machstatus == 'Under Repair'){
-              document.getElementById("under-repair").innerHTML = mcount;
-            }else if (machstatus == 'Under Maintenance'){
-              document.getElementById("under-maintenance").innerHTML = mcount;
+            }else if (machstatus == 'Unplanned Downtime'){
+              document.getElementById("unplanned-downtime").innerHTML = mcount;
+            }else if (machstatus == 'Planned Downtime'){
+              document.getElementById("planned-downtime").innerHTML = mcount;
             }else{
-              document.getElementById("standby").innerHTML = mcount;
+              document.getElementById("inspection").innerHTML = mcount;
             }
           }
         }
@@ -575,7 +930,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function generateMachineUptimeDowntimeTrendWeekly() {
-        $("ul.nav-tabs-bottom li:nth-child(4)").show();
+        $("ul.nav-tabs-bottom li:nth-child(5)").show();
 
         const reptype = $("#report-type").val();
         const buildingcode = $("#cb-buildingcode").val();
@@ -678,9 +1033,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-
-    
-    
     $("#cap-lst-buildingcode").click(() => $("#cb-buildingcode").val('').trigger('change'));
 	$("#cap-lst-classcode").click(() => $("#cb-classcode").val('').trigger('change'));
 	$("#cap-lst-machstatus").click(() => $("#cb-machstatus").val('').trigger('change'));

@@ -24,4 +24,22 @@ class ControllerHome{
 		$answer = (new ModelHome)->mdlMachineHealth($buildingcode, $start_date, $end_date);
 		return $answer;
 	}	
+
+	// ------------------------------------------------------------------------------------
+	//                                      STOCK LEDGER
+	// ------------------------------------------------------------------------------------
+	static public function ctrShowStockPeriods(){
+		$answer = (new ModelHome)->mdlShowStockPeriods();
+		return $answer;
+	}
+
+	static public function ctrShowStockMatrix($inventoryfrom, $inventoryfromnextday, $inventoryto){
+		$answer = (new ModelHome)->mdlShowStockMatrix($inventoryfrom, $inventoryfromnextday, $inventoryto);
+		return $answer;
+	}
+
+	static public function ctrShowInventoryTechnicalTemplate($start_date, $from_date, $end_date){
+		$answer = (new ModelHome)->mdlShowInventoryTechnicalTemplate($start_date, $from_date, $end_date);
+		return $answer;
+	}
 }

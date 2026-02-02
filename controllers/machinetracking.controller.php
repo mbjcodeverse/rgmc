@@ -6,11 +6,12 @@ class ControllerMachineTracking{
 
 	static public function ctrEditMachineTracking($data){
 		$answer = (new ModelMachineTracking)->mdlEditMachineTracking($data);
+		return $answer;
     }	
 
     // List TRANSACTIONS
-	static public function ctrMachineTrackingTransactionList($machineid, $datemode, $start_date, $end_date, $curstatus){
-		$answer = (new ModelMachineTracking)->mdlMachineTrackingTransactionList($machineid, $datemode, $start_date, $end_date, $curstatus);
+	static public function ctrMachineTrackingTransactionList($machineid, $datemode, $start_date, $end_date, $curstatus, $postedby){
+		$answer = (new ModelMachineTracking)->mdlMachineTrackingTransactionList($machineid, $datemode, $start_date, $end_date, $curstatus, $postedby);
 		return $answer;
 	}	
 
@@ -30,8 +31,28 @@ class ControllerMachineTracking{
 		return $answer;
 	}
 
+	static public function ctrPrintMachineTracking($inccode){
+		$answer = (new ModelMachineTracking)->mdlPrintMachineTracking($inccode);
+		return $answer;
+	}
+
 	static public function ctrCancelMachineTracking($inccode){
 		$answer = (new ModelMachineTracking)->mdlCancelMachineTracking($inccode);
+		return $answer;
+	}	
+
+	static public function ctrMachineCategoryFailuretypeList($machineid){
+		$answer = (new ModelMachineTracking)->mdlMachineCategoryFailuretypeList($machineid);
+		return $answer;
+	}	
+
+	static public function ctrMachineCategoryBreakdownList($machineid,$class_code){
+		$answer = (new ModelMachineTracking)->mdlMachineCategoryBreakdownList($machineid,$class_code);
+		return $answer;
+	}
+	
+	static public function ctrMachineIncidentList($machineid){
+		$answer = (new ModelMachineTracking)->mdlMachineIncidentList($machineid);
 		return $answer;
 	}	
 }

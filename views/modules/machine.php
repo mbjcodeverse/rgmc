@@ -91,9 +91,9 @@
                   <select data-placeholder="< Select Status >" class="form-control select" data-fouc id="sel-machstatus" name="sel-machstatus" required>
                     <option></option>
                     <option value="Operational">Operational</option>
-                    <option value="Under Repair">Under Repair</option>
-                    <option value="Under Maintenance">Under Maintenance</option>
-                    <option value="Standby">Standby</option>
+                    <option value="Offline">Offline</option>
+                    <!-- <option value="Under Maintenance">Under Maintenance</option> -->
+                    <!-- <option value="Standby">Standby</option> -->
                   </select>                   
                 </div>
 

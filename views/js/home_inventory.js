@@ -35,7 +35,7 @@ $(function() {
                     html.push('<table class="table mx-auto w-auto itemInventoryTable">');
                         html.push('<thead>');
                             html.push('<tr>');
-                                html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">#</th>');
+                                // html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">#</th>');
                                 html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">ITEM DESCRIPTION</th>');
                                 html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">PU</th>');
                                 html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">EQ QTY</th>');
@@ -109,17 +109,17 @@ $(function() {
                                 // if (ctr != num_rec){
                                     item_num += 1;
                                     html.push('<tr>');
-                                        html.push('<td style="text-align:left;border-left:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+item_num+'</td>');
-                                        html.push('<td style="text-align:left;border-left:1px solid white;border-right:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+pdesc+'</td>');
-                                        html.push('<td style="text-align:left;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+meas1+'</td>');
-                                        html.push('<td style="text-align:center;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+eqnum+'</td>');
-                                        html.push('<td style="text-align:left;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+meas2+'</td>');
-                                        html.push('<td style="text-align:right;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+ucost+'</td>');
-                                        html.push('<td style="text-align:right;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+reorder+'</td>');
+                                        // html.push('<td style="text-align:left;border-left:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+item_num+'</td>');
+                                        html.push('<td style="text-align:left;border-left:1px solid white;border-right:1px solid white;font-size:1.1em;padding-top:4px;padding-bottom:4px;">'+pdesc+'</td>');
+                                        html.push('<td style="text-align:left;font-size:1.1em;padding-top:4px;padding-bottom:4px;">'+meas1+'</td>');
+                                        html.push('<td style="text-align:center;font-size:1.1em;padding-top:4px;padding-bottom:4px;">'+eqnum+'</td>');
+                                        html.push('<td style="text-align:left;font-size:1.1em;padding-top:4px;padding-bottom:4px;">'+meas2+'</td>');
+                                        html.push('<td style="text-align:right;font-size:1.1em;padding-top:4px;padding-bottom:4px;">'+ucost+'</td>');
+                                        html.push('<td style="text-align:right;font-size:1.1em;padding-top:4px;padding-bottom:4px;">'+reorder+'</td>');
                                         if (onhand > 0){
-                                            html.push('<td style="text-align:right;border-left:1px solid white;border-right:1px solid white;font-size:1.2em;color:lightgreen;font-weight:bold;padding-top:4px;padding-bottom:4px;">'+onhand+'</td>');
+                                            html.push('<td style="text-align:right;border-left:1px solid white;border-right:1px solid white;font-size:1.1em;color:lightgreen;font-weight:bold;padding-top:4px;padding-bottom:4px;">'+onhand+'</td>');
                                         }else{
-                                            html.push('<td style="text-align:right;border-left:1px solid white;border-right:1px solid white;font-size:1.2em;color:#ff94bd;font-weight:bold;padding-top:4px;padding-bottom:4px;">'+onhand+'</td>');
+                                            html.push('<td style="text-align:right;border-left:1px solid white;border-right:1px solid white;font-size:1.1em;color:#ff94bd;font-weight:bold;padding-top:4px;padding-bottom:4px;">'+onhand+'</td>');
                                         }
                                         html.push('<td style="border-right:1px solid white;padding-top:4px;padding-bottom:4px;"><button type="button" class="btn btn-outline btn-sm bg-orange-400 border-orange-400 text-orange-400 btn-icon rounded-round border-2 ml-2 btnStockcard" itemid="'+prev_itemid+'" data-toggle="modal" data-target="#stockcard"><i class="icon-stack-text"></i></button></td>');
                                     html.push('</tr>');

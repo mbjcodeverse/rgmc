@@ -1,21 +1,21 @@
 $(function() {
-     let user_level = $('#user_level').val();
-     let prod_opr = $('#prod_opr').val();
-     let current_user = $('#txt-generatedby').val();
-     if (user_level == 'Operator'){
-        if (prod_opr == 'Restricted'){
-          $("#lst-postedby").val(current_user).trigger('change');
-          $("#lst-postedby").prop('disabled', true);
-          // $("#lbl-lst-postedby").off('click');
-          $("#lbl-lst-postedby")
-          .css({
-              'pointer-events': 'none',
-              'opacity': '0.5',
-              'cursor': 'not-allowed'
-          });
-        }
-        $('#btn-return').show();
-     }
+    //  let user_level = $('#user_level').val();
+    //  let prod_opr = $('#prod_opr').val();
+    //  let current_user = $('#txt-generatedby').val();
+    //  if (user_level == 'Operator'){
+    //     if (prod_opr == 'Restricted'){
+    //       $("#lst-postedby").val(current_user).trigger('change');
+    //       $("#lst-postedby").prop('disabled', true);
+    //       // $("#lbl-lst-postedby").off('click');
+    //       $("#lbl-lst-postedby")
+    //       .css({
+    //           'pointer-events': 'none',
+    //           'opacity': '0.5',
+    //           'cursor': 'not-allowed'
+    //       });
+    //     }
+    //     $('#btn-return').show();
+    //  }
 
      $("#btn-return").click(function(){
         window.location = 'prodoperator';
@@ -515,5 +515,23 @@ $(function() {
         '</body> ' +
         '</html>'
         window.location.href = location + window.btoa(excelTemplate);
+     }
+
+     let user_level = $('#user_level').val();
+     let prod_opr = $('#prod_opr').val();
+     let current_user = $('#txt-generatedby').val();
+     if (user_level == 'Operator'){
+        if (prod_opr == 'Restricted'){
+          $("#lst-postedby").val(current_user).trigger('change');
+          $("#lst-postedby").prop('disabled', true);
+          // $("#lbl-lst-postedby").off('click');
+          $("#lbl-lst-postedby")
+          .css({
+              'pointer-events': 'none',
+              'opacity': '0.5',
+              'cursor': 'not-allowed'
+          });
+        }
+        $('#btn-return').show();
      }
   });
