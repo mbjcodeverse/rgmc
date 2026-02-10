@@ -209,7 +209,7 @@ $(function() {
                             html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">Operated by</th>');
                             html.push('<th class="table_head_left_fixed" style="padding-top:8px;padding-bottom:8px;">Items</th>');
                             html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">Qty</th>');
-                            html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">W/D</th>');
+                            // html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">W/D</th>');
                             html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">Cost</th>');
                             html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">Amount</th>');
                           html.push('</tr>');
@@ -299,11 +299,11 @@ $(function() {
                                 if (prodname == null){
                                    html.push('<td style="font-size:1.2em;font-weight:bold;text-align:right;"></td>');
                                    html.push('<td style="font-size:1.2em;font-weight:bold;text-align:right;"></td>');
-                                   html.push('<td style="font-size:1.2em;font-weight:bold;text-align:right;"></td>');
+                                  //  html.push('<td style="font-size:1.2em;font-weight:bold;text-align:right;"></td>');
                                    html.push('<td style="font-size:1.2em;font-weight:bold;text-align:right;border-top: 2px solid white;">'+tamount+'</td>');
                                 }else{
                                    html.push('<td style="text-align:right;">'+qty+'</td>');
-                                   html.push('<td style="text-align:right;color:#fc889e;">'+wd_weight+'</td>');
+                                  //  html.push('<td style="text-align:right;color:#fc889e;">'+wd_weight+'</td>');
                                    html.push('<td style="text-align:right;">'+price+'</td>');
                                    html.push('<td style="text-align:right;">'+tamount+'</td>');
                                 }

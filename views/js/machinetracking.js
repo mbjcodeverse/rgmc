@@ -151,13 +151,13 @@ $(function() {
             4️⃣ COLLECT DATA (SAFE)
             =============================== */
 
-            let date_reported = $("#date-datereported").val()
-                ? $("#date-datereported").val().split("/").reverse().join("-")
-                : "";
-
-            let date_completed = $("#date-datecompleted").val()
-                ? $("#date-datecompleted").val().split("/").reverse().join("-")
-                : "";
+            let date_reported = $("#date-datereported").val().split("/");
+            date_reported = date_reported[2] + "-" + date_reported[0] + "-" + date_reported[1];
+            // alert(date_reported);   
+            
+            let date_completed = $("#date-datecompleted").val().split("/");
+            date_completed = date_completed[2] + "-" + date_completed[0] + "-" + date_completed[1];
+            // alert(date_completed);
 
             let diagnosis = new FormData();
             diagnosis.append("trans_type", $("#trans_type").val());
@@ -196,8 +196,9 @@ $(function() {
 
                 success: function (answer) {
                     if ($("#txt-phase").val() === 'Allocated' && user_level !== 'Operator') {
+                        let approver = $("#tns-postedby").val();
                         window.open(
-                            "extensions/tcpdf/pdf/joborder.php?inccode=" + answer,
+                            "extensions/tcpdf/pdf/joborder.php?inccode=" + answer+"&approver="+approver,
                             "_blank"
                         );
                     }
@@ -352,6 +353,9 @@ $(function() {
     }
 
     function clearForm(){
+        $("#mt-id").val("");
+        $("#trans_type").val("New");
+
         $("#sel-failuretype").prop('disabled', true);
         $("#sel-breakid").prop('disabled', true);
 
@@ -396,6 +400,8 @@ $(function() {
         $("#txt-actiontaken").val("");
 
         $('#btn-joborder').hide();
+        $('#btn-save').show();
+        $('#btn-cancel').hide();
         $("#btn-joborder").prop('disabled', true);
     }
 
@@ -484,6 +490,7 @@ $(function() {
         $("#lst-machineid").val('').trigger('change');
         $("#lst-datemode").val('Reported').trigger('change');
         $("#lst-curstatus").val('').trigger('change');
+        $("#lst-phase").val('- Queued -').trigger('change');
 
         $('#lst_date_range').data('daterangepicker').setStartDate(moment('2025-12-01'));
         $('#lst_date_range').data('daterangepicker').setEndDate(moment());
@@ -561,13 +568,20 @@ $(function() {
                     var controlnum = mt.controlnum;
                     var machinedesc = mt.machinedesc;
                     var phase = mt.phase;
+                    var curstatus = mt.curstatus;
+                    // var failuretype = mt.failuretype;
                     var datecompleted = mt.datecompleted;
+                    var timeduration = mt.timeduration;
+
+                    if (Number(timeduration) == 0.00){
+                        timeduration = '';
+                    }
                     // var sale_date = si.sdate;
                     // var saledate = sale_date.split("-");
                     // var sdate = saledate[1] + "/" + saledate[2] + "/" + saledate[0];
     
                     var button = "<td><button type='button' class='btn btn-outline btn-sm bg-green-400 border-green-400 text-green-400 btn-icon rounded-round border-2 ml-2 btnDiagnosis' inccode='" + inccode + "'><i class='icon-pencil3'></i></button></td>";
-                    slst.row.add([datereported, inctime, inccode, machinedesc, phase, datecompleted, button])
+                    slst.row.add([datereported, inctime, inccode, machinedesc, phase, curstatus, datecompleted, timeduration, button])
                 }
                 slst.draw();
             },
@@ -609,6 +623,7 @@ $(function() {
             success:function(answer){
                 isDiagnosisLoad = true;
                 $('#trans_type').val('Update');
+                $('#mt-id').val(answer["id"]);
                 $("#sel-machineid").val(answer["machineid"]).trigger('change');
                 isDiagnosisLoad = false;
 
@@ -644,6 +659,15 @@ $(function() {
                 $("#num-timeduration").val(numberWithCommas(answer["timeduration"]));
                 $("#txt-actiontaken").val(answer["actiontaken"]);
                 $("#txt-cause").val(answer["cause"]);
+
+                // show Cancel button for Technical Head
+                if (user_level != 'Operator' && answer["phase"] != 'Completed' && answer["phase"] != 'Cancelled'){
+                    $('#btn-cancel').show();
+                    $('#btn-save').show();
+                }else{
+                    $('#btn-cancel').hide();
+                    $('#btn-save').hide();
+                }
 
                 setAssignedTechnician(answer["technician"]);
 
@@ -947,10 +971,72 @@ $(function() {
                 $("#btn-joborder").prop('disabled', false);
             }
         }else{
-            if ($('#txt-phase').val().trim() !== 'Completed' && $('#sel-technician').val() !== '') {
+            if ($('#txt-phase').val().trim() !== 'Completed' && $('#txt-phase').val().trim() !== 'Cancelled' && $('#sel-technician').val() !== '') {
                 $('#txt-phase').val('Allocated');
                 $('#btn-joborder').show();
             }
         }
     }
+
+    $("#btn-cancel").click(function(){
+      swal.fire({
+          title: 'Do you want to Cancel job order?',
+          text: "You won't be able to revert this!",
+          type: 'question',
+          showCancelButton: true,
+          confirmButtonText: 'Yes, Cancel!',
+          cancelButtonText: 'No',
+          confirmButtonClass: 'btn btn-outline-success',
+          cancelButtonClass: 'btn btn-outline-danger',
+          allowOutsideClick: false,
+          buttonsStyling: false
+      }).then(function(result) {
+          if(result.value) {
+            var id = $("#mt-id").val();            
+            var canceljob = new FormData();
+            canceljob.append("id", id);            
+            $.ajax({
+               url:"ajax/joborder_cancel_record.ajax.php",
+               method: "POST",
+               data: canceljob,
+               cache: false,
+               contentType: false,
+               processData: false,
+               dataType:"text",
+               success:function(answer){
+               },
+               error: function () {
+                 swal.fire({
+                    title: 'Cancellation Terminated!',
+                    text: 'Something went wrong :(',
+                    type: 'error',
+                    confirmButtonText: 'Got it!',
+                    confirmButtonClass: 'btn btn-outline-success',
+                    allowOutsideClick: false,
+                    buttonsStyling: false
+                 }).then(function(result){
+                    if(result.value) {              
+                      window.location = 'machinetracking';
+                    }
+                 })
+               },
+               complete: function () {
+                 swal.fire({
+                    title: 'Cancellation Successful!',
+                    type: 'success',
+                    confirmButtonText: 'Got it!',
+                    confirmButtonClass: 'btn btn-outline-success',
+                    allowOutsideClick: false,
+                    buttonsStyling: false
+                 }).then(function(result){
+                    if(result.value) {              
+                      window.location = 'machinetracking';
+                    }
+                 })
+               }
+
+            })
+          }
+      });
+   });
 });

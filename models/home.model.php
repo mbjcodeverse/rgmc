@@ -40,23 +40,6 @@ class ModelHome{
 		// $whereClause = "WHERE mt.phase NOT IN ('Completed', 'Cancelled')" . $building;
 
 		$whereClause = "WHERE lm.rn = 1" . $building;
-		// $stmt = (new Connection)->connect()->prepare("SELECT m.machstatus, IFNULL(COUNT(m.machstatus),0) AS mcount
-		// 													 FROM machine m INNER JOIN building b
-		// 													      ON (b.buildingcode = m.buildingcode)
-		// 														  $whereClause
-		// 														  GROUP BY m.machstatus");
-
-		// $stmt = (new Connection)->connect()->prepare("SELECT 
-		// 														mt.curstatus AS machstatus,
-		// 														COUNT(DISTINCT mt.machineid) AS mcount
-		// 													FROM machinetracking mt
-		// 													INNER JOIN machine m
-		// 														ON mt.machineid = m.machineid
-		// 													INNER JOIN building b
-		// 														ON b.buildingcode = m.buildingcode
-		// 													$whereClause
-		// 													GROUP BY mt.curstatus");
-
 		$stmt = (new Connection)->connect()->prepare("WITH latest_mt AS (
 																SELECT
 																	mt.machineid,
@@ -198,12 +181,10 @@ class ModelHome{
 	// 	$stmt = (new Connection)->connect()->prepare("SELECT 
 	// 					c.classname,
 	// 					m.machinedesc,
-
-	// 					COALESCE(latest_mt.curstatus, 'Operational') AS machinestatus,
-
+	// 					m.machineid,
+	// 					COALESCE(latest_mt.machstatus, 'Operational') AS machinestatus,
 	// 					COUNT(mt.id) AS totalfrequency,
 	// 					COALESCE(SUM(mt.timeduration), 0) AS totaldowntime,
-
 	// 					CASE 
 	// 						WHEN COUNT(mt.id) = 0 
 	// 						THEN (DATEDIFF('$end_date', '$start_date') * 24)
@@ -230,7 +211,7 @@ class ModelHome{
 	// 					ON c.classcode = m.classcode
 
 	// 				LEFT JOIN (
-	// 					SELECT machineid, curstatus
+	// 					SELECT machineid, machstatus
 	// 					FROM machinetracking mt1
 	// 					WHERE mt1.id = (
 	// 						SELECT MAX(mt2.id)
@@ -247,7 +228,7 @@ class ModelHome{
 	// 				GROUP BY 
 	// 					c.classname, 
 	// 					m.machinedesc, 
-	// 					latest_mt.curstatus
+	// 					latest_mt.machstatus
 	// 				ORDER BY 
 	// 					c.classname, 
 	// 					m.machinedesc;
@@ -256,7 +237,10 @@ class ModelHome{
 	// 	return $stmt -> fetchAll();
 	// 	$stmt -> close();
 	// 	$stmt = null;
-	// }	
+	// }
+	
+
+
 
 	static public function mdlMachineHealth($buildingcode, $start_date, $end_date){
 		if ($buildingcode != ''){
@@ -266,7 +250,7 @@ class ModelHome{
 		}	
 
 		if(!empty($end_date)){
-			$dates = " AND (mt.datereported BETWEEN '$start_date' AND '$end_date')";
+			$dates = " AND (mt.datereported BETWEEN '$start_date' AND '$end_date') AND (mt.phase != 'Cancelled')";
 		}else{
 			$dates = "";
 		}	
@@ -276,9 +260,7 @@ class ModelHome{
 						c.classname,
 						m.machinedesc,
 						m.machineid,
-
 						COALESCE(latest_mt.machstatus, 'Operational') AS machinestatus,
-
 						COUNT(mt.id) AS totalfrequency,
 						COALESCE(SUM(mt.timeduration), 0) AS totaldowntime,
 
@@ -307,35 +289,47 @@ class ModelHome{
 					JOIN machine m 
 						ON c.classcode = m.classcode
 
+					/* 🔹 get latest machstatus per machine using datereported */
 					LEFT JOIN (
-						SELECT machineid, machstatus
+						SELECT mt1.machineid, mt1.machstatus
 						FROM machinetracking mt1
-						WHERE mt1.id = (
-							SELECT MAX(mt2.id)
-							FROM machinetracking mt2
-							WHERE mt2.machineid = mt1.machineid
-						)
+						INNER JOIN (
+							SELECT machineid, MAX(datereported) AS latest_date
+							FROM machinetracking WHERE (phase != 'Cancelled')
+							GROUP BY machineid
+						) mt2
+							ON mt1.machineid = mt2.machineid
+						AND mt1.datereported = mt2.latest_date
 					) latest_mt
 						ON m.machineid = latest_mt.machineid
 
 					LEFT JOIN machinetracking mt 
 						ON m.machineid = mt.machineid
+						$dates
 
-					$whereClause
+					WHERE 
+						m.machinedesc != ''
+						$building	
+					-- $whereClause
 					GROUP BY 
-						c.classname, 
-						m.machinedesc, 
+						c.classname,
+						m.machinedesc,
+						m.machineid,
 						latest_mt.machstatus
+
 					ORDER BY 
-						c.classname, 
-						m.machinedesc;
+						c.classname,
+						m.machinedesc
 					");
 		$stmt -> execute();
 		return $stmt -> fetchAll();
 		$stmt -> close();
 		$stmt = null;
 	}
-	
+
+
+
+
 	// ------------------------------------------------------------------------------------
 	//                                      STOCK LEDGER
 	// ------------------------------------------------------------------------------------

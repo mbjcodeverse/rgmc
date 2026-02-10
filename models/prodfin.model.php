@@ -792,16 +792,18 @@ class ModelProdfin{
 							b.pdesc AS prodname,
 							b.meas2,
 							SUM(d.qty) AS qty,
-							IFNULL(SUM(wdi.tamount),0.00) AS waste_damage,
-							IFNULL(SUM(wdi.qty * b.pweight),0.00) AS wd_weight,
+							0 AS waste_damage,
+							0 AS wd_weight,
+							-- IFNULL(SUM(wdi.tamount),0.00) AS waste_damage,
+							-- IFNULL(SUM(wdi.qty * b.pweight),0.00) AS wd_weight,
 							d.price,
 							SUM(d.tamount) AS tamount
 						FROM categorygoods AS a
 						INNER JOIN products AS b ON a.categorycode = b.categorycode
 						INNER JOIN prodfinitems AS d ON b.itemid = d.itemid
 						INNER JOIN prodfin AS c ON c.prodnumber = d.prodnumber
-						LEFT JOIN debris AS wd ON c.prodnumber = wd.prodnumber
-						LEFT JOIN debrisitems AS wdi ON (wd.debnumber = wdi.debnumber)
+						-- LEFT JOIN debris AS wd ON c.prodnumber = wd.prodnumber
+						-- LEFT JOIN debrisitems AS wdi ON (wd.debnumber = wdi.debnumber)
 						LEFT JOIN machine AS g ON c.machineid = g.machineid
 						INNER JOIN employees AS i ON c.postedby = i.empid
 						INNER JOIN employees AS j ON c.operatedby = j.empid
@@ -1417,7 +1419,7 @@ class ModelProdfin{
 									SUM(d.qty) as total_qty,
 									SUM(pci.packtarget) as target_qty,
 									SUM(d.tamount) as total_amount
-									FROM products AS p
+									FROM rawmats AS p
                                         INNER JOIN prodcomitems AS d ON (p.itemid = d.itemid)
 										INNER JOIN prodcom as c ON (c.prodnumber = d.prodnumber)
 										INNER JOIN machine as m ON (m.machineid = c.machineid)

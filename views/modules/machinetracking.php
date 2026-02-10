@@ -7,11 +7,12 @@
         <h5 class="card-title flex-grow-1 profile-header-title">MACHINE INCIDENT</h5> 
 
         <input type="hidden" name="tns-postedby" id="tns-postedby" value="<?php echo $_SESSION['empid']; ?>">
-        <input type="text" name="trans_type" id="trans_type" value="New" style="visibility:hidden;" required>  
+        <input type="hidden" name="trans_type" id="trans_type" value="New" required>  
         <!-- <input type="hidden" name="txt-machstatus" id="txt-machstatus" value="Operational"> -->
         <input type="hidden" name="prod_opr" id="prod_opr" value="<?php echo $_SESSION['mopr']; ?>">
         <input type="hidden" name="user_level" id="user_level" value="<?php echo $_SESSION['ulevel']; ?>">  
         <input type="hidden" name="class_code" id="class_code">
+        <input type="hidden" name="mt-id" id="mt-id">
         <button type="button" class="btn btn-sm btn-outline-success" id="btn-operator" style="display:none;" onclick="window.location.href='prodoperator'"><i class="icon-stack2"></i>
             &nbsp;&nbsp;Production
         </button>
@@ -249,6 +250,8 @@
             <button type="button" class="btn btn-light btn-lg" id="btn-search" data-toggle="modal" data-target="#modal-search-machinetracking"><i class="icon-search4 mr-2"></i> Search</button>
            
             <button type="submit" class="btn btn-light btn-lg" id="btn-save" style="display:none;"><i class="icon-floppy-disk mr-2"></i> Save</button>
+
+            <button type="button" class="btn btn-light btn-lg" style="display:none;color:#ff8375" name="btn-cancel" id="btn-cancel"><i class="icon-blocked"></i>&nbsp;&nbsp;Cancel</button>
           </span>
         </div>     
       </div>  <!-- card body -->
@@ -260,7 +263,7 @@
 
 <!-- ============== Machine Tracking List ============ -->
 <div id="modal-search-machinetracking" class="modal" tabindex="-1">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
+  <div class="modal-dialog modal-full modal-dialog-centered">
     <div class="modal-content" style="background-color: #343f53;">
       <div class="modal-header">
         <h5 class="modal-title profile-name" style="margin-top:-3px;"><i class="icon-menu7 mr-2"></i> &nbsp; MACHINE INCIDENT INFORMATION LIST&nbsp;&nbsp;&nbsp;&nbsp;</h5>
@@ -310,7 +313,7 @@
                 <label for="lst-phase" id="lbl-lst-phase" style="color:aqua;">= &gt; Phase</label>
                 <select data-placeholder="< Select Phase >" class="form-control select" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" data-fouc id="lst-phase" name="lst-phase" required>
                     <option></option>
-                    <option value="- Queued -" selected>- Queued -</option>
+                    <option value="- Queued -">- Queued -</option>
                     <option value="Pending">Pending</option>
                     <option value="Allocated">Allocated</option>
                     <option value="Completed">Completed</option>
@@ -338,9 +341,12 @@
               <th style="min-width: 160px;">Time</th>
               <th style="min-width: 120px;">Incident #</th>
               <th style="min-width: 325px;">Machine</th>
-              <th style="min-width: 145px;">Status</th>
+              <th style="min-width: 145px;">Phase</th>
+              <th style="min-width: 165px;">Status</th>
+              <!-- <th style="min-width: 200px;">Failure Type</th> -->
               <th style="min-width: 130px;">Date Comp</th>
-              <th>Act</th>
+              <th style="min-width: 110px;">Downtime</th>
+              <th style="max-width: 110px;">Act</th>
             </tr>
           </thead>
 

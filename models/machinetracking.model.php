@@ -171,6 +171,9 @@ class ModelMachineTracking{
 													a.controlnum,
                                                     b.machinedesc,
                                                     a.phase,
+													a.curstatus,
+													a.failuretype,
+													a.timeduration,
                                                     IF(a.datecompleted IS NULL OR a.datecompleted = '0000-00-00', '', DATE_FORMAT(a.datecompleted, '%m/%d/%Y')) AS datecompleted
                                                 FROM machinetracking a
                                                 INNER JOIN machine b ON a.machineid = b.machineid
@@ -360,7 +363,7 @@ class ModelMachineTracking{
 			$duty_shift = "";
 		}
 
-		$whereClause = "WHERE (t.inccode != '')" . $machine . $dates . $class_code . $reported_by . $cur_status . $failure_type . $duty_shift;
+		$whereClause = "WHERE (t.phase != 'Cancelled')" . $machine . $dates . $class_code . $reported_by . $cur_status . $failure_type . $duty_shift;
 
 		if ($reptype == 1){
 			$stmt = (new Connection)->connect()->prepare("SELECT
@@ -526,5 +529,14 @@ class ModelMachineTracking{
         $answer = $stmt->fetchAll();
         $stmt = null; 
         return $answer;
+	}
+
+	static public function mdlCancelJobOrder($field, $id){
+		$stmt = (new Connection)->connect()->prepare("UPDATE machinetracking SET phase = 'Cancelled' WHERE $field = :$id");
+		$stmt -> bindParam(":".$id, $id, PDO::PARAM_STR);
+		$stmt -> execute();
+		return $stmt -> fetch();
+		$stmt -> close();
+		$stmt = null;
 	}
 }

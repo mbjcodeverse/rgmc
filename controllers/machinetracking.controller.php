@@ -54,5 +54,10 @@ class ControllerMachineTracking{
 	static public function ctrMachineIncidentList($machineid){
 		$answer = (new ModelMachineTracking)->mdlMachineIncidentList($machineid);
 		return $answer;
-	}	
+	}
+	
+	static public function ctrCancelJobOrder($field, $id){
+		$answer = (new ModelMachineTracking)->mdlCancelJobOrder($field, $id);
+		return $answer;
+	}
 }

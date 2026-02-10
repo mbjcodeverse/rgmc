@@ -214,13 +214,20 @@ document.addEventListener('DOMContentLoaded', function() {
                                     }else{
                                         average_category_mttr = total_category_downtime / total_category_frequency;
                                         average_category_mtbf = total_category_mtbf / total_category_frequency;
-                                        html.push('<tr>');
-                                            html.push('<td colspan="3"></td>');
-                                            html.push('<td style="text-align:center;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+total_category_frequency+'</td>');
-                                            html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(total_category_downtime)+'</td>');
-                                            html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mtbf)+'</td>');
-                                            html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mttr)+'</td>');
-                                        html.push('</tr>');
+
+                                        if (total_category_frequency > 0){
+                                            html.push('<tr>');
+                                                html.push('<td colspan="3"></td>');
+                                                html.push('<td style="text-align:center;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+total_category_frequency+'</td>');
+                                                html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(total_category_downtime)+'</td>');
+                                                html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mtbf)+'</td>');
+                                                html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mttr)+'</td>');
+                                            html.push('</tr>');
+                                        }else{
+                                            html.push('<tr>');
+                                                html.push('<td colspan="7"></td>');
+                                            html.push('</tr>');
+                                        }
 
                                         total_category_frequency = 0;
                                         total_category_downtime = 0.00;
@@ -235,25 +242,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
                                 html.push('<tr>');
                                     html.push('<td style="text-align:left;border:1px solid white;border-right:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+classname+'</td>');
-
-                                    // html.push(
-                                    // '<td style="text-align:left;border:1px solid white;font-size:1.1em;padding:4px;">' +
-                                    //     '<span class="machine-desc" ' +
-                                    //     'data-machineid="'+machineid+'" ' +
-                                    //     'style="' +
-                                    //         'cursor:pointer;' +
-                                    //         'padding:2px 6px;' +
-                                    //         'border-radius:4px;' +
-                                    //         'transition:background-color 0.15s ease,color 0.15s ease,font-weight 0.15s ease;' +
-                                    //     '" ' +
-                                    //     'onmouseover="this.style.backgroundColor=\'#ffeb3b\'; this.style.color=\'#000\'; this.style.fontWeight=\'bold\';" ' +
-                                    //     'onmouseout="this.style.backgroundColor=\'transparent\'; this.style.color=\'inherit\'; this.style.fontWeight=\'normal\';"' +
-                                    //     '>' +
-                                    //     machinedesc +
-                                    //     '</span>' +
-                                    // '</td>'
-                                    // );
-
                                     html.push(
                                         '<td class="machine-desc" ' +
                                             'data-machineid="'+machineid+'" ' +
@@ -262,14 +250,14 @@ document.addEventListener('DOMContentLoaded', function() {
                                             'border:1px solid white;' +
                                             'font-size:1.1em;' +
                                             'cursor:pointer;' +
-                                            'padding:0;' +       // TD padding removed
+                                            'padding:0;' +       
                                             '">' +
 
                                             '<div ' +
                                             'style="' +
                                                 'width:100%;' +
                                                 'height:100%;' +
-                                                'padding:1px 4px;' +   // 1px top/bottom, 4px left/right
+                                                'padding:1px 4px;' +   
                                                 'box-sizing:border-box;' +
                                                 'border-radius:2px;' +
                                                 'transition:background-color 0.15s ease,color 0.15s ease,font-weight 0.15s ease;' +
@@ -282,23 +270,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                         '</td>'
                                         );
 
-                                    // html.push('<td style="text-align:left;border:1px solid white;border-right:1px solid white;font-size:1.1em;padding-top:4px;padding-bottom:4px;">'+machinedesc+'</td>');
-                                    
-                                    
-                                    // html.push('<td style="text-align:center;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+''+'</td>');
-
-                                    // html.push(
-                                    //     '<td style="text-align:center;' +
-                                    //     'border:4px solid white;' +
-                                    //     'font-size:1.2em;' +
-                                    //     'padding-top:4px;' +
-                                    //     'padding-bottom:4px;' +
-                                    //     'background-color:' + statusColor + ';' +
-                                    //     'color:white;">' +
-                                    //     machinestatus +
-                                    //     '</td>'
-                                    // );
-
                                     html.push(
                                         '<td style="text-align:center;' +
                                         'border:4px solid white;' +
@@ -308,26 +279,32 @@ document.addEventListener('DOMContentLoaded', function() {
                                         'background-color:' + statusColor + ';' +
                                         'color:white;"></td>'
                                     );
-
-                                    //html.push('<td style="text-align:center;border:4px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+machinestatus+'</td>');
                                     
-                                    html.push('<td style="text-align:center;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+totalfrequency+'</td>');
-                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+totaldowntime+'</td>');
-                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+mtbf+'</td>');
-                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+mttr+'</td>');
+                                    if (Number(totalfrequency) > 0){
+                                        html.push('<td style="text-align:center;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+totalfrequency+'</td>');
+                                        html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+totaldowntime+'</td>');
+                                        html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+mtbf+'</td>');
+                                        html.push('<td style="text-align:right;border:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;">'+mttr+'</td>');
+                                    }
                                 html.push('</tr>');
                             }
 
                             if (i > 0){
                                 average_category_mttr = total_category_downtime / total_category_frequency;
                                 average_category_mtbf = total_category_mtbf / total_category_frequency;
-                                html.push('<tr>');
-                                    html.push('<td colspan="3"></td>');
-                                    html.push('<td style="text-align:center;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+total_category_frequency+'</td>');
-                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(total_category_downtime)+'</td>');
-                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mtbf)+'</td>');
-                                    html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mttr)+'</td>');
-                                html.push('</tr>');
+                                if (total_category_frequency > 0){
+                                    html.push('<tr>');
+                                        html.push('<td colspan="3"></td>');
+                                        html.push('<td style="text-align:center;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+total_category_frequency+'</td>');
+                                        html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(total_category_downtime)+'</td>');
+                                        html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mtbf)+'</td>');
+                                        html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mttr)+'</td>');
+                                    html.push('</tr>');
+                                }else{
+                                    html.push('<tr>');
+                                        html.push('<td colspan="7"></td>');
+                                    html.push('</tr>');
+                                }
                             }
 
                         html.push('</table>');
@@ -373,10 +350,13 @@ document.addEventListener('DOMContentLoaded', function() {
                                         average_category_mtbf = total_category_mtbf / total_category_frequency;
                                         html.push('<tr>');
                                             html.push('<td style="text-align:left;border:1px solid white;border-right:1px solid white;font-size:1.2em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+prev_classname.toUpperCase()+'</td>');
+
+                                            if (total_category_frequency > 0){
                                             html.push('<td style="text-align:center;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+total_category_frequency+'</td>');
                                             html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(total_category_downtime)+'</td>');
                                             html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mtbf)+'</td>');
                                             html.push('<td style="text-align:right;border:1px solid white;font-size:1.3em;padding-top:4px;padding-bottom:4px;font-weight:bold;">'+numberWithCommas(average_category_mttr)+'</td>');
+                                            }
                                         html.push('</tr>');
 
                                         total_category_frequency = 0;
