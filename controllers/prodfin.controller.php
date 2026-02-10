@@ -88,8 +88,8 @@ class ControllerProdfin{
 	}
 
 	// Quota Report
-	static public function ctrShowQuotaReport($machineid, $start_date, $end_date, $categorycode, $etype, $operatedby, $prodstatus, $reptype, $shift){
-		$answer = (new ModelProdfin)->mdlShowQuotaReport($machineid, $start_date, $end_date, $categorycode, $etype, $operatedby, $prodstatus, $reptype, $shift);
+	static public function ctrShowQuotaReport($machineid, $start_date, $end_date, $categorycode, $etype, $operatedby, $prodstatus, $reptype, $shift, $sortby){
+		$answer = (new ModelProdfin)->mdlShowQuotaReport($machineid, $start_date, $end_date, $categorycode, $etype, $operatedby, $prodstatus, $reptype, $shift, $sortby);
 		return $answer;
 	}
 }

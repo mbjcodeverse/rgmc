@@ -12,6 +12,7 @@ class AjaxQuotaReport{
    public $prodstatus;
    public $reptype;
    public $shift;
+   public $sortby;
 
    public function ajaxDisplayQuotaReport(){
      $machineid = $this->machineid;
@@ -23,8 +24,9 @@ class AjaxQuotaReport{
      $prodstatus = $this->prodstatus;
      $reptype = $this->reptype;
      $shift = $this->shift;
+     $sortby = $this->sortby;
 
-     $answer = (new ControllerProdfin)->ctrShowQuotaReport($machineid, $start_date, $end_date, $categorycode, $etype, $operatedby, $prodstatus, $reptype, $shift);
+     $answer = (new ControllerProdfin)->ctrShowQuotaReport($machineid, $start_date, $end_date, $categorycode, $etype, $operatedby, $prodstatus, $reptype, $shift, $sortby);
      echo json_encode($answer);
    }
 }
@@ -39,4 +41,5 @@ $quota_rep -> operatedby = $_POST["operatedby"];
 $quota_rep -> prodstatus = $_POST["prodstatus"];
 $quota_rep -> reptype = $_POST["reptype"];
 $quota_rep -> shift = $_POST["shift"];
+$quota_rep -> sortby = $_POST["sortby"];
 $quota_rep -> ajaxDisplayQuotaReport();

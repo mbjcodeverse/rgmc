@@ -70,7 +70,7 @@
                   </div>
                 </div>
 
-                <div class="col-sm-3 form-group">
+                <div class="col-sm-2 form-group">
                   <label for="lst-categorycode" id="lbl-lst-categorycode" style="color:aqua;">= &gt; Category</label>
                   <select data-placeholder="< Select Category >" class="form-control select-search" id="lst-categorycode" name="lst-categorycode">
                     <option></option>
@@ -106,9 +106,20 @@
                         }
                       ?>
                   </select>              
+                </div>   
+                
+                <div class="col-sm-2 form-group">
+                  <label for="lst-sortby">Sort by</label>
+                  <select data-placeholder="< Sort Type >" class="form-control select" data-fouc id="lst-sortby" name="lst-sortby">
+                    <option></option>
+                    <option value="1" selected>KPI (Descending)</option>
+                    <option value="2">KPI (Ascending)</option>
+                    <option value="3">Value (Descending)</option>
+                    <option value="4">Value (Ascending)</option>
+                  </select>
                 </div>                
 
-                <div class="col-sm-1 form-group">
+                <div class="col-sm-1 form-group" style="display:none;">
                   <label for="lst-prodstatus">Status</label>
                   <!-- <label for="lst-prodstatus" id="lbl-lst-prodstatus" style="color:aqua;">= &gt; Status</label> -->
                   <select data-placeholder="< Select Status >" class="form-control select" data-fouc id="lst-prodstatus" name="lst-prodstatus">

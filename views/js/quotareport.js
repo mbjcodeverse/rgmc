@@ -42,7 +42,7 @@ $(function() {
 
      $("#lst-etype").val('Finished Goods').trigger('change');
 
-     $('#lst-machineid, #lst_date_range, #lst-categorycode, #lst-etype, #lst-operatedby, #lst-prodstatus, #lst-reptype, #lst-shift').on("change", function(){
+     $('#lst-machineid, #lst_date_range, #lst-categorycode, #lst-etype, #lst-operatedby, #lst-prodstatus, #lst-reptype, #lst-shift, #lst-sortby').on("change", function(){
         $("#btn-print-report").prop('disabled', false);
         $("#btn-export").prop('disabled', false);
   
@@ -57,6 +57,7 @@ $(function() {
         let prodstatus = $("#lst-prodstatus").val();
         let reptype = $("#lst-reptype").val();
         let shift = $("#lst-shift").val();
+        let sortby = $("#lst-sortby").val();
   
         var data = new FormData();
         data.append("machineid", machineid);
@@ -68,6 +69,7 @@ $(function() {
         data.append("prodstatus", prodstatus);
         data.append("reptype", reptype);
         data.append("shift", shift);
+        data.append("sortby", sortby);
   
         $.ajax({
              url:"ajax/quota_report.ajax.php",   
@@ -91,6 +93,7 @@ $(function() {
                                 html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;font-size:1.2em;">Prod Qty</th>');
                                 html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;font-size:1.2em;">Quota</th>');
                                 html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;font-size:1.2em;">KPI %</th>');
+                                html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;font-size:1.2em;">Value</th>');
                                 // html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">Amount</th>');
                               html.push('</tr>');
                             html.push('</thead>');
@@ -102,6 +105,7 @@ $(function() {
                                 let total_qty = numberWithCommas(production.total_qty);
                                 let target_qty = numberWithCommas(production.target_qty);
                                 let kpi = numberWithCommas(production.kpi) + " %";
+                                let total_amount = numberWithCommas(production.total_amount);
 
                                 html.push('<tr>');
                                   html.push('<td style="text-align:center;border:1px solid white;font-size:1.3em;padding-right:12px;padding-left:12px;">'+(i + 1)+'</td>');
@@ -109,7 +113,8 @@ $(function() {
                                   html.push('<td style="text-align:center;font-size:1.2em;">'+shifts+'</td>');
                                   html.push('<td style="text-align:right;font-size:1.2em;">'+total_qty+'</td>');
                                   html.push('<td style="text-align:right;font-size:1.2em;">'+target_qty+'</td>');
-                                  html.push('<td style="text-align:right;font-size:1.2em;">'+kpi+'</td>');
+                                  html.push('<td style="text-align:right;font-size:1.2em;color:#fcc97c;">'+kpi+'</td>');
+                                  html.push('<td style="text-align:right;font-size:1.2em;color:#95fc7c;">'+total_amount+'</td>');
                                 html.push('</tr>');  
                             }
                         html.push('</table>');

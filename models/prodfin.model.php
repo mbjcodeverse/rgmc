@@ -1218,7 +1218,7 @@ class ModelProdfin{
 	}	
 
 	// Quota Report
-	static public function mdlShowQuotaReport($machineid, $start_date, $end_date, $categorycode, $etype, $operatedby, $prodstatus, $reptype, $shift){
+	static public function mdlShowQuotaReport($machineid, $start_date, $end_date, $categorycode, $etype, $operatedby, $prodstatus, $reptype, $shift, $sortby){
 		if ($machineid != ''){
 			$machine = " AND (c.machineid = '$machineid')";
 		}else{
@@ -1253,6 +1253,16 @@ class ModelProdfin{
 			$prod_shift = " AND (c.shift = '$shift')";
 		}else{
 			$prod_shift = "";
+		}	
+
+		if ($sortby == '1'){
+			$sort_by = " ORDER BY kpi DESC";
+		}elseif ($sortby == '2'){
+			$sort_by = " ORDER BY kpi";
+		}elseif ($sortby == '3'){
+			$sort_by = " ORDER BY total_amount DESC";
+		}elseif ($sortby == '4'){
+			$sort_by = " ORDER BY total_amount";
 		}	
 
 		if(!empty($end_date)){
@@ -1294,7 +1304,7 @@ class ModelProdfin{
 										INNER JOIN prodcapacity as pc ON (pc.capacitynumber = pci.capacitynumber) AND (pc.machineid = c.machineid)
 										$whereClause GROUP BY oprname
 										$entry_type	
-									ORDER BY kpi DESC");
+									$sort_by");
 		}else if ($reptype == 2){	
 			$stmt = (new Connection)->connect()->prepare("SELECT 'Finished Goods' as etype,
 									CONCAT(e.lname, ', ', e.fname) AS oprname,
