@@ -178,6 +178,15 @@
 							</div>
 
 
+
+							<!-- Subcomponents Metrics Table -->
+							<div class="card-body">
+								<p style="font-size:1.2em;">SUBCOMPONENTS METRICS = > [ In Progress... ]</p>
+								<div class="table-responsive subcomponents_metrics" id="subcomponents_metrics">
+								</div>
+							</div>
+
+
 							
 
 

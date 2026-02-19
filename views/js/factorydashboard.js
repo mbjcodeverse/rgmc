@@ -167,7 +167,8 @@ document.addEventListener('DOMContentLoaded', function() {
     $('#report-type, #lst_date_range').on("change", function() {
         fetchFactoryDashboardData();
         generateUsageMatrix();
-        fetchProductionMetrics();   // Table below Line Graph
+        fetchProductionMetrics();
+        fetchSubcomponentsMetrics();
     });
 
     $('#report-type').trigger("change");
@@ -1498,7 +1499,7 @@ function fetchFactoryDashboardData() {
     });
 }
 
-// STATISTICS Tab - Production Metrics -> below Line Graph
+// STATISTICS Tab - Production Metrics -> below Line Graph -------------------------------
 function fetchProductionMetrics() {
     var reptype = $("#report-type").val();
     let date_range = $("#lst_date_range").val();
@@ -1942,6 +1943,70 @@ function materialCostTrail(date) {
         }
     });    
 }
+
+// ---------------------------------------------------------------------------------------
+// STATISTICS Tab - Subcomponents Metrics -> below Line Graph
+function fetchSubcomponentsMetrics() {
+    var reptype = $("#report-type").val();
+    let date_range = $("#lst_date_range").val();
+
+    let start_date = date_range.substring(6, 10) + '-' + date_range.substring(0, 2) + '-' + date_range.substring(3, 5);
+    let end_date = date_range.substring(19, 23) + '-' + date_range.substring(13, 15) + '-' + date_range.substring(16, 18);
+
+    let data_metrics = new FormData();
+    data_metrics.append("reptype", reptype);
+    data_metrics.append("start_date", start_date);
+    data_metrics.append("end_date", end_date);
+
+    $.ajax({
+        url: "ajax/subcomponents_metrics.ajax.php",
+        method: "POST",
+        data: data_metrics,
+        cache: false,
+        contentType: false,
+        processData: false,
+        dataType: "json",
+        success: function(answer) {
+            $(".subcomponents_metrics").empty();
+            var html = [];
+
+            html.push('<style>');
+                html.push('.scrollable-table-wrapper { position: relative; width: 100%; margin: 0 auto; font-size: 1.1em; }');
+                html.push('.scrollable-table-header, .scrollable-table-footer { width: 100%; table-layout: fixed; background-color: #2a3141; }');
+                html.push('.scrollable-table-footer td { font-weight: bold; }');
+                html.push('.scrollable-table-body-container { max-height: 400px; overflow-y: auto; width: 100%; }'); // Ensured the body container is 100% width
+                html.push('.scrollable-table-body { width: 100%; table-layout: fixed; }'); // Ensured table-layout: fixed
+                html.push('thead th, tfoot td { position: sticky; background-color: #2a3141; z-index: 2; top: 0; }'); // Sticky header
+                html.push('.scrollable-table-wrapper table tr td, .scrollable-table-wrapper table tr th { padding-top: 4px; padding-bottom: 4px; }');
+                html.push('.scrollable-table-body td, .scrollable-table-header th { text-align: right; }'); // Ensured text-align: right for both header and body
+            html.push('</style>');
+
+            html.push('<div class="scrollable-table-wrapper">');
+
+                        // Header Table
+            html.push('<table class="table table-bordered scrollable-table-header">');
+                html.push('<thead>');
+                    html.push('<tr>');
+                        html.push('<th style="font-size:0.9em;width:160px;padding-right:5px;">Categories</th>');
+                        html.push('<th style="text-align:right;font-size:0.9em;width:85px;padding-right:5px;">Prod Qty</th>');
+                        html.push('<th style="text-align:right;font-size:0.9em;width:107px;padding-right:5px;">Prod Value</th>');
+                        html.push('<th style="text-align:right;font-size:0.9em;width:85px;padding-right:5px;">Weight</th>');
+                        html.push('<th style="text-align:right;font-size:0.9em;width:100px;padding-right:5px;">Mat Qty</th>');
+                        html.push('<th style="text-align:right;font-size:0.9em;width:107px;padding-right:5px;">Mat Cost</th>');
+                        html.push('<th style="text-align:right;font-size:0.9em;width:80px;padding-right:5px;">Mat %</th>');
+                        html.push('<th style="text-align:right;font-size:0.9em;width:107px;padding-right:5px;">Acc Cost</th>');
+                        html.push('<th style="text-align:right;font-size:0.9em;width:80px;padding-right:5px;">Acc %</th>');
+                        html.push('<th style="text-align:right;font-size:0.9em;width:70px;padding-right:5px;">Head Count</th>');
+                        html.push('<th style="text-align:right;font-size:0.9em;width:107px;padding-right:5px;">Man Cost</th>');
+                    html.push('</tr>');
+                html.push('</thead>');
+            html.push('</table>');
+
+            $('.subcomponents_metrics').html(html.join(''));
+        }
+    });
+}
+// ---------------------------------------------------------------------------------------
 
 function numberWithCommasNoDecimal(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

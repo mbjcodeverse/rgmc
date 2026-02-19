@@ -853,4 +853,57 @@ static public function mdlShowMaterialCostTrail($trans_date) {
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }  
+
+
+  static public function mdlShowSubcomponentsMetrics($reptype, $start_date, $end_date){
+		  if(!empty($end_date)){
+        $dates = " BETWEEN '$start_date' AND '$end_date'";
+      }else{
+        $dates = "";
+      }					
+
+		  $dateClause = $dates;
+        
+      if ($reptype == 1){
+        $stmt = (new Connection)->connect()->prepare("SELECT 
+                      c.catdescription AS category,
+                      IFNULL(p.production_cost, 0) AS production_cost,
+                      IFNULL(p.production_qty, 0) AS production_qty
+                  FROM
+                      (                        
+                          SELECT c.catdescription AS catdescription
+                          FROM categoryrawmats c 
+                          INNER JOIN rawmats r ON c.categorycode = r.categorycode
+                          INNER JOIN prodcomitems pci ON r.itemid = pci.itemid
+                          INNER JOIN prodcom pc ON pci.prodnumber = pc.prodnumber
+                          WHERE pc.prodstatus = 'Posted' 
+                            AND pc.proddate $dateClause
+                          GROUP BY c.catdescription
+                      ) c
+                      LEFT JOIN (
+                          SELECT rc.catdescription, SUM(pci.tamount) AS production_cost, SUM(pci.qty) AS production_qty
+                          FROM categoryrawmats rc 
+                          INNER JOIN rawmats r ON rc.categorycode = r.categorycode
+                          INNER JOIN prodcomitems pci ON r.itemid = pci.itemid
+                          INNER JOIN prodcom pc ON pci.prodnumber = pc.prodnumber
+                          WHERE pc.prodstatus = 'Posted' 
+                            AND pc.proddate $dateClause
+                          GROUP BY rc.catdescription
+                      ) p ON c.catdescription = p.catdescription
+                  ORDER BY c.catdescription");
+      } elseif ($reptype == 2){
+			  $stmt = (new Connection)->connect()->prepare("");  
+	    } elseif ($reptype == 3){
+			  $stmt = (new Connection)->connect()->prepare("");
+		  } elseif ($reptype == 4){
+			  $stmt = (new Connection)->connect()->prepare("");
+	    } elseif ($reptype == 5){
+			  $stmt = (new Connection)->connect()->prepare("");
+	    }
+
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    $stmt = null;
+    return $result;
+	}  
 }

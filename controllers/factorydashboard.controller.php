@@ -52,5 +52,12 @@ class ControllerFactoryDashboard{
     static public function ctrShowProductionCostTrail($trans_date){
 		$answer = (new ModelFactoryDashboard)->mdlShowProductionCostTrail($trans_date);
 		return $answer;
+	}
+	
+	
+
+	static public function ctrShowSubcomponentsMetrics($reptype, $start_date, $end_date){
+		$answer = (new ModelFactoryDashboard)->mdlShowSubcomponentsMetrics($reptype, $start_date, $end_date);
+		return $answer;
 	}	
 }
