@@ -15,14 +15,14 @@
             </div>
 
             <div class="form-group form-group-feedback form-group-feedback-left">
-              <input type="text" class="form-control custom-input" name="loginUser" id="loginUser" value="magnetar" required>
+              <input type="text" class="form-control custom-input" name="loginUser" id="loginUser" value="" required>
               <div class="form-control-feedback">
                 <i class="icon-user"></i> <!-- Icon color will be gold -->
               </div>
             </div>
 
             <div class="form-group form-group-feedback form-group-feedback-left">
-              <input type="password" class="form-control custom-input" name="loginPass" value="uyscuti" required>
+              <input type="password" class="form-control custom-input" name="loginPass" value="" required>
               <div class="form-control-feedback">
                 <i class="icon-lock2"></i> <!-- Icon color will be gold -->
               </div>
