@@ -2002,6 +2002,107 @@ function fetchSubcomponentsMetrics() {
                 html.push('</thead>');
             html.push('</table>');
 
+            // Scrollable Body
+            html.push('<div class="scrollable-table-body-container">');
+                html.push('<table class="table table-striped table-bordered scrollable-table-body">');
+                    html.push('<tbody>');
+                        var total_prod_qty = 0.00;
+                        var total_prod_weight = 0.00;
+                        var total_prod_value = 0.00;
+
+                        for (let i = 0; i < answer.length; i++) {
+                            let submetrics = answer[i];
+                            let category = submetrics.category.toUpperCase();
+                            let production_cost = submetrics.production_cost;
+                            let production_qty = submetrics.production_qty;
+
+                            total_prod_qty += Number(production_qty);
+                            total_prod_value += Number(production_cost);
+
+                            html.push('<tr>');
+                                html.push('<td ' +
+                                    'style="text-align:right; color:#00ffff; width:160px; cursor:pointer;padding-right:5px;font-size:0.9em;" ' +
+                                    'onmouseover="this.style.backgroundColor=\'#fccd60\'; this.style.color=\'#303030\'; this.style.fontSize=\'0.9em\'; this.style.fontWeight=\'bold\'" ' +
+                                    'onmouseout="this.style.backgroundColor=\'\'; this.style.color=\'#00ffff\'; this.style.fontSize=\'\'; this.style.fontWeight=\'\'" ' +
+                                    'onclick="subcomponentsDetails(\'' + category + '\')" ' +
+                                    '>' + category + '</td>');
+                                
+                                if (Number(production_qty) > 0.00){    
+                                    html.push('<td style="color:#62fca3;font-size:0.8em;text-align:right;width:85px;padding-right:5px;">'+numberWithCommas(production_qty)+'</td>');  
+                                    html.push('<td style="color:#62fca3;font-size:0.8em;text-align:right;width:107px;padding-right:5px;">'+numberWithCommas(production_cost)+'</td>');
+                                    html.push('<td style="color:orange;font-size:0.8em;text-align:right;width:85px;padding-right:5px;"></td>');   
+                                }else{
+                                    html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:85px;padding-right:5px;"></td>');   
+                                    html.push('<td style="color:#62fca3;font-size:0.8em;text-align:right;width:107px;padding-right:5px;"></td>');
+                                    html.push('<td style="color:orange;font-size:0.8em;text-align:right;width:85px;padding-right:5px;"></td>');                                       
+                                }   
+
+                                // if (Number(material_cost) > 0.00){ 
+                                //     html.push('<td style="color:#ffa6c1;font-size:0.8em;text-align:right;width:100px;padding-right:5px;">'+numberWithCommas(material_qty)+'</td>');
+                                //     html.push('<td style="color:#ffa6c1;font-size:0.8em;text-align:right;width:107px;padding-right:5px;">'+numberWithCommas(material_cost)+'</td>');
+                                // }else{
+                                    html.push('<td style="color:#ffa6c1;font-size:0.8em;text-align:right;width:100px;padding-right:5px;"></td>');
+                                    html.push('<td style="color:#ffa6c1;font-size:0.8em;text-align:right;width:107px;padding-right:5px;"></td>');
+                                // }
+
+                                // if (Number(production_cost) > 0.00){    
+                                //     let average_material = ((Number(material_cost) / Number(production_cost)) * 100).toFixed(2);
+                                //     counter++;
+                                //     total_average_material = total_average_material + Number(average_material);
+                                //     html.push('<td style="color:powderblue;font-size:0.8em;text-align:right;width:80px;padding-right:5px;">'+numberWithCommas(average_material)+' %</td>');    
+                                // }else{
+                                    html.push('<td style="color:powderblue;font-size:0.8em;text-align:right;width:80px;padding-right:5px;"></td>');                                     
+                                // } 
+
+                                // if (Number(accessories_cost) > 0.00){ 
+                                //     html.push('<td style="color:#ffa6c1;font-size:0.8em;text-align:right;width:107px;padding-right:5px;">'+numberWithCommas(accessories_cost)+'</td>');
+                                // }else{
+                                    html.push('<td style="color:#ffa6c1;font-size:0.8em;text-align:right;width:107px;padding-right:5px;"></td>');
+                                // }
+
+                                // if (Number(accessories_cost) > 0.00){    
+                                //     let average_accessories = ((Number(accessories_cost) / Number(production_cost)) * 100).toFixed(2);
+                                //     accounter++;
+                                //     total_average_accessories = total_average_accessories + Number(average_accessories);
+                                //     // alert(total_average_material);
+                                //     html.push('<td style="color:powderblue;font-size:0.8em;text-align:right;width:80px;padding-right:5px;">'+numberWithCommas(average_accessories)+' %</td>');    
+                                // }else{
+                                    html.push('<td style="color:powderblue;font-size:0.8em;text-align:right;width:80px;padding-right:5px;"></td>');                                     
+                                // }
+
+                                // if (Number(head_count) > 0.00){
+                                //     html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:70px;padding-right:5px;">'+numberWithCommas(head_count)+'</td>');
+                                // }else{
+                                    html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:70px;padding-right:5px;"></td>');
+                                // }
+                                
+                                // if (Number(manpower_cost) > 0.00){  
+                                //     html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:107px;padding-right:5px;">'+numberWithCommas(manpower_cost)+'</td>');
+                                // }else{
+                                    html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:107px;padding-right:5px;"></td>');
+                                // }
+                            html.push('</tr>');        
+                        }
+                    html.push('</tbody>'); 
+
+                    html.push('<tfoot>');
+                        html.push('<tr>');
+                            html.push('<td style="color:#a4dcfc;font-size:1.1em;padding-right:5px;">SUB-TOTAL</td>');
+                            html.push('<td style="text-align:right;font-size:0.9em;color:#62fca3;padding-right:5px;">'+numberWithCommas(total_prod_qty)+'</td>');
+                            html.push('<td style="text-align:right;font-size:0.9em;color:#62fca3;padding-right:5px;">'+numberWithCommas(total_prod_value)+'</td>');
+                            // html.push('<td style="text-align:right;font-size:0.9em;color:orange;padding-right:5px;">'+numberWithCommas(total_prod_weight)+'</td>');
+                            // html.push('<td style="text-align:right;font-size:0.9em;color:#ffa6c1;padding-right:5px;">'+numberWithCommas(total_material_qty)+'</td>');
+                            // html.push('<td style="text-align:right;font-size:0.9em;color:#ffa6c1;padding-right:5px;">'+numberWithCommas(total_material_cost)+'</td>');
+                            // html.push('<td style="text-align:right;font-size:0.9em;color:powderblue;padding-right:5px;">'+numberWithCommas(_ave.toFixed(2))+' %</td>');
+                            // html.push('<td style="text-align:right;font-size:0.9em;color:#ffa6c1;padding-right:5px;">'+numberWithCommas(total_accessories_cost)+'</td>');
+                            // html.push('<td style="text-align:right;font-size:0.9em;color:powderblue;padding-right:5px;">'+numberWithCommas(_acc_ave.toFixed(2))+' %</td>');
+                            // html.push('<td style="text-align:right;font-size:0.9em;color:#ffeaa6;padding-right:5px;">'+numberWithCommas(total_head_count)+'</td>');
+                            // html.push('<td style="text-align:right;font-size:0.9em;color:#ffeaa6;padding-right:5px;">'+numberWithCommas(total_manpower_cost)+'</td>');
+                        html.push('</tr>');
+                    html.push('</tfoot>');
+                html.push('</table>');
+            html.push('</div>');        
+                        
             $('.subcomponents_metrics').html(html.join(''));
         }
     });
