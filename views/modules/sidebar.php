@@ -548,6 +548,10 @@
                         echo '
                             <li class="nav-item"><a href="prodmetrics" class="nav-link">Production Metrics</a></li>  
                         ';
+
+                        echo '
+                            <li class="nav-item"><a href="submetrics" class="nav-link">Subcomponents Metrics</a></li>  
+                        ';
                     echo '</ul>';
                   echo '</li>';
                 

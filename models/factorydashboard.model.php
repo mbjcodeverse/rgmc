@@ -781,7 +781,7 @@ class ModelFactoryDashboard{
   //   return $stmt->fetchAll(PDO::FETCH_ASSOC);
   // } 
 
-static public function mdlShowMaterialCostTrail($trans_date) {
+  static public function mdlShowMaterialCostTrail($trans_date) {
     $sql = "SELECT 1 AS priority, 'Requisition' AS trans_type, m.machinedesc,
                    SUM(CASE WHEN r.categorycode != '0005' AND r.categorycode != '0010' THEN d.qty ELSE 0 END) AS qty,
                    SUM(CASE WHEN r.categorycode != '0005' AND r.categorycode != '0010' THEN d.tamount ELSE 0 END) AS tamount,
@@ -834,7 +834,7 @@ static public function mdlShowMaterialCostTrail($trans_date) {
     $stmt->bindParam(':trans_date', $trans_date, PDO::PARAM_STR);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
-}
+  }
 
 
   
@@ -868,7 +868,9 @@ static public function mdlShowMaterialCostTrail($trans_date) {
         $stmt = (new Connection)->connect()->prepare("SELECT 
                       c.catdescription AS category,
                       IFNULL(p.production_cost, 0) AS production_cost,
-                      IFNULL(p.production_qty, 0) AS production_qty
+                      IFNULL(p.production_qty, 0) AS production_qty,
+                      IFNULL(m.head_count, 0) AS head_count,
+                      IFNULL(m.manpower_cost, 0) AS manpower_cost
                   FROM
                       (                        
                           SELECT c.catdescription AS catdescription
@@ -890,6 +892,15 @@ static public function mdlShowMaterialCostTrail($trans_date) {
                             AND pc.proddate $dateClause
                           GROUP BY rc.catdescription
                       ) p ON c.catdescription = p.catdescription
+
+                      LEFT JOIN (
+                          SELECT cr.catdescription, SUM(sm.headcount) AS head_count, SUM(sm.amount) AS manpower_cost
+                          FROM categoryrawmats cr 
+                          INNER JOIN submetrics sm ON cr.categorycode = sm.categorycode
+                          WHERE sm.mstatus = 'Posted'
+                            AND sm.mdate $dateClause
+                          GROUP BY cr.catdescription
+                      ) m ON c.catdescription = m.catdescription
                   ORDER BY c.catdescription");
       } elseif ($reptype == 2){
 			  $stmt = (new Connection)->connect()->prepare("");  

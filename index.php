@@ -98,6 +98,9 @@ require_once "models/othercost.model.php";
 require_once "controllers/prodmetrics.controller.php";
 require_once "models/prodmetrics.model.php";
 
+require_once "controllers/submetrics.controller.php";
+require_once "models/submetrics.model.php";
+
 require_once "controllers/machinetracking.controller.php";
 require_once "models/machinetracking.model.php";
 

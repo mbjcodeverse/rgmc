@@ -1994,8 +1994,8 @@ function fetchSubcomponentsMetrics() {
                         html.push('<th style="text-align:right;font-size:0.9em;width:100px;padding-right:5px;">Mat Qty</th>');
                         html.push('<th style="text-align:right;font-size:0.9em;width:107px;padding-right:5px;">Mat Cost</th>');
                         html.push('<th style="text-align:right;font-size:0.9em;width:80px;padding-right:5px;">Mat %</th>');
-                        html.push('<th style="text-align:right;font-size:0.9em;width:107px;padding-right:5px;">Acc Cost</th>');
-                        html.push('<th style="text-align:right;font-size:0.9em;width:80px;padding-right:5px;">Acc %</th>');
+                        // html.push('<th style="text-align:right;font-size:0.9em;width:107px;padding-right:5px;">Acc Cost</th>');
+                        // html.push('<th style="text-align:right;font-size:0.9em;width:80px;padding-right:5px;">Acc %</th>');
                         html.push('<th style="text-align:right;font-size:0.9em;width:70px;padding-right:5px;">Head Count</th>');
                         html.push('<th style="text-align:right;font-size:0.9em;width:107px;padding-right:5px;">Man Cost</th>');
                     html.push('</tr>');
@@ -2009,15 +2009,21 @@ function fetchSubcomponentsMetrics() {
                         var total_prod_qty = 0.00;
                         var total_prod_weight = 0.00;
                         var total_prod_value = 0.00;
+                        var total_head_count = 0.00;
+                        var total_manpower_cost = 0.00;
 
                         for (let i = 0; i < answer.length; i++) {
                             let submetrics = answer[i];
                             let category = submetrics.category.toUpperCase();
                             let production_cost = submetrics.production_cost;
                             let production_qty = submetrics.production_qty;
+                            let head_count = submetrics.head_count;
+                            let manpower_cost = submetrics.manpower_cost;
 
                             total_prod_qty += Number(production_qty);
                             total_prod_value += Number(production_cost);
+                            total_head_count += Number(head_count);
+                            total_manpower_cost += Number(manpower_cost);
 
                             html.push('<tr>');
                                 html.push('<td ' +
@@ -2057,7 +2063,7 @@ function fetchSubcomponentsMetrics() {
                                 // if (Number(accessories_cost) > 0.00){ 
                                 //     html.push('<td style="color:#ffa6c1;font-size:0.8em;text-align:right;width:107px;padding-right:5px;">'+numberWithCommas(accessories_cost)+'</td>');
                                 // }else{
-                                    html.push('<td style="color:#ffa6c1;font-size:0.8em;text-align:right;width:107px;padding-right:5px;"></td>');
+                                    // html.push('<td style="color:#ffa6c1;font-size:0.8em;text-align:right;width:107px;padding-right:5px;"></td>');
                                 // }
 
                                 // if (Number(accessories_cost) > 0.00){    
@@ -2067,20 +2073,20 @@ function fetchSubcomponentsMetrics() {
                                 //     // alert(total_average_material);
                                 //     html.push('<td style="color:powderblue;font-size:0.8em;text-align:right;width:80px;padding-right:5px;">'+numberWithCommas(average_accessories)+' %</td>');    
                                 // }else{
-                                    html.push('<td style="color:powderblue;font-size:0.8em;text-align:right;width:80px;padding-right:5px;"></td>');                                     
+                                    // html.push('<td style="color:powderblue;font-size:0.8em;text-align:right;width:80px;padding-right:5px;"></td>');                                     
                                 // }
 
-                                // if (Number(head_count) > 0.00){
-                                //     html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:70px;padding-right:5px;">'+numberWithCommas(head_count)+'</td>');
-                                // }else{
+                                if (Number(head_count) > 0.00){
+                                    html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:70px;padding-right:5px;">'+numberWithCommas(head_count)+'</td>');
+                                }else{
                                     html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:70px;padding-right:5px;"></td>');
-                                // }
+                                }
                                 
-                                // if (Number(manpower_cost) > 0.00){  
-                                //     html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:107px;padding-right:5px;">'+numberWithCommas(manpower_cost)+'</td>');
-                                // }else{
+                                if (Number(manpower_cost) > 0.00){  
+                                    html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:107px;padding-right:5px;">'+numberWithCommas(manpower_cost)+'</td>');
+                                }else{
                                     html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:107px;padding-right:5px;"></td>');
-                                // }
+                                }
                             html.push('</tr>');        
                         }
                     html.push('</tbody>'); 

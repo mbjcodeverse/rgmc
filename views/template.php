@@ -184,6 +184,7 @@
             $_GET["route"] == 'resetoperatoraccount' ||
             $_GET["route"] == 'breakdownlist' ||
             $_GET["route"] == 'domainmigration' ||
+            $_GET["route"] == 'submetrics' ||
             $_GET["route"] == 'logout'){
             include "modules/".$_GET["route"].".php";
         }else{
