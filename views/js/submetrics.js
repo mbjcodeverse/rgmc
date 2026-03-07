@@ -231,7 +231,7 @@ $(function() {
             s_metrics.append("mdate", mdate);
             s_metrics.append("postedby", postedby);
 
-            alert(trans_type + ' ' + categorycode + ' ' + submetid + ' ' + headcount + ' ' + dailyrate + ' ' + amount + ' ' + mdate + ' ' + postedby);
+            // alert(trans_type + ' ' + categorycode + ' ' + submetid + ' ' + headcount + ' ' + dailyrate + ' ' + amount + ' ' + mdate + ' ' + postedby);
            
             $.ajax({
                url:"ajax/submetrics_save_record.ajax.php",
