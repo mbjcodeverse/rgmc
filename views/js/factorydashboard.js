@@ -2017,10 +2017,12 @@ function fetchSubcomponentsMetrics() {
                             let category = submetrics.category.toUpperCase();
                             let production_cost = submetrics.production_cost;
                             let production_qty = submetrics.production_qty;
+                            let production_weight = submetrics.production_weight;
                             let head_count = submetrics.head_count;
                             let manpower_cost = submetrics.manpower_cost;
 
                             total_prod_qty += Number(production_qty);
+                            total_prod_weight += Number(production_weight);
                             total_prod_value += Number(production_cost);
                             total_head_count += Number(head_count);
                             total_manpower_cost += Number(manpower_cost);
@@ -2036,7 +2038,7 @@ function fetchSubcomponentsMetrics() {
                                 if (Number(production_qty) > 0.00){    
                                     html.push('<td style="color:#62fca3;font-size:0.8em;text-align:right;width:85px;padding-right:5px;">'+numberWithCommas(production_qty)+'</td>');  
                                     html.push('<td style="color:#62fca3;font-size:0.8em;text-align:right;width:107px;padding-right:5px;">'+numberWithCommas(production_cost)+'</td>');
-                                    html.push('<td style="color:orange;font-size:0.8em;text-align:right;width:85px;padding-right:5px;"></td>');   
+                                    html.push('<td style="color:orange;font-size:0.8em;text-align:right;width:85px;padding-right:5px;">'+numberWithCommas(production_weight)+'</td>');   
                                 }else{
                                     html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:85px;padding-right:5px;"></td>');   
                                     html.push('<td style="color:#62fca3;font-size:0.8em;text-align:right;width:107px;padding-right:5px;"></td>');
@@ -2096,7 +2098,7 @@ function fetchSubcomponentsMetrics() {
                             html.push('<td style="color:#a4dcfc;font-size:1.1em;padding-right:5px;">SUB-TOTAL</td>');
                             html.push('<td style="text-align:right;font-size:0.9em;color:#62fca3;padding-right:5px;">'+numberWithCommas(total_prod_qty)+'</td>');
                             html.push('<td style="text-align:right;font-size:0.9em;color:#62fca3;padding-right:5px;">'+numberWithCommas(total_prod_value)+'</td>');
-                            html.push('<td style="text-align:right;font-size:0.9em;color:orange;padding-right:5px;"></td>');
+                            html.push('<td style="text-align:right;font-size:0.9em;color:orange;padding-right:5px;">'+numberWithCommas(total_prod_weight)+'</td>');
                             html.push('<td style="text-align:right;font-size:0.9em;color:#ffa6c1;padding-right:5px;"></td>');
                             html.push('<td style="text-align:right;font-size:0.9em;color:#ffa6c1;padding-right:5px;"></td>');
                             html.push('<td style="text-align:right;font-size:0.9em;color:powderblue;padding-right:5px;"></td>');

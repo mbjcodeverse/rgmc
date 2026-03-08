@@ -2,7 +2,7 @@
 
 class Connection{
 	public function connect(){
-		// $link = new PDO("mysql:host=localhost;dbname=rgmc", "root", "");
+		//$link = new PDO("mysql:host=localhost;dbname=rgmc", "root", "");
 
 		// $link = new PDO("mysql:host=localhost;dbname=u896983687_rgmc", "u896983687_rgmc", "RGMC_onwards2025");
 

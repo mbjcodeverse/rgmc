@@ -869,6 +869,7 @@ class ModelFactoryDashboard{
                       c.catdescription AS category,
                       IFNULL(p.production_cost, 0) AS production_cost,
                       IFNULL(p.production_qty, 0) AS production_qty,
+                      IFNULL(p.production_weight, 0) AS production_weight,
                       IFNULL(m.head_count, 0) AS head_count,
                       IFNULL(m.manpower_cost, 0) AS manpower_cost
                   FROM
@@ -883,7 +884,7 @@ class ModelFactoryDashboard{
                           GROUP BY c.catdescription
                       ) c
                       LEFT JOIN (
-                          SELECT rc.catdescription, SUM(pci.tamount) AS production_cost, SUM(pci.qty) AS production_qty
+                          SELECT rc.catdescription, SUM(pci.tamount) AS production_cost, SUM(pci.qty) AS production_qty, SUM(pci.qty * r.rweight) AS production_weight
                           FROM categoryrawmats rc 
                           INNER JOIN rawmats r ON rc.categorycode = r.categorycode
                           INNER JOIN prodcomitems pci ON r.itemid = pci.itemid

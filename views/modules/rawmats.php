@@ -153,7 +153,7 @@
             </div>
             
             <div class="col-sm-2 form-group">
-              <label for="sel-wmeas" id="sel-lst-wmeas" style="color:aqua;">Wt. Meas</label>
+              <label for="sel-wmeas" id="sel-lst-wmeas" style="color:aqua;">= &gt; Wt. Meas</label>
               <select data-placeholder="< Select Meas >" class="form-control select-search" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" id="sel-wmeas" name="sel-wmeas">
                 <option></option>
                 <?php
