@@ -122,7 +122,7 @@
             <div class="col-sm-2 form-group">
                 <label for="num-ucost">Rate</label>
                 <input type="text" style="font-size:1em;padding:2px;padding-right:17px;text-align:right;color:transparent;text-shadow: 0 0 0 #ffffff;" class="form-control numeric bordered-textbox" id="num-ucost" name="num-ucost" value="0.00" autocomplete="nope" required>
-            </div>             
+            </div>
         </div>
 
         <!-- Third Row -->
@@ -147,10 +147,30 @@
                 <input type="text" style="font-size:1em;padding:2px;padding-right:17px;text-align:right;color:transparent;text-shadow: 0 0 0 #ffffff;" class="form-control numeric hide-cursor bordered-textbox" id="num-high" name="num-high" value="0.00" autocomplete="nope">
             </div>             
 
-            <div class="col-sm-4 form-group">
+            <div class="col-sm-2 form-group">
+                <label for="num-rweight" style="color:orange;">Weight</label>
+                <input type="text" style="font-size:1em;padding:2px;padding-right:17px;text-align:right;color:transparent;text-shadow: 0 0 0 #ffffff;" class="form-control numeric bordered-textbox" id="num-rweight" name="num-rweight" value="0.00" autocomplete="nope" required>
+            </div>
+            
+            <div class="col-sm-2 form-group">
+              <label for="sel-wmeas" id="sel-lst-wmeas" style="color:aqua;">Wt. Meas</label>
+              <select data-placeholder="< Select Meas >" class="form-control select-search" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" id="sel-wmeas" name="sel-wmeas">
+                <option></option>
+                <?php
+                    $wmeas = (new ControllerMeasure)->ctrShowAllMeasure();
+                    foreach ($wmeas as $key => $value) {
+                      echo '<option value="'.$value["mdesc"].'">'.$value["mexpound"].'</option>';
+                    }
+                 ?>
+              </select>  
+            </div>    
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 form-group">
                 <label for="tns-remarks">Remarks</label>
                 <input type="text" class="form-control bordered-textbox" id="tns-remarks" name="tns-remarks" autocomplete="nope">
-            </div>          
+            </div>  
         </div>
  
         <div class="clearfix">

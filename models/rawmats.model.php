@@ -14,10 +14,10 @@ class ModelRawMats{
 		    $itemid = $item_id -> fetchAll(PDO::FETCH_ASSOC);
 
 			$stmt = $pdo->prepare("INSERT INTO rawmats(itemid, pdesc, categorycode, isactive, meas2, itemcode,
-			                                                  ucost, purchaseitem, remarks,
+			                                                  ucost, wmeas, rweight, purchaseitem, remarks,
 															  classification, critical, low, moderate, high)
 													  VALUES (:itemid, :pdesc, :categorycode, :isactive,
-													          :meas2, :itemcode, :ucost, :purchaseitem, :remarks,
+													          :meas2, :itemcode, :ucost, :wmeas, :rweight, :purchaseitem, :remarks,
 															  :classification, :critical, :low, :moderate, :high)");
 
 			$stmt->bindParam(":itemid", $itemid[0]['gen_id'], PDO::PARAM_STR);
@@ -27,6 +27,8 @@ class ModelRawMats{
 			$stmt->bindParam(":meas2", $data["meas2"], PDO::PARAM_STR);
 			$stmt->bindParam(":itemcode", $data["itemcode"], PDO::PARAM_STR);
 			$stmt->bindParam(":ucost", $data["ucost"], PDO::PARAM_STR);
+			$stmt->bindParam(":wmeas", $data["wmeas"], PDO::PARAM_STR);
+			$stmt->bindParam(":rweight", $data["rweight"], PDO::PARAM_STR);
 			$stmt->bindParam(":purchaseitem", $data["purchaseitem"], PDO::PARAM_INT);
 			$stmt->bindParam(":remarks", $data["remarks"], PDO::PARAM_STR);
 			$stmt->bindParam(":classification", $data["classification"], PDO::PARAM_STR);
@@ -60,6 +62,8 @@ class ModelRawMats{
 															 meas2 = :meas2,
 															 itemcode = :itemcode,
 															 ucost = :ucost,
+															 wmeas = :wmeas,
+															 rweight = :rweight,
 															 purchaseitem = :purchaseitem,
 															 remarks = :remarks,
 															 classification = :classification,
@@ -76,6 +80,8 @@ class ModelRawMats{
 			$stmt->bindParam(":meas2", $data["meas2"], PDO::PARAM_STR);
 			$stmt->bindParam(":itemcode", $data["itemcode"], PDO::PARAM_STR);
 			$stmt->bindParam(":ucost", $data["ucost"], PDO::PARAM_STR);
+			$stmt->bindParam(":wmeas", $data["wmeas"], PDO::PARAM_STR);
+			$stmt->bindParam(":rweight", $data["rweight"], PDO::PARAM_STR);
 			$stmt->bindParam(":purchaseitem", $data["purchaseitem"], PDO::PARAM_INT);
 			$stmt->bindParam(":remarks", $data["remarks"], PDO::PARAM_STR);
 			$stmt->bindParam(":classification", $data["classification"], PDO::PARAM_STR);

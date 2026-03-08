@@ -54,6 +54,8 @@ $(function() {
      $("#sel-meas2").val('').trigger('change');
      $('#tns-itemcode').val('');
      $('#num-ucost').val('0.00');
+     $('#num-rweight').val('0.00');
+     $("#sel-wmeas").val('').trigger('change');
      $('#num-critical').val('0.00');
      $('#num-low').val('0.00');
      $('#num-moderate').val('0.00');
@@ -92,7 +94,7 @@ $(function() {
             var pdesc = $("#tns-pdesc").val();
             var categorycode = $("#sel-categorycode").val();
             var classification = $("#sel-classification").val();
-            alert(classification);
+            // alert(classification);
 
             if ($('#chk-isactive').prop('checked')){
               var isactive = "1";
@@ -105,6 +107,11 @@ $(function() {
 
             var txt_ucost = $("#num-ucost").val();
             var ucost = parseFloat(txt_ucost.replaceAll(",","")); 
+
+            var wmeas = $("#sel-wmeas").val();
+
+            var txt_rweight = $("#num-rweight").val();
+            var rweight = parseFloat(txt_rweight.replaceAll(",","")); 
 
             var txt_critical = $("#num-critical").val();
             var critical = parseFloat(txt_critical.replaceAll(",",""));  
@@ -136,6 +143,8 @@ $(function() {
             items.append("meas2", meas2);
             items.append("itemcode", itemcode); 
             items.append("ucost", ucost); 
+            items.append("wmeas", wmeas); 
+            items.append("rweight", rweight);
             items.append("purchaseitem", purchaseitem);
             items.append("remarks", remarks);            
             items.append("classification", classification);  
@@ -183,6 +192,10 @@ $(function() {
 
    $("#lbl-lst-categorycode").click(function(){
      $("#lst-categorycode").val('').trigger('change');
+   });
+
+   $("#sel-lst-wmeas").click(function(){
+     $("#sel-wmeas").val('').trigger('change');
    });
    
    // Search Item - Modal Form dynamic selector
@@ -283,6 +296,8 @@ $(function() {
             $("#sel-meas2").val(answer["meas2"]).trigger('change');
             $("#tns-itemcode").val(answer["itemcode"]);
             $("#num-ucost").val(numberWithCommas(answer["ucost"]));
+            $("#sel-wmeas").val(answer["wmeas"]).trigger('change');
+            $("#num-rweight").val(numberWithCommas(answer["rweight"]));
 
             if (answer["purchaseitem"] == '1'){
                $("#chk-purchaseitem").prop( "checked", true);

@@ -12,6 +12,8 @@ class rawmatsDetail{
   public $meas2;
   public $itemcode;
   public $ucost;
+  public $wmeas;
+  public $rweight;
   public $purchaseitem;
   public $remarks;
   public $classification;
@@ -30,6 +32,8 @@ class rawmatsDetail{
     $meas2 = $this->meas2;
     $itemcode = $this->itemcode;
     $ucost = $this->ucost;
+    $wmeas = $this->wmeas;
+    $rweight = $this->rweight;
     $purchaseitem = $this->purchaseitem;
     $remarks = $this->remarks;
     $classification = $this->classification;
@@ -45,6 +49,8 @@ class rawmatsDetail{
                   "meas2"=>$meas2,
                   "itemcode"=>$itemcode,
                   "ucost"=>$ucost,
+                  "wmeas"=>$wmeas,
+                  "rweight"=>$rweight,
                   "purchaseitem"=>$purchaseitem,
                   "remarks"=>$remarks,
                   "classification"=>$classification,
@@ -73,6 +79,8 @@ $items -> isactive = $_POST["isactive"];
 $items -> meas2 = $_POST["meas2"];
 $items -> itemcode = $_POST["itemcode"];
 $items -> ucost = $_POST["ucost"];
+$items -> wmeas = $_POST["wmeas"];
+$items -> rweight = $_POST["rweight"];
 $items -> purchaseitem = $_POST["purchaseitem"];
 $items -> remarks = $_POST["remarks"];
 $items -> classification = $_POST["classification"];
