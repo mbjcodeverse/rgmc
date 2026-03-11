@@ -149,7 +149,7 @@
 
             <div class="col-sm-2 form-group">
                 <label for="num-rweight" style="color:orange;">Weight</label>
-                <input type="text" style="font-size:1em;padding:2px;padding-right:17px;text-align:right;color:transparent;text-shadow: 0 0 0 #ffffff;" class="form-control numeric bordered-textbox" id="num-rweight" name="num-rweight" value="0.00" autocomplete="nope" required>
+                <input type="text" style="font-size:1em;padding:2px;padding-right:17px;text-align:right;color:transparent;text-shadow: 0 0 0 #ffffff;" class="form-control numeric5 bordered-textbox" id="num-rweight" name="num-rweight" value="0.00000" autocomplete="nope" required>
             </div>
             
             <div class="col-sm-2 form-group">

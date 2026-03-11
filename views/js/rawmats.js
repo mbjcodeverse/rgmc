@@ -54,7 +54,7 @@ $(function() {
      $("#sel-meas2").val('').trigger('change');
      $('#tns-itemcode').val('');
      $('#num-ucost').val('0.00');
-     $('#num-rweight').val('0.00');
+     $('#num-rweight').val('0.00000');
      $("#sel-wmeas").val('').trigger('change');
      $('#num-critical').val('0.00');
      $('#num-low').val('0.00');

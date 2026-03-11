@@ -291,6 +291,11 @@
   _gblBindNumericClasses('numeric');
 </script>
 
+<script src="views/js/script.numeric_key_binding_5dec.js"></script>
+<script>
+  _gblBindNumericClasses5dec('numeric5');
+</script>
+
 <!-- <script src="views/js/script.numeric_key_binding_3dec.js"></script>
 <script>
   _gblBindNumericClasses3dec('numeric3dec');
