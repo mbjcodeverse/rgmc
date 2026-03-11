@@ -111,6 +111,13 @@ function numberWithCommas(num) {
     return number;
 }
 
+function numberWithCommas5dec(num) {
+    var n = parseFloat(num).toFixed(5);
+    var parts = n.toString().split(".");
+    var number = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "." + parts[1];
+    return number;
+}
+
 function getCurrentTime(){
     // -- With Seconds --
     // const date = new Date();

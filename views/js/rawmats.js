@@ -297,7 +297,7 @@ $(function() {
             $("#tns-itemcode").val(answer["itemcode"]);
             $("#num-ucost").val(numberWithCommas(answer["ucost"]));
             $("#sel-wmeas").val(answer["wmeas"]).trigger('change');
-            $("#num-rweight").val(numberWithCommas(answer["rweight"]));
+            $("#num-rweight").val(numberWithCommas5dec(answer["rweight"]));
 
             if (answer["purchaseitem"] == '1'){
                $("#chk-purchaseitem").prop( "checked", true);

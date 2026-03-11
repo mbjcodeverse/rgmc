@@ -70,6 +70,7 @@ $(function() {
              processData: false,            
              dataType:"json",               
              success:function(answer){
+                // alert("mom");
                 $(".release_content").empty();
                 var html = [];
                 // Overall Incoming Category
