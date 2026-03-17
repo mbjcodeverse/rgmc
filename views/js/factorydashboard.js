@@ -2038,7 +2038,7 @@ function fetchSubcomponentsMetrics() {
                                 if (Number(production_qty) > 0.00){    
                                     html.push('<td style="color:#62fca3;font-size:0.8em;text-align:right;width:85px;padding-right:5px;">'+numberWithCommas(production_qty)+'</td>');  
                                     html.push('<td style="color:#62fca3;font-size:0.8em;text-align:right;width:107px;padding-right:5px;">'+numberWithCommas(production_cost)+'</td>');
-                                    html.push('<td style="color:orange;font-size:0.8em;text-align:right;width:85px;padding-right:5px;">'+numberWithCommas5dec(production_weight)+'</td>');   
+                                    html.push('<td style="color:orange;font-size:0.8em;text-align:right;width:85px;padding-right:5px;">'+numberWithCommas(production_weight)+'</td>');   
                                 }else{
                                     html.push('<td style="color:#ffeaa6;font-size:0.8em;text-align:right;width:85px;padding-right:5px;"></td>');   
                                     html.push('<td style="color:#62fca3;font-size:0.8em;text-align:right;width:107px;padding-right:5px;"></td>');
@@ -2098,7 +2098,7 @@ function fetchSubcomponentsMetrics() {
                             html.push('<td style="color:#a4dcfc;font-size:1.1em;padding-right:5px;">SUB-TOTAL</td>');
                             html.push('<td style="text-align:right;font-size:0.9em;color:#62fca3;padding-right:5px;">'+numberWithCommas(total_prod_qty)+'</td>');
                             html.push('<td style="text-align:right;font-size:0.9em;color:#62fca3;padding-right:5px;">'+numberWithCommas(total_prod_value)+'</td>');
-                            html.push('<td style="text-align:right;font-size:0.9em;color:orange;padding-right:5px;">'+numberWithCommas5dec(total_prod_weight)+'</td>');
+                            html.push('<td style="text-align:right;font-size:0.9em;color:orange;padding-right:5px;">'+numberWithCommas(total_prod_weight)+'</td>');
                             html.push('<td style="text-align:right;font-size:0.9em;color:#ffa6c1;padding-right:5px;"></td>');
                             html.push('<td style="text-align:right;font-size:0.9em;color:#ffa6c1;padding-right:5px;"></td>');
                             html.push('<td style="text-align:right;font-size:0.9em;color:powderblue;padding-right:5px;"></td>');
