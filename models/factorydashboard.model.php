@@ -222,7 +222,7 @@ class ModelFactoryDashboard{
                           INNER JOIN rawmats mat ON ro.itemid = mat.itemid
                           WHERE r.reqstatus = 'Posted' 
                             AND r.reqdate $dateClause
-                            AND mat.categorycode != '0005' AND mat.categorycode != '0010'  -- without Accessories & PE Packaging Pcs
+                            AND mat.categorycode != '0005' AND mat.categorycode != '0010' AND mat.categorycode != '0017'  -- without Accessories & PE Packaging Pcs & PP Packaging Pcs
                           GROUP BY c.catdescription
 
                           UNION
@@ -235,7 +235,7 @@ class ModelFactoryDashboard{
                           INNER JOIN rawmats mat ON ro.itemid = mat.itemid
                           WHERE r.reqstatus = 'Posted' 
                             AND r.reqdate $dateClause
-                            AND mat.categorycode = '0005' OR mat.categorycode = '0010'  -- Accessories & PE Packaging Pcs
+                            AND mat.categorycode = '0005' OR mat.categorycode = '0010' OR mat.categorycode = '0017' -- Accessories & PE Packaging Pcs & PP Packaging Pcs
                           GROUP BY c.catdescription
 
                           UNION
@@ -304,7 +304,7 @@ class ModelFactoryDashboard{
                           WHERE r.reqstatus = 'Posted'
                             AND ro.matcost = 1 
                             AND r.reqdate $dateClause
-                            AND (mat.categorycode = '0005' OR mat.categorycode = '0010')  -- Accessories & PE Packaging Pcs
+                            AND (mat.categorycode = '0005' OR mat.categorycode = '0010' OR mat.categorycode = '0017')  -- Accessories & PE Packaging Pcs & PP Packaging Pcs
                           GROUP BY pc.catdescription
                       ) a ON c.catdescription = a.catdescription
 
