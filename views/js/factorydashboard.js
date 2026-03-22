@@ -2015,11 +2015,18 @@ function fetchSubcomponentsMetrics() {
                         for (let i = 0; i < answer.length; i++) {
                             let submetrics = answer[i];
                             let category = submetrics.category.toUpperCase();
+                            let categorycode = submetrics.categorycode;
                             let production_cost = submetrics.production_cost;
                             let production_qty = submetrics.production_qty;
                             let production_weight = submetrics.production_weight;
                             let head_count = submetrics.head_count;
                             let manpower_cost = submetrics.manpower_cost;
+
+                            // alert(categorycode);
+
+                            if (categorycode != '0005' && categorycode != '0010' && categorycode != '0017'){
+                                production_weight = submetrics.production_qty;
+                            }
 
                             total_prod_qty += Number(production_qty);
                             total_prod_weight += Number(production_weight);

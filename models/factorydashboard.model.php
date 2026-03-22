@@ -414,7 +414,7 @@ class ModelFactoryDashboard{
 			$tier_code = "";
 		}    
 
-    $whereClause = "WHERE (rm.itemid != '')" . $category_code . $tier_code;
+    $whereClause = "WHERE (rm.itemid != '') AND (rm.isactive = 1)" . $category_code . $tier_code;
 
 		$stmt = (new Connection)->connect()->prepare("SELECT 
             rm.itemid,rm.ucost,c.categorycode,rm.critical,rm.low,rm.moderate,rm.high,
@@ -867,6 +867,7 @@ class ModelFactoryDashboard{
       if ($reptype == 1){
         $stmt = (new Connection)->connect()->prepare("SELECT 
                       c.catdescription AS category,
+                      IFNULL(p.categorycode, '') AS categorycode,
                       IFNULL(p.production_cost, 0) AS production_cost,
                       IFNULL(p.production_qty, 0) AS production_qty,
                       IFNULL(p.production_weight, 0) AS production_weight,
@@ -884,7 +885,7 @@ class ModelFactoryDashboard{
                           GROUP BY c.catdescription
                       ) c
                       LEFT JOIN (
-                          SELECT rc.catdescription, SUM(pci.tamount) AS production_cost, SUM(pci.qty) AS production_qty, SUM(pci.qty * r.rweight) AS production_weight
+                          SELECT rc.categorycode,rc.catdescription, SUM(pci.tamount) AS production_cost, SUM(pci.qty) AS production_qty, SUM(pci.qty * r.rweight) AS production_weight
                           FROM categoryrawmats rc 
                           INNER JOIN rawmats r ON rc.categorycode = r.categorycode
                           INNER JOIN prodcomitems pci ON r.itemid = pci.itemid
