@@ -382,7 +382,7 @@ class ModelHome{
 	}
 
 	static public function mdlShowStockMatrix($inventoryfrom, $inventoryfromnextday, $inventoryto) {
-		$stmt = (new Connection)->connect()->prepare("SELECT mp.itemid,mp.pdesc AS product_display_name,
+		$stmt = (new Connection)->connect()->prepare("SELECT mp.itemid,mp.ucost,mp.pdesc AS product_display_name,
 			COALESCE(beg.beginning_qty, 0) AS beginning_qty,
 			COALESCE(beg.beginning_ucost, 0) AS beginning_ucost,
 			COALESCE(beg.beginning_tamount, 0) AS beginning_tamount,

@@ -186,16 +186,21 @@ $(function() {
                                     html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:80px;color:orange;">Cost</th>');
                                     html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:90px;color:orange;">Value</th>');
                                     html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:90px;border-right:3px solid white;">VARIANCE</th>');
+                                }else{
+                                    html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:80px;color:orange;">Cost</th>');
+                                    html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:90px;color:cyan;">Value</th>');
                                 }
 
                                 html.push('<th class="table_head_right_fixed" style="padding-top:8px;padding-bottom:8px;">Act</th>');
                             html.push('</tr>');
                         html.push('</thead>');
                         var total_inventory_value = 0.00;
+                        var current_inventory_value = 0.00;
                         for(var i = 0; i < answer.length; i++) {
                             let matrix = answer[i];
                             let pdesc = matrix.product_display_name;
                             let itemid = matrix.itemid;
+                            let ucost = Number(matrix.ucost);
                             let beginning_qty = parseInt(matrix.beginning_qty);
                             let beginning_tamount = Number(matrix.beginning_tamount);
                             let purchase_qty_total = parseFloat(matrix.purchase_qty_total);
@@ -210,7 +215,10 @@ $(function() {
                             let ending_tamount = Number(matrix.ending_tamount);
                             let variance = ending_qty - instock;
 
+                            let current_item_value = parseFloat(instock * ucost);
+
                             total_inventory_value = total_inventory_value + ending_tamount;
+                            current_inventory_value = current_inventory_value + current_item_value;
 
                             // Check if pdesc exceeds 35 characters and truncate if necessary
                             if (pdesc.length > 35) {
@@ -261,14 +269,14 @@ $(function() {
                                 }else if (instock < 0){
                                     html.push('<td style="padding-right:11px;padding-top:2px;padding-bottom:2px;text-align:right;border:1px solid white;font-size:1.1em;font-weight:bold;color:white;background-color:red;">'+numberWithCommasNoDecimal(instock)+'</td>');
                                 }else{
-                                    html.push('<td style="padding-right:11px;padding-top:2px;padding-bottom:2px;text-align:right;border:1px solid white;font-size:1.1em;font-weight:bold;color:white;"></td>');
+                                    html.push('<td></td>');
                                 }
 
                                 if ($("#date-invto").val() != $("#date-ldate").val()){
                                     if (ending_qty != 0){
                                         html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;color:#89fa91;">'+ending_qty+'</td>');
                                     }else{
-                                        html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;"></td>');
+                                        html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;border-left:1px solid white;"></td>');
                                     }
 
                                     if (ending_ucost > 0.00){
@@ -290,10 +298,18 @@ $(function() {
                                     }else{
                                         html.push('<td style="padding-right:11px;padding-top:2px;padding-bottom:2px;text-align:right;border:1px solid white;font-size:1.1em;font-weight:bold;color:white;"></td>');
                                     }
+                                }else{
+                                    if (instock != 0){
+                                        html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;border-top:1px solid white;color:orange;">'+numberWithCommas(ucost)+'</td>');
+                                        html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;border-top:1px solid white;color:cyan;">'+numberWithCommas(current_item_value)+'</td>');
+                                    }else{
+                                        html.push('<td></td>');
+                                        html.push('<td></td>');
+                                    }
                                 }
                                 
                                 if (beginning_qty != 0 || purchase_qty_total != 0 || return_qty_total != 0 || release_qty_total != 0){
-                                    html.push('<td style="border-right:1px solid white;border-bottom:1px solid white;border-top:1px solid white;padding-top:4px;padding-bottom:4px;"><button type="button" class="btn btn-outline btn-sm bg-orange-400 border-orange-400 text-orange-400 btn-icon rounded-round border-2 ml-2 btnStockcardPeriod" itemid="'+itemid+'" data-toggle="modal" data-target="#stockcard"><i class="icon-stack-text"></i></button></td>');
+                                    html.push('<td style="border-right:1px solid white;border-bottom:1px solid white;border-top:1px solid white;border-left:1px solid white;padding-top:4px;padding-bottom:4px;"><button type="button" class="btn btn-outline btn-sm bg-orange-400 border-orange-400 text-orange-400 btn-icon rounded-round border-2 ml-2 btnStockcardPeriod" itemid="'+itemid+'" data-toggle="modal" data-target="#stockcard"><i class="icon-stack-text"></i></button></td>');
                                 }
                             html.push('</tr>');
                         }
@@ -302,6 +318,11 @@ $(function() {
                             html.push('<tr>'); 
                                 html.push('<td colspan="8" style="padding-right:11px;padding-top:2px;padding-bottom:2px;text-align:right;border:1px solid white;font-size:1.3em;font-weight:bold;color:white;">TOTAL IVENTORY VALUE</td>');
                                 html.push('<td colspan="2" style="padding-right:11px;padding-top:2px;padding-bottom:2px;text-align:right;border:1px solid white;font-size:1.3em;font-weight:bold;color:white;">'+numberWithCommas(total_inventory_value)+'</td>');
+                            html.push('</tr>');
+                        }else{
+                            html.push('<tr>'); 
+                                html.push('<td colspan="8" style="padding-right:11px;padding-top:2px;padding-bottom:2px;text-align:right;border:1px solid white;font-size:1.3em;font-weight:bold;color:white;">TOTAL IVENTORY VALUE</td>');
+                                html.push('<td colspan="2" style="padding-right:11px;padding-top:2px;padding-bottom:2px;text-align:right;border:1px solid white;font-size:1.3em;font-weight:bold;color:white;">'+numberWithCommas(current_inventory_value)+'</td>');
                             html.push('</tr>');
                         }
                     html.push('</table>');

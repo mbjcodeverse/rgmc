@@ -130,7 +130,10 @@ class ModelFactoryDashboard{
                     SELECT reqdate, SUM(ri.tamount) AS raw_materials_cost
                     FROM rawout ro
                     JOIN rawoutitems ri ON ro.reqnumber = ri.reqnumber
-                    WHERE ro.reqstatus = 'Posted' AND ri.matcost = 1 AND ro.reqdate $dateClause
+                    -- JOIN rawmats mat ON ri.itemid = mat.itemid
+                    WHERE ro.reqstatus = 'Posted' AND ri.matcost = 1 AND ro.reqdate
+                          -- AND mat.categorycode != '0005' AND mat.categorycode != '0010' AND mat.categorycode != '0017'
+                          $dateClause
                     GROUP BY ro.reqdate
                 ) r ON d.date = r.reqdate
                 LEFT JOIN (
@@ -222,7 +225,7 @@ class ModelFactoryDashboard{
                           INNER JOIN rawmats mat ON ro.itemid = mat.itemid
                           WHERE r.reqstatus = 'Posted' 
                             AND r.reqdate $dateClause
-                            AND mat.categorycode != '0005' AND mat.categorycode != '0010' AND mat.categorycode != '0017'  -- without Accessories & PE Packaging Pcs & PP Packaging Pcs
+                            AND (mat.categorycode != '0005' AND mat.categorycode != '0010' AND mat.categorycode != '0017')  -- without Accessories & PE Packaging Pcs & PP Packaging Pcs
                           GROUP BY c.catdescription
 
                           UNION
@@ -235,7 +238,7 @@ class ModelFactoryDashboard{
                           INNER JOIN rawmats mat ON ro.itemid = mat.itemid
                           WHERE r.reqstatus = 'Posted' 
                             AND r.reqdate $dateClause
-                            AND mat.categorycode = '0005' OR mat.categorycode = '0010' OR mat.categorycode = '0017' -- Accessories & PE Packaging Pcs & PP Packaging Pcs
+                            AND (mat.categorycode = '0005' OR mat.categorycode = '0010' OR mat.categorycode = '0017') -- Accessories & PE Packaging Pcs & PP Packaging Pcs
                           GROUP BY c.catdescription
 
                           UNION
