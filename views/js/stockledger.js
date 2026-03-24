@@ -179,7 +179,7 @@ $(function() {
                                 html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:75px;color:#89fa91;">Return</th>');
                                 html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:90px;color:#7FFF00;">INBOUND</th>');
                                 html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:75px;color:#ffd6ad;">RELEASE</th>');
-                                html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:90px;border-right:3px solid white;">STOCK</th>');
+                                html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:90px;border-right:3px solid white;">STOCKS</th>');
 
                                 if ($("#date-invto").val() != $("#date-ldate").val()){
                                     html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:75px;color:#89fa91;">Ending</th>');
