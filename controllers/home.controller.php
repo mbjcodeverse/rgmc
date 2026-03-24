@@ -38,6 +38,12 @@ class ControllerHome{
 		return $answer;
 	}
 
+	// FOR PRINTING
+	static public function ctrPrintStockMatrix($inventoryfrom, $inventoryfromnextday, $inventoryto){
+		$answer = (new ModelHome)->mdlPrintStockMatrix($inventoryfrom, $inventoryfromnextday, $inventoryto);
+		return $answer;
+	}
+
 	static public function ctrShowInventoryTechnicalTemplate($start_date, $from_date, $end_date){
 		$answer = (new ModelHome)->mdlShowInventoryTechnicalTemplate($start_date, $from_date, $end_date);
 		return $answer;

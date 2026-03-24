@@ -184,7 +184,7 @@ $(function() {
                                 if ($("#date-invto").val() != $("#date-ldate").val()){
                                     html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:75px;color:#89fa91;">Ending</th>');
                                     html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:80px;color:orange;">Cost</th>');
-                                    html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:90px;color:orange;">Value</th>');
+                                    html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:90px;color:cyan;">Value</th>');
                                     html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:90px;border-right:3px solid white;">VARIANCE</th>');
                                 }else{
                                     html.push('<th class="table_head_right_fixed" style="padding-right:11px;padding-top:8px;padding-bottom:8px;min-width:80px;color:orange;">Cost</th>');
@@ -274,7 +274,7 @@ $(function() {
 
                                 if ($("#date-invto").val() != $("#date-ldate").val()){
                                     if (ending_qty != 0){
-                                        html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;color:#89fa91;">'+ending_qty+'</td>');
+                                        html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;border-left:1px solid white;color:#89fa91;">'+ending_qty+'</td>');
                                     }else{
                                         html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;border-left:1px solid white;"></td>');
                                     }
@@ -286,7 +286,7 @@ $(function() {
                                     }
 
                                     if (ending_tamount > 0.00){
-                                        html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;color:orange;">'+numberWithCommas(ending_tamount)+'</td>');
+                                        html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;color:cyan;">'+numberWithCommas(ending_tamount)+'</td>');
                                     }else{
                                         html.push('<td style="padding-right:11px;padding-top:4px;padding-bottom:4px;text-align:right;border-right:1px solid white;border-bottom:1px solid white;"></td>');
                                     }
@@ -549,12 +549,6 @@ $(function() {
 
         let date_end = $("#date-invto").val();
         let end_date = date_end.substring(6, 10) + '-' + date_end.substring(0, 2) + '-' + date_end.substring(3, 5);
-        
-        // alert(start_date + "     " + end_date);
-        // var branchcode = $('#lst-branchcode').val();
-        // let t_date = $("#date-tdate").val();
-        // let tdate = t_date.substring(6, 10) + '-' + t_date.substring(0, 2) + '-' + t_date.substring(3, 5);
-        // let reptype = $("#lst-reptype").val();
 
         let generatedby = $("#txt-generatedby").val();
         window.open("extensions/tcpdf/pdf/inventory_template.php?start_date="+start_date+"&from_date="+from_date+"&end_date="+end_date+"&generatedby="+generatedby, "_blank");
@@ -599,14 +593,19 @@ $(function() {
     });
 
     $("#btn-print").click(function(){
+        let date_start = $("#date-invfrom").val();
+        let start_date = date_start.substring(6, 10) + '-' + date_start.substring(0, 2) + '-' + date_start.substring(3, 5);
 
-        // var branchcode = $('#lst-branchcode').val();
-        // let t_date = $("#date-tdate").val();
-        // let tdate = t_date.substring(6, 10) + '-' + t_date.substring(0, 2) + '-' + t_date.substring(3, 5);
-        // let reptype = $("#lst-reptype").val();
+        let date_from = $("#inventoryfromnextday").val();
+        let from_date = date_from.substring(6, 10) + '-' + date_from.substring(0, 2) + '-' + date_from.substring(3, 5);
 
-        // let generatedby = $("#tns-generatedby").val();
-        // window.open("extensions/tcpdf/pdf/inventory_report.php?tdate="+tdate+"&branchcode="+branchcode+"&reptype="+reptype+"&generatedby="+generatedby, "_blank");
+        let date_end = $("#date-invto").val();
+        let end_date = date_end.substring(6, 10) + '-' + date_end.substring(0, 2) + '-' + date_end.substring(3, 5);
+
+        // alert(start_date + '   ' + from_date + '   ' + date_from);
+
+        let generatedby = $("#txt-generatedby").val();
+        window.open("extensions/tcpdf/pdf/inventory_print.php?start_date="+start_date+"&from_date="+date_from+"&end_date="+end_date+"&generatedby="+generatedby, "_blank");
     });  
   
     function exportToExcel() {

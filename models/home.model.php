@@ -474,6 +474,100 @@ class ModelHome{
 		return $result;
 	}
 
+	// FOR PRINTING
+	static public function mdlPrintStockMatrix($inventoryfrom, $inventoryfromnextday, $inventoryto) {
+		$stmt = (new Connection)->connect()->prepare("SELECT cp.catdescription,mp.meas1,mp.itemcode,mp.itemid,mp.ucost,mp.pdesc AS product_display_name,
+			COALESCE(beg.beginning_qty, 0) AS beginning_qty,
+			COALESCE(beg.beginning_ucost, 0) AS beginning_ucost,
+			COALESCE(beg.beginning_tamount, 0) AS beginning_tamount,
+			COALESCE(pur.purchase_qty_total, 0) AS purchase_qty_total,
+	 		COALESCE(pur.purchase_ucost_total, 0) AS purchase_ucost_total,
+	 		COALESCE(pur.purchase_tamount_total, 0) AS purchase_tamount_total,
+			COALESCE(ret.return_qty_total, 0) AS return_qty_total,
+			COALESCE(rel.release_qty_total, 0) AS release_qty_total,
+	 		COALESCE(rel.release_ucost_total, 0) AS release_ucost_total,
+			COALESCE(end.ending_qty, 0) AS ending_qty,
+			COALESCE(end.ending_ucost, 0) AS ending_ucost,
+			COALESCE(end.ending_tamount, 0) AS ending_tamount
+			FROM items mp INNER JOIN category cp ON (mp.categorycode = cp.categorycode)
+			-- Subquery for beginning inventory
+			LEFT JOIN (
+				SELECT ii.itemid,
+					SUM(ii.qty) AS beginning_qty,
+					SUM(ii.price) AS beginning_ucost,
+					SUM(ii.tamount) AS beginning_tamount
+				FROM inventoryitems ii
+				INNER JOIN inventory inv ON inv.invnumber = ii.invnumber
+					AND inv.invdate = :inventoryfrom
+					AND inv.invstatus = 'Posted'
+				GROUP BY ii.itemid
+			) beg ON beg.itemid = mp.itemid
+
+			-- Subquery for incoming items
+	 		LEFT JOIN (
+	 			SELECT pit.itemid,
+	 				SUM(pit.qty) AS purchase_qty_total,
+	 				AVG(pit.price) AS purchase_ucost_total,
+	 				SUM(pit.tamount) AS purchase_tamount_total
+	 			FROM purchaseitems pit
+	 			INNER JOIN purchaseorder pur ON pur.ponumber = pit.ponumber
+	 			    AND pur.postatus = 'Posted'
+	 				AND pur.podate BETWEEN :inventoryfromnextday AND :inventoryto
+	 			GROUP BY pit.itemid
+	 		) pur ON pur.itemid = mp.itemid
+
+			-- Subquery for returned items
+	 		LEFT JOIN (
+	 			SELECT rit.itemid,
+	 				SUM(rit.qty) AS return_qty_total
+	 			FROM returnitems rit
+	 			INNER JOIN returned ret ON ret.retnumber = rit.retnumber
+	 			    AND ret.retstatus = 'Posted'
+	 				AND ret.retdate BETWEEN :inventoryfromnextday AND :inventoryto
+	 			GROUP BY rit.itemid
+	 		) ret ON ret.itemid = mp.itemid
+
+			-- Subquery for stockout items
+	 		LEFT JOIN (
+	 			SELECT oit.itemid,
+	 				SUM(oit.qty) AS release_qty_total,
+	 				AVG(oit.price) AS release_ucost_total,
+	 				SUM(oit.tamount) AS release_tamount_total
+	 			FROM stockoutitems oit
+	 			INNER JOIN stockout rel ON rel.reqnumber = oit.reqnumber
+	 			    AND rel.reqstatus = 'Posted'
+	 				AND rel.reqdate BETWEEN :inventoryfromnextday AND :inventoryto
+	 			GROUP BY oit.itemid
+	 		) rel ON rel.itemid = mp.itemid
+
+			-- Subquery for beginning inventory
+			LEFT JOIN (
+				SELECT ei.itemid,
+					SUM(ei.qty) AS ending_qty,
+					SUM(ei.price) AS ending_ucost,
+					SUM(ei.tamount) AS ending_tamount
+				FROM inventoryitems ei
+				INNER JOIN inventory inv ON inv.invnumber = ei.invnumber
+					AND inv.invdate = :inventoryto
+					AND inv.invstatus = 'Posted'
+				GROUP BY ei.itemid
+			) end ON end.itemid = mp.itemid
+
+			WHERE mp.isactive = 1
+			ORDER BY product_display_name
+		");
+
+		$stmt->bindParam(':inventoryfrom', $inventoryfrom, PDO::PARAM_STR);
+		$stmt->bindParam(':inventoryfromnextday', $inventoryfromnextday, PDO::PARAM_STR);
+		$stmt->bindParam(':inventoryto', $inventoryto, PDO::PARAM_STR);
+		$stmt->execute();
+		$result = $stmt->fetchAll();
+
+		$stmt->closeCursor();
+		$stmt = null;
+		return $result;
+	}
+
 	static public function mdlShowInventoryTechnicalTemplate($inventoryfrom, $inventoryfromnextday, $inventoryto) {
 		$stmt = (new Connection)->connect()->prepare("SELECT cat.catdescription,mp.meas1,mp.itemcode,mp.pdesc AS product_display_name,
 			COALESCE(beg.beginning_qty, 0) AS beginning_qty,
