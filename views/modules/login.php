@@ -10,7 +10,7 @@
               <h1 class="mb-1 display-4 gold-accent" style="font-size: 2.0rem;">RIVSON GOLDPLAST</h1>
 
               <span class="d-block" style="font-size: 1.2rem; letter-spacing: 1px;color:gold;font-weight:600;">
-               MANUFACTURING CORPORATION
+               MANUFACTURING CORP
               </span>
             </div>
 
