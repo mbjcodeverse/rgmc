@@ -80,6 +80,7 @@ $(function() {
                 $("#sel-tbr").val(answer["tbr"]).trigger('change');
                 $("#sel-tmac").val(answer["tmac"]).trigger('change');
                 $("#sel-tcls").val(answer["tcls"]).trigger('change');
+                $("#sel-tech").val(answer["tech"]).trigger('change');
 
                 $("#sel-psup").val(answer["psup"]).trigger('change');
                 $("#sel-pemp").val(answer["pemp"]).trigger('change');
@@ -205,7 +206,8 @@ $(function() {
         var tcat = $("#sel-tcat").val();
         var tbr = $("#sel-tbr").val();
         var tmac = $("#sel-tmac").val();
-        var tcls = $("#sel-tcls").val();  
+        var tcls = $("#sel-tcls").val();
+        var tech = $("#sel-tech").val();    
         
         var psup = $("#sel-psup").val();
         var pemp = $("#sel-pemp").val();
@@ -254,6 +256,7 @@ $(function() {
         user.append("tbr", tbr);
         user.append("tmac", tmac);
         user.append("tcls", tcls);
+        user.append("tech", tech);
 
         user.append("psup", psup);
         user.append("pemp", pemp);
@@ -322,6 +325,7 @@ $(function() {
         $('#t3').hide();
         $('#t4').hide();
         $('#t5').hide();
+        $('#t6').hide();
     }
     
     function showTechnical(){
@@ -330,6 +334,7 @@ $(function() {
         $('#t3').show();
         $('#t4').show();
         $('#t5').show();
+        $('#t6').show();
     }
     
     // Generate a temporary username (only letters and numbers)

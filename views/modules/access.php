@@ -231,7 +231,7 @@
                 <option value="ViewOnly">View Only</option>
                 <option value="Restricted">Restricted</option>
               </select>
-            </div>       
+            </div>      
         </div>  
 
         <!-- ------------------------------------------------------------>
@@ -394,7 +394,18 @@
                 <option value="Restricted">Restricted</option>
               </select>
             </div>            
-        </div>     
+        </div>   
+        
+        <div class="row" style="margin-top:-15px;" id="t6">                  
+          <div class="col-sm-4 form-group">
+              <label for="sel-tech" style="color:cyan;">Technician Control</label>
+              <select data-placeholder="Access Type" class="form-control select" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" data-fouc id="sel-tech" name="sel-tech" required>
+                <option></option>
+                <option value="Full">Full</option>
+                <option value="Restricted">Restricted</option>
+              </select>
+            </div> 
+        </div> 
         
         <!-- ------------------------------------------------------------>
 

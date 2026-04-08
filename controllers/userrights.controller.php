@@ -80,6 +80,7 @@ class ControllerUserRights{
                     $_SESSION["tbr"] = $answer["tbr"];
                     $_SESSION["tmac"] = $answer["tmac"];
                     $_SESSION["tcls"] = $answer["tcls"];  
+					$_SESSION["tech"] = $answer["tech"];
                     
                     $_SESSION["psup"] = $answer["psup"];
                     $_SESSION["pemp"] = $answer["pemp"];

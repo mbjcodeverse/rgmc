@@ -41,6 +41,7 @@ class userRightsEntry{
   public $tbr;
   public $tmac;
   public $tcls;
+  public $tech;
   public $psup;
   public $pemp;
   public $paccess;
@@ -88,6 +89,7 @@ class userRightsEntry{
     $tbr = $this->tbr;
     $tmac = $this->tmac;
     $tcls = $this->tcls;
+    $tech = $this->tech;
 
     $psup = $this->psup;
     $pemp = $this->pemp;
@@ -132,6 +134,7 @@ class userRightsEntry{
                   "tbr"=>$tbr,
                   "tmac"=>$tmac,
                   "tcls"=>$tcls,
+                  "tech"=>$tech,
                   "psup"=>$psup,
                   "pemp"=>$pemp,
                   "paccess"=>$paccess,
@@ -190,6 +193,7 @@ $inputUserRights -> tcat = $_POST["tcat"];
 $inputUserRights -> tbr = $_POST["tbr"];
 $inputUserRights -> tmac = $_POST["tmac"];
 $inputUserRights -> tcls = $_POST["tcls"];
+$inputUserRights -> tech = $_POST["tech"];
 
 $inputUserRights -> psup = $_POST["psup"];
 $inputUserRights -> pemp = $_POST["pemp"];

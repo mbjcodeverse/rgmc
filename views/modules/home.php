@@ -2,6 +2,7 @@
 <div class="content pt-10">
 	<div class="row">
 		<input type="hidden" name="txt-generatedby" id="txt-generatedby" value="<?php echo $_SESSION["empid"];?>">
+		<input type="hidden" name="tech_access" id="tech_access" value="<?php echo $_SESSION["tech"];?>">
 		<input type="hidden" name="class_code" id="class_code">
 		
 		<input type="hidden" name="inventoryfrom" id="inventoryfrom" value="">
@@ -784,9 +785,122 @@
   </div>
 </div>
 
+<!-- ============== Technician List ============ -->
+<div id="modal-search-technicianlist" class="modal" tabindex="-1">
+  <div class="modal-dialog modal-full modal-dialog-centered">
+    <div class="modal-content" style="background-color: #343f53;">
+      <div class="modal-header">
+        <h5 class="modal-title profile-name" style="margin-top:-3px;"><i class="icon-menu7 mr-2"></i> &nbsp; ALLOCATED JOB ORDER LIST&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+        <!-- <button type="button" class="btn btn-light btn-sm" id="btn-print" style="margin-top:-5px;color:#f3fcb6;border-radius: 12px;"><i class="icon-printer"></i> &nbsp;Print Invoices</button> -->
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="h-divider">
+      </div>
+          <!-- -25px - reduces gap between row with comboboxes and table below -->
+          <div class="row" pb-0 style="margin:10px;margin-bottom: -25px;">  
+            <div class="col-sm-5 form-group">
+                <label for="lst-machineid" id="lbl-lst-machineid" style="color:aqua;">= &gt; Machine Description</label>
+                <select class="form-control select-search" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" id="lst-machineid" name="lst-machineid">
+                    <option value="" selected hidden disabled>&lt;&nbsp;Select Machine&nbsp;&gt;</option>
+                    <?php
+                        $machines = (new ControllerMachine)->ctrShowMachineListLocation();
+                        foreach ($machines as $key => $value) {
+                          echo '<option value="'.$value["machineid"].'">'.$value["machinedesc"].' [ '.$value["machabbr"].' ] '.$value["buildingname"].'</option>';
+                        }
+                     ?>
+                </select>
+            </div>
+
+            <div class="col-sm-2 form-group">
+                <label for="lst-datemode" id="lbl-lst-datemode">Date Mode</label>
+                <select data-placeholder="Select Mode" class="form-control select" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" data-fouc id="lst-datemode" name="lst-datemode" required>
+                    <option></option>
+                    <option value="Reported" selected>Reported</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>            
+
+            <div class="col-sm-3 form-group">
+              <div class="form-group">
+                <label for="lst_date_range" id="lbl-lst-date-range">Date Range</label>
+                <div class="input-group">
+                  <span class="input-group-prepend">
+                    <span class="input-group-text"><i class="icon-calendar22"></i></span>
+                  </span>
+                  <input type="text" class="form-control daterange-basic" id="lst_date_range" name="lst_date_range" required> 
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-sm-2 form-group">
+                <label for="lst-phase" id="lbl-lst-phase" style="color:aqua;">= &gt; Phase</label>
+                <select data-placeholder="< Select Phase >" class="form-control select" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" data-fouc id="lst-phase" name="lst-phase" required>
+                    <option></option>
+                    <option value="- Queued -">- Queued -</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Allocated">Allocated</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+            </div> -->
+
+            <!-- <div class="col-sm-2 form-group">
+                <label for="lst-curstatus" id="lbl-lst-curstatus" style="color:aqua;">= &gt; Machine Status</label>
+                <select data-placeholder="< Select Status >" class="form-control select" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" data-fouc id="lst-curstatus" name="lst-curstatus" required>
+                    <option></option>
+                    <option value="Operational">Operational</option>
+                    <option value="Offline">Offline</option>
+                    <option value="Idle">Idle</option>
+                </select>
+            </div> -->
+          </div>  
+
+          <!-- <div class="h-divider"></div> -->
+
+          <table class="table table-hover table-bordered table-striped datatable-small-font profile-grid-header technicianListTable">
+          <thead>
+            <tr>
+              <th style="min-width: 130px;">Date Rep</th>
+              <th style="min-width: 160px;">Time</th>
+              <th style="min-width: 120px;">Incident #</th>
+              <th style="min-width: 325px;">Machine</th>
+              <th style="min-width: 145px;">Phase</th>
+              <th style="min-width: 165px;">Status</th>
+              <!-- <th style="min-width: 200px;">Failure Type</th> -->
+              <th style="min-width: 130px;">Technician</th>
+              <!-- <th style="min-width: 110px;">Downtime</th> -->
+            </tr>
+          </thead>
+
+          <!-- <tfoot>
+            <tr>
+                <th colspan="3" style="text-align:right;">TOTAL AMOUNT</th>
+                <th><input type="text" class="form-control" id="num-totalamount" name="num-totalamount"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+          </tfoot> -->
+
+          <tbody>
+          </tbody>
+        </table>
+
+        <!-- <div class="row">
+        <div class="col-sm-2 form-group">
+                <input type="text" style="font-size:1em;padding:2px;padding-right:17px;text-align:right;color:transparent;text-shadow: 0 0 0 #ffffff;" class="form-control qty numeric" name="num-netamount" id="num-netamount" value="0.00" required>
+            </div> 
+        </div> -->
+
+    </div>
+  </div>
+</div>
+
 <script src="views/js/home.js"></script>
 <script src="views/js/home_inventory.js"></script>
 <script src="views/js/stockcard_home.js"></script>
 <script src="views/js/stockledger.js"></script>
+<script src="views/js/technicianlist.js"></script>
 		
 					

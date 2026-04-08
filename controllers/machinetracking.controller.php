@@ -60,4 +60,9 @@ class ControllerMachineTracking{
 		$answer = (new ModelMachineTracking)->mdlCancelJobOrder($field, $id);
 		return $answer;
 	}
+
+	static public function ctrTechnicianList($machineid, $datemode, $start_date, $end_date){
+		$answer = (new ModelMachineTracking)->mdlTechnicianList($machineid, $datemode, $start_date, $end_date);
+		return $answer;
+	}	
 }

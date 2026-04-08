@@ -539,4 +539,50 @@ class ModelMachineTracking{
 		$stmt -> close();
 		$stmt = null;
 	}
+
+	static public function mdlTechnicianList($machineid, $datemode, $start_date, $end_date){
+		if ($machineid != ''){
+			$machine = " AND (b.machineid = '$machineid')";
+		}else{
+			$machine = "";
+		}	
+
+		// if ($technician != ''){
+		// 	$reporter = " AND (a.reporter = '$technician')";
+		// }else{
+		// 	$reporter = "";
+		// }	
+
+		if(!empty($end_date)){
+            if ($datemode == 'Reported'){
+			    $dates = " AND (a.datereported BETWEEN '$start_date' AND '$end_date')";
+            }else{
+                $dates = " AND (a.datecompleted BETWEEN '$start_date' AND '$end_date')";
+            }
+		}else{
+			$dates = "";
+		}					
+
+		$whereClause = "WHERE (a.inccode != '') AND (a.phase = 'Allocated')" . $machine . $dates; //. $reporter;
+
+		$stmt = (new Connection)->connect()->prepare("SELECT
+                                        DATE_FORMAT(a.datereported, '%m/%d/%Y') AS datereported,
+                                                    a.inctime,
+                                                    a.inccode,
+													a.controlnum,
+                                                    b.machinedesc,
+                                                    a.phase,
+													a.curstatus,
+													a.failuretype,
+													CONCAT(e.lname,', ',e.fname) AS technician
+                                                FROM machinetracking a
+                                                INNER JOIN machine b ON a.machineid = b.machineid
+												INNER JOIN employees e ON a.technician = e.empid
+                                                $whereClause
+                                                ORDER BY a.datereported");
+        $stmt->execute();
+        $results = $stmt->fetchAll();
+        $stmt = null; 
+        return $results;
+	}	
 }

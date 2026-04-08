@@ -25,7 +25,7 @@ class ModelUserRights{
                                                                  mrep, mirm, mifp, mcrm, mcfg, mopr,
                                                                  tmd, tmt, tmi, tpo, tis,
                                                                  trel, tret, tadj, tinv, trep,
-                                                                 tprt, tcat, tbr, tmac, tcls,
+                                                                 tprt, tcat, tbr, tmac, tcls, tech,
                                                                  psup, pemp, paccess, plog, pcost)
                                                          VALUES (:userid, :empid, :utype, :ulevel, :username, :upassword,
                                                                  :mmd, :mip, :mfp, :mpc, :mrm,
@@ -33,7 +33,7 @@ class ModelUserRights{
                                                                  :mrep, :mirm, :mifp, :mcrm, :mcfg, :mopr,
                                                                  :tmd, :tmt, :tmi, :tpo, :tis,
                                                                  :trel, :tret, :tadj, :tinv, :trep,
-                                                                 :tprt, :tcat, :tbr, :tmac, :tcls,
+                                                                 :tprt, :tcat, :tbr, :tmac, :tcls, :tech,
                                                                  :psup, :pemp, :paccess, :plog, :pcost)");	
 
 			$stmt->bindParam(":userid", $usercode, PDO::PARAM_STR);
@@ -75,6 +75,7 @@ class ModelUserRights{
             $stmt->bindParam(":tbr", $data["tbr"], PDO::PARAM_STR);
             $stmt->bindParam(":tmac", $data["tmac"], PDO::PARAM_STR);
             $stmt->bindParam(":tcls", $data["tcls"], PDO::PARAM_STR);
+			$stmt->bindParam(":tech", $data["tech"], PDO::PARAM_STR);
 
             $stmt->bindParam(":psup", $data["psup"], PDO::PARAM_STR);
             $stmt->bindParam(":pemp", $data["pemp"], PDO::PARAM_STR);
@@ -105,7 +106,7 @@ class ModelUserRights{
                         mrep = :mrep, mirm = :mirm, mifp = :mifp, mcrm = :mcrm, mcfg = :mcfg, mopr = :mopr,
                         tmd = :tmd, tmt = :tmt, tmi = :tmi, tpo = :tpo, tis = :tis,
                         trel = :trel, tret = :tret, tadj = :tadj, tinv = :tinv, trep = :trep,
-                        tprt = :tprt, tcat = :tcat, tbr = :tbr, tmac = :tmac, tcls = :tcls,
+                        tprt = :tprt, tcat = :tcat, tbr = :tbr, tmac = :tmac, tcls = :tcls, tech = :tech,
                         psup = :psup, pemp = :pemp, paccess = :paccess, plog = :plog, pcost = :pcost
                         WHERE userid = :userid");
 
@@ -146,6 +147,7 @@ class ModelUserRights{
             $stmt->bindParam(":tbr", $data["tbr"], PDO::PARAM_STR);
             $stmt->bindParam(":tmac", $data["tmac"], PDO::PARAM_STR);
             $stmt->bindParam(":tcls", $data["tcls"], PDO::PARAM_STR);
+			$stmt->bindParam(":tech", $data["tech"], PDO::PARAM_STR);
 
             $stmt->bindParam(":psup", $data["psup"], PDO::PARAM_STR);
             $stmt->bindParam(":pemp", $data["pemp"], PDO::PARAM_STR);
