@@ -786,10 +786,10 @@ class ModelFactoryDashboard{
 
   static public function mdlShowMaterialCostTrail($trans_date) {
     $sql = "SELECT 1 AS priority, 'Requisition' AS trans_type, m.machinedesc,
-                   SUM(CASE WHEN r.categorycode != '0005' AND r.categorycode != '0010' THEN d.qty ELSE 0 END) AS qty,
-                   SUM(CASE WHEN r.categorycode != '0005' AND r.categorycode != '0010' THEN d.tamount ELSE 0 END) AS tamount,
-                   SUM(CASE WHEN r.categorycode = '0005' OR r.categorycode = '0010' THEN d.qty ELSE 0 END) AS aqty,
-                   SUM(CASE WHEN r.categorycode = '0005' OR r.categorycode = '0010' THEN d.tamount ELSE 0 END) AS atamount
+                   SUM(CASE WHEN r.categorycode != '0005' AND r.categorycode != '0010' AND r.categorycode != '0017' THEN d.qty ELSE 0 END) AS qty,
+                   SUM(CASE WHEN r.categorycode != '0005' AND r.categorycode != '0010' AND r.categorycode != '0017' THEN d.tamount ELSE 0 END) AS tamount,
+                   SUM(CASE WHEN r.categorycode = '0005' OR r.categorycode = '0010' OR r.categorycode = '0017' THEN d.qty ELSE 0 END) AS aqty,
+                   SUM(CASE WHEN r.categorycode = '0005' OR r.categorycode = '0010' OR r.categorycode = '0017' THEN d.tamount ELSE 0 END) AS atamount
             FROM machine m 
             INNER JOIN rawout c ON m.machineid = c.machineid
             INNER JOIN rawoutitems d ON c.reqnumber = d.reqnumber
