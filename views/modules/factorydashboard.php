@@ -550,6 +550,45 @@
   </div>
 </div>
 
+<!-- ============== Production Machine Details ============ -->
+<div id="modal-production-machine-details" class="modal allow-modal-drag" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content" style="background-color: #343f53;">
+      <div class="modal-header">
+        <h1 class="modal-title profile-name" id="trans_prod_info_machine"><i class="icon-menu7 mr-2"></i></h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="h-divider">
+      </div>      
+
+      <table class="table table-hover table-bordered table-striped datatable-small-font profile-grid-header productionMachineDetailsTable" style="font-size: 1.4em;">
+        <thead>
+          <tr>
+			<th>Machine</th>
+            <th>Product Name</th>
+            <th style="text-align:right;">Value</th>
+            <th style="text-align:right;">Qty</th>
+			<th style="text-align:right;">Wt.</th>
+            <th style="text-align:right;">Total Wt.</th>
+          </tr>
+        </thead>
+		<tbody>
+        <!-- Data populated dynamically -->
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="2" style="text-align:right;color:#fcd772;border:4px solid white;">TOTAL PRODUCTION</th>
+				<th style="border-right:4px solid white;border-bottom:4px solid white;border-top:4px solid white;"></th>
+				<th style="border-right:4px solid white;border-bottom:4px solid white;border-top:4px solid white;"></th>
+				<th colspan="2" style="border-right:4px solid white;border-bottom:4px solid white;border-top:4px solid white;"></th>
+			</tr>
+		</tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+
 <script src="views/js/factorydashboard.js"></script>
 		
 					

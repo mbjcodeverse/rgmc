@@ -96,6 +96,25 @@ if (!$.fn.DataTable.isDataTable('.productionDetailsTable')) {
     });
 }
 
+if (!$.fn.DataTable.isDataTable('.productionMachineDetailsTable')) {
+    var pdm = $('.productionMachineDetailsTable').DataTable({
+        processing: true,
+        autoWidth: true,
+        scrollY: '55vh',
+        keys: true,
+        paging: false,
+        dom: '<"datatable-header"><"datatable-scroll"t><"datatable-footer">',
+        //dom: '<"datatable-header"f><"datatable-scroll"t><"datatable-footer"i>',
+                language: {
+                    loadingRecords: 'Loading production details...',
+                    search: '<span>Filter:</span> _INPUT_',
+                    searchPlaceholder: 'Type to filter...',
+                    lengthMenu: '<span>Show:</span> _MENU_',
+                    paginate: { 'first': 'First', 'last': 'Last', 'next': $('html').attr('dir') == 'rtl' ? '&larr;' : '&rarr;', 'previous': $('html').attr('dir') == 'rtl' ? '&rarr;' : '&larr;' }
+                }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     $('#lst_date_range').daterangepicker({
         ranges:{
@@ -1606,6 +1625,7 @@ function fetchProductionMetrics() {
                                     'onmouseover="this.style.backgroundColor=\'#fccd60\'; this.style.color=\'#303030\'; this.style.fontSize=\'0.9em\'; this.style.fontWeight=\'bold\'" ' +
                                     'onmouseout="this.style.backgroundColor=\'\'; this.style.color=\'#00ffff\'; this.style.fontSize=\'\'; this.style.fontWeight=\'\'" ' +
                                     'onclick="productionDetails(\'' + category + '\')" ' +
+                                    'oncontextmenu="productionDetailsMachine(\'' + category + '\'); return false;" ' +
                                     '>' + category + '</td>');
                                 
                                 if (Number(production_qty) > 0.00){    
@@ -1854,6 +1874,107 @@ function productionDetails(prod_category){
             </tr>
             `);
             pd.draw();
+        }
+    });
+}
+
+function productionDetailsMachine(prod_category){
+    let category = prod_category;
+    let date_range = $("#lst_date_range").val();
+
+    let start_date = date_range.substring(6, 10) + '-' + date_range.substring(0, 2) + '-' + date_range.substring(3, 5);
+    let end_date = date_range.substring(19, 23) + '-' + date_range.substring(13, 15) + '-' + date_range.substring(16, 18);
+
+    // Convert dates to MM/DD/YYYY format
+    let start_date_formatted = start_date.substring(5, 7) + '/' + start_date.substring(8, 10) + '/' + start_date.substring(0, 4);
+    let end_date_formatted = end_date.substring(5, 7) + '/' + end_date.substring(8, 10) + '/' + end_date.substring(0, 4);
+
+    // Concatenate category with date range
+    let display_text;
+    if (start_date_formatted === end_date_formatted) {
+        // Same start and end date
+        display_text = `${category.toUpperCase()} [${start_date_formatted}]`;
+    } else {
+        // Different start and end dates
+        display_text = `${category.toUpperCase()} [${start_date_formatted} - ${end_date_formatted}]`;
+    }
+
+    // Show modal and update the production category with the formatted text
+    $('#modal-production-machine-details').modal('show');
+    $('#trans_prod_info_machine').text(display_text);
+
+    // $('#modal-production-details').modal('show');
+    // $('#trans_prod_info').text(category.toUpperCase());
+
+    let data_details = new FormData();
+    data_details.append("category", category);
+    data_details.append("start_date", start_date);
+    data_details.append("end_date", end_date);
+
+    $.ajax({
+        url: "ajax/production_details_machine.ajax.php",
+        method: "POST",
+        data: data_details,
+        cache: false,
+        contentType: false,
+        processData: false,
+        dataType: "json",
+        success: function(answer) {
+            //$(".productionDetailsTable").DataTable().clear();
+            pd.clear();
+            var total_value = 0.00;
+            var total_qty = 0.00;
+            var total_weight = 0.00;
+            for (var i = 0; i < answer.length; i++) {
+                let production = answer[i];
+                let catdescription = production.catdescription;
+
+                let machinedesc = production.machinedesc;
+                let formattedMachinedesc = "";
+                formattedMachinedesc = `<span style="font-size:16px;color:#aedefc; text-align:left; display:block;">${machinedesc}</span>`;
+
+                let pdesc = production.pdesc;
+                let formattedPdesc = "";
+                formattedPdesc = `<span style="font-size:16px;color:#aedefc; text-align:left; display:block;">${pdesc}</span>`;
+
+                let wmeas = production.wmeas;
+
+                let pweight = Number(production.pweight);
+                let formttedPweight = "";
+                formttedPweight = `<span style="font-size:16px;color:orange; text-align:right; display:block;">${numberWithCommas(pweight) + " " + wmeas}</span>`;
+
+                let qty = Number(production.qty);
+                let formattedQty = '';
+                total_qty += qty;
+                formattedQty = `<span style="font-size:16px;color:greenyellow; text-align:right; display:block;">${numberWithCommasNoDecimal(qty)}</span>`;
+
+                let tamount = Number(production.tamount);
+                let formattedValue = '';
+                total_value += tamount;
+                formattedValue = `<span style="font-size:16px;color:#aedefc; text-align:right; display:block;">${numberWithCommas(tamount)}</span>`;
+
+                let formattedTotalWeight = '';
+                let prod_weight = qty * pweight;
+                total_weight += prod_weight;
+                formattedTotalWeight = `<span style="font-size:16px;color:greenyellow; text-align:right; display:block;">${numberWithCommas(prod_weight)}</span>`;
+
+                pdm.row.add([formattedMachinedesc,formattedPdesc,formattedValue,formattedQty,formttedPweight,formattedTotalWeight]);
+            }
+            $('.productionMachineDetailsTable tfoot').html(`
+            <tr>
+                <th colspan="2" style="border:4px solid white;text-align:right; color:white;">TOTAL PRODUCTION</th>
+                <th style="border-right:4px solid white;border-bottom:4px solid white;border-top:4px solid white;font-weight:bold; color:#fcd772; text-align:right; font-size:1.2em;">
+                ${numberWithCommas(total_value.toFixed(2))}
+                </th>
+                <th style="border-right:4px solid white;border-bottom:4px solid white;border-top:4px solid white;font-weight:bold; color:#fcd772; text-align:right; font-size:1.2em;">
+                ${numberWithCommas(total_qty.toFixed(2))}
+                </th>
+                <th colspan="2" style="border-right:4px solid white;border-bottom:4px solid white;border-top:4px solid white;font-weight:bold; color:#fcd772; text-align:right; font-size:1.2em;">
+                ${numberWithCommas(total_weight.toFixed(2))}
+                </th>
+            </tr>
+            `);
+            pdm.draw();
         }
     });
 }

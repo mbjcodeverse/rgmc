@@ -23,6 +23,12 @@ class ControllerFactoryDashboard{
 	}
 
 
+	static public function ctrShowProductionDetailsMachine($category, $start_date, $end_date){
+		$answer = (new ModelFactoryDashboard)->mdlShowProductionDetailsMachine($category, $start_date, $end_date);
+		return $answer;
+	}
+
+
 
     static public function ctrShowDashboardAssessment($start_date, $end_date, $categorycode, $tier){
 		$answer = (new ModelFactoryDashboard)->mdlShowDashboardAssessment($start_date, $end_date, $categorycode, $tier);

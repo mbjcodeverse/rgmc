@@ -386,6 +386,35 @@ class ModelFactoryDashboard{
       $stmt = null;
       return $result;
   }
+
+  static public function mdlShowProductionDetailsMachine($category, $start_date, $end_date){
+		  if(!empty($end_date)){
+        $dates = " BETWEEN '$start_date' AND '$end_date'";
+      }else{
+        $dates = "";
+      }					
+
+		  $dateClause = $dates;
+
+      $stmt = (new Connection)->connect()->prepare("SELECT m.machinedesc, c.categorycode,
+                            c.catdescription,
+                            p.pdesc,
+                            p.pweight,
+                            p.wmeas,
+                            SUM(pi.qty) AS qty,
+                            SUM(pi.tamount) AS tamount
+                            FROM categorygoods c INNER JOIN products p ON (c.categorycode = p.categorycode)
+                                                 INNER JOIN prodfinitems pi ON (p.itemid = pi.itemid)
+                                                 INNER JOIN prodfin pd ON (pd.prodnumber = pi.prodnumber)
+                                                 INNER JOIN machine m ON (pd.machineid = m.machineid)
+                            WHERE (c.catdescription = '$category') AND
+                                  (pd.proddate $dateClause)
+                            GROUP BY m.machinedesc,p.pdesc");
+      $stmt->execute();
+      $result = $stmt->fetchAll();
+      $stmt = null;
+      return $result;
+  }
   
   static public function mdlShowDashboardAssessment($start_date, $end_date, $categorycode, $tier) {
     $categorycode = ltrim($categorycode, ',');
