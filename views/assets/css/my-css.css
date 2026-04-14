@@ -505,3 +505,30 @@ tr.row_selected{
 .daterangepicker .drp-buttons .btn:hover {
   background-color: #555;
 }
+
+.fc-event-hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    filter: brightness(1.2);
+    transition: all 0.2s ease;
+    z-index: 999;
+    cursor: pointer;
+}
+
+/* .fullcalendar-event-colors,
+.fc {
+    height: auto !important;
+}
+
+.fc-daygrid-body,
+.fc-daygrid-body table {
+    height: auto !important;
+}
+
+.fc-daygrid-body tbody tr:has(.fc-daygrid-day-number) {
+    display: table-row;
+}
+
+.fc-daygrid-body tbody tr:not(:has(.fc-daygrid-day-number)) {
+    display: none;
+} */

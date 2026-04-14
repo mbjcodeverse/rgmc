@@ -10,7 +10,12 @@ class ModelCalendar{
 
 		$dateClause = $dates;
 
-        $stmt = (new Connection)->connect()->prepare("SELECT * FROM machinetracking WHERE datereported $dateClause");
+        $stmt = (new Connection)->connect()->prepare("SELECT m.machinedesc,
+                                                             mt.curstatus, mt.datereported, mt.phase
+                                        FROM machine m INNER JOIN machinetracking mt
+                                                       ON (m.machineid = mt.machineid)
+                                        WHERE (phase = 'Pending' OR phase = 'Allocated') AND
+                                               datereported $dateClause");
 
 		$stmt -> execute();
 		return $stmt -> fetchAll();

@@ -37,20 +37,19 @@ function maintenanceCalendarList(start = null, end = null){
         dataType: "json",
 
         success: function(answer) {
-
             let colorMap = {
-                "Electrical": "#EF5350",
-                "Mechanical": "#26A69A",
-                "Network": "#5C6BC0"
+                "Unplanned Downtime": "#ee534f",
+                "Planned Downtime": "#28b6f6",
+                "Inspection": "#5c6bc0"
             };
 
             calendarEventsData = answer.map(item => ({
-                title: item.failuretype,
+                title: item.machinedesc,
                 start: item.datereported,
-                color: colorMap[item.failuretype] || "#546E7A"
+                color: colorMap[item.curstatus] || "#546E7A"
             }));
 
-            // ✅ Refresh calendar safely
+            // Refresh calendar safely
             if (calendarEventColorsInit) {
                 calendarEventColorsInit.removeAllEvents();
                 calendarEventColorsInit.addEventSource(calendarEventsData);
@@ -64,21 +63,22 @@ function maintenanceCalendarList(start = null, end = null){
 // FULLCALENDAR INIT (v5+)
 // ========================================
 var FullCalendarStyling = function() {
-
     var _componentFullCalendarStyling = function() {
-
         if (typeof FullCalendar == 'undefined') {
             console.warn('FullCalendar not loaded.');
             return;
         }
 
         var calendarEl = document.querySelector('.fullcalendar-event-colors');
-
         if (calendarEl) {
-
             calendarEventColorsInit = new FullCalendar.Calendar(calendarEl, {
-
                 initialView: 'dayGridMonth',
+
+                showNonCurrentDates: false,     // HIDE gray days
+                fixedWeekCount: false,          // remove empty extra rows
+
+                // height: 'auto',                 // KEY FIX
+                // expandRows: false,              // PREVENT row stretching
 
                 headerToolbar: {
                     left: 'prev,next today',
@@ -88,6 +88,19 @@ var FullCalendarStyling = function() {
 
                 editable: true,
                 events: calendarEventsData,
+
+                eventClick: function(info) {
+                    alert(info.event.title); // machinedesc
+                },
+
+                // ✅ HOVER HIGHLIGHT
+                eventMouseEnter: function(info) {
+                    info.el.classList.add('fc-event-hover');
+                },
+
+                eventMouseLeave: function(info) {
+                    info.el.classList.remove('fc-event-hover');
+                },
 
                 // ========================================
                 // CALENDAR → DATE PICKER
@@ -118,7 +131,6 @@ var FullCalendarStyling = function() {
                     );
                 }
             });
-
             calendarEventColorsInit.render();
         }
     };
@@ -128,7 +140,6 @@ var FullCalendarStyling = function() {
             _componentFullCalendarStyling();
         }
     }
-
 }();
 
 
@@ -136,10 +147,6 @@ var FullCalendarStyling = function() {
 // DOCUMENT READY
 // ========================================
 $(document).ready(function () {
-
-    // ========================================
-    // INIT DATERANGEPICKER
-    // ========================================
     $('#lst_date_range_maintenance').daterangepicker({
         ranges:{
           'All'           : [moment('2025-12-01'), moment()],
@@ -165,9 +172,7 @@ $(document).ready(function () {
         let end_date = picker.endDate.format('YYYY-MM-DD');
 
         if (calendarEventColorsInit) {
-
             let diffDays = picker.endDate.diff(picker.startDate, 'days') + 1;
-
             if (diffDays === 1) {
                 calendarEventColorsInit.changeView('dayGridDay');
             } else if (diffDays <= 7) {
@@ -175,28 +180,19 @@ $(document).ready(function () {
             } else {
                 calendarEventColorsInit.changeView('dayGridMonth');
             }
-
             calendarEventColorsInit.gotoDate(start_date);
         }
-
         maintenanceCalendarList(start_date, end_date);
     });
 
 
-    // ========================================
-    // TAB INIT
-    // ========================================
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-
         var target = $(e.target).attr("href");
-
         if (target === "#calendar") {
-
             if (!calendarInitialized) {
                 FullCalendarStyling.init();
                 calendarInitialized = true;
 
-                // Initial load
                 maintenanceCalendarList();
             } else {
                 if (calendarEventColorsInit) {
