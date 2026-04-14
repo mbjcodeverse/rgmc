@@ -101,7 +101,7 @@
   <script src="https://cdn.jsdelivr.net/npm/daterangepicker"></script>
   <link href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet">
 
-  <link href="views/assets/css/mycss.css" rel="stylesheet" type="text/css">
+  <link href="views/assets/css/my-css.css" rel="stylesheet" type="text/css">
 
   
   <!-- <script src="views/global_assets/js/initialization/form_checkboxes_radios.js"></script> -->
