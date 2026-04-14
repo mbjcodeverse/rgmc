@@ -932,6 +932,7 @@
 <script src="views/js/stockcard_home.js"></script>
 <script src="views/js/stockledger.js"></script>
 <script src="views/js/technicianlist.js"></script>
-<script src="views/js/calendar.js"></script>
+<!-- <script src="views/js/calendar.js"></script> -->
+<script src="views/js/calendar.js?v=2"></script>
 		
 					
