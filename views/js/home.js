@@ -52,7 +52,7 @@ var totalPercentage = 0, validCount = 0, totalAverage = 0.00;
 document.addEventListener('DOMContentLoaded', function() {
 // $(function() {
     // Hide - Report Type by default (Machiniries Tab)
-    $("ul.nav-tabs-bottom li:nth-child(5)").hide();
+    $("ul.nav-tabs-bottom li:nth-child(6)").hide();
 
     // Machiniries Tab date range
     $('#lst_date_range').daterangepicker({
@@ -96,15 +96,15 @@ document.addEventListener('DOMContentLoaded', function() {
     tableInventory.columns.adjust();
 
     $('li.cur-inventory').click(function(){
-        $("ul.nav-tabs-bottom li:nth-child(5)").hide();    
+        $("ul.nav-tabs-bottom li:nth-child(6)").hide();    
     });
 
     $('li.cur-machine').click(function(){
-        $("ul.nav-tabs-bottom li:nth-child(5)").hide();
+        $("ul.nav-tabs-bottom li:nth-child(6)").hide();
     });    
     
     $('li.cur-stockledger').click(function(){
-        $("ul.nav-tabs-bottom li:nth-child(5)").hide();
+        $("ul.nav-tabs-bottom li:nth-child(6)").hide();
     }); 
 
     machine_status_count();

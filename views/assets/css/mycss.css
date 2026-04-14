@@ -453,3 +453,57 @@ tr.row_selected{
   background-color:#313445 !important;
   /*border: 2px solid yellow;*/
 }
+
+
+
+/* Container */
+.daterangepicker {
+  background-color: #495975;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+/* Calendar table */
+.daterangepicker .calendar-table {
+  background-color: #495975;
+  border: none;
+}
+
+/* Cells */
+.daterangepicker td,
+.daterangepicker th {
+  color: #ddd;
+}
+
+/* Hover */
+.daterangepicker td:hover {
+  background-color: #333;
+}
+
+/* Active dates */
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* In range */
+.daterangepicker td.in-range {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+/* Buttons */
+.daterangepicker .drp-buttons {
+  border-top: 1px solid #444;
+}
+
+.daterangepicker .drp-buttons .btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.daterangepicker .drp-buttons .btn:hover {
+  background-color: #555;
+}

@@ -15,7 +15,6 @@ class saveMachineDiagnosis{
   public $inctime;
   public $failuretype;
   public $breakid;
-  // public $controlnum;
   public $incidentdetails;
   public $technician;
   public $compreporter;
@@ -39,7 +38,6 @@ class saveMachineDiagnosis{
     $inctime = $this->inctime;
   	$failuretype = $this->failuretype;
     $breakid = $this->breakid;
-  	// $controlnum = $this->controlnum;
     $incidentdetails = $this->incidentdetails;
     $technician = $this->technician;
     $compreporter = $this->compreporter;
@@ -61,7 +59,6 @@ class saveMachineDiagnosis{
                   "inctime"=>$inctime,
                   "failuretype"=>$failuretype,
                   "breakid"=>$breakid,
-                  // "controlnum"=>$controlnum,
                   "incidentdetails"=>$incidentdetails,
                   "technician"=>$technician,
                   "compreporter"=>$compreporter,
@@ -96,7 +93,6 @@ $machine_diagnosis -> shift = $_POST["shift"];
 $machine_diagnosis -> inctime = $_POST["inctime"];
 $machine_diagnosis -> failuretype = $_POST["failuretype"];
 $machine_diagnosis -> breakid = $_POST["breakid"];
-// $machine_diagnosis -> controlnum = $_POST["controlnum"];
 $machine_diagnosis -> incidentdetails = $_POST["incidentdetails"];
 $machine_diagnosis -> technician = $_POST["technician"];
 $machine_diagnosis -> compreporter = $_POST["compreporter"];

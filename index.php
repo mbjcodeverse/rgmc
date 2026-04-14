@@ -104,6 +104,9 @@ require_once "models/submetrics.model.php";
 require_once "controllers/machinetracking.controller.php";
 require_once "models/machinetracking.model.php";
 
+require_once "controllers/calendar.controller.php";
+require_once "models/calendar.model.php";
+
 // require_once "extensions/vendor/mike42/escpos-php/src/Mike42/Escpos/printer.php";
 // require_once "extensions/vendor/mike42/escpos-php/src/Mike42/Escpos/EscposImage.php";
 // require_once "extensions/vendor/mike42/escpos-php/src/Mike42/Escpos/PrintConnectors/FilePrintConnector.php";

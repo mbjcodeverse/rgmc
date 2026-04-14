@@ -10,20 +10,6 @@
 
 		<input type="hidden" name="inventoryto" id="inventoryto" value="">
 		<input type="hidden" name="inventorytonextday" id="inventorytonextday" value="">
-		<!-- <div class="col-sm-3 col-xl-3">
-			<div class="card card-body bg-success-400 has-bg-image">
-				<div class="media">
-					<div class="mr-3 align-self-center">
-						<i class="icon-pulse2 icon-3x opacity-75" style="text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);"></i>
-					</div>
-
-					<div class="media-body text-right">
-						<h2 class="mb-0" id="operational" style="text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);">0</h2>
-						<span class="text-uppercase font-size-xs" style="font-size:1.3em;text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);">Operational</span>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 		<div class="col-sm-4 col-xl-4">
 			<div class="card card-body bg-danger-400 has-bg-image">
@@ -69,21 +55,6 @@
 				</div>
 			</div>
 		</div>		
-
-		<!-- <div class="col-sm-6 col-xl-3">
-			<div class="card card-body bg-indigo-400 has-bg-image">
-				<div class="media">
-					<div class="mr-3 align-self-center">
-						<i class="icon-esc icon-3x opacity-75" style="text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);"></i>
-					</div>
-
-					<div class="media-body text-right">
-						<h2 class="mb-0" id="standby" style="text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);">0</h2>
-						<span class="text-uppercase font-size-xs" style="font-size:1.3em;text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);">Standby</span>
-					</div>
-				</div>
-			</div>
-		</div> -->
 	</div>
 
 
@@ -99,9 +70,10 @@
 				<div class="nav-tabs-responsive bg-dark border-top shadow-0" style="font-size: 1.3em;">
 					<ul class="nav nav-tabs nav-tabs-bottom flex-nowrap mb-0">
 						<li class="nav-item cur-machine"><a href="#machine-data" class="nav-link active" data-toggle="tab"><i class="icon-cogs mr-2 icon-2x"></i> Machineries</a></li>
-						<li class="nav-item cur-tasks"><a href="#tabular-data" class="nav-link" data-toggle="tab"><i class="icon-calendar2 mr-2 icon-2x"></i> Tasks</a></li>						
+						<li class="nav-item cur-tasks"><a href="#tabular-data" class="nav-link" data-toggle="tab"><i class="icon-list-numbered mr-2 icon-2x"></i> Tasks</a></li>						
 						<li class="nav-item cur-inventory"><a href="#inventory-data" class="nav-link" data-toggle="tab"><i class="icon-stack4 mr-2 icon-2x"></i> Catalog</a></li>
 						<li class="nav-item cur-stockledger"><a href="#stock-ledger" class="nav-link" data-toggle="tab"><i class="icon-books mr-2 icon-2x"></i> Stock Ledger</a></li>
+						<li class="nav-item cur-calendar"><a href="#calendar" class="nav-link" data-toggle="tab"><i class="icon-calendar2 mr-2 icon-2x"></i> Event Calendar</a></li>
 						<li class="nav-item ml-auto">
 							<div class="d-flex align-items-center">
 								<!-- <label style="margin-top:16px;">Report Type</label> -->
@@ -497,10 +469,68 @@
 						<div class="row stock_ledger" id="stock_ledger">
           				</div> 
 					</div>					
-					<!-- END of Stock Ledger -->					
+					<!-- END of Stock Ledger -->
+					 
+					<!-- [5] Calendar Tab -->
+					<div class="tab-pane fade" id="calendar">
+						<div class="card-header border-bottom" style="padding-top: 10px; padding-bottom: 0px;">
+							<div class="row d-flex align-items-center" style="display: flex; flex-wrap: nowrap; justify-content: flex-start; align-items: center; gap: 10px;">
+								<!-- Building Label and Dropdown -->
+								<div class="col-form-label col-lg-1 text-right" style="color: aqua; font-size: 1.2em; min-width: 120px; max-width: 150px; flex: 0 0 auto;">
+									<label id="lbl-lst-buildingcode">=&gt; Building</label>
+								</div>
+								<div class="col-sm-2 form-group" style="margin-bottom: 7px; flex: 1;">
+									<select data-placeholder="< Select Bldg >" class="form-control select-search" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" id="sel-building_code" name="sel-building_code" required style="width: 100%;">
+										<option></option>
+										<?php $building = (new ControllerBuilding)->ctrShowBuildingList(); foreach ($building as $key => $value) { echo '<option value="'.$value["buildingcode"].'">'.$value["buildingname"].'</option>'; } ?>
+									</select>
+								</div>
 
+								<!-- Date Label and Range -->
+								<div class="col-form-label col-lg-1 text-right" style="font-size: 1.2em; color: aqua; flex: 0 0 auto;">
+									<label id="lbl-lst-machstatus">Date</label>
+								</div>
+								<div class="col-sm-2 form-group" style="margin-bottom: 7px; flex: 1;">
+									<input type="text" class="form-control daterange-basic" style="border: 1px solid #6e6e6e; width: 100%;" id="lst_date_range_maintenance" name="lst_date_range_maintenance" required>
+								</div>
+
+								<!-- Display Type -->
+								<div class="col-form-label col-lg-1 text-right" style="font-size: 1.2em; min-width: 120px; max-width: 150px; flex: 0 0 auto;">
+									<label id="lbl-lst-displaytype">Display</label>
+								</div>
+								<div class="col-sm-2 form-group" style="margin-bottom: 7px; flex: 1;">
+									<select data-placeholder="Select Type" class="form-control select" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" data-fouc id="sel-display_type" name="sel-display_type" required>
+										<option></option>
+										<!-- <option value="Statistical">Statistical</option> -->
+										<option value="Summary">Summary</option>
+										<option value="Narrative">Narrative</option>
+									</select>
+								</div>								
+							</div>
+						</div>
+
+						<div class="card">
+							<!-- <div class="card-header header-elements-inline">
+								<h5 class="card-title">Event colors</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+										<a class="list-icons-item" data-action="collapse"></a>
+										<a class="list-icons-item" data-action="reload"></a>
+										<a class="list-icons-item" data-action="remove"></a>
+									</div>
+								</div>
+							</div> -->
+							
+							<div class="card-body" style="margin-top: 20px;" id="calendar">
+								<!-- <p class="mb-3">FullCalendar allows you to change the color of all events on the calendar using the <code>eventColor</code> option. Also you can change text, border and background colors for events in a specific Event Source with <code>event source</code> options (backgroundColor, color, textColor and borderColor) and for individual events with <code>color</code> option, which sets an event's background and border color. Example below demonstrates event colors based on a day of the week.</p> -->
+
+								<div class="fullcalendar-event-colors"></div>
+							</div>
+						</div>
+
+					</div>
+					<!-- END Calendar -->
 				</div>  <!-- tab content -->
-
 			</div>  <!-- card -->
 		</div>  <!-- /left content -->
 	</div>  <!-- /inner container -->
@@ -902,5 +932,6 @@
 <script src="views/js/stockcard_home.js"></script>
 <script src="views/js/stockledger.js"></script>
 <script src="views/js/technicianlist.js"></script>
+<script src="views/js/calendar.js"></script>
 		
 					

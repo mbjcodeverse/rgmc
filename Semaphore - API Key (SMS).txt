@@ -1,0 +1,6 @@
+rivsongroupcompanies@gmail.com
+password: same with this email
+
+Semaphore SMS Messaging: API Key
+-----------------------------------------------
+946f3641aee6d0611cd0966ec04df5fb

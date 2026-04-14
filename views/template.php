@@ -27,7 +27,6 @@
   <link href="views/assets/css/colors.min.css" rel="stylesheet" type="text/css">
 
   <link href="views/assets/css/loader.css" rel="stylesheet" type="text/css">
-  <link href="views/assets/css/mycss.css" rel="stylesheet" type="text/css">
   <link href="views/assets/css/passtrength.css" rel="stylesheet" type="text/css">
   <!-- /global stylesheets -->
 
@@ -89,6 +88,20 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/dark.css">
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
+  <!-- Calendars -->
+  <!-- <script src="views/global_assets/js/plugins/ui/fullcalendar/core/main.min.js"></script>
+	<script src="views/global_assets/js/plugins/ui/fullcalendar/daygrid/main.min.js"></script>
+	<script src="views/global_assets/js/plugins/ui/fullcalendar/timegrid/main.min.js"></script>
+	<script src="views/global_assets/js/plugins/ui/fullcalendar/interaction/main.min.js"></script> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5/main.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5/main.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+  <link href="views/assets/css/mycss.css" rel="stylesheet" type="text/css">
 
   
   <!-- <script src="views/global_assets/js/initialization/form_checkboxes_radios.js"></script> -->
@@ -287,6 +300,7 @@
 
 <!-- Customize numeric input -->
 <script src="views/js/script.numeric_key_binding.js"></script>
+
 <script>
   _gblBindNumericClasses('numeric');
 </script>
