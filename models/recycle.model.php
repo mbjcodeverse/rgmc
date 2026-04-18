@@ -132,7 +132,7 @@ class ModelRecycle{
 		$stmt = null;
 	}	
 
-	static public function mdlShowRecycleReport($machineid, $start_date, $end_date, $categorycode, $postedby, $recycleby, $recstatus, $reptype){
+	static public function mdlShowRecycleReport($machineid, $start_date, $end_date, $categorycode, $postedby, $recycleby, $recstatus, $reptype, $shift){
 		if ($machineid != ''){
 			$machine = " AND (c.machineid = '$machineid')";
 		}else{
@@ -163,13 +163,19 @@ class ModelRecycle{
 			$req_status = "";
 		}	
 
+		if ($shift != ''){
+			$prod_shift = " AND (c.shift = '$shift')";
+		}else{
+			$prod_shift = "";
+		}
+
 		if(!empty($end_date)){
 			$dates = " AND (c.recdate BETWEEN '$start_date' AND '$end_date')";
 		}else{
 			$dates = "";
 		}					
 
-		$whereClause = "WHERE (c.recnumber != '')" . $machine . $req_status . $dates . $posted_by . $request_by . $category_code;
+		$whereClause = "WHERE (c.recnumber != '')" . $machine . $req_status . $dates . $posted_by . $request_by . $category_code . $prod_shift;
         
         if ($reptype == 1){
 			$stmt = (new Connection)->connect()->prepare("SELECT a.catdescription,SUM(d.qty) as total_qty,SUM(d.tamount) as total_amount FROM categoryrawmats as a INNER JOIN rawmats as b ON (a.categorycode = b.categorycode) INNER JOIN recycleitems as d ON (b.itemid = d.itemid) INNER JOIN recycle as c ON (c.recnumber = d.recnumber) INNER JOIN employees as i ON (c.postedby = i.empid) INNER JOIN employees as j ON (c.recycleby = j.empid) $whereClause GROUP BY a.catdescription WITH ROLLUP");

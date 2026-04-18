@@ -57,8 +57,12 @@ $(function() {
      $("#lbl-lst-recstatus").click(function(){
         $("#lst-recstatus").val('').trigger('change');
      });
+
+     $("#lbl-lst-shift").click(function(){
+        $("#lst-shift").val('').trigger('change');
+     });
   
-     $('#lst-machineid, #lst_date_range, #lst-categorycode, #lst-postedby, #lst-recycleby, #lst-recstatus, #lst-reptype').on("change", function(){
+     $('#lst-machineid, #lst_date_range, #lst-categorycode, #lst-postedby, #lst-recycleby, #lst-recstatus, #lst-reptype, #lst-shift').on("change", function(){
         $("#btn-print-report").prop('disabled', false);
         $("#btn-export").prop('disabled', false);
   
@@ -72,6 +76,7 @@ $(function() {
         let categorycode = $("#lst-categorycode").val();
         let recstatus = $("#lst-recstatus").val();
         let reptype = $("#lst-reptype").val();
+        let shift = $("#lst-shift").val();
   
         var data = new FormData();
         data.append("machineid", machineid);
@@ -82,6 +87,7 @@ $(function() {
         data.append("recycleby", recycleby);
         data.append("recstatus", recstatus);
         data.append("reptype", reptype);
+        data.append("shift", shift);
   
         $.ajax({
              url:"ajax/recycle_report.ajax.php",   

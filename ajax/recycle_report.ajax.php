@@ -11,6 +11,7 @@ class AjaxRecycleReport{
    public $recycleby;
    public $recstatus;
    public $reptype;
+   public $shift;
 
    public function ajaxDisplayRecycleReport(){
      $machineid = $this->machineid;
@@ -21,8 +22,9 @@ class AjaxRecycleReport{
      $recycleby = $this->recycleby;
      $recstatus = $this->recstatus;
      $reptype = $this->reptype;
+     $shift = $this->shift;
 
-     $answer = (new ControllerRecycle)->ctrShowRecycleReport($machineid, $start_date, $end_date, $categorycode, $postedby, $recycleby, $recstatus, $reptype);
+     $answer = (new ControllerRecycle)->ctrShowRecycleReport($machineid, $start_date, $end_date, $categorycode, $postedby, $recycleby, $recstatus, $reptype, $shift);
      echo json_encode($answer);
    }
 }
@@ -36,4 +38,5 @@ $recycle_report -> postedby = $_POST["postedby"];
 $recycle_report -> recycleby = $_POST["recycleby"];
 $recycle_report -> recstatus = $_POST["recstatus"];
 $recycle_report -> reptype = $_POST["reptype"];
+$recycle_report -> shift = $_POST["shift"];
 $recycle_report -> ajaxDisplayRecycleReport();

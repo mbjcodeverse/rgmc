@@ -14,8 +14,8 @@ class ControllerRecycle{
 		return $answer;
 	}	
 
-	static public function ctrShowRecycleReport($machineid, $start_date, $end_date, $categorycode, $postedby, $recycleby, $recstatus, $reptype){
-		$answer = (new ModelRecycle)->mdlShowRecycleReport($machineid, $start_date, $end_date, $categorycode, $postedby, $recycleby, $recstatus, $reptype);
+	static public function ctrShowRecycleReport($machineid, $start_date, $end_date, $categorycode, $postedby, $recycleby, $recstatus, $reptype, $shift){
+		$answer = (new ModelRecycle)->mdlShowRecycleReport($machineid, $start_date, $end_date, $categorycode, $postedby, $recycleby, $recstatus, $reptype, $shift);
 		return $answer;
 	}
 

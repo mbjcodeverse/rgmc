@@ -73,7 +73,7 @@
                   </div>
                 </div>
 
-                <div class="col-sm-2 form-group">
+                <div class="col-sm-3 form-group">
                   <label for="lst-categorycode" id="lbl-lst-categorycode" style="color:aqua;">= &gt; Category</label>
                   <select data-placeholder="< Select Category >" class="form-control select-search" id="lst-categorycode" name="lst-categorycode">
                     <option></option>
@@ -86,7 +86,7 @@
                   </select>
                 </div> 
 
-                <div class="col-sm-3 form-group">
+                <div class="col-sm-2 form-group">
                   <label for="lst-postedby" id="lbl-lst-postedby" style="color:aqua;">= &gt; Posted by</label>
                   
                   <select data-placeholder="< Select Employee >" class="form-control select-search" id="lst-postedby" name="lst-postedby">
@@ -102,7 +102,7 @@
                   </select>              
                 </div> 
                 
-                <div class="col-sm-3 form-group">
+                <div class="col-sm-2 form-group">
                   <label for="lst-recycleby" id="lbl-lst-recycleby" style="color:aqua;">= &gt; Recycled by</label>
                   
                   <select data-placeholder="< Select Employee >" class="form-control select-search" id="lst-recycleby" name="lst-recycleby">
@@ -127,6 +127,16 @@
                     <option value="Cancelled">Cancelled</option>
                   </select>
                 </div>
+
+                <div class="col-sm-1 form-group">
+                  <label for="lst-shift" id="lbl-lst-shift" style="color:aqua;">= &gt; Shift</label>
+                  <!-- <label for="lst-prodstatus" id="lbl-lst-prodstatus" style="color:aqua;">= &gt; Status</label> -->
+                  <select data-placeholder="< Select Shift >" class="form-control select" data-fouc id="lst-shift" name="lst-shift">
+                    <option></option>
+                    <option value="Day">Day</option>
+                    <option value="Night">Night</option>
+                  </select>
+                </div> 
               </div>                                        
           </div>  <!-- card body -->
 
