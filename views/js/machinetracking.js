@@ -383,6 +383,8 @@ $(function() {
         let user_level = $("#user_level").val();
         if (prod_opr == 'Full' || user_level != 'Operator'){
             $("#sel-reporter").val('').trigger('change');
+            $("#sel-reporter").prop('disabled', false);     // Operator and Non-operator with access to machine tracking can create Job Order
+            $("#sel-technician").prop('disabled', false);
         }    
 
         $("#sel-shift").val('').trigger('change');

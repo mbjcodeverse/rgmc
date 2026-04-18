@@ -132,7 +132,7 @@ class ModelProdcom{
 		$stmt = null;
 	}	
 
-	static public function mdlShowProdcomReport($machineid, $start_date, $end_date, $categorycode, $postedby, $operatedby, $prodstatus, $reptype){
+	static public function mdlShowProdcomReport($machineid, $start_date, $end_date, $categorycode, $postedby, $operatedby, $prodstatus, $reptype, $shift){
 		if ($machineid != ''){
 			$machine = " AND (c.machineid = '$machineid')";
 		}else{
@@ -161,6 +161,12 @@ class ModelProdcom{
 			$req_status = " AND (c.prodstatus = '$prodstatus')";
 		}else{
 			$req_status = "";
+		}
+		
+		if ($shift != ''){
+			$prod_shift = " AND (c.shift = '$shift')";
+		}else{
+			$prod_shift = "";
 		}	
 
 		if(!empty($end_date)){
@@ -169,7 +175,7 @@ class ModelProdcom{
 			$dates = "";
 		}					
 
-		$whereClause = "WHERE (c.prodnumber != '')" . $machine . $req_status . $dates . $posted_by . $request_by . $category_code;
+		$whereClause = "WHERE (c.prodnumber != '')" . $machine . $req_status . $dates . $posted_by . $request_by . $category_code . $prod_shift;
         
         if ($reptype == 1){
 			$stmt = (new Connection)->connect()->prepare("SELECT a.catdescription,SUM(d.qty) as total_qty,SUM(d.tamount) as total_amount FROM categoryrawmats as a INNER JOIN rawmats as b ON (a.categorycode = b.categorycode) INNER JOIN prodcomitems as d ON (b.itemid = d.itemid) INNER JOIN prodcom as c ON (c.prodnumber = d.prodnumber) INNER JOIN employees as i ON (c.postedby = i.empid) INNER JOIN employees as j ON (c.operatedby = j.empid) $whereClause GROUP BY a.catdescription WITH ROLLUP");

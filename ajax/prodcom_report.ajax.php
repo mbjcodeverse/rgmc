@@ -11,6 +11,7 @@ class AjaxProdcomReport{
    public $operatedby;
    public $prodstatus;
    public $reptype;
+   public $shift;
 
    public function ajaxDisplayProdcomReport(){
      $machineid = $this->machineid;
@@ -21,8 +22,9 @@ class AjaxProdcomReport{
      $operatedby = $this->operatedby;
      $prodstatus = $this->prodstatus;
      $reptype = $this->reptype;
+     $shift = $this->shift;
 
-     $answer = (new ControllerProdcom)->ctrShowProdcomReport($machineid, $start_date, $end_date, $categorycode, $postedby, $operatedby, $prodstatus, $reptype);
+     $answer = (new ControllerProdcom)->ctrShowProdcomReport($machineid, $start_date, $end_date, $categorycode, $postedby, $operatedby, $prodstatus, $reptype, $shift);
      echo json_encode($answer);
    }
 }
@@ -36,4 +38,5 @@ $prod_component -> postedby = $_POST["postedby"];
 $prod_component -> operatedby = $_POST["operatedby"];
 $prod_component -> prodstatus = $_POST["prodstatus"];
 $prod_component -> reptype = $_POST["reptype"];
+$prod_component -> shift = $_POST["shift"];
 $prod_component -> ajaxDisplayProdcomReport();

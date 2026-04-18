@@ -14,8 +14,8 @@ class ControllerProdcom{
 		return $answer;
 	}	
 
-	static public function ctrShowProdcomReport($machineid, $start_date, $end_date, $categorycode, $postedby, $operatedby, $prodstatus, $reptype){
-		$answer = (new ModelProdcom)->mdlShowProdcomReport($machineid, $start_date, $end_date, $categorycode, $postedby, $operatedby, $prodstatus, $reptype);
+	static public function ctrShowProdcomReport($machineid, $start_date, $end_date, $categorycode, $postedby, $operatedby, $prodstatus, $reptype, $shift){
+		$answer = (new ModelProdcom)->mdlShowProdcomReport($machineid, $start_date, $end_date, $categorycode, $postedby, $operatedby, $prodstatus, $reptype, $shift);
 		return $answer;
 	}
 
