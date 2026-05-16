@@ -349,7 +349,7 @@ $(function() {
             if(result.value) {
                 let approver = $("#tns-postedby").val();
                 let inccode = $("#txt-inccode").val();
-  	            window.open("extensions/tcpdf/pdf/joborder.php?inccode="+inccode+"&approver="+approver, "_blank");
+  	            window.open("extensions/tcpdf/pdf/joborderprint.php?inccode="+inccode+"&approver="+approver, "_blank");
             }
         });
     });
