@@ -2,6 +2,7 @@
 class ControllerMachineTracking{
 	static public function ctrCreateMachineTracking($data){
 	   	$answer = (new ModelMachineTracking)->mdlAddMachineTracking($data);
+		return $answer;
 	}
 
 	static public function ctrEditMachineTracking($data){

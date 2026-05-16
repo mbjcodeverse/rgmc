@@ -48,7 +48,8 @@ class ModelMachineTracking{
 			$machine_stmt->execute();
 
 		    $pdo->commit();
-		    return "ok";
+		    // return "ok";
+			return $diagnosisid[0]['gen_id'];
 		}catch (Exception $e){
 			$pdo->rollBack();
 			return "error";

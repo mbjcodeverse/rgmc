@@ -111,6 +111,17 @@
   <!-- /theme JS files -->
 </head>
 <!-- <body class="navbar-top" onload="pageLoader()"> -->
+
+
+
+
+<!-- Messenger Chat Plugin -->
+
+
+
+
+
+
   <body class="navbar-top">
   <div id="progressloader">
     <div class="straight"></div>

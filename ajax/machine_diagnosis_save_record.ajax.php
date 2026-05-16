@@ -71,6 +71,7 @@ class saveMachineDiagnosis{
 
     if ($trans_type == 'New'){
       $answer = (new ControllerMachineTracking)->ctrCreateMachineTracking($data);
+      echo $answer;
     }else{
       $answer = (new ControllerMachineTracking)->ctrEditMachineTracking($data);
       echo $answer;

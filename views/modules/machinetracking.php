@@ -169,7 +169,8 @@
             </div>
         </div>
 
-        <div class="row" id="completion_report" style="margin-top:-10px;display:none;">
+        <!-- <div class="row" id="completion_report" style="margin-top:-10px;display:none;"> -->
+        <div class="row" id="completion_report" style="margin-top:-10px;">    
             <div class="col-sm-3 form-group">
                 <label for="sel-technician">Assigned Technician</label>
                 <select data-placeholder="< Assigned to >" class="form-control select-search" data-container-css-class="border-secondary" data-dropdown-css-class="border-secondary" id="sel-technician" name="sel-technician">
@@ -221,7 +222,8 @@
             </div>             
         </div>
 
-        <div class="row" id="corrective_action" style="margin-top:-10px;display:none;">
+        <!-- <div class="row" id="corrective_action" style="margin-top:-10px;display:none;"> -->
+        <div class="row" id="corrective_action" style="margin-top:-10px;">    
             <div class="col-sm-6 form-group">
                 <label for="txt-cause">Root Cause</label>
                 <textarea class="form-control bordered-textbox" id="txt-cause" name="txt-cause" rows="3" placeholder="Identify and explain the underlying cause of the incident. Provide details on why the incident occurred."></textarea>
@@ -239,7 +241,8 @@
           <input type="text" name="trans_type" id="trans_type" value="New" style="visibility:hidden;" required>
           <input type="hidden" id="num-id" name="num-id">
           <span class="float-left">
-            <button type="button" class="btn btn-light btn-lg" id="btn-joborder" style="display:none;" disabled><i class="icon-printer mr-2"></i> Print Job Order</button>
+            <button type="button" class="btn btn-light btn-lg" id="btn-joborder" disabled><i class="icon-printer mr-2"></i> Print Job Order</button>
+            <!-- <button type="button" class="btn btn-light btn-lg" id="btn-joborder" style="display:none;" disabled><i class="icon-printer mr-2"></i> Print Job Order</button> -->
           </span>
 
           <span class="float-right">
@@ -374,5 +377,6 @@
   </div>
 </div>
 
-<script src="views/js/machinetracking.js"></script>
+<!-- <script src="views/js/machinetracking.js"></script> -->
+<script src="views/js/machinetracking.js?v=<?php echo filemtime('views/js/machinetracking.js'); ?>"></script>
 

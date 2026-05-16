@@ -195,13 +195,20 @@ $(function() {
                 dataType: "text",
 
                 success: function (answer) {
-                    if ($("#txt-phase").val() === 'Allocated' && user_level !== 'Operator') {
-                        let approver = $("#tns-postedby").val();
-                        window.open(
-                            "extensions/tcpdf/pdf/joborder.php?inccode=" + answer+"&approver="+approver,
-                            "_blank"
-                        );
-                    }
+                    let approver = $("#tns-postedby").val();
+                    window.open(
+                        "extensions/tcpdf/pdf/joborderprint.php?inccode=" + answer+"&approver="+approver,
+                        // "extensions/tcpdf/pdf/joborder.php?inccode=" + answer+"&approver="+approver,
+                        "_blank"
+                    );
+
+                    // if ($("#txt-phase").val() === 'Allocated' && user_level !== 'Operator') {
+                    //     let approver = $("#tns-postedby").val();
+                    //     window.open(
+                    //         "extensions/tcpdf/pdf/joborder.php?inccode=" + answer+"&approver="+approver,
+                    //         "_blank"
+                    //     );
+                    // }
                 },
 
                 error: function () {
@@ -381,6 +388,7 @@ $(function() {
 
         let prod_opr = $("#prod_opr").val();
         let user_level = $("#user_level").val();
+        
         if (prod_opr == 'Full' || user_level != 'Operator'){
             $("#sel-reporter").val('').trigger('change');
             $("#sel-reporter").prop('disabled', false);     // Operator and Non-operator with access to machine tracking can create Job Order
@@ -401,7 +409,7 @@ $(function() {
         $("#txt-cause").val("");
         $("#txt-actiontaken").val("");
 
-        $('#btn-joborder').hide();
+        // $('#btn-joborder').hide();
         $('#btn-save').show();
         $('#btn-cancel').hide();
         $("#btn-joborder").prop('disabled', true);
@@ -607,8 +615,12 @@ $(function() {
 
     let isDiagnosisLoad = false;
     $(".machinetrackingListTable tbody").on("click", "button.btnDiagnosis", function(){
-        $('#btn-joborder').hide();
-        $("#btn-joborder").prop('disabled', true);
+        // $('#btn-joborder').hide();
+        // $("#btn-joborder").prop('disabled', true);
+
+        $('#btn-joborder').show();
+        $("#btn-joborder").prop('disabled', false);
+
         $("#modal-search-machinetracking").modal("hide");
         $("#trans_type").val("Update");
         var inccode = $(this).attr("inccode");
@@ -663,7 +675,8 @@ $(function() {
                 $("#txt-cause").val(answer["cause"]);
 
                 // show Cancel button for Technical Head
-                if (user_level != 'Operator' && answer["phase"] != 'Completed' && answer["phase"] != 'Cancelled'){
+                if (answer["phase"] != 'Completed' && answer["phase"] != 'Cancelled'){
+                // if (user_level != 'Operator' && answer["phase"] != 'Completed' && answer["phase"] != 'Cancelled'){
                     $('#btn-cancel').show();
                     $('#btn-save').show();
                 }else{
@@ -965,13 +978,13 @@ $(function() {
             $technician.val(selectedTechnician);
 
             let user_level = $("#user_level").val();
-            if (user_level == 'Operator'){
-                $('#btn-joborder').hide();
-                $("#btn-joborder").prop('disabled', true);
-            }else{
-                $('#btn-joborder').show();
-                $("#btn-joborder").prop('disabled', false);
-            }
+            // if (user_level == 'Operator'){
+            //     $('#btn-joborder').hide();
+            //     $("#btn-joborder").prop('disabled', true);
+            // }else{
+            //     $('#btn-joborder').show();
+            //     $("#btn-joborder").prop('disabled', false);
+            // }
         }else{
             if ($('#txt-phase').val().trim() !== 'Completed' && $('#txt-phase').val().trim() !== 'Cancelled' && $('#sel-technician').val() !== '') {
                 $('#txt-phase').val('Allocated');
